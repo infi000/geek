@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/*设置小方格圆角*/
+div {
+    border-radius: 10px
+}
+.header{
+    height: 70px;
+    width: 100%;
+    border-radius:0;
+    border-bottom:4px solid #37BF5C;
+    margin:0 auto;
+}
+.header img{
+    width: 113px;
+    height: 41px;
+    margin-left:20%;
+    margin-top:16px;
+}
+.view {
+    width: 180px;
+    height: 180px;
+    margin: 180px auto 0;
+}
+/*3D视角 与动画*/
+.box {
+    animation-name: animation;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 90px 90px 0;
+       -moz-transform-style: preserve-3d;
+    -moz-transform-origin: 90px 90px 0;
+}
+
+
+/*立方体动画 开始*/
+
+@-webkit-keyframes animation {
+    from,
+    to {}
+    16% {
+        -webkit-transform: rotateY(-30deg);
+    }
+    33% {
+        -webkit-transform: rotateX(-60deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateX(170deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateX(135deg) rotateX(-60deg);
+    }
+    83% {
+        -webkit-transform: rotateX(100deg);
+    }
+    100%{
+         -webkit-transform: rotatez(100deg);
+    }
+}
+
+@-moz-keyframes animation {
+    from,
+    to {}
+    16% {
+        -moz-transform: rotateZ(135deg);
+    }
+    33% {
+        -moz-transform: rotateX(1135deg)  rotatez(45deg)  rotateZ(135deg);
+    }
+    50% {
+        -moz-transform: rotateY(1135deg) rotateX(1135deg) rotateZ(135deg) ;
+    }
+    66% {
+        -moz-transform: rotateY(1135deg) rotateZ(-1135deg);
+    }
+    83% {
+        -moz-transform: rotateY(-135deg);
+    }
+    100%{
+         -moz-transform: rotatez(100deg);
+    }
+}
+
+
+
+
+/*立方体动画 结束*/
+
+
+/*立方体样式 开始*/
+
+.box_a,
+.box_b,
+.box_c,
+.box_d,
+.box_e,
+.box_f {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box .box_a {
+    -webkit-transform: translateZ(90px);-moz-transform: translateZ(90px);
+     background: white;
+    opacity: 0.5;
+
+}
+
+.box_a .a1_3 div,
+.box_a .a4_6 div,
+.box_a .a7_9 div {
+    background: #FFFEEE;
+     opacity: 0.5;
+}
+
+.box .box_b {
+    -webkit-transform: rotateX(-90deg) translateZ(90px);-moz-transform: rotateX(-90deg) translateZ(90px); 
+    background: white;
+     opacity: 0.5;
+}
+
+.box_b .a1_3 div,
+.box_b .a4_6 div,
+.box_b .a7_9 div {
+    background: #FFF395;
+     opacity: 0.5;
+}
+
+.box .box_c {
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(90px);  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(90px); 
+    background: white;
+     opacity: 0.5;
+}
+
+.box_c .a1_3 div,
+.box_c .a4_6 div,
+.box_c .a7_9 div {
+    background: #F38484;
+     opacity: 0.5;
+}
+
+.box .box_d {
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(90px);   -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(90px); 
+    background: white;
+     opacity: 0.5;
+}
+
+.box_d .a1_3 div,
+.box_d .a4_6 div,
+.box_d .a7_9 div {
+    background:#949494;
+     opacity: 0.5;
+}
+
+.box .box_e {
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(90px);-moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+    background: white;
+     opacity: 0.5;
+}
+
+.box_e .a1_3 div,
+.box_e .a4_6 div,
+.box_e .a7_9 div {
+    background: #75BEF3;
+     opacity: 0.5;
+}
+
+.box .box_f {
+    -webkit-transform: rotateY(90deg) translateZ(90px); -moz-transform: rotateY(90deg) translateZ(90px);
+    background: white;
+     opacity: 0.5;
+}
+
+.box_f .a1_3 div,
+.box_f .a4_6 div,
+.box_f .a7_9 div {
+    background: #49D249;
+     opacity: 0.5;
+}
+
+
+/*立方体样式 结束*/
+
+
+/*小格子样式 开始*/
+
+.a1_3 div,
+.a4_6 div,
+.a7_9 div {
+    border: 1px solid;
+    width: 58px;
+    height: 58px;
+    border-radius: 10px;
+}
+
+.a1_3 {
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+}
+
+.a4_6 {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+ 
+}
+
+.a7_9 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+ 
+}
+
+
+/*小格子样式 结束*/
+
+/*下划线与阴影*/
+.line{
+    width:60%;
+    height:2px;
+    background: #37BF5C;
+    margin: 65px auto;
+
+
+}
+.inline{
+    width:180px;
+    height: 1px;
+    margin: 0 auto;
+    background: #37BF5C;
+       box-shadow:0px 32px 12px;
+}

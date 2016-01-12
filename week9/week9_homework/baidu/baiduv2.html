@@ -1,0 +1,606 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/baidu.css">
+    <link media="screen and (max-width:500px)" rel="stylesheet" href="./css/mbaidu.css" />
+    <title>百度一下，你就知道</title>
+</head>
+
+<body>
+    <!-- pc页面 -->
+    <div id="wrapper">
+        <!-- 头部样式 -->
+        <div id="head">
+            <div class="head_wrapper">
+                <!-- logo 和 搜索框 -->
+                <div class="h_form">
+                    <div class="h_content">
+                        <div class="logo">
+                            <img src="image/baidu.png" width="270" height="129">
+                        </div>
+                        <form id="form">
+                            <input class="ipt" id="con_txt">
+                            <input type="submit" class="btn" value="百度一下">
+                        </form>
+                    </div>
+                </div>
+                <!--    <div class="h_wall"></div> -->
+                <div id="headerlist">
+                    <ul>
+                        <li><a href="http://news.baidu.com/" class="headerlist_a">新闻</a></li>
+                        <li><a href="http://www.hao123.com/" class="headerlist_a">hao123</a></li>
+                        <li><a href="http://map.baidu.com/" class="headerlist_a">地图</a></li>
+                        <li><a href="http://v.baidu.com/" class="headerlist_a">视频</a></li>
+                        <li><a href="http://tieba.baidu.com/" class="headerlist_a">贴吧</a></li>
+                        <li><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="headerlist_b">登录</a></li>
+                        <li class="headerlist_a"><a href="#" onmouseover="setshow()" onmouseout="setout()">设置</a>
+                        </li>
+                        <li><a href="#" id="headerlist_more" onmouseout="tipsOut()" onmouseover="tips()">更多产品</a></li>
+                    </ul>
+                    <div id="set" onmouseover="setshow()" onmouseout="setout()">
+                        <ul>
+                            <div id="set_div"></div>
+                            <li>搜索设置</li>
+                            <li>高级搜索</li>
+                            <li>关闭预测</li>
+                            <li>搜索历史</li>
+                            <div id="set_div2"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div id="more_tips" onmouseover="tips()" onmouseout="tipsOut()">
+                    <ul>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/nuomi.png">糯米</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/zhidao.png">知道</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/yinyue.png">音乐</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/tupian.png">图片</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/wenku.png">文库</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/fengyunbang.png">风云榜</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/tuiguang.png">百度推广</a>
+                        </li>
+                        <li id="all"><a class="more_tips_a" href="#">全部产品>></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="s_tab"></div>
+        <!-- footer -->
+        <div id="footer">
+            <ul>
+                <li><a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a></li>
+                <li><a href="http://home.baidu.com/">关于百度</a></li>
+                <li><a href="http://ir.baidu.com/">About Baidu</a></li>
+            </ul>
+            <br>
+            <p>
+                <span>©2015 Baidu</span>
+                <a href="http://jianyi.baidu.com/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                <span>京ICP证030173号</span>
+            </p>
+        </div>
+    </div>
+    <!-- 手机页面 -->
+    <div class="page">
+        <div class="header">
+            <div class="ui-new-toolbar">
+                <div class="ui-new-toolbar-l">
+                    <div data-href="http://m.baidu.com/?from=1000376a" class="ui-new-toolbar-baidu"></div>
+                    <div class="ui-new-toolbar-userhome"></div>
+                </div>
+                <div class="ui-new-toolbar-r">
+                    <div class="ui-new-toolbar-screen"></div>
+                    <div class="ui-new-toolbar-subscribe"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 内容部分 -->
+        <div class="page-content">
+            <!-- 导航 开始-->
+            <div class="navigator">
+                <div class="divider"></div>
+                <div class="content">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td colspan="1">
+                                    <div class="tuijian"><b></b><span data-href="#index/chosen:%E6%8E%A8%E8%8D%90" class="cur">推荐</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div class="baijia"><b></b><span data-href="#index/news:478:%E7%99%BE%E5%AE%B6">百家</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div class="bendi"><b></b><span data-href="#index/local:0:%E5%8C%97%E4%BA%AC">本地</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/image:%E5%9B%BE%E7%89%87">图片</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E5%A8%B1%E4%B9%90">娱乐</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E7%A4%BE%E4%BC%9A">社会</span></div>
+                                </td>
+                            </tr>
+                            <tr class="last-shown-line">
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E5%86%9B%E4%BA%8B">军事</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E7%A7%91%E6%8A%80">科技</span></div>
+                                </td>
+                                <td colspan="2">
+                                    <div><b></b><span data-href="#index/info:%E4%BA%92%E8%81%94%E7%BD%91">互联网</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E5%A5%B3%E4%BA%BA">女人</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div class="navdown"><b></b><span data-href="#index/info:%E6%90%9E%E7%AC%91">更多</span>
+                                        <div class="down-triangle"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="display: none;" class="navdis">
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E7%94%9F%E6%B4%BB">生活</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E5%9B%BD%E9%99%85">国际</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E5%9B%BD%E5%86%85">国内</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E4%BD%93%E8%82%B2">体育</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E6%B1%BD%E8%BD%A6">汽车</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E8%B4%A2%E7%BB%8F">财经</span></div>
+                                </td>
+                            </tr>
+                            <tr style="display: none;" class="navdis">
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E6%88%BF%E4%BA%A7">房产</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E6%97%B6%E5%B0%9A">时尚</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E6%95%99%E8%82%B2">教育</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E6%B8%B8%E6%88%8F">游戏</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E6%97%85%E6%B8%B8">旅游</span></div>
+                                </td>
+                                <td colspan="1">
+                                    <div><b></b><span data-href="#index/info:%E4%BA%BA%E6%96%87">人文</span></div>
+                                </td>
+                            </tr>
+                            <tr style="display: none;" class="navdis">
+                                <td colspan="2">
+                                    <div><b></b><span data-href="#index/info:%E5%88%9B%E6%84%8F">创意</span></div>
+                                </td>
+                                <td colspan="2">
+                                    <div><b></b><span data-href="#index/tag:%E4%BA%92%E8%81%94%E7%BD%91%2B">互联网+</span></div>
+                                </td>
+                            </tr>
+                            <tr style="display: none;" class="navdis">
+                                <td colspan="4">
+                                    <div><b></b><span data-href="#index/info:%E5%88%9B%E6%84%8F">删除及排序</span></div>
+                                </td>
+                                <td colspan="2">
+                                    <div class="navup"><b></b><span data-href="#index/tag:%E4%BA%92%E8%81%94%E7%BD%91%2B">收起</span></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++推荐页面++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="sections" id="tuijian">
+                <div class="subpage">
+                    <div class="topic">
+                        <div class="swiper-container banner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./image/phone/banner1.jpg">
+                                    <div class="news-title">
+                                        <h4>男子持刀在伦敦地铁里砍人</h4>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><img src="./image/phone/banner2.jpg">
+                                    <div class="news-title">
+                                        <h4>俄空军空袭IS运油车 浓烟滚滚</h4>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><img src="./image/phone/banner3.jpg">
+                                    <div class="news-title">
+                                        <h4>用百度钱包支付，单单返现金1%起</h4>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><img src="./image/phone/banner4.jpg">
+                                    <div class="news-title">
+                                        <h4>日本长公主首次出访海外</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-clickable gundongtiao">
+                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active "></span>
+                            <span class="swiper-pagination-bullet "></span>
+                            <span class="swiper-pagination-bullet "></span>
+                            <span class="swiper-pagination-bullet "></span>
+                        </div>
+                    </div>
+                    <div class="ui-hotword">
+                        <div class="ui-hotword-left">
+                            <span>热点</span>
+                        </div>
+                        <ul class="ui-hotword-content" style="transition: margin-top 1s ease-out 0s; margin-top: -168px;">
+                            <li class="ui-hotword-item" data-name="男女同龄退休">
+                                <span>男女同龄退休</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="微信封杀Uber">
+                                <span>微信封杀Uber</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="伦敦地铁砍人">
+                                <span>伦敦地铁砍人</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="香港创客节">
+                                <span>香港创客节</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="养老保险 缴费年限">
+                                <span>养老保险 缴费年限</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="鲁迅书法拍卖">
+                                <span>鲁迅书法拍卖</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="官员批假活佛">
+                                <span>官员批假活佛</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="网银跨行转账免费">
+                                <span>网银跨行转账免费</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="2016年高考新规">
+                                <span>2016年高考新规</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                            <li class="ui-hotword-item" data-name="韩国大旱 白菜19块">
+                                <span>韩国大旱 白菜19块</span>
+                                <b class="ui-hotword-item-right"></b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="news">
+                        <div class="news-list">
+                            <div class="news-item">
+                                <div class="news-main">
+                                    <img class="news-img" src="./image/phone/xjp.jpg">
+                                    <div class="news-main-title ">
+                                        <!-- 习近平再次集体会见部分非洲国家领导人 -->
+                                    </div>
+                                    <div class="news-item">
+                                        <b class="news-time"></b>
+                                        <b class="news-from"></b>
+                                    </div>
+                                </div>
+                                <div class="news-main">
+                                    <img class="news-img" src="">
+                                    <div class="news-main-title ">
+                                        <!-- 国际财经头条：三星内幕交易调查设计多名总裁级高管 -->
+                                    </div>
+                                    <div class="news-item">
+                                        <b class="news-time"><!-- 2分钟前 --></b>
+                                        <b class="news-from"><!-- 热点 --></b>
+                                    </div>
+                                </div>
+                                <div class="news-main">
+                                    <img class="news-img" src="">
+                                    <div class="news-main-title ">
+                                        <!-- 科技大事件:Facebook悄然关闭Creative Labs -->
+                                    </div>
+                                    <div class="news-item">
+                                        <b class="news-time"><!-- 26分钟前 --></b>
+                                        <b class="news-from"><!-- 热点 --></b>
+                                    </div>
+                                </div>
+                                <div class="news-main">
+                                    <img class="news-img" src="">
+                                    <div class="news-main-title ">
+                                        <!-- o2o创业的死亡率为何那么的高？ -->
+                                    </div>
+                                    <div class="news-item">
+                                        <b class="news-time"><!-- 26分钟前 --></b>
+                                        <b class="news-from"><!-- 网易新闻 --></b>
+                                    </div>
+                                </div>
+                                <div class="yincang1">
+                                    <div class="news-main">
+                                        <img class="news-img" src="">
+                                        <div class="news-main-title">
+                                            <!-- 习近平再次集体会见部分非洲国家领导人 -->
+                                        </div>
+                                        <div class="news-item">
+                                            <b class="news-time"><!-- 1天前 --></b>
+                                            <b class="news-from"><!-- 新浪要闻 --></b>
+                                        </div>
+                                    </div>
+                                    <div class="news-main">
+                                        <img class="news-img" src="">
+                                        <div class="news-main-title">
+                                            <!-- 国际财经头条：三星内幕交易调查设计多名总裁级高管 -->
+                                        </div>
+                                        <div class="news-item">
+                                            <b class="news-time"><!-- 2分钟前 --></b>
+                                            <b class="news-from"><!-- 热点 --></b>
+                                        </div>
+                                    </div>
+                                    <div class="news-main">
+                                        <img class="news-img" src="">
+                                        <div class="news-main-title">
+                                            可以在此添加内容
+                                        </div>
+                                        <div class="news-item">
+                                            <b class="news-time"><!-- 26分钟前 --></b>
+                                            <b class="news-from"><!-- 热点 --></b>
+                                        </div>
+                                    </div>
+                                    <div class="news-main">
+                                        <img class="news-img" src="">
+                                        <div class="news-main-title">
+                                            可以在此添加内容
+                                        </div>
+                                        <div class="news-item">
+                                            <b class="news-time"><!-- 26分钟前 --></b>
+                                            <b class="news-from"><!-- 网易新闻 --></b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-refresh-wrapper">
+                        <div class="news-refresh">点击加载更多</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- ++++++++++++++++++++++++++++++百家+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="sections" id="baijia" style="display: none">
+                <div class="b-subpage">
+                    <div class=".news-main">
+                        <div class="b-newsimg">
+                            <img src="./image/phone/b1.jpg">
+                            <img src="./image/phone/b2.jpg">
+                            <img src="./image/phone/b3.jpg">
+                        </div>
+                    </div>
+                    <div class="news-main">
+                        <img class="news-img2" src="">
+                        <div class="news-main-title2">
+                            可以在此添加内容
+                        </div>
+                        <div class="news-item">
+                            <b class="news-time2"><!-- 26分钟前 --></b>
+                        </div>
+                    </div>
+                    <div class="news-main">
+                        <img class="news-img2" src="">
+                        <div class="news-main-title2">
+                            可以在此添加内容
+                        </div>
+                        <div class="news-item">
+                            <b class="news-time2"><!-- 26分钟前 --></b>
+                        </div>
+                    </div>
+                    <div class="news-main">
+                        <img class="news-img2" src="">
+                        <div class="news-main-title2">
+                            可以在此添加内容
+                        </div>
+                        <div class="news-item">
+                            <b class="news-time2"><!-- 26分钟前 --></b>
+                        </div>
+                    </div>
+                    <div class="news-main">
+                        <img class="news-img2" src="">
+                        <div class="news-main-title2">
+                            可以在此添加内容
+                        </div>
+                        <div class="news-item">
+                            <b class="news-time2"><!-- 26分钟前 --></b>
+                        </div>
+                    </div>
+                    <div class="news-main">
+                        <img class="news-img2" src="">
+                        <div class="news-main-title2">
+                            可以在此添加内容
+                        </div>
+                        <div class="news-item">
+                            <b class="news-time2"><!-- 26分钟前 --></b>
+                        </div>
+                    </div>
+                    <dic class="yincang1">
+                        <div class="news-main">
+                            <img class="news-img2" src="">
+                            <div class="news-main-title2">
+                                可以在此添加内容
+                            </div>
+                            <div class="news-item">
+                                <b class="news-time2"><!-- 26分钟前 --></b>
+                            </div>
+                        </div>
+                        <div class="news-main">
+                            <img class="news-img2" src="">
+                            <div class="news-main-title2">
+                                可以在此添加内容
+                            </div>
+                            <div class="news-item">
+                                <b class="news-time2"><!-- 26分钟前 --></b>
+                            </div>
+                        </div>
+                        <div class="news-main">
+                            <img class="news-img2" src="">
+                            <div class="news-main-title2">
+                                可以在此添加内容
+                            </div>
+                            <div class="news-item">
+                                <b class="news-time2"><!-- 26分钟前 --></b>
+                            </div>
+                        </div>
+                    </dic>
+                    <div class="news-refresh-wrapper">
+                        <div class="news-refresh">点击加载更多</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- +++++++++++++++++++++++++++++本地++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="sections" id="bendi" style="display: none">
+                <div class="subpage">
+                    <div class="topic">
+                        <div class="banner">
+                            <div class="">
+                                <div class=""><img src="./image/phone/bendi1.jpg">
+                                    <div class="news-title">
+                                        <h4>微信为何怕UBEr:没烧十块，滴滴焙烧100块</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="news-list">
+                            <div class="news-item">
+                                <div class="news-main">
+                                    <div class="news-title3">
+                                        微信为何怕UBEr:没烧十块，滴滴焙烧100块
+                                    </div>
+                                    <div class="news-item3">
+                                        <b class="news-content3">
+                                            微信为何怕UBEr:没烧十块，滴滴焙烧100块微信为何怕UBEr:没烧十块，滴滴焙烧100块微信为何怕UBEr:没烧十块，滴滴焙烧100块
+                                        </b>
+                                        <b class="news-time3">
+                                            123456
+                                        </b>
+                                    </div>
+                                </div>
+                                <div class="news-main">
+                                    <div class="news-title3">
+                                        微信为何怕UBEr:没烧十块，滴滴焙烧100块
+                                    </div>
+                                    <div class="news-item3">
+                                        <b class="news-content3">
+                                            微信为何怕UBEr:没烧十块，滴滴焙烧100块微信为何怕UBEr:没烧十块，滴滴焙烧100块微信为何怕UBEr:没烧十块，滴滴焙烧100块
+                                        </b>
+                                        <b class="news-time3">
+                                             123456
+                                        </b>
+                                    </div>
+                                </div>
+                                <div class="news-main">
+                                    <div class="news-title3">
+                                    </div>
+                                    <div class="news-item3">
+                                        <b class="news-content3"></b>
+                                        <b class="news-time3"></b>
+                                    </div>
+                                </div>
+                                <div class="news-main">
+                                    <div class="news-title3">
+                                    </div>
+                                    <div class="news-item3">
+                                        <b class="news-content3"></b>
+                                        <b class="news-time3"></b>
+                                    </div>
+                                </div>
+                                <div class="yincang1">
+                                    <div class="news-main">
+                                        <div class="news-title3">
+                                        </div>
+                                        <div class="news-item3">
+                                            <b class="news-content3"></b>
+                                            <b class="news-time3"></b>
+                                        </div>
+                                    </div>
+                                    <div class="news-main">
+                                        <div class="news-title3">
+                                        </div>
+                                        <div class="news-item3">
+                                            <b class="news-content3"></b>
+                                            <b class="news-time3"></b>
+                                        </div>
+                                    </div>
+                                    <div class="news-main">
+                                        <div class="news-title3">
+                                        </div>
+                                        <div class="news-item3">
+                                            <b class="news-content3"></b>
+                                            <b class="news-time3"></b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-refresh-wrapper">
+                    <div class="news-refresh">点击加载更多</div>
+                </div>
+            </div>
+        </div>
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    </div>
+    <div class="footer">
+        <div class="item-wrapper">
+            <div class="item feedback">意见反馈</div>
+        </div>
+        <div class="item-wrapper">
+            <div class="item app-recommend">应用推荐</div>
+        </div>
+        <div class="item-wrapper">
+            <div class="item app-download">客户端</div>
+        </div>
+    </div>
+    </div>
+    <!--  </div> -->
+</body>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<!-- Swiper JS -->
+<script src="./js/swiper.jquery.min.js"></script>
+<!-- Initialize Swiper -->
+<script type="text/javascript" src="./js/baiduajax.js"></script>
+<script type="text/javascript" src="./js/baiduv2.js"></script>
+
+</html>

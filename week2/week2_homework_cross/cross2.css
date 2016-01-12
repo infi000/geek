@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    /*    border: 1px solid #E2CBCB*/
+}
+
+body {
+    background: #E3C299;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five {
+    width: 100px;
+    height: 100px;
+}
+
+
+/*父级盒子居中*/
+
+#all {
+    width: 300px;
+    height: 300px;
+    background: #E3C299;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#one {
+    background: #4387FD;
+    position: relative;
+    left: 102px;
+    box-shadow: 10px -10px 15px #7575FB;
+    z-index: 3;
+    border: 1px solid #4894FD;
+}
+
+#one:hover {
+    background: #4894FD;
+}
+
+#two {
+    background: #D83F33;
+    position: relative;
+    box-shadow: 10px -10px 15px #F16565;
+    border: 1px solid #ED4E41;
+}
+
+#two:hover {
+    background: #ED4E41;
+}
+
+#three {
+    background: #1B1B1B;
+    position: relative;
+    left: 102px;
+    top: -102px;
+    box-shadow: 10px -10px 15px #E1E8DC;
+    z-index: 2;
+    border: 1px solid #1B1B1B;
+}
+
+#three:hover {
+    background: #E3EFDB;
+    border: 1px solid #E3EFDB;
+}
+
+
+/*图片居中*/
+
+#three img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 38px;
+    left: 38px;
+}
+
+#four {
+    background: #F9C73E;
+    position: relative;
+    left: 102px;
+    top: -102px;
+    box-shadow: 10px -10px 15px #E2E244;
+    border: 1px solid #FFD561;
+}
+
+#four:hover {
+    background: #FFD561;
+}
+
+#five {
+    background: #049652;
+    position: relative;
+    left: 204px;
+    top: -306px;
+    box-shadow: 10px -10px 15px #7BB35D;
+    z-index: 2;
+    border: 1px solid #05AB5E;
+}
+
+#five:hover {
+    background: #05AB5E
+}
+
+#fiver:hover #five img {
+    width: 100px;
+    height: 100px;
+}

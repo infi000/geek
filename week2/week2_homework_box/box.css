@@ -1,0 +1,100 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body,
+    #con_box {
+        background: #89979E;
+    }
+    
+    #con_box {
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        margin-top: 150px;
+    }
+    
+    #box {
+        width: 250px;
+        height: 250px;
+        background: #D9E0E3;
+        border: 50px solid #6F818B;
+        border-radius: 10px 10px 10px 10px;
+        margin: 100px;
+        margin-right: 45px;
+        padding: 20px;
+        box-shadow: -8px 7px 2px #4C585F;
+        -webkit-transition: box-shadow 1s 0.1s;
+    }
+    
+    #clock {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        color: #A9EBF7;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: "微软雅黑";
+        background: #4E5B64;
+        border: 25px solid #7C858E;
+        margin-top: 30px;
+        margin-left: 30px;
+        border-radius: 10px 10px 10px 10px;
+        text-align: center;
+        -webkit-transition: box-shadow 1s 0.1s;
+        box-shadow: -7px 10px 2px #6E787D
+    }
+    
+    #box:hover #clock {
+        box-shadow: -24px 26px 8px #6E787D;
+    }
+    
+    #box:hover {
+        box-shadow: -38px 44px 8px #4C585F;
+    }
+    
+    .con {
+        display: -webkit-flex;
+        display: -webit-box;
+        -webkit-align-items: center;
+        width: 40%;
+        height: 320px;
+        background: #F3DEDE;
+        border-radius: 35px;
+        -webkit-transition: box-shadow 1s 0.1s;
+        box-shadow: -8px 7px 2px #796161;
+    }
+    
+    .con:hover div {
+        box-shadow: -15px 18px 9px #9E5962;
+    }
+    
+    .con:hover {
+        box-shadow: -38px 44px 8px #796161;
+    }
+    
+    .con div {
+        margin: 0 20px;
+        border-radius: 30px;
+        background: #BE4C5B;
+        -webkit-transition: box-shadow 1s 0.1s;
+        box-shadow: -4px 7px 2px #9E5962
+    }
+    
+    #first,
+    #five {
+        height: 70px;
+        -webkit-flex: 1;
+    }
+    
+    #second,
+    #four {
+        height: 110px;
+        -webkit-flex: 1.5;
+    }
+    
+    #three {
+        height: 140px;
+        -webkit-flex: 2;
+    }
