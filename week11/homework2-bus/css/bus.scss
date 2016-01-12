@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*背景颜色*/
+$color-bg:#F4F7C9;
+$font-size:15px;
+$darkgreen:#26653C;
+$darkred:#AB0000;
+$font-family:"Microsoft Yahei";
+/*主字体颜色*/
+$color-style:#232B2D;
+$center:0 auto;
+$box-width:400px;
+$box-border:20px solid;
+$box-shadow:2px 2px 2px 0 rgba(0, 0, 0, .2);
+@mixin fontlittle {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.line {
+    border: {
+        top: 10px solid $color-style;
+    }
+    width:100%;
+    margin:$center;
+}
+
+.card {
+    width: 95%;
+    height: 220px;
+    background: $color-bg;
+    box-shadow: $box-shadow;
+    margin: $center;
+    position: relative;
+}
+
+.num {
+    position: absolute;
+    top: 10px;
+    width: 26%;
+    height: 20%;
+    background: $darkred;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.place {
+    position: absolute;
+    height: 40%;
+    width: 65%;
+    right: 0;
+}
+
+.time {
+    width: 30%;
+    height: 8%;
+    position: absolute;
+    top: 0.2*220px+10px+2px;
+    @include fontlittle;
+}
+
+.info {
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0.2*220px+10px+2px+0.08*220px+2px;
+    background: $darkgreen;
+    border-bottom: 5px;
+}
+
+.price {
+    width: 80%;
+    height: 9%;
+    position: absolute;
+    top: 0.2*220px+10px+2px+0.08*220px+2px+0.45*220px+5px;
+    left: 10%;
+    @inclued fontlittle;
+    border-bottom: 3px solid $darkred;
+}
+
+.square{
+    width:10px;
+    height: 20px;
+    background: $color-style;
+    position: absolute;
+    top:-20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: $color-bg;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 1140px;
+    background: $color-bg;
+}
+
+
+/*头部样式*/
+
+.header {
+    height: 70px;
+    line-height: 70px;
+    margin: $center;
+    background: $color-style;
+    color: white;
+    img {
+        width: 113px;
+        height: 45px;
+        float: left;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    h1 {
+        margin: $center;
+        width: 300px;
+        text-align: center;
+    }
+}
+
+
+/*内容样式*/
+
+.content {
+    width: 900px;
+    height: 800px;
+    margin: $center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin: 25px auto;
+    background: white;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
+}
+
+.box {
+    width: $box-width;
+    height: 700px;
+    margin: $center;
+    border: {
+        top-left-radius: 150px;
+        top-right-radius: 150px;
+        top: $box-border $color-style;
+        left: $box-border $color-style;
+        right: $box-border $color-style;
+    }
+}
+/*横梁*/
+.line-up {
+    @extend .line;
+    margin-top: 100px;
+}
+
+.line-mid,
+.line-down {
+    @extend .line;
+    margin-top: 10px;
+}
+/*站牌*/
+.card-up,
+.card-down {
+    @extend .card;
+    margin-top: 20px;
+}
+/*站牌挂钩*/
+.square-left,.square-right{
+    @extend .square;
+}
+.square-left{
+    left:5px;
+}
+.square-right{
+    right:5px;
+}
+/*车号*/
+.num-up {
+    color: white;
+    @extend .num;
+}
+
+.num-down {
+    color: #D2D20B;
+    @extend .num;
+}
+/*发车时间*/
+.time-up,
+.time-down {
+    @extend .time;
+}
+/*额外信息*/
+.info-up,
+.info-down {
+    @extend .info;
+}
+
+.info-down {
+    height: 52%;
+}
+/*站点*/
+.station td {
+    width: (400px/17);
+    text-align: center;
+    vertical-align: top;
+    color: white;
+    @include fontlittle;
+}
+/*价格*/
+.price-up,
+.price-down {
+    @extend .price;
+    p {
+        margin-left: 5px;
+        @include fontlittle;
+        font-weight: 100;
+    }
+}
+
+.price-down {
+    top: 0.2*220px+10px+2px+0.08*220px+2px+0.52*220+2px;
+}
+/*箭头*/
+.rightarrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: {
+        bottom: 3px solid $darkred;
+        left: 21px solid $darkred;
+        top: 10px solid rgba(255, 0, 0, 0);
+        right: 10px solid rgba(255, 0, 0, 0);
+    }
+}
+/*there here*/
+.place-up,
+.place-down {
+    @extend .place;
+    table {
+        margin: $center;
+        text-align: center;
+        color: $darkgreen;
+        tr {
+            font-size: 18px;
+        }
+        .placeword {
+            @include fontlittle;
+            font-weight: 100;
+        }
+        .here {
+            color: $darkred;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/*页脚样式*/
+
+.footer {
+    height: 50px;
+    line-height: 50px;
+    background: #CDF6D9;
+    font-size: 12px;
+    color: #999;
+    margin: $center;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: #999;
+    }
+}

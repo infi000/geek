@@ -1,0 +1,88 @@
+@charset "UTF-8";
+$width90:90%;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #DFDEDE;
+}
+
+xmp {
+    display: inline;
+}
+
+
+/*页面整体样式*/
+
+.wallper {
+    width: $width90;
+    min-width: 1140px;
+    background: white;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: "微软雅黑";
+}
+
+.header,
+.article,
+.footer {
+    width: 100%;
+}
+
+
+/*头部样式*/
+
+.header {
+    height: 70px;
+    line-height: 70px;
+    margin: 0px auto;
+    border-bottom: 4px solid #38C05D;
+}
+
+.header img {
+    width: 113px;
+    height: 47px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.header h1 {
+    margin: 0 auto;
+    width: 290px;
+}
+
+
+/*正文样式*/
+
+.article {
+    margin-top: 20px;
+    overflow: hidden;
+    width: $width90;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.answer {
+    background: #DFDEDE
+}
+
+
+/*页脚样式*/
+
+.footer {
+    height: 50px;
+    line-height: 50px;
+    background: #CDF6D9;
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+}

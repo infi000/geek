@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+body {
+    background: #0D7792;
+}
+
+#header,
+#content,
+#footer {
+    width: 55%;
+    min-width: 710px;
+    margin: 0 auto;
+}
+
+.red {
+    font-weight: bold;
+    color: red;
+}
+
+.black {
+    font-weight: bold;
+    color: black;
+}
+
+.blue {
+    color: #3A5FCD;
+}
+
+
+/*对全局变量样式声明------------------------------------------------------------------------*/
+
+#header {
+    margin-top: 10px;
+    background: white;
+    height: 80px;
+    border-radius: 40px 40px 0 0;
+}
+
+#header ul {
+    float: right;
+    margin-top: 59px;
+    margin-right: 40px;
+}
+
+#header ul li {
+    list-style: none;
+    float: left;
+    margin-left: 1em;
+}
+
+#header ul li a {
+    color: #FF0099;
+    text-decoration: none;
+}
+
+#header img {
+    margin-left: 35px;
+}
+
+
+/*头部样式*/
+
+
+/*--------------------------------------------------------------*/
+
+#content {
+    background: white;
+}
+
+#content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    color: #00688B
+}
+
+#content tr {
+    height: 25px;
+}
+
+#content td {
+    padding: 3px;
+}
+
+#content .ltd {
+    text-align: right;
+    width: 140px;
+}
+
+#content table,
+#content tr,
+#content td {
+    border: 1px #DCDCDC solid;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+#content table {
+    margin: 10px 40px 0 40px;
+}
+
+#content .message {
+    background: #C1CDC1;
+    color: #00688B;
+    font-weight: bold;
+}
+
+input {
+    height: 18px;
+}
+
+#sub {
+    height: 40px;
+    text-align: center;
+}
+
+#sub input {
+    height: 20px;
+    width: 90px;
+}
+
+#exp {
+    line-height: 20px;
+}
+
+#content tr td.noborder table {
+    margin-left: 0;
+}
+
+#content tr td.noborder table tr td {
+    border: 2px solid white;
+    border-bottom: 3px solid #DCDCDC;
+}
+
+#content tr td.noborder table tr td input {
+    margin-left: 10px;
+}
+
+.checkbox {
+    vertical-align: middle;
+}
+
+
+/*把选项做成无序列表，指定样式，使其能够整齐排列*/
+
+.area li {
+    float: left;
+    list-style: none;
+    width: 170px;
+}
+
+.job li {
+    float: left;
+    list-style: none;
+    width: 130px;
+}
+
+textarea{
+    resize: none;      /*textarea禁止拖动*/
+}
+
+/*z中间表格样式*/
+
+
+/*------------------------------------------------------------*/
+
+#footer {
+    background: white;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 28px;
+    color: grey;
+    border-radius: 0 0 40px 40px;
+}
+
+#footer #di1 {
+    float: left;
+}
+
+#footer #di2 {
+    float: right;
+}
+
+
+/*页脚样式*/

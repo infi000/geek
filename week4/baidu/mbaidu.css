@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#wrapper{
+    display: none;
+}
+.page{
+    display: block;
+    min-width: 320px
+}
+/*天气*/
+.page-weather {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1;
+    padding: 0 9px;
+   }
+.weather-status {
+    position: relative;
+    padding: 0 6px;
+    top: -30px;
+    right: -60px;
+}
+.weather-status span{
+	font-size:5px;
+	color:#818388;
+}
+.weather-status p{
+font-size: 5px;
+color:#818388;
+}
+.page-tem{
+	float: left;
+	    font-size: 30px;
+    color: #818388;
+}
+/*头部*/
+
+.page-header {
+    padding-bottom: 10px;
+}
+
+
+/*头部用户*/
+
+.page-usrinfo {
+    position: relative;
+    height: 54px;
+}
+
+.page-usrinfo a {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    padding: 7px;
+    color: #B2B4BA;
+    font-size: 28px;
+    line-height: 20px;
+}
+
+
+/*头部Logo*/
+
+.page-logo {
+    height: 55px;
+    padding: 17px 0 15px;
+}
+
+.page-logo img {
+    width: 175px;
+    height: 55px
+}
+
+
+/*头部输入框*/
+
+.page-form {
+    margin: 0 10px;
+    border-radius: 1px;
+    height: 42px;
+    -webkit-box-shadow: 0 1px 1px 0 #dfdfdf;
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.page-input {
+    margin-right: 79px;
+    width: 100%;
+    float: left;
+    height: 39px;
+    width: 100%;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    height: 42px;
+    line-height: 28px;
+    resize: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-btn {
+    position: absolute;
+    right: -13px;
+    top:1px;
+    width: 79px;
+    height: 44px;
+    background: #ececec;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e7e9eb);
+    color: #46484b;
+    -webkit-box-shadow: 0 0 0 1px #fff inset;
+    box-shadow: 0 0 0 1px #fff inset;
+    -webkit-text-shadow: 0 1px 0 #fafafa;
+    text-shadow: 0 1px 0 #fafafa;
+    white-space: nowrap;
+    line-height: 42px;
+    border: 0;
+    border-left: 1px solid #8d9394;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 16px;
+}
+/*头部导航*/
+.page-navs{
+    margin: 17px 0px 14px 12px;
+    overflow: hidden;
+}
+.page-navs img{
+	    display: block;
+    margin-left: 18px;
+    margin-bottom: 5px;
+    width:25px;
+    height:25px;
+
+}
+.page-navs a{
+	    width: 16%;
+    float: left;
+    font-size: 13px;
+    color: #262626;
+}
+/*头部结束*/
+
+/*内容部分*/
+.page-content{
+	    position: relative;
+    padding: 2px 10px 10px;
+}
+.page-plus {
+    border: 1px solid #d9dde2;
+    margin-top: 8px;
+    background: #fff;
+}
+/*第一部分*/
+.page-plus-tittle {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+.normal-tittle, .edit-title {
+
+    width: 100%;
+  
+}
+.page-plus h2 {
+    padding-left: 5px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #aaa;
+    float: left;
+
+
+}
+.tittle-img1{
+	float: left;
+	margin-top:10px;
+}
+.tittle-img2{
+	float: right;
+	margin-top:10px;
+}
+.page-plus-content {
+    overflow: hidden;
+    font-size: 14px;
+}
+.page-plus-content a{
+
+    float: left;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+    text-decoration: none;
+    color:black;
+}
+/*第二部分*/
+.page-plus-change{
+	    padding-left: 35%;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    float: left;
+}
+.page-plus-content2 {
+    overflow: hidden;
+    font-size: 14px;
+}
+.page-plus-content2 a{
+
+    float: left;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    padding: 0 6px;
+    width: 45%;
+    height: 42px;
+    line-height: 42px;
+    text-decoration: none;
+    color:black;
+}
+/*第三部分*/
+.page-plus-content3 {
+    overflow: hidden;
+    font-size: 14px;
+}
+.page-gps{
+    position: relative;
+    margin: 8px 14px 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #262626;
+}
+.page-gps-zone{
+	    float: right;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #d2d6dd;
+    border-radius: 2px;
+
+    font-size: 14px;
+    margin-right: 7px;
+}
+.page-gps-zone img{
+	margin-top: 1px;
+	margin-right: 1px
+}
+.content3-1 a{
+    float: left;
+/*    display: block;*/
+    position: relative;
+    -webkit-box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 75px;
+    line-height: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.content3-2 a{
+    float: left;
+   /* display: block;*/
+    position: relative;
+    -webkit-box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 75px;
+    line-height: 25px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.content3-1{
+    background: yellow
+}
+.content3-2{
+    display: none;
+}
+.page-img3{
+
+  
+    width: 40px;
+    height: 40px;
+}
+@media screen and (device-aspect-ratio: 40/71) {
+    .page-img3{
+          display: block;
+    margin-left: 13px;
+    width: 40px;
+    height: 40px;
+    }
+}
+.page-plus-control {
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #262626;
+}
+.page-plus-control-2 {
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #262626;
+    display: none;
+}
+/*页脚部分*/
+.page-footer {
+    margin: 20px 25px 0;
+}
+.page-footer div a {
+    display: inline-block;
+    height: 24px;
+    width: 47%;
+    line-height: 24px;
+    border: 1px solid #ececec;
+    border-radius: 1px;
+    color: #555;
+    font-size: 13px;
+    float: right;
+}
+#switch-to-utouch{
+	float: left
+}
+#index-copyright {
+    display: block;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 35px 0 13px;
+    color: #aaa;
+}

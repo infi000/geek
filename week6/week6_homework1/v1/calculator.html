@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link type="text/css" rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 头部 开始 -->
+        <div class="header">
+            <img src="geek.png">
+            <h1</h1>
+        </div>
+        <!-- 头部 结束 -->
+        <!-- 内容 开始 -->
+        <div class="content">
+            <form>
+                <table>
+                    <tbody>
+                        <tr class="screen">
+                            <!-- 显示器 -->
+                            <td colspan="5">
+                                <input id="screen" value="" placeholder="CASIO" maxlength="5">
+                            </td>
+                        </tr>
+                        <!-- 键盘 -->
+                        <tr>
+                            <td colspan="4">
+                              
+                                <h2>CASIO</h2>
+                            </td>
+                            <td>
+                                <input type="button" id="power" value="power" onclick="openScreen()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="1">
+                            </td>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="2">
+                            </td>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="3">
+                            </td>
+                            <td>
+                                <input type="button" class="btn char" onclick="screenChars(this)" value="+" name="plus">
+                            </td>
+                            <td>
+                                <input type="button" class="btn sin" value="sin" name="sin" onclick="showSin()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="4">
+                            </td>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="5">
+                            </td>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="6">
+                            </td>
+                            <td>
+                                <input type="button" class="btn char" onclick="screenChars(this)" value="-" name="minus">
+                            </td>
+                            <td>
+                                <input type="button" class="btn sin" value="cos" name="cos" onclick="showCos()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="7">
+                            </td>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="8">
+                            </td>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="9">
+                            </td>
+                            <td>
+                                <input type="button" class="btn char" onclick="screenChars(this)" value="*" name="multiplication">
+                            </td>
+                            <td>
+                                <input type="button" class="btn sin" value="tan" name="tan" onclick="showTan()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="btn num" type="button" onclick="screenNum(this)" value="0">
+                            </td>
+                            <td>
+                                <input type="button" class="btn num" onclick="screenNum(this)" value=".">
+                            </td>
+                            <td>
+                                <input type="button" class="btn char" onclick="screenChars(this)" value="/" name="division">
+                            </td>
+                            <td>
+                                <input type="button" class="btn log" value="sqrt" name="sqrt" onclick="showSqrt()">
+                            </td>
+                            <td>
+                                <input type="button" class="btn log" value="log" name="log" onclick="showLog()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input class="btn num" type="button" onclick="clean()" value="Del">
+                            </td>
+                            <td colspan="2">
+                                <input class="btn equal" type="button" onclick="answer()" value="=">
+                            </td>
+                            <td>
+                                <input type="button" class="btn log" value="exp" name="exp" onclick="showExp()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <!-- 内容 结束 -->
+        <!-- 尾部开始 -->
+        <div class="footer">
+            Copyright © 2013-2015
+            <strong><a href="http://www.jikexueyuan.com/" target="_blank">极客学院</a></strong> &nbsp;
+            <strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056
+        </div>
+        <!-- 尾部结束 -->
+    </div>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+
+</html>

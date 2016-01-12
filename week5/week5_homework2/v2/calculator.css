@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #F2F4F4;
+    font-size: 15px;
+    font-family: "微软雅黑";
+}
+
+
+.wrapper {
+    width: 100%;
+    min-width: 1140px;
+    background: #F2F4F4;
+}
+/*头部样式*/
+
+.header {
+    height: 70px;
+    line-height: 70px;
+    margin: 0px auto;
+    background: #232B2D;
+    color: white;
+}
+
+.header img {
+    width: 113px;
+    height: 45px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.header h1 {
+    margin: 0 auto;
+    width: 220px;
+}
+/*内容样式*/
+.content {
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    box-shadow: #232B2D;
+    padding-top: 10px;
+    margin: 25px auto;
+    background: white;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
+}
+
+table{
+	    margin: 0 auto;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    border: 1px solid;
+	   border-collapse: collapse;
+}
+.btn{
+	width: 95%;
+    height: 100%;
+    box-shadow: 1px 1px 1px grey;
+    outline: 0;
+}
+.btn:active{
+	box-shadow: none;
+	background-color:#DCD7D7;
+}
+#screen{
+	    text-align: right;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    background: #393636;
+    color: white;
+    font-size:25px;
+    padding-right: 10px;
+}
+
+
+
+
+
+/*页脚样式*/
+
+.footer {
+    height: 50px;
+    line-height: 50px;
+    background: #CDF6D9;
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+}

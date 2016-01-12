@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="baidu.css">
+    <link media="screen and (max-width:500px)" rel="stylesheet" href="mbaidu.css" />
+    <script type="text/javascript" src="baiduv2.js"></script>
+    <title>百度一下，你就知道</title>
+</head>
+
+<body>
+    <!-- pc页面 -->
+    <div id="wrapper">
+        <!-- 头部样式 -->
+        <div id="head">
+            <div class="head_wrapper">
+                <!-- logo 和 搜索框 -->
+                <div class="h_form">
+                    <div class="h_content">
+                        <div class="logo">
+                            <img src="image/baidu.png" width="270" height="129">
+                        </div>
+                        <form id="form">
+                            <input class="ipt" id="con_txt">
+                            <input type="submit" class="btn" value="百度一下">
+                        </form>
+                    </div>
+                </div>
+                <!--    <div class="h_wall"></div> -->
+                <div id="headerlist">
+                    <ul>
+                        <li><a href="http://news.baidu.com/" class="headerlist_a">新闻</a></li>
+                        <li><a href="http://www.hao123.com/" class="headerlist_a">hao123</a></li>
+                        <li><a href="http://map.baidu.com/" class="headerlist_a">地图</a></li>
+                        <li><a href="http://v.baidu.com/" class="headerlist_a">视频</a></li>
+                        <li><a href="http://tieba.baidu.com/" class="headerlist_a">贴吧</a></li>
+                        <li><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="headerlist_b">登录</a></li>
+                        <li class="headerlist_a"><a href="#" onmouseover="setshow()" onmouseout="setout()">设置</a>
+                        </li>
+                        <li><a href="#" id="headerlist_more" onmouseout="tipsOut()" onmouseover="tips()">更多产品</a></li>
+                    </ul>
+                    <div id="set" onmouseover="setshow()" onmouseout="setout()">
+                        <ul>
+                            <div id="set_div"></div>
+                            <li>搜索设置</li>
+                            <li>高级搜索</li>
+                            <li>关闭预测</li>
+                            <li>搜索历史</li>
+                            <div id="set_div2"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div id="more_tips" onmouseover="tips()" onmouseout="tipsOut()">
+                    <ul>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/nuomi.png">糯米</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/zhidao.png">知道</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/yinyue.png">音乐</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/tupian.png">图片</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/wenku.png">文库</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/fengyunbang.png">风云榜</a>
+                        </li>
+                        <li>
+                            <a class="more_tips_a" href="#"><img src="image/tuiguang.png">百度推广</a>
+                        </li>
+                        <li id="all"><a class="more_tips_a" href="#">全部产品>></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="s_tab"></div>
+        <!-- footer -->
+        <div id="footer">
+            <ul>
+                <li><a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a></li>
+                <li><a href="http://home.baidu.com/">关于百度</a></li>
+                <li><a href="http://ir.baidu.com/">About Baidu</a></li>
+            </ul>
+            <br>
+            <p>
+                <span>©2015 Baidu</span>
+                <a href="http://jianyi.baidu.com/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                <span>京ICP证030173号</span>
+            </p>
+        </div>
+    </div>
+    <!-- 手机页面 -->
+    <div class="page">
+        <div class="page-weather">
+            <div class="page-tem">12°<img src="img/tianqi.png"></div>
+            <div class="weather-status">
+                <p>北京</p>
+                <p>空气&nbsp;<span>61</span></p>
+            </div>
+        </div>
+        <div class="page-header">
+            <div class="page-usrinfo">
+                <a href="#"><img src="img/usr.png"></a>
+            </div>
+            <div class="page-logo">
+                <img src="img/mbaidu.png">
+            </div>
+            <form class="page-form">
+                <input type="text" class="page-input">
+                <input type="submit" class="page-btn" value="百度一下">
+            </form>
+            <div class="page-navs">
+                <a><img src="img/xinwen.png">新闻</a>
+                <a><img src="img/xiaoshuo.png">小说</a>
+                <a><img src="img/shipin.png">视频</a>
+                <a><img src="img/shenghuo.png">生活+</a>
+                <a><img src="img/ditu.png">地图</a>
+                <a><img src="img/gengduo.png">更多</a>
+            </div>
+        </div>
+        <!-- 内容部分 -->
+        <div class="page-content">
+            <!-- 第一部分 开始-->
+            <div class="page-content-1 page-plus">
+                <div class="page-plus-tittle">
+                    <div class="normal-tittle">
+                        <img class="tittle-img1" src="img/diqiu.png">
+                        <h2>常用网址</h2>
+                        <img class="tittle-img2" src="img/daohang.png">
+                    </div>
+                </div>
+                <div class="page-plus-content">
+                    <a href="#">贴吧</a>
+                    <a href="#">hao123</a>
+                    <a href="#">地图</a>
+                    <a href="#">百度VIP</a>
+                    <a href="#">图片</a>
+                    <a href="#">音乐</a>
+                    <a href="#">糯米</a>
+                    <a href="#"><img class="content-img" src="img/jia.png"></a>
+                </div>
+            </div>
+            <!-- 第一部分 结束 -->
+            <!-- 第二部分 开始 -->
+            <div class="page-content-2 page-plus">
+                <div class="page-plus-tittle">
+                    <div class="normal-tittle">
+                        <img class="tittle-img1" src="img/redian.png">
+                        <h2>时事热点</h2>
+                        <div class="page-plus-change"><img class="tittle-img3" src="img/huan.png">换一批</div>
+                        <img class="tittle-img2" src="img/daohang.png">
+                    </div>
+                </div>
+                <div class="page-plus-content2">
+                    <a href="#">张铁林被索赔百万</a>
+                    <a href="#">s5半决赛</a>
+                    <a href="#">刘晓庆吃天价面条</a>
+                    <a href="#">西安6人秦岭迷路</a>
+                    <a href="#">火腿培根为致癌物</a>
+                    <a href="#">妹子偶遇巨型蜘蛛</a>
+                </div>
+            </div>
+            <!-- 第二部分 结束 -->
+            <!-- 第三部分 开始 -->
+            <div class="page-content-3 page-plus">
+                <div class="page-plus-tittle">
+                    <div class="normal-tittle">
+                        <img class="tittle-img1" src="img/diwei.png">
+                        <h2>生活服务</h2>
+                        <img class="tittle-img2" src="img/daohang.png">
+                    </div>
+                </div>
+                <div class="page-plus-content3">
+                    <div class="page-gps">
+                        点击定位，查看附近位置信息
+                        <div class="page-gps-zone">
+                            <img src="img/dingwei.png"> 定位
+                        </div>
+                    </div>
+                    <div class="content3-1">
+                        <a href="#"><div><img class="page-img3" src="img/1.jpg"></div>电影</a>
+                        <a href="#"><div><img class="page-img3" src="img/2.jpg"></div>团购</a>
+                        <a href="#"><div><img class="page-img3" src="img/3.jpg"></div>外卖</a>
+                        <a href="#"><div><img class="page-img3" src="img/4.jpg"></div>打车</a>
+                        <a href="#"><div><img class="page-img3" src="img/5.jpg"></div>酒店</a>
+                        <a href="#"><div><img class="page-img3" src="img/6.jpg"></div>美食</a>
+                        <a href="#"><div><img class="page-img3" src="img/7.jpg"></div>KTV</a>
+                        <a href="#"><div><img class="page-img3" src="img/8.jpg"></div>银行</a>
+                    </div>
+                    <div class="content3-2" id="page-content">
+                        <a href="#"><div><img class="page-img3" src="img/9.jpg"></div>飞机票</a>
+                        <a href="#"><div><img class="page-img3" src="img/10.jpg"></div>火车票</a>
+                        <a href="#"><div><img class="page-img3" src="img/11.jpg"></div>汽车票</a>
+                        <a href="#"><div><img class="page-img3" src="img/12.jpg"></div>公交站</a>
+                        <a href="#"><div><img class="page-img3" src="img/3.jpg"></div>旅行</a>
+                        <a href="#"><div><img class="page-img3" src="img/14.jpg"></div>就诊</a>
+                    </div>
+                </div>
+
+                <div class="page-plus-control" onclick="show()" id="page-control">
+                  展示全部<img src="img/down.png">
+                </div>
+                <div class="page-plus-control-2" onclick="dis()" id="page-control-2">
+                向上收回<img src="img/up.png"></div>
+            </div>
+            <!-- 内容部分 结束 -->
+            <!-- 页脚 开始 -->
+            <div class="page-footer">
+                <div>
+                    <a id="switch-to-utouch" href="#">极速版</a>
+                    <a href="#">用户反馈</a>
+                </div>
+                <a id="index-copyright" href="#">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

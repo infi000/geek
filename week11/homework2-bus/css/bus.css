@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/*背景颜色*/
+/*主字体颜色*/
+.line, .line-up, .line-mid,
+.line-down {
+  border-top: 10px solid #232B2D;
+  width: 100%;
+  margin: 0 auto; }
+
+.card, .card-up,
+.card-down {
+  width: 95%;
+  height: 220px;
+  background: #F4F7C9;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  position: relative; }
+
+.num, .num-up, .num-down {
+  position: absolute;
+  top: 10px;
+  width: 26%;
+  height: 20%;
+  background: #AB0000;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center; }
+
+.place, .place-up,
+.place-down {
+  position: absolute;
+  height: 40%;
+  width: 65%;
+  right: 0; }
+
+.time, .time-up,
+.time-down {
+  width: 30%;
+  height: 8%;
+  position: absolute;
+  top: 56px;
+  font-size: 12px;
+  font-weight: bold; }
+
+.info, .info-up,
+.info-down {
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  top: 75.6px;
+  background: #26653C;
+  border-bottom: 5px; }
+
+.price, .price-up,
+.price-down {
+  width: 80%;
+  height: 9%;
+  position: absolute;
+  top: 179.6px;
+  left: 10%;
+  @inclued fontlittle;
+  border-bottom: 3px solid #AB0000; }
+
+.square, .square-left, .square-right {
+  width: 10px;
+  height: 20px;
+  background: #232B2D;
+  position: absolute;
+  top: -20px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #F4F7C9;
+  font-size: 15px;
+  font-family: "Microsoft Yahei"; }
+
+.wrapper {
+  width: 100%;
+  min-width: 1140px;
+  background: #F4F7C9; }
+
+/*头部样式*/
+.header {
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto;
+  background: #232B2D;
+  color: white; }
+  .header img {
+    width: 113px;
+    height: 45px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px; }
+  .header h1 {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center; }
+
+/*内容样式*/
+.content {
+  width: 900px;
+  height: 800px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  margin: 25px auto;
+  background: white;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2); }
+
+.box {
+  width: 400px;
+  height: 700px;
+  margin: 0 auto;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border-top: 20px solid #232B2D;
+  border-left: 20px solid #232B2D;
+  border-right: 20px solid #232B2D; }
+
+/*横梁*/
+.line-up {
+  margin-top: 100px; }
+
+.line-mid,
+.line-down {
+  margin-top: 10px; }
+
+/*站牌*/
+.card-up,
+.card-down {
+  margin-top: 20px; }
+
+/*站牌挂钩*/
+.square-left {
+  left: 5px; }
+
+.square-right {
+  right: 5px; }
+
+/*车号*/
+.num-up {
+  color: white; }
+
+.num-down {
+  color: #D2D20B; }
+
+/*发车时间*/
+/*额外信息*/
+.info-down {
+  height: 52%; }
+
+/*站点*/
+.station td {
+  width: 23.52941px;
+  text-align: center;
+  vertical-align: top;
+  color: white;
+  font-size: 12px;
+  font-weight: bold; }
+
+/*价格*/
+.price-up p,
+.price-down p {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  font-weight: 100; }
+
+.price-down {
+  top: 192px; }
+
+/*箭头*/
+.rightarrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-bottom: 3px solid #AB0000;
+  border-left: 21px solid #AB0000;
+  border-top: 10px solid rgba(255, 0, 0, 0);
+  border-right: 10px solid rgba(255, 0, 0, 0); }
+
+/*there here*/
+.place-up table,
+.place-down table {
+  margin: 0 auto;
+  text-align: center;
+  color: #26653C; }
+  .place-up table tr,
+  .place-down table tr {
+    font-size: 18px; }
+  .place-up table .placeword,
+  .place-down table .placeword {
+    font-size: 12px;
+    font-weight: bold;
+    font-weight: 100; }
+  .place-up table .here,
+  .place-down table .here {
+    color: #AB0000;
+    font-weight: bold; }
+
+/*页脚样式*/
+.footer {
+  height: 50px;
+  line-height: 50px;
+  background: #CDF6D9;
+  font-size: 12px;
+  color: #999;
+  margin: 0 auto;
+  text-align: center; }
+  .footer a {
+    text-decoration: none;
+    color: #999; }
+
+/*# sourceMappingURL=bus.css.map */

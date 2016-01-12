@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="classtable.css">
+    <title>课程表</title>
+    <script type="text/javascript" src="classtable.js"></script>
+</head>
+
+<body onload="showTime()">
+    <h1>课程表</h1>
+    <table>
+        <tbody>
+            <tr>
+                <th colspan="2" id="show">2015-2016学期</th>
+                <!-- 学期占用2列长度 -->
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+            </tr>
+            <tr>
+                <td rowspan="5" class="time">上午</td>
+                <!-- 上午占用5行距离 -->
+                <td class="lesson">第一节</td>
+                <td>数学</td>
+                <td>化学</td>
+                <td>英语</td>
+                <td>语文</td>
+                <td>数学</td>
+            </tr>
+            <tr>
+                <td class="lesson">第二节</td>
+                <td>化学</td>
+                <td>英语</td>
+                <td>体育</td>
+                <td>化学</td>
+                <td>语文</td>
+            </tr>
+            <tr>
+                <td class="lesson">第三节</td>
+                <td>美术</td>
+                <td>英语</td>
+                <td>化学</td>
+                <td>语文</td>
+                <td>数学</td>
+            </tr>
+            <tr>
+                <td class="lesson">第三节</td>
+                <td>音乐</td>
+                <td>语文</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>化学</td>
+            </tr>
+            <tr>
+                <td class="lesson">第四节</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>化学</td>
+                <td>语文</td>
+                <td>数学</td>
+            </tr>
+            <tr>
+                <td id="col7" colspan="7">午休</td>
+                <!-- 占用7列距离分割上下部分 -->
+            </tr>
+            <tr>
+                <td rowspan="2" class="time">下午</td>
+                <!-- 下午占用5行距离 -->
+                <td class="lesson">第五节</td>
+                <td>化学</td>
+                <td>英语</td>
+                <td>语文</td>
+                <td>语文</td>
+                <td>体育</td>
+            </tr>
+            <tr>
+                <td class="lesson">第六节</td>
+                <td>英语</td>
+                <td>化学</td>
+                <td>美术</td>
+                <td>体育</td>
+                <td>语文</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

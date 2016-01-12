@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #DFDEDE;
+}
+
+p {
+    text-indent: 2em
+}
+
+
+/*页面整体样式*/
+
+.wallper {
+    width: 90%;
+    min-width: 1140px;
+    background: white;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: "微软雅黑";
+}
+
+.header,
+.article,
+.footer {
+    width: 100%;
+}
+
+
+/*头部样式*/
+
+.header {
+    height: 70px;
+    line-height: 70px;
+    margin: 0px auto;
+    border-bottom: 4px solid #38C05D;
+}
+
+.header img {
+    width: 113px;
+    height: 47px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.header h1 {
+    margin: 0 auto;
+    width: 290px;
+}
+
+
+/*正文样式*/
+
+.article {
+    margin-top: 20px;
+    overflow: hidden;
+    /*  height: 540px;*/
+}
+
+
+/*左列布局*/
+
+.left {
+    float: left;
+    width: 400px;
+    margin-left: -100%;
+    /*  background: red;*/
+    position: relative;
+}
+
+.left ul {
+    margin: 10px;
+}
+
+.left ul li {
+    margin-top: 10px;
+    /*   background: grey;*/
+    line-height: 20px;
+    height: 60px;
+    cursor: pointer;
+    -webkit-transition: background 0.3s;
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.left ul li:hover {
+    background: #38C05D;
+}
+
+.left ul li:hover .arrow {
+    border-left: 10px solid #38C05D;
+}
+
+.arrow {
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    position: absolute;
+    left: 380px;
+    top: 20px;
+    -webkit-transition: border-left 0.3s;
+}
+
+
+/*右列布局*/
+
+.right {
+    float: left;
+    width: 100%;
+    ;
+}
+
+.inner {
+    margin-left: 400px;
+    padding: 10px 20px;
+}
+.inner div{
+    display: none;
+      padding: 20px;
+    box-shadow: 1px 1px 7px 1px #204229;
+    border-radius: 10px;
+    background: #38C05D;
+    -webkit-transition: block 0.3s 0.3s;
+ 
+}
+
+/*答案区样式*/
+#answer_1{
+  
+}
+#answer_2{
+    margin-top: 35px;;
+}
+#answer_3{
+    margin-top: 130px;
+}
+#answer_4{
+        margin-top: 235px;
+}
+#answer_5{
+        margin-top: 280px
+}
+#answer_6{
+    margin-top: 360px;
+}
+#answer_7{
+        margin-top: 475px;
+}
+#answer_8{
+margin-top: 535px;
+
+}
+#answer_9{
+    margin-top: 605px;
+}
+/*答案区结束*/
+.inner ul li {
+    list-style: none;
+}
+
+
+/*页脚样式*/
+
+.footer {
+    height: 50px;
+    line-height: 50px;
+    background: #CDF6D9;
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+}

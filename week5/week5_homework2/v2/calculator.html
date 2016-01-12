@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link type="text/css" rel="stylesheet" href="calculator.css">
+    <script type="text/javascript" src="calculator.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- 头部 开始 -->
+        <div class="header">
+            <img src="geek.png">
+            <h1>简易计算器</h1>
+        </div>
+        <!-- 头部 结束 -->
+        <!-- 内容 开始 -->
+        <div class="content">
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                <!-- 显示器 -->
+                    <td colspan="4">
+                        <input id="screen" value="" placeholder="0">
+                    </td>
+                </tr>
+                <!-- 键盘 -->
+                <tr>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="1">
+                    </td>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="2">
+                    </td>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="3">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" onclick="screenChars(this)" value="+" placeholder="plus" ></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="4">
+                    </td>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="5">
+                    </td>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="6">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" onclick="screenChars(this)" value="-" placeholder="minus"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="7">
+                    </td>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="8">
+                    </td>
+                    <td>
+                        <input class="btn" type="button" onclick="screenNum(this)" value="9">
+                    </td>
+                    <td>
+                        <input type="button" class="btn" onclick="screenChars(this)" value="*" placeholder="multiplication"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="btn" type="button" onclick="screenNum(this)" value="0">
+                    </td>
+                    <td>                        
+<input type="button" class="btn" onclick="screenChars(this)" value="/" placeholder="division"></input>
+                    </td>
+                    <td>
+                        <input type="button" class="btn" onclick="screenNum(this)" value="."></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="btn" type="button" onclick="clean()" value="Del">
+                    </td>
+                    <td colspan="2">
+                        <input class="btn" type="button" onclick="answer()" value="=">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    </div>
+       <!-- 内容 结束 -->
+        <!-- 尾部开始 -->
+        <div class="footer">
+            Copyright © 2013-2015
+            <strong><a href="http://www.jikexueyuan.com/" target="_blank">极客学院</a></strong> &nbsp;
+            <strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056
+        </div>
+        <!-- 尾部结束 -->
+    </div>
+</body>
+
+</html>

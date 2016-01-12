@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>简易计算器</title>
+    <link type="text/css" rel="stylesheet" href="counter.css">
+    <script type="text/javascript" src="counter.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 头部 开始 -->
+        <div class="header">
+            <img src="geek.png">
+            <h1>简易计算器</h1>
+        </div>
+        <!-- 头部 结束 -->
+        <!-- 内容 开始 -->
+        <div class="content">
+            <!-- 表格 -->
+            <form>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>请输入第一个数字</th>
+                            <th></th>
+                            <th>请输入第二个数字</th>
+                            <th></th>
+                            <th>答案</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id='first' value="" placeholder="00"    maxlength="7">
+                            </td>
+                            <td>
+                                <select id="chars">
+                                    <option value="plus">+</option>
+                                    <option value="minus">-</option>
+                                    <option value="multiply">*</option>
+                                    <option value="division">/</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input id="second" value="" placeholder="00" maxlength="7">
+                            </td>
+                            <td >
+                                <input id="btn" type="button" value="=" onclick="answer()" maxlength="7">
+                            </td>
+                            <td>
+                                <input id="ans" placeholder="00" maxlength="7">
+                            </td>
+                        </tr>
+                      
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <!-- 内容 结束 -->
+        <!-- 尾部开始 -->
+        <div class="footer">
+            Copyright © 2013-2015
+            <strong><a href="http://www.jikexueyuan.com/" target="_blank">极客学院</a></strong> &nbsp;
+            <strong><a href="http://www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a></strong> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056
+        </div>
+        <!-- 尾部结束 -->
+    </div>
+</body>
+
+</html>
