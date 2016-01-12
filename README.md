@@ -92,27 +92,32 @@
 ## week8 ##
 
 - 开发手机版本的百度新闻。
+
 > 开发带后台的H5版本百度新闻，完善之前开发的bootstrap后台，作为新闻的后台系统，并能用基础的PHP+MYSQL开发跑通后台。
 
 
 ## week9 ##
 
 - 开发Nodejs版本的百度新闻系统
+
 > 把之前的前端百度新闻界面拉过来，后台改成nodejs版本，可以做成express渲染模板形式亦可以做成rest风格api形式搭载mysql,记得导出sql脚本文件。
 
 ## week10 ##
 
 - 利用Yeoman或FIS重组百度首页
+
 > 利用Yeoman或者FIS重新组织你的百度首页样式和JS，然后达到工程化可编译状态。
 
 ## week11 ##
 
 - 利用less或者sass改善极客学院CSS
+
 > 
 1. 编写Grunt或Gulp脚本对Sass或者Less进行编译。
 2. 符合性能优化标准进行压缩合并以及充分利用Less或Sass优势少写代码。
 
 - 利用less或sass编写公交站牌
+
 > 利用less或sass编写代码制作出一个公交站牌的效果。
 
 ## week12 ##
