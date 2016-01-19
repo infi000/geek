@@ -8,9 +8,12 @@ var jsontext3;
 
 function newsinfo() {
     Atext1 = $.ajax({
-        type: "post",
-        url: "../mysql/get.php",
-        dataType: "json",
+        type: "POST",
+            url: "../mysql/get.php",
+            data: {
+                news: '1'
+            },
+            dataType: "json",
         success: function() {
             jsontext1 = JSON.parse(Atext1.responseText);
             for (var i = 0; i < jsontext1.result.length; i++) {
@@ -25,9 +28,12 @@ function newsinfo() {
 }
 function newsinfo2() {
     Atext2 = $.ajax({
-        type: "post",
-        url: "../mysql/get2.php",
-        dataType: "json",
+            type: "post",
+            url: "../mysql/get.php",
+            data: {
+                news: 2
+            },
+            dataType: "json",
         success: function() {
             jsontext2 = JSON.parse(Atext2.responseText);
             for (var i = 0; i < jsontext2.result.length; i++) {
@@ -41,9 +47,12 @@ function newsinfo2() {
 }
 function newsinfo3() {
     Atext3 = $.ajax({
-        type: "post",
-        url: "../mysql/get3.php",
-        dataType: "json",
+            type: "post",
+            url: "../mysql/get.php",
+            data: {
+                news: 3
+            },
+            dataType: "json",
         success: function() {
             jsontext3 = JSON.parse(Atext3.responseText);
             for (var i = 0; i < jsontext3.result.length; i++) {

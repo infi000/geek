@@ -10,11 +10,11 @@ if (!$con)
   	mysql_query("set names 'utf8'");
     //+++++++++++++++++++++++++修改表1
     if($_POST['news']==1){
-          $newstitle=$_REQUEST['newstitle'];
-    $newsimg=$_REQUEST['newsimg'];
-    $newsfrom=$_REQUEST['newsfrom'];
-    $addtime=$_REQUEST['addtime'];
-    $newsid=$_REQUEST['newsid'];
+          $newstitle=$_POST['newstitle'];
+    $newsimg=$_POST['newsimg'];
+    $newsfrom=$_POST['newsfrom'];
+    $addtime=$_POST['addtime'];
+    $newsid=$_POST['newsid'];
   $sql="UPDATE `new1` SET `newstitle`='".$newstitle."',`newsfrom`='".$newsfrom."',`newsimg`='".$newsimg."',`addtime`='".$addtime."' WHERE `newsid`='".$newsid."'";
   $result=mysql_query($sql,$con);
   if(!$result){
@@ -25,10 +25,10 @@ if (!$con)
     }
 //+++++++++++++++++++++++++++++++++++修改表2
     if($_POST['news']==2){
-       $newstitle=$_REQUEST['newstitle'];
-    $newsimg=$_REQUEST['newsimg'];
-    $addtime=$_REQUEST['addtime'];
-    $newsid=$_REQUEST['newsid'];
+       $newstitle=$_POST['newstitle'];
+    $newsimg=$_POST['newsimg'];
+    $addtime=$_POST['addtime'];
+    $newsid=$_POST['newsid'];
   $sql="UPDATE `new2` SET `newstitle`='".$newstitle."',`newsimg`='".$newsimg."',`addtime`='".$addtime."' WHERE `newsid`='".$newsid."'";
 
   $result=mysql_query($sql,$con);
@@ -42,10 +42,10 @@ if (!$con)
 	
   //+++++++++++++++++++++++++++++修改表3
    if($_POST['news']==3){
-        $newstitle=$_REQUEST['newstitle'];
-    $newscontent=$_REQUEST['newscontent'];
-    $addtime=$_REQUEST['addtime'];
-    $newsid=$_REQUEST['newsid'];
+        $newstitle=$_POST['newstitle'];
+    $newscontent=$_POST['newscontent'];
+    $addtime=$_POST['addtime'];
+    $newsid=$_POST['newsid'];
 
   
   $sql="UPDATE `new3` SET `newstitle`='".$newstitle."',`newscontent`='".$newscontent."',`addtime`='".$addtime."' WHERE `newsid`='".$newsid."'";

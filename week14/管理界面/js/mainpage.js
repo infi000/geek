@@ -139,7 +139,6 @@
     function newsinfo2() {
         Atext2 = $.ajax({
             type: "post",
-            // contentType : 'application/json',
             url: "../../mysql/get.php",
             data: {
                 news: 2
@@ -271,9 +270,13 @@
                 newsfrom: news_from,
                 addtime: time
             },
-            dataType: 'json',
-            success: function() {
-
+            dataType: 'text',
+            success: function(msg) {
+                alert(msg);
+                location.reload() ;
+            },
+            error: function() {
+                alert("数据上传失败");
             }
         })
     });
@@ -291,9 +294,13 @@
                 newsimg: img,
                 addtime: time
             },
-            dataType: "json",
-            success: function() {
-
+            dataType: "text",
+            success: function(msg) {
+                alert(msg);
+                location.reload() ;
+            },
+            error: function() {
+                alert("数据上传失败");
             }
         })
     });
@@ -311,111 +318,133 @@
                 newscontent: content,
                 addtime: time
             },
-            dataType: "json",
-            success: function() {
-
+            dataType: "text",
+            success: function(msg) {
+                alert(msg);
+                location.reload() ;
+            },
+            error: function() {
+                alert("数据上传失败");
             }
         })
     });
     //+++++++++++++++++++++++++++修改表格+++++++++++++++++++++++++++++++++++
     function change1(i) {
-               $(".nbtn1").eq(i).click(function() {
-                id = $(".nid1").eq(i).attr("name");
-                title = $(".ntitle1").eq(i).val();
-                img = $(".nimg1").eq(i).val();
-                news_from = $(".nfrom1").eq(i).val();
-                time = $(".ntime1").eq(i).val();
-                console.log(id+title+img+news_from+time);
-                $.ajax({
-                    type: "POST",
-                    url: "../../mysql/change.php",
-                    data: {
-                        news: 1,
-                        newsid: id,
-                        newstitle: title,
-                        newsimg: img,
-                        newsfrom: news_from,
-                        addtime: time
-                    },
-                    dataType: "json",
-                    success: function() {
-
-                    }
-                });     
-
+        $(".nbtn1").eq(i).click(function() {
+            id = $(".nid1").eq(i).attr("name");
+            title = $(".ntitle1").eq(i).val();
+            img = $(".nimg1").eq(i).val();
+            news_from = $(".nfrom1").eq(i).val();
+            time = $(".ntime1").eq(i).val();
+            console.log(id + title + img + news_from + time);
+            $.ajax({
+                type: "POST",
+                url: "../../mysql/change.php",
+                data: {
+                    news: 1,
+                    newsid: id,
+                    newstitle: title,
+                    newsimg: img,
+                    newsfrom: news_from,
+                    addtime: time
+                },
+                dataType: "text",
+                success: function(msg) {
+                    alert(msg);
+                    location.reload() ;
+                },
+                error: function() {
+                    alert("数据上传失败");
+                }
             });
+
+        });
     }
 
-   
 
 
- function change2(i) {
+
+    function change2(i) {
         $(".nbtn2").eq(i).click(function() {
-                id = $(".nid2").eq(i).attr("name");
-                title = $(".ntitle2").eq(i).val();
-                img = $(".nimg2").eq(i).val();
-                time = $(".ntime2").eq(i).val();
-                $.ajax({
-                    type: "POST",
-                    url: "../../mysql/change.php",
-                    data: {
-                        news: 2,
-                        newsid: id,
-                        newstitle: title,
-                        newsimg: img,
-                        addtime: time
-                    },
-                    dataType: "json",
-                    success: function() {
-
-                    }
-                });
+            id = $(".nid2").eq(i).attr("name");
+            title = $(".ntitle2").eq(i).val();
+            img = $(".nimg2").eq(i).val();
+            time = $(".ntime2").eq(i).val();
+            $.ajax({
+                type: "POST",
+                url: "../../mysql/change.php",
+                data: {
+                    news: 2,
+                    newsid: id,
+                    newstitle: title,
+                    newsimg: img,
+                    addtime: time
+                },
+                dataType: "text",
+                 success: function(msg) {
+                alert(msg);
+                location.reload() ;
+            },
+            error: function() {
+                alert("数据上传失败");
+            }
             });
+        });
     }
 
- function change3(i) {
-       $(".nbtn3").eq(i).click(function() {
-                id = $(".nid3").eq(i).attr("name");
-                title = $(".ntitle3").eq(i).val();
-                time = $(".ntime3").eq(i).val();
-                content = $(".ncontent3").val();
-                $.ajax({
-                    type: "POST",
-                    url: "../../mysql/change.php",
-                    data: {
-                        news: 1,
-                        newsid: id,
-                        newstitle: title,
-                        newscontent:content,
-                        addtime: time
-                    },
-                    dataType: "json",
-                    success: function() {
-
-                    }
-                });
+    function change3(i) {
+        $(".nbtn3").eq(i).click(function() {
+            id = $(".nid3").eq(i).attr("name");
+            title = $(".ntitle3").eq(i).val();
+            time = $(".ntime3").eq(i).val();
+            content = $(".ncontent3").val();
+            $.ajax({
+                type: "POST",
+                url: "../../mysql/change.php",
+                data: {
+                    news: 1,
+                    newsid: id,
+                    newstitle: title,
+                    newscontent: content,
+                    addtime: time
+                },
+                dataType: "text",
+                  success: function(msg) {
+                alert(msg);
+                location.reload() ;
+            },
+            error: function() {
+                alert("数据上传失败");
+            }
             });
+        });
     }
 
 
 
-function change(){
-     for (var x = 0; x < $(".nbtn1").length; x++) {
-      change1(x)
+    function change() {
+        for (var x = 0; x < $(".nbtn1").length; x++) {
+            change1(x)
         };
-         for (var y = 0; y < $(".nbtn2").length; y++) {
-           change2(y)
+        for (var y = 0; y < $(".nbtn2").length; y++) {
+            change2(y)
         };
 
-     for (var z = 0; z < $(".nbtn3").length; z++) {
-           change3(z) 
+        for (var z = 0; z < $(".nbtn3").length; z++) {
+            change3(z)
         };
-}
+        console.log('change')
+    }
 
-   function newsinfo() {
+    function newsinfo() {
         newsinfo1();
         newsinfo2();
         newsinfo3();
+        console.log('newsinfo')
     };
+  
+
+(function(){
     newsinfo();
-    change();
+    setTimeout('change()',200);
+})()

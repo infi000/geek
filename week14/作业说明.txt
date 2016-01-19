@@ -1,8 +1,8 @@
-*所有PHP文件链接数据库均默认链接mysql_connect("localhost","root","")，如有不同需要修改password.PHP文件。
+*所有PHP文件链接数据库均默认链接mysql_connect("root","root","")，如有不同需要修改password.PHP文件。
 
 1.在浏览器中运行MYSQL文件夹里面的createDatebase.php文件，用来创建数据库和所有要用到的表。或者在数据库下运行homework8.sql文件。
 
-2.运行后台管理界面，在管理界面文件夹/mainpage下。
+2.运行后台管理界面，在管理界面文件夹下,用户名密码为root ,root。
 
 3.后台管理界面可以添加和修改百度手机新闻页面中“推荐”“百家”“本地”的相关数据。
 

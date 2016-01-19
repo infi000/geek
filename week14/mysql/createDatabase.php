@@ -83,11 +83,12 @@ else
  	
  	//创建用户名密码
  	$sqlTable4 = "CREATE TABLE login (	
-	newsid INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	userid INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	username varchar(100),
-	password varchar(200))";
+	password varchar(200),
+	keywords varchar(100))";
 	mysql_query($sqlTable4,$con);
-    $login_1="insert into login (username,password) values ('root','root')";
+    $login_1="insert into login (username,password,keywords) values ('root','root','geek')";
     mysql_query($login_1);
 
 	mysql_close($con);
