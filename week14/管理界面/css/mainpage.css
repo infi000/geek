@@ -221,6 +221,7 @@ body {
 
 .ntime {
     text-align: center;
+    width:100px;
 }
 
 .ntime3 {
@@ -296,6 +297,7 @@ body {
 .ncontent,
 .nimg {
     float: left;
+    height:40px;
 }
 
 .del-li1,

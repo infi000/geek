@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    div{
+    	width: 200px;
+    	height: 200px;
+    	margin: 0 auto;
+    	}</style>
+</head>
+
+<body>
+    <!-- <form method="get" action="./test.php" > -->
+    <div class="div">
+        用户：
+        <input type="text" name="name" class="name">
+        <br> 密码：
+        <input type="text" name="password" class="password">
+        <br>
+        <input type="submit" value="确定" class="btn"></input>
+    </div>
+    <!-- </form> -->
+</body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+     var uname=$(".name");
+     var upassword=$(".password");
+	 $.ajax({
+	 	url:'test.php',
+	 	data:{name:uname,password:upassword},
+	 	type:"get",
+	 	success: function () {
+	 		
+	 	}
+	 })
+
+
+
+</script>
+</html>

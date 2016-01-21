@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-restify",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "mysql": "^2.10.0",
+    "orm": "^2.1.29",
+    "restify": "^4.0.3"
+  },
+  "dependencies": {
+    "mysql": "^2.10.2",
+    "orm": "^2.1.29",
+    "restify": "^4.0.3",
+    "supervisor": "^0.9.1"
+  }
+}
