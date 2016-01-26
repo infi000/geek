@@ -721,6 +721,7 @@
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript">
+$.ajax({url:"./configure.xml",type:"get",success: function(msg){data=$(msg)}})
 $(".main-sidebar").height($(".wrapper").height());
 $(window).resize(function() {
     $(".main-sidebar").height($(".wrapper").height())
