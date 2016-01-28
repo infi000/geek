@@ -1,0 +1,1 @@
+创建表结构可以运行homework.sql或者运行creatdatabases.php(数据库的用户名密码修改在password.php里面);

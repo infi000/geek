@@ -47,14 +47,6 @@ function respond(req, res, next) {
                 new1[0].newsfrom = changeMsg[3];
                 new1[0].addtime = changeMsg[6];
                 new1[0].save(function(err) {});
-                // newstitle = req.params.title;
-                // newsimg = req.params.img;
-                // newscontent = req.params.content;
-                // newsfrom = req.params.from;
-                // addtime = req.params.time;
-                // newsid = req.params.id;
-                // save(function(err) {});
-                // res.send(req.params.id + req.params.tag + req.params.title)
 
             });
         }
@@ -66,19 +58,19 @@ function respond(req, res, next) {
             var changeMsg = req.params.data;
             changeMsg = changeMsg.split(",:,");
             console.log(changeMsg);
-            console.log(changeMsg[0]);
-            console.log(changeMsg[1]);
-            console.log(changeMsg[2]);
-            console.log(changeMsg[3]);
-            console.log(changeMsg[4]);
-            console.log(changeMsg[5]);
-            console.log(changeMsg[6]);
+            console.log("tag"+changeMsg[0]);
+            console.log("id"+changeMsg[1]);
+            console.log("title"+changeMsg[2]);
+            console.log("from"+changeMsg[3]);
+            console.log("img"+changeMsg[4]);
+            console.log("content"+changeMsg[5]);
+            console.log("time"+changeMsg[6]);
             News.create({
                 newstitle: changeMsg[2],
                 newsimg: changeMsg[4],
                 newscontent: changeMsg[5],
                 newsfrom:changeMsg[3],
-                tag: changeMsg[1],
+                tag: changeMsg[0],
                 addtime: changeMsg[6]
             }, function(err) {});
         };
