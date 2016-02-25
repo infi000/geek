@@ -1,0 +1,123 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+
+.wrapper {
+    background: #ebebeb
+}
+
+.header {
+    width: 100%;
+    /*height: 135px;*/
+    padding-top: 100px;
+    background: url(../img/headerbg.jpg);
+}
+
+.content {
+    width: 100%;
+    /*height: 200px;*/
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: aqua;
+}
+
+.banner {
+    color: white;
+}
+
+
+/*头部样式*/
+
+.header-block {
+    /*    background: green;
+    height: 30px;
+    line-height: 30px;
+    border:;*/
+    margin-left: 10px;
+}
+
+.header-nav {
+    margin-top: 0;
+}
+
+.header-nav-box {
+    margin: 0 auto;
+}
+
+.header-nav-a {
+    border: 1px solid #F1362F;
+    background: #FF675E;
+    color: white;
+}
+
+.header-nav-a:hover {
+    background: black;
+    border: 1px solid black;
+    color: white;
+}
+
+
+/*内容样式*/
+
+.content-jianli,
+.content-lvli,
+.content-jineng,
+.content-zuopin {
+    width: 90%;
+    margin: 0 auto
+}
+
+.content-jianli-jumbotron,
+.content-lvli-jumbotron {
+    background: white;
+}
+
+.content-jianli-jumbotron img {
+    width: 200px;
+}
+
+.content-jianlimessage li {
+    /*float: left;*/
+    list-style: none;
+    background: aqua;
+    margin-top: 10px;
+    padding: 5px 0;
+    /*  height: 30px;
+  line-height: 30px;*/
+}
+
+.content-jianlimessage li span {
+    font-size: 18px;
+}
+
+.content-jineng-box {
+    background: white;
+    box-shadow: 1px 1px 3px;
+}
+
+.content-jineng-box img {
+    width: 100%;
+}
+
+
+/*作品*/
+
+
+
+.content-zuopin-lunbo {
+    margin: 0 auto;
+}
+
+.content-zuopin-luobo img {
+  min-height: 300px;
+}
+#zuopin .lunbo-img{
+  height:300px;
+  margin: 0 auto;
+}
+/*.active{
+  background: #3300ff
+}*/

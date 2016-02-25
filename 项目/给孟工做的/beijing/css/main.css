@@ -154,7 +154,9 @@ button{
     /*   background: yellow;
 */
 }
-
+.banner{
+    color:white;
+}
 .header-search {
     margin-top: 8px;
 }
