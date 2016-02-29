@@ -9,7 +9,7 @@ var jsontext3;
 function newsinfo() {
     Atext1 = $.ajax({
         type: "get",
-        url:  "http://127.0.0.1:3900/1",
+        url:  "http://115.159.150.183:3900/1",
         dataType: "json",
         success: function() {
             jsontext1 = JSON.parse(Atext1.responseText);
@@ -26,7 +26,7 @@ function newsinfo() {
 function newsinfo2() {
     Atext2 = $.ajax({
         type: "get",
-        url:  "http://127.0.0.1:3900/2",
+        url:  "http://115.159.150.183:3900/2",
         dataType: "json",
         success: function() {
             jsontext2 = JSON.parse(Atext2.responseText);
@@ -42,7 +42,7 @@ function newsinfo2() {
 function newsinfo3() {
     Atext3 = $.ajax({
         type: "get",
-        url:  "http://127.0.0.1:3900/3",
+        url:  "http://115.159.150.183:3900/3",
         dataType: "json",
         success: function() {
             jsontext3 = JSON.parse(Atext3.responseText);

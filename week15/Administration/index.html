@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="./css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mainpage.css" type="text/css">
+    <title>mainpage</title>
+</head>
+
+<body>
+    <div class="main page">
+        <div class="navbar navbar-default">
+            <a href="#"><img class="logo" src="./img/geek.png"></a>
+            <ul class='nav navbar-nav pull-right h_nav'>
+                <li class='dropdown'>
+                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                        <i class='glyphicon glyphicon-envelope'> </i> 信息
+                        <span class='badge h_badge'>5</span>
+                        <b class='caret'></b>
+                    </a>
+                    <ul class='dropdown-menu h_dropdown-menu'>
+                        <li>
+                            <a href='#'>新信息</a>
+                        </li>
+                        <li>
+                            <a href='#'>收邮件</a>
+                        </li>
+                        <li>
+                            <a href='#'>发邮件</a>
+                        </li>
+                        <li>
+                            <a href='#'>垃圾箱</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class='dropdown'>
+                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                        <i class='glyphicon glyphicon-wrench'></i> 设置
+                    </a>
+                    <ul class='dropdown-menu h_dropdown-menu'>
+                        <li>
+                            <a href='#'>皮肤颜色</a>
+                        </li>
+                        <li>
+                            <a href='#'>风格样式</a>
+                        </li>
+                        <li>
+                            <a href='#'>字体大小</a>
+                        </li>
+                        <li>
+                            <a href='#'>声音大小</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class='dropdown user'>
+                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                        <i class='icon-user'></i>
+                        <strong>Geeker</strong>
+                        <i class="glyphicon glyphicon-user"></i>
+                        <b class='caret'></b>
+                    </a>
+                    <ul class='dropdown-menu'>
+                        <li>
+                            <a href='#'>编辑</a>
+                        </li>
+                        <li>
+                            <a href="/">登出</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="wapper">
+            <div id="sidebar">
+                <div class="list-group table-of-contents">
+                    <a class="list-group-item" href="#navbar"><i class='icon-dashboard glyphicon glyphicon-dashboard l_color'></i><br><span class="l_color">--</span></a>
+                    <a class="list-group-item" href="#buttons"><i class='icon-file-text-alt glyphicon glyphicon-file'></i><br><span>--</span></a>
+                    <a class="list-group-item page_3 " id="tuijian" href="#typography"> <i class='icon-table glyphicon glyphicon-list-alt'></i>
+                        <br>推荐</a>
+                    <a class="list-group-item" id="baijia" href="#tables"><i class='icon-flag glyphicon glyphicon-stats'></i><br>百家</a>
+                    <a class="list-group-item" id="bendi" href="#forms"> <i class='icon-bookmark glyphicon glyphicon-trash'></i>
+                        <br>本地</a>
+                    <a class="list-group-item" href="#navs"><i class='icon-cloud glyphicon glyphicon-save'></i><br>--</a>
+                    <a class="list-group-item" href="#indicators"> <i class='icon-bug glyphicon glyphicon-share-alt'></i>
+                        <br>--</a>
+                </div>
+            </div>
+            <div id="tools">
+                <ol class="breadcrumb">
+                    <li><a href="#">Web大前端</a></li>
+                    <li><a href="#">第三期</a></li>
+                    <li class="active">week9</li>
+                </ol>
+            </div>
+            <div id="content">
+                <!-- 推荐页面后台 -->
+                <div class="panel panel-default tuijian">
+                    <div class="panel-heading  newspage">推荐页面</div>
+                    <div class="panel panel-primary p_info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">修改新闻内容</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <ul class="from1">
+                                    <li class="del-li del-li1">
+                                        <p class="pnid">序号</p>
+                                        <p class="pntitle ">新闻标题</p>
+                                        <p class="pnimg">图片地址</p>
+                                        <p class="pnfrom">新闻出处</p>
+                                        <p class="pntime">新闻添加时间</p>
+                                    </li>
+                                </ul>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">增加新闻</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>新闻标题</th>
+                                        <th>新闻出处</th>
+                                        <th>图片地址</th>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                            <td class="active">
+                                                <input type='text' name="newstitle" class="tag1-newstitle">
+                                            </td>
+                                            <td class="danger">
+                                                <input type='text' name="newsfrom" class="tag1-newsfrom">
+                                            </td>
+                                            <td class="info">
+                                                <input type='text' name="newsimg" class="tag1-newsimg">
+                                            </td>
+                                            <td>
+                                                <input class="btn btn-success addtag1" type="submit" value="提交" />
+                                                <input class="btn btn-success" type="reset" value="重置" />
+                                            </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- +++++++++++++++++++++++++++++++++++++===百家页面后台 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+                <div class="panel panel-default baijia" style="display:none">
+                    <div class="panel-heading  newspage">百家页面</div>
+                    <div class="panel panel-primary p_info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">修改新闻内容</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <ul class="from2">
+                                    <li class="del-li del-li2">
+                                        <p class="pnid">序号</p>
+                                        <p class="pntitle">新闻标题</p>
+                                        <p class="pnimg">图片地址</p>
+                                        <p class="pntime">新闻添加时间</p>
+                                    </li>
+                                </ul>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">添加新闻</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>新闻标题</th>
+                                        <th>图片地址</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                            <td class="active">
+                                                <input type='text' name="newstitle" class="tag2-newstitle">
+                                            </td>
+                                            <td class="info">
+                                                <input type='text' name="newsimg" class="tag2-newsimg">
+                                            </td>
+                                            <td>
+                                                <input class="btn btn-success addtag2" type="submit" value="提交" />
+                                                <input class="btn btn-success" type="reset" value="重置" />
+                                            </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- _++++++++++++++++++++++++++++++++本地页面后台++++++++++++++++++++++++++++++++++++++++++ -->
+                <div class="panel panel-default bendi" style="display:none">
+                    <div class="panel-heading  newspage">本地页面</div>
+                    <div class="panel panel-primary p_info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">修改新闻</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <ul class="from3">
+                                    <li class="del-li del-li3">
+                                        <p class="pnid">序号</p>
+                                        <p class="pntitle">新闻标题</p>
+                                        <p class="pncontent">新闻内容</p>
+                                        <p class="pntime ntime3">新闻添加时间</p>
+                                    </li>
+                                </ul>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">添加新闻</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>新闻标题</th>
+                                        <th>新闻内容</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <form>
+                                            <td class="active">
+                                                <input type='text' name="newstitle" class="tag3-newstitle">
+                                            </td>
+                                            <td class="danger">
+                                                <input type='text' name="newscontent" class="tag3-newscontent">
+                                            </td>
+                                            <td>
+                                                <input class="btn btn-success addtag3" type="submit" value="提交" />
+                                                <input class="btn btn-success" type="reset" value="重置" />
+                                            </td>
+                                        </form>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./css/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/mainpage.js"></script>
+    <script type="text/javascript" src="./js/ajax.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
