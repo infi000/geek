@@ -1,7 +1,9 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
 }
-
+.row{
+    padding:0 15px;
+}
 .wrapper {
     background: #ebebeb
 }
@@ -46,7 +48,15 @@ body {
 .header-nav-box {
     margin: 0 auto;
 }
-
+.header-nav-button{
+    background: #ffffff;
+}
+.header-nav-button:hover{
+    background: #FF594F;
+}
+.button-icon{
+    background: black;
+}
 .header-nav-a {
     border: 1px solid #F1362F;
     background: #FF675E;
@@ -61,7 +71,7 @@ body {
 
 
 /*内容样式*/
-
+/*内容总体*/
 .content-jianli,
 .content-lvli,
 .content-jineng,
@@ -72,27 +82,45 @@ body {
 
 .content-jianli-jumbotron,
 .content-lvli-jumbotron {
-    background: white;
+      background: #FFFAFA;
+    box-shadow: 0px 2px 2px #868686;
 }
 
 .content-jianli-jumbotron img {
     width: 200px;
 }
 
+/*简历*/
 .content-jianlimessage li {
-    /*float: left;*/
     list-style: none;
     background: aqua;
     margin-top: 10px;
     padding: 5px 0;
-    /*  height: 30px;
-  line-height: 30px;*/
+    font-size: 16px;
+}
+.content-jianli h2{
+    text-align: center;
+}
+.content-jianlimessage li p{
+      font-size: 16px;
+      line-height: 2em;
+      padding: 10px;
+}
+.jianli_jieshao{
+    text-indent: 2em;
+}
+.jianli-tag{
+    font-size:18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+/*履历*/
+.content-lvli-box{
+    margin: 0 auto;
 }
 
-.content-jianlimessage li span {
-    font-size: 18px;
-}
 
+/*技能*/
 .content-jineng-box {
     background: white;
     box-shadow: 1px 1px 3px;
@@ -102,22 +130,36 @@ body {
     width: 100%;
 }
 
-
+.content-lvli-box dt{
+    font-size: 2em;
+} 
+.content-lvli-box dd{
+    font-size: 18px
+}
 /*作品*/
-
-
 
 .content-zuopin-lunbo {
     margin: 0 auto;
 }
 
-.content-zuopin-luobo img {
+/*.content-zuopin-luobo img {
   min-height: 300px;
-}
-#zuopin .lunbo-img{
-  height:300px;
-  margin: 0 auto;
-}
-/*.active{
-  background: #3300ff
 }*/
+/*.zuopin-msg{
+    opacity: 1;
+    -webkit-transition:opacity 1.5s;
+}
+.zuopin-imgbox:hover .lunbo-img{
+ -webkit-filter:blur(4px);
+
+}
+.zuopin-imgbox:hover .zuopin-msg{
+    opacity: 1;
+}
+.zuopin-imgbox:hover 
+#zuopin .lunbo-img{
+  margin: 0 auto;
+  transition:1.5s;
+  -webkit-transition:1.5s;
+}
+*/
