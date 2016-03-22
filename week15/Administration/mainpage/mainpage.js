@@ -90,7 +90,7 @@ var from3 = $(".from3");
 function newsinfo1() {
     Atext1 = $.ajax({
         type: "GET",
-        url: "http://127.0.0.1:3900/1",
+        url: "http://115.159.150.183:3900/1",
         dataType: "json",
         success: function() {
             jsontext1 = JSON.parse(Atext1.responseText);
@@ -146,7 +146,7 @@ function newsinfo2() {
     Atext2 = $.ajax({
         type: "GET",
         // contentType : 'application/json',
-        url: "http://127.0.0.1:3900/2",
+        url: "http://115.159.150.183:3900/2",
         dataType: "json",
         success: function() {
             jsontext2 = JSON.parse(Atext2.responseText);
@@ -193,7 +193,7 @@ function newsinfo2() {
 function newsinfo3() {
     Atext3 = $.ajax({
         type: "GET",
-        url: "http://127.0.0.1:3900/3",
+        url: "http://115.159.150.183:3900/3",
         dataType: "json",
         success: function() {
             jsontext3 = JSON.parse(Atext3.responseText);
@@ -257,7 +257,7 @@ $(".addtag1").click(function() {
     time = getNewDate();
     ul = (1 + ",:," + "" + ",:," + title + ",:," + newsfrom + ",:," + img + ",:," + "" + ",:," + time);
     $.ajax({
-        url: "http://127.0.0.1:3900/0/" + ul,
+        url: "http://115.159.150.183:3900/0/" + ul,
         type: "post",
         success: function() {
             alert("上传文件成功！");
@@ -273,7 +273,7 @@ $(".addtag2").click(function() {
     time = getNewDate();
     ul = (2 + ",:," + "" + ",:," + title + ",:," + "" + ",:," + img + ",:," + "" + ",:," + time);
     $.ajax({
-        url: "http://127.0.0.1:3900/0/" + ul,
+        url: "http://115.159.150.183:3900/0/" + ul,
         type: "post",
         success: function() {
             alert("上传文件成功！");
@@ -289,7 +289,7 @@ $(".addtag3").click(function() {
     time = getNewDate();
     ul = (3 + ",:," + "" + ",:," + title + ",:," + "" + ",:," + "" + ",:," + content + ",:," + time);
     $.ajax({
-        url: "http://127.0.0.1:3900/0/" + ul,
+        url: "http://115.159.150.183:3900/0/" + ul,
         type: "post",
         success: function() {
             alert("上传文件成功！");
@@ -307,7 +307,7 @@ $(".addtag3").click(function() {
 //     newsfrom = $(".tag1-newsfrom").eq(0).val();
 //     time = $(".tag1-addtime").eq(0).val();
 //     ul = 1 + "/" + title + "/" + img + "/" + newsfrom + "/" + "/" + time;
-//     $("form").eq(0).attr("action", 'http://127.0.0.1:3900/0//' + ul)
+//     $("form").eq(0).attr("action", 'http://115.159.150.183:3900/0//' + ul)
 //     console.log($("form").eq(0).attr("action"))
 //     console.log(ul);
 // })
@@ -320,7 +320,7 @@ $(".addtag3").click(function() {
 //         newsfrom = $(".nfrom1").eq(i).val();
 //         time = $(".ntime1").eq(i).val();
 //         ul = "/" + id + "/" + 1 + "/" + title + "/" + img + "/" + newsfrom + "/" + "/" + time;
-//         $("form").eq(i).attr("action", 'http://127.0.0.1:3900/1' + ul)
+//         $("form").eq(i).attr("action", 'http://115.159.150.183:3900/1' + ul)
 //         console.log($("form").eq(i).attr("action"))
 //         console.log(ul);
 //     })
@@ -339,7 +339,7 @@ function change1(i) {
         time = getNewDate();
         ul = (1 + ",:," + id + ",:," + title + ",:," + newsfrom + ",:," + img + ",:," + "" + ",:," + time);
         $.ajax({
-            url: "http://127.0.0.1:3900/1/" + ul,
+            url: "http://115.159.150.183:3900/1/" + ul,
             type: "post",
             success: function() {
                 alert("上传文件成功！");
@@ -361,7 +361,7 @@ function change2(i) {
         time = getNewDate();
         ul = (2 + ",:," + id + ",:," + title + ",:," + "" + ",:," + img + ",:," + "" + ",:," + time);
         $.ajax({
-            url: "http://127.0.0.1:3900/1/" + ul,
+            url: "http://115.159.150.183:3900/1/" + ul,
             type: "post",
             success: function() {
                 alert("上传文件成功！");
@@ -380,7 +380,7 @@ function change3(i) {
         time = getNewDate();
         ul = (3 + ",:," + id + ",:," + title + ",:," + "" + ",:," + img + ",:," + content + ",:," + time);
         $.ajax({
-            url: "http://127.0.0.1:3900/1/" + ul,
+            url: "http://115.159.150.183:3900/1/" + ul,
             type: "post",
             success: function() {
                 alert("上传文件成功！");

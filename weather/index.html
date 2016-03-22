@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>天气网</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/weather.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+</head>
+
+<body ng-app="weather" ng-controller="getpage">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-7">
+                    <ul class="nav nav-tabs" style="border:0">
+                        <li role="presentation" class="getCityweather"><a href="#">北京</a></li>
+                        <li role="presentation" class="getCityweather"><a href="#">青岛</a></li>
+                        <li role="presentation" class="getCityweather"><a href="#">沈阳</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-5">
+                    <div class="input-group">
+                        <input type="text" class="form-control searchCity" placeholder="Search">
+                        <span class="input-group-btn"><button class="btn btn-default searchCityweather" type="button">Go!</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--end header -->
+    <div class="content">
+        <div class="jumbotron" style="padding:10px;margin-bottom:0 ">
+            <h1 class="cityName"></h1>
+            <p class="text-center" style="font-size:3em"><span class="cityWeather"></span>/<span class="cityTemp"></span>&#176;C</p>
+            <p class="text-center">空气质量(pm2.5):<span class="pm25"></span><span class="qlty"></span></p>
+            <p class="text-center">最低温度:<span class="cityL_tmp"></span>&#176;C</p>
+            <p class="text-center">最高温度:<span class="cityH_tmp"></span>&#176;C</p>
+            <p class="text-left">更新时间:<span class="time"></span></p>
+        </div>
+        <!-- end  <div class="jumbotron">-->
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-2">2016-3-20 11:40</div>
+                    <div class="col-xs-2">2016-3-20 11:40</div>
+                    <div class="col-xs-2">2016-3-20 11:40</div>
+                    <div class="col-xs-2">2016-3-20 11:40</div>
+                    <div class="col-xs-2">2016-3-20 11:40</div>
+                    <div class="col-xs-2">2016-3-20 11:40</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-2">10&#176;C</div>
+                    <div class="col-xs-2">10&#176;C</div>
+                    <div class="col-xs-2">10&#176;C</div>
+                    <div class="col-xs-2">10&#176;C</div>
+                    <div class="col-xs-2">10&#176;C</div>
+                    <div class="col-xs-2">10&#176;C</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-xs-2">111%</div>
+                    <div class="col-xs-2">111%</div>
+                    <div class="col-xs-2">111%</div>
+                    <div class="col-xs-2">111%</div>
+                    <div class="col-xs-2">111%</div>
+                    <div class="col-xs-2">111%</div>
+                </div>
+            </li>
+        </ul>
+        <div class="jumbotron" style="padding:10px;margin-bottom:0 ">
+            <p class="text-center">舒适度指数：<span class="comf"></span></p>
+            <p class="text-center">穿衣指数：<span class="drsg"></span></p>
+            <p class="text-center">感冒指数：<span class="flu"></span></p>
+            <p class="text-center">运动指数：<span class="sport"></span></p>
+        </div>
+        <!-- end  <div class="jumbotron">-->
+        
+        <ul class="list-group weather7_ul" style="text-align: center;font-size:17px;">
+        </ul>
+    </div>
+    <!-- end <div class="content"> -->
+    <footer>
+    </footer>
+</body>
+<script type="text/javascript" src="js/get.js"></script>
+<script type="text/javascript" src="js/action.js"></script>
+
+</html>

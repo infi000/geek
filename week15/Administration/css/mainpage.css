@@ -95,14 +95,14 @@ body {
     background-color: #F5F5F5
 }
 
-.list-group-item {
+.slidepage {
     background: #F5F5F5;
     border: 1px solid #F5F5F5;
     margin-top: 15px;
     -webkit-transition: background 0.5s 0.1s;
 }
 
-.list-group-item:hover {
+.slidepage:hover {
     background-color: #7ECE94!important;
     /*color:white!important;*/
 }
@@ -155,39 +155,46 @@ body {
     /*   position: absolute;*/
 }
 
+.changelist {
+    padding: 0;
+    border: 0;
+}
+.getnewsimg{
+    width: 100%;
+}
+
+
 .p_info {
     margin-top: 20px;
 }
-
 .panel-primary>.panel-heading {
     background: #C0DDE8!important;
     border-color: #C0DDE8!important;
 }
-
 .panel-primary {
     border-color: #C0DDE8!important
 }
-
 .panel-title {
     color: #33A3DD!important;
 }
 
-
 /*form input {
     width: 100%;
 }*/
-
+.row-tag{
+        font-size: 15px;
+    font-weight: bold;
+    color:black;
+}
 .sqlform .btn {
     width: 20%;
     text-align: center;
 }
-
 .newspage {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
 }
-
 .news-id,
 .news-id2,
 .news-id3 {
@@ -197,7 +204,6 @@ body {
     outline: none;
     background: white
 }
-
 .news-name {
     width: 45px;
     border: 0;
@@ -205,80 +211,60 @@ body {
     background: white
 }
 
-
 /*动态表格样式*/
-
 .nid {
     width: 50px;
     text-align: center;
     border: 0;
 }
-
 .ntitle {
     width: 345px;
     text-align: center;
 }
-
 .ntime {
     text-align: center;
-    width:100px;
+    width: 100px;
 }
-
-
-
 .nfrom {
     width: 90px;
 }
-
 .ncontent {
     width: 385px;
     text-align: center;
 }
-
 .nimg {
     width: 215px;
 }
-
 .nform {
     /*display: none;*/
 }
-
 .pnid {
     width: 50px;
     text-align: center;
     border: 0;
 }
-
 .pntitle {
     width: 345px;
     text-align: center;
 }
-
 .pntime {
     text-align: center;
 }
-
 .pntime3 {
     margin-left: 80px;
 }
-
 .pnfrom {
     width: 90px;
 }
-
 .pncontent {
     width: 385px;
     text-align: center;
 }
-
 .pnimg {
     width: 215px;
 }
-
 .pnform {
-    /*display: none;*/
 }
-
 .pnid,
 .pntitle,
 .pntime,
@@ -287,7 +273,6 @@ body {
 .pnimg {
     float: left;
 }
-
 .nid,
 .ntitle,
 .ntime,
@@ -297,7 +282,6 @@ body {
     float: left;
     height: 40px;
 }
-
 .del-li1,
 .del-li2,
 .del-li3 {
@@ -305,29 +289,46 @@ body {
     margin: 10px auto;
     height: 40px;
 }
-
 .del-li1 input,
 .del-li2 input,
 .del-li3 input {
     margin-left: 10px
 }
-
 .del-li p {
-    float: left;
-    /* background: yellow; */
+    float: left;   
     margin-left: 10px;
     font-size: 16px;
     font-weight: bold;
 }
-
 .from1,
 .from2,
 .from3 {
-    /*    background: yellow;*/
+    
     margin: 0 auto;
     width: 1028px;
 }
-
 .from3 {
     width: 1075px
+}
+
+/*表格字体样式*/
+.font-newsid{
+    font-size: 20px;
+    
+}
+.font-newstitle{
+      font-size: 20px;
+
+}
+.font-newscontent{
+      font-size: 15px;
+
+}
+.font-newsfrom{
+    
+  font-size: 20px;
+}
+.font-addtime{
+      font-size: 20px;
+
 }
