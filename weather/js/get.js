@@ -1,3 +1,4 @@
+// 天气
 var cityName = $(".cityName"); //城市
 var pm25 = $(".pm25"); //pm25
 var qlty = $(".qlty"); //空气质量
@@ -27,6 +28,7 @@ var getWeather = $.ajax({
     success: function(msg) {
         cityData = msg["HeWeather data service 3.0"][0];
         city7Data = cityData.daily_forecast;
+        city3Data = cityData.hourly_forecast;
         cityName.html(cityData.basic.city);
         pm25.html(cityData.aqi.city.pm25); //pm2.5
         qlty.html(cityData.aqi.city.qlty); //空气质量
@@ -53,3 +55,27 @@ var getWeather = $.ajax({
     }
 
 })
+//天气结束
+//新闻
+
+var getNews = $.ajax({
+    url: 'http://apis.baidu.com/showapi_open_bus/channel_news/search_news',
+    type: 'GET',
+    dataType: "json",
+    data: {
+        "channelId": "5572a109b3cdc86cf39001e6","channelName": "体育"
+    },
+    beforeSend: function(request) {
+        request.setRequestHeader('apikey', '6e2948769e7f9ddf97e95ed8225812b5');
+    },
+    success: function(msg) {
+        newsData=msg
+
+
+
+
+}})
+
+
+
+//新闻结束
