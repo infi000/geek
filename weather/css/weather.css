@@ -1,0 +1,11 @@
+.weather7_min{
+	color:#CCCCCC;
+	margin-left: 10px;
+}
+.weather7_img{
+	width:50%;
+}
+.weather7_date,.weather7_maxmin{
+	display: block;
+	margin-top:10px;
+}
