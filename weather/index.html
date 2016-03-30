@@ -11,6 +11,7 @@
     <title>天气网</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/weather.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
@@ -19,8 +20,12 @@
 
 <body ng-app="weather" ng-controller="getpage">
     <header>
- <a href="#" class="btn btn-primary btn-lg active" role="button">天气</a>
-<a href="view/sports.html" class="btn btn-default btn-lg active" role="button">体育新闻</a>
+     <nav class="navbar navbar-default navbar-fixed-top" style="min-height: 0">
+            <div class="container">
+        <a href="#" class="btn btn-primary btn-lg active  headerNav" role="button">天气</a>
+        <a href="view/news.html" class="btn btn-default btn-lg active  headerNav" role="button">新闻</a>
+             </div>
+        </nav>
     </header>
     <!--end header -->
     <div class="content">

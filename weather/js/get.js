@@ -57,25 +57,39 @@ var getWeather = $.ajax({
 })
 //天气结束
 //新闻
-
+var channelName="体育最新";
 var getNews = $.ajax({
     url: 'http://apis.baidu.com/showapi_open_bus/channel_news/search_news',
     type: 'GET',
     dataType: "json",
     data: {
-        "channelId": "5572a109b3cdc86cf39001e6","channelName": "体育"
+        "channelName":channelName,"page":"1"
     },
     beforeSend: function(request) {
         request.setRequestHeader('apikey', '6e2948769e7f9ddf97e95ed8225812b5');
     },
     success: function(msg) {
-        newsData=msg
-
-
-
+         newsData=msg.showapi_res_body.pagebean.contentlist;//获取新闻数组
+        for (var i = 0; i < newsData.length; i++) {
+        $('<li class="list-group-item newsList-li"><img class="newsImg"><div class="newsBox"><a href="" class="newsUrl"><h4 class="newsTitle"></h4></a><p class="newsDesc"></p><span class="newspubDate label label-danger"></span></div></li>').appendTo($('.newsList-ul'));
+        //动态渲染dom
+        if(newsData[i].imageurls.length==0)
+        {
+            imgSrc="../img/sina.jpg"
+        }else{
+            imgSrc=newsData[i].imageurls[0].url
+        }
+        $(".newsUrl").eq(i).attr({"href":newsData[i].link})
+         $(".newsImg").eq(i).attr({"src":imgSrc});//imgURL
+        $(".newsTitle").eq(i).html(newsData[i].title);//新闻标题
+        $(".newsDesc").eq(i).html(newsData[i].desc+"...");//新闻段落
+        $(".newspubDate").eq(i).html(newsData[i].pubDate);//新闻日期
+        };
+       
 
 }})
 
+// "channelId": "5572a109b3cdc86cf39001e6",
 
 
 //新闻结束

@@ -1,0 +1,23 @@
+{
+
+}
+.newsImg{
+	width:40%;
+	float: left;
+	margin-right: 3px;
+}
+.newsTitle{
+	color:black;
+}
+.newsDesc{
+	color:grey;
+}
+.newspubDate{
+	    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 20px  
+}
+footer nav{
+text-align: center;
+}
