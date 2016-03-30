@@ -51,7 +51,7 @@ var getWeather = $.ajax({
             $(".weather7_min").eq(i).html(city7Data[i].tmp.min);
 
         }
-
+changeWeatherBg()
     }
 
 })

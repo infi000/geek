@@ -1,4 +1,4 @@
-//天气页面
+//天气页面###############################################################################
 //把按钮的值放入DATA中通过AJAX得到参数
 function getCityweather() {
     var citydata = $(this).find("a").html();
@@ -39,6 +39,7 @@ function getCityweather() {
 
 
             }
+         changeWeatherBg()
         }
     })
 }
@@ -83,13 +84,28 @@ function searchCityweather() {
 
             }
         }
+
     })
     console.log("dd");
     console.log(citydata)
 }
 $(".searchCityweather").on("click", searchCityweather);
+
+//改变背景
+function changeWeatherBg(){
+     weatherBg=cityWeather.html();
+    if (weatherBg=="晴"){
+        {$(".main-weather").css({"background":"url(img/sun.jpg)"})}
+    }
+  else if(weatherBg=="阴"){
+        {$(".main-weather").css({"background":"url(img/mai.png)"})}
+    }
+    else if(weatherBg=="小雨")
+        {$(".main-weather").css({"background":"url(img/rain.png)"})}
+};
+
 //天气页面结束
-//新闻页面
+//新闻页面#######################################################################
 //翻页
 function getnextPage() {
     var page = $(this).html();

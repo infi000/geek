@@ -1,3 +1,12 @@
+/*主要天气样式*/
+.main-weather{
+	/*background: url("../img/sun.jpg");*/
+color: #4A1211;
+    background-size: 100% 100%;
+}
+
+
+/*七天天气样式*/
 .weather7_min{
 	color:#CCCCCC;
 	margin-left: 10px;
