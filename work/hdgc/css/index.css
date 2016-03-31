@@ -119,55 +119,63 @@ body {
 }
 
 .content-food {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     background: blue;
     position: relative;
     margin-top: 5%;
 }
 
-.content-foodLeftBox {
+.content-foodBox {
     position: relative;
     width: 30%;
     float: left;
     margin-left: 2%
-}
-
-.content-foodMidBox {
-    position: relative;
-    width: 30%;
-    float: left;
-    margin-left: 2%
-}
-
-.content-foodRightBox {
-    position: relative;
-    width: 30%;
-    float: left;
-    margin-left: 2%
-}
-
-.priceBox {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
 }
 
 .price {
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    width: 50%;
+    width: 100%;
 }
 
 .food {
-    margin-top: -20%;
+    margin-top: -30%;
     width: 100%;
 }
-.content-food p{
+
+.content-food p {
     color: yellow;
     font-family: "微软雅黑";
     font-size: 20px;
     margin-top: -10%;
 }
+
+.content-foodLongBox {
+      position: relative;
+    width: 45%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+.priceLong {
+    width: 80%;
+    float: left;
+}
+
+.foodLong {
+       margin-left: -25%;
+    margin-top: -15%;
+    width: 40%;
+    float: left;
+    }
+
+/*.priceBox {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+*/
+
+
 
 /*content end+++++++++++++++++++++++++++++++++++++*/
