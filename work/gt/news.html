@@ -15,7 +15,7 @@
         <div class="content">
             <div class="title">
                 <img src="resources/utitls/logo.png">
-                <h2>欢迎登陆高铁影音平台，点击阅读最新时事</h2>
+                <h2>欢迎登陆高铁影音平台，点击阅读最新时事.</h2>
                 <p>
                     <span class="addFontsize">放大字体</span>
                     <span class="reduceFontsize">缩小字体</span>
@@ -123,6 +123,7 @@ var addFontsize = $(".addFontsize");
 var reduceFontsize = $(".reduceFontsize");
 var a = $(".article-content").find("a");
 var span = $(".article-content").find("span");
+//放大字体
 addFontsize.on("click", function() {
     var aSize = parseInt(a.css(
         "font-size"
@@ -138,6 +139,7 @@ addFontsize.on("click", function() {
         "font-size": spanSize + 10 + "px"
     });
 });
+//缩小字体
 reduceFontsize.on("click", function() {
     var aSize = parseInt(a.css(
         "font-size"

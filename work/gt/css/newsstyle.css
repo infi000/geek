@@ -13,19 +13,24 @@ a {
     text-decoration: none;
 }
 
+
 /*.news-item h2 {
     font-size: 60px;
     font-weight: normal;
     margin-top: 15px;
 }*/
+
+
 /*
 .time {
     color: #897e84;
 }
 */
-.wrapper{
-	   background: #3b2a32;
+
+.wrapper {
+    background: #3b2a32;
 }
+
 
 /*header++++++++++++++++++++++++++*/
 
@@ -53,30 +58,65 @@ header {
     margin: 0 auto;
 }
 
+
+/* 判断移动设备*/
+
+@media only screen and (max-device-width: 860px) {
+    .content {
+        width: 95%;
+        background: #3b2a32;
+    }
+    header {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .title {
+        height: auto;
+    }
+    .title p {
+        text-align: right;
+    }
+}
+
+
+/*某些特定样式重写*/
+
+@media only screen and (min-width:860px) {
+    .title {
+        height: 50px;
+    }
+    .title p {
+        float: right;
+    }
+}
+
 .title {
-    height: 50px;
     line-height: 50px;
 }
 
 .title img {
     float: left;
-        margin-top: 10px;
+    margin-top: 10px;
     margin-right: 20px;
 }
-.title h2{
-	color:#a8afb3;
-	display: inline;
+
+.title h2 {
+    color: #a8afb3;
+    display: inline;
 }
-.title p{
-	float: right;
-	height: 100%;
-	color: white;
-	font-weight: bold;
-	cursor: pointer;
+
+.title p {
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
-.title p span:hover{
-	color:#ccc;
+
+.title p span:hover {
+    color: #ccc;
 }
+
+
 /*content article*/
 
 .article {
