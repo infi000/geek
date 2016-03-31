@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  	<script type="text/Javascript" src="js/qhstyle.js"></script>
+<script>    
+  var thisURL = document.URL;    
+  var filename="";
+  var filetype="";
+  var  getval =thisURL.split('?')[1];  
+  var array_parm= getval.split("\&");  
+  for(var i=0;i<array_parm.length;i++){
+  var keyvalues=array_parm[i].split("=");
+  var key=keyvalues[0];
+  var value=keyvalues[1];
+  if(key=="playid"){
+  filename=value;
+  }
+  else if(key=="type"){
+  filetype=value;
+  }
+  }
+  var showval= ""; 
+  if(filetype=="film"){
+  showval="gt_data\\film\\videos\\"+filename+".mp4";
+    } 
+	else if(filetype=="tv"){
+  showval="gt_data\\tv\\videos\\"+filename+".mp4";
+	}
+	else if(filetype=="music_rcm"){
+  showval="gt_data\\music\\musics\\rcm_"+filename+".mp3";
+	}
+	else if(filetype=="music"){
+  showval="gt_data\\music\\musics\\"+filename+".mp3";
+	}
+  function  setvideopath(){  
+     //alert(showval);  
+     document.getElementById('video').src=showval;  
+  }
+  function  backurl(){  
+     //alert(showval);  
+	 
+  if(filetype=="film"){
+  window.location.href="films.html";
+    } 
+	else if(filetype=="tv"){
+  window.location.href="tv.html";
+	}
+	else if(filetype=="music_rcm"){
+  window.location.href="music.html";
+	}
+	else if(filetype=="music"){
+  window.location.href="music.html";
+	}
+  }
+</script>  
+ <meta charset="utf-8"/>
+<title>播放电影</title>
+</head>
+
+<body onload="setvideopath()" style="height:100%; background-color:#000000">
+<div style="line-height:40px; background-color:#000000">
+	<label onclick="backurl()" style="font-size:24px; margin-left:10px; color:#FFFFFF;cursor:pointer;">返回</label>
+</div> 
+ <div id="second-phase" class="phase-row" data-title="Illustrations"style="padding-top:0px; data-coloroverlap="light">
+    <video id="video" src="" style=" display:block; margin:0 auto;width:80%;height:auto; max-width:100%;" autoplay="autoplay" controls></video>
+	</div>
+</body>
+</html>

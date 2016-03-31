@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title><?php print $this->title?></title>
+<!--[if lt IE 9]>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+　　<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/phone/base-src.css" />
+<link rel="stylesheet" type="text/css" href="css/phone/common-src.css" />
+<link rel="stylesheet" type="text/css" href="css/phone/news.css" />
+<link rel="stylesheet" type="text/css" href="css/phone/adaptive_style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+<div class="index_long"></div>
+<div class="index_Con_bg">
+	<div class="index_Con">
+	  <div class="wrap-980 main clearfix">
+        <div class="newsmain">
+           
+        <h1><?php print $this->title ?></h1>
+      <br/><br/>
+       <form name="exeForm" enctype="multipart/form-data" id="exeForm" action="" method="post">
+           <div class="divmessage">
+               <span style="font-size:14px;text-align:center;font-family: '微软雅黑'">提示信息</span>
+           </div>
+        <div class="divli">
+            <span style="font-size:14px;text-align:center;font-family: '微软雅黑'">手机号: </span><input type="text"  class="form-controla" name="phone" value="" size="15" maxlength="11"> 
+        </div> 
+           <div class="divli" style="display: none;">
+            <span style="font-size:14px;text-align:center;font-family: '微软雅黑'">支付方式: </span><input type="radio"  class="form-controla" name="payment" value="2010" id="alipay1" checked="checked"> <label for="alipay1" style="font-size:14px;text-align:center;font-family: '微软雅黑'">支付宝支付</label> <!--input type="radio"  class="form-controla" name="payment" value="3010"  id="alipay2" > <label  for="alipay2" style="font-size:14px;text-align:center;font-family: '微软雅黑'">微信支付</label-->
+        </div> 
+            <div class="divli" style="display: none;">
+            <span style="font-size:14px;text-align:center;font-family: '微软雅黑'">认证码: </span><input type="text"  class="form-controla" name="code" value="" size="7" maxlength="6"> 
+        </div> 
+           <div class="date">
+               <br/>
+           </div> 
+           <div align="center">
+           <button class="btn-default box_form_button" />购买服务</button><button class="btn-default box_form_button1" style="display: none;"/>立即支付</button><button class="btn-default box_form_button2" style="display: none;"/>立即观看</button>
+         </div>
+           <h2></h2>
+       </form> 
+            </div>
+        </div>
+       
+        </div>
+      
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/phone.js"></script>
+<script language="javascript">
+function message_tips(s){
+    $(".divmessage").hide();
+    $(".divmessage").find("span").text('');
+    if($.trim(s)){
+        $(".divmessage").find("span").text(s);
+        $(".divmessage").show();
+    }
+}
+$(function(){
+  $(".divmessage").hide();
+  $("input[name=phone]").focus(function(){
+      message_tips();
+  })
+  $(".box_form_button").click(function(){
+      var phone = $("input[name=phone]").val().trim();
+      //message_tips(phone);
+      var url = '?m=12080';
+      $.post(url,{'phone':phone},function(data){
+			if(data.status){
+                           //alert(data.msg.replace("\\n","<br/>"));
+                           o = data.data;
+                           if(o.ordersn != undefined){
+                               $(".divli").eq(0).hide();
+                               $(".divli").eq(1).show();
+                              // alert($.cookie('CLIENTORDERSN'));
+                              $(".box_form_button").hide();
+                              $(".box_form_button1").show();
+                           }else if(o.token != undefined){
+                              $(".box_form_button").hide();
+                              $(".box_form_button2").show();
+                           }
+			}else{
+                            alert(data.msg.replace("\\n","<br/>"));
+			}
+		},'json');
+      return false;
+  })
+  $(".box_form_button1").click(function(){
+      //message_tips(phone);
+      var url = '?m=12081';
+      $("form[name=exeForm]").attr("action",url);
+      
+  })
+  
+  $(".box_form_button2").click(function(){
+      //message_tips(phone);
+      var url = '?m=12070';
+      $("form[name=exeForm]").attr("action",url);
+      
+  })
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?php $this->includes('top')?>
+<!------nav start------>
+<div class="nav">
+<div class="navbot">
+    <div class="search_blog">&nbsp;&nbsp;<p style="font-size:14px">订单管理</p>
+      <form name="exeForm" id="exeForm" action="" method="post">
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全选 <input type="checkbox" class="_pageinalCheckBoxAll" />&nbsp;&nbsp;&nbsp;&nbsp;
+   订单号：<input type="text" name="keyword" value="" maxlength="20">
+        <input type="button" id="searchButton" value="查询" class="" />
+       <input type="hidden" name="<?php print ACTIONPARAM?>" value="">
+      </form>
+     </div>
+  </div>
+</div>
+<!------nav end------>
+<br />
+<!------main start------>
+<div class="main">
+ <!------左侧栏 start------>
+  <div class="left">
+    <div class="blogroom">
+    <?php print $this->tableBody ?>   
+      <div class="clear"></div>
+      <?php print $this->pager ?>
+     
+      
+    </div> 
+    <div class="clear"></div>
+  </div>
+  
+<div id="dialog-form" style="display:none;" class="ui-widget ui-widget-content ui-corner-all" title="订单信息查看"> 
+</div>
+  <!------左侧栏 end------> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript" src="js/jquery.paginal.js"></script>
+<script language="javascript" src="js/jquery-ui.js"></script>
+
+<script language="javascript">
+$(function(){
+	$("#searchButton").click(function(){
+		$("#exeForm").attr('method','GET');
+		$("input[name='<?php print ACTIONPARAM?>']").val("<?php print Core::get_url('/order/clist',1)?>");
+		$("#exeForm").submit();
+	})
+	$().pagination.removeparam = 'm';
+	$().pagination.action();
+  
+});  
+
+</script>
+<?php $this->includes('foot')?>

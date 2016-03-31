@@ -1,0 +1,220 @@
+/*
+ * @Filename: base.css
+ * @Description: init default browser's style
+ * @Version: 1.0.0
+*/
+body, form, frame, iframe, blockquote, p, pre, sup, sub, table, caption, dl, li, dl, dd, dt, div, span, a, input, textarea, fieldset, legend, b, strong, em, i, h1, h2, h3, h4, h5, h6, img, label {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "microsoft yahei", Arial, sans-serif;
+	color: #333;
+	font-size:12px;
+    background-color: #FFF;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	max-width: 100%;
+    background-color: transparent;
+}
+th,td{
+    vertical-align: middle;
+	padding-left:2px;
+	padding-right:2px;
+}
+caption, th {
+    text-align: center;
+}
+fieldset, img, abbr, acronym {
+    border: 0;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    blr:expression(this.onFocus=this.blur());
+}
+a:hover, a:active, a:visited {
+    outline: none;
+    text-decoration: underline;
+}
+input {
+    outline: none
+}
+option {
+    padding-left: 0.4em;
+}
+select {
+    padding: 1px;
+}
+h1, h2, h3, h4, h5, h6 {
+
+    font-weight: bold;
+    text-rendering: optimizelegibility;
+}
+h1 {
+    font-size: 36px;
+  
+}
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 40px;
+}
+h4 {
+    font-size: 18px;
+    line-height: 20px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 20px;
+}
+h6 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+div:target {
+    outline: 0 none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+}
+
+fieldset, img {
+    border: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+sub,
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+ul,
+ol {
+    padding: 0;
+    margin: 0 0 10px 25px;
+}
+bl{padding: 0px;
+    margin: 0 0 0 0;}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin-bottom: 0;
+}
+li {
+    line-height: 20px;
+}
+dl {
+    margin-bottom: 20px;
+}
+dt,
+dd {
+    padding:5px 0;
+    margin:0;
+    line-height: 20px;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 10px;
+}
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #ffffff;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+button{
+    display: inline-block;
+    overflow: hidden;
+    padding: 5px 20px 6px 20px;
+    margin-bottom: 0;
+	box-sizing:border-box;
+	background:#dedede;
+    background: #f8f8f8;
+    background: -moz-linear-gradient(top, #f8f8f8, #dedede);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#dedede));
+    background: -webkit-linear-gradient(top, #f8f8f8, #dedede);
+    background: -o-linear-gradient(top, #f8f8f8, #dedede);
+    background: linear-gradient(to bottom, #f8f8f8, #dedede);
+    background-repeat: repeat-x;
+	border: 1px solid #cccccc;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+button:hover, button:active{
+    background: #dedede;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4), 0 1px 0px rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4), 0 1px 0px rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4), 0 1px 0px rgba(255, 255, 255, 0.9)
+}
+input[disabled="disabled"], button[disabled="disabled"]{
+	cursor:not-allowed;
+}
+
+/*webkit 选择框*/
+.mui-file[type="file"]{
+   -webkit-appearance: none;
+   text-align: left;
+   -webkit-rtl-ordering:left;
+	padding:0px;
+	height:32px
+}
+.mui-file[type="file"]::-webkit-file-upload-button{
+   -webkit-appearance: none;
+   float: left;
+   border: 1px solid #c9c9c9;
+   background-image: -webkit-gradient(linear, left bottom, left top, from(#eeeeee), to(#fdfdfd));
+   width:70px;
+   height:34px;
+   margin:-1px  0 0 -2px;
+   border-radius: 4px 0 0 4px;
+}

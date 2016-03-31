@@ -1,0 +1,59 @@
+/*
+ * @Filename: common.css
+ * @Description: common style
+ * @Version: 1.0.0
+*/
+
+.underline{text-decoration: underline;}
+.deleteline{text-decoration: line-through; }
+.overline{text-decoration:overline; }
+.noline{text-decoration:none;}
+
+.ti-2{text-indent: 2em;}
+.ti-4{text-indent: 4em;}
+.ti-10{text-indent: 10em;}
+
+.lh-1{line-height: 100%;}
+.lh-15{line-height: 150%;}
+.lh-2{line-height: 200%;}
+.lh-25{line-height: 250%;}
+
+
+.bg-fff {background: #fff;}
+.wrap-980 {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+	position:relative
+}
+
+
+/*scrollbar style*/
+::-webkit-scrollbar-thumb{
+    background-color:#ccc;
+    height:50px;
+    -webkit-border-radius:5px;
+    border: none;
+}
+/*---鼠标点击滚动条显示样式--*/
+::-webkit-scrollbar-thumb:hover{
+    background-color:#999;
+    height:50px;
+    -webkit-border-radius:5px;
+}
+/*---滚动条大小--*/
+::-webkit-scrollbar{
+    width:7px;
+    height:7px;
+}
+/*---滚动框背景样式--*/
+::-webkit-scrollbar-track-piece{
+    background-color:transparent;
+    -webkit-border-radius:0;
+}
+
+.wrap-980 {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}

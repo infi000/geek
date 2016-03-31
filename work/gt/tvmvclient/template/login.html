@@ -1,0 +1,15 @@
+<?php $this->includes('top')?>
+<div align="center" style="border: 1px solid #ccc;border-radius: 8px;box-shadow: 0 0 10px #ccc;box-sizing: border-box;position: relative;margin-top: 50px;width:500px;height:260px;margin-left: auto;margin-right: auto;">
+    <form action="" method="post" onsubmit="return $().Validator.Validate(this,4);">
+        <p style="border: 1px solid #ccc;border-radius: 8px;box-shadow: 0 0 10px #ccc;box-sizing: border-box;width: 300px;padding:6px;position: relative;margin-top: 30px;font-size:18px;color:#308aff;font-weight:bold;">后台管理系统</p>
+        <div style="position: relative;margin-top: 50px">
+            <span style="border: 1px solid #ccc;border-radius: 8px;box-shadow: 0 0 10px #ccc;box-sizing: border-box;height:30px;padding:6px;margin: 0 10px;color:#308aff;">登录名：</span><input style="height:24px;" type="text" maxlength="20" name="user" dataType="Require" msg="用户名必须填写"><br/>
+    	<br/><span style="border: 1px solid #ccc;border-radius: 8px;box-shadow: 0 0 10px #ccc;box-sizing: border-box;height:30px;padding:6px;margin: 0 10px;color:#308aff;">密&nbsp;&nbsp;码：</span><input  style="height:24px;" type="password" maxlength="20" name="pass" dataType="Require" msg="密码必须填写"><br/>
+    	<br/>
+        <input type="submit" class="btn-default" style="border: 1px solid #ccc;border-radius: 8px;box-sizing: border-box;width:80px;height:30px;" maxlength="20" value="登录">
+        <div>
+    </form>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<?php $this->includes('foot')?>

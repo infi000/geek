@@ -1,0 +1,210 @@
+body, html{
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    /*height: 100%;*/
+
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+}
+
+.header{
+
+    height: 10.5em;
+    background: url("../images/phone/header-bg.png") repeat-x left top;
+    background-size: auto 100%;
+    margin-bottom: 1em;
+}
+
+.header .logo{
+    max-width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+}
+
+.header .logo img{
+    height: 100%;
+}
+
+.container{
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container .classify-top, .container .content{
+    width: 100%;
+}
+
+.container .classify-top{
+    margin-bottom: 0.8em;
+}
+
+.container .classify-top .classify-box{
+    width: 107%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classify-top .classify-box .classify{
+    display: inline-block;
+    /*width: 176.5px;*/
+    width: 45%;
+    /*height: 94px;*/
+    text-align: center;
+
+    margin-right: 0.5em;
+    margin-bottom: 0.8em;
+
+    position: relative;
+}
+
+.classify-top .classify-box .classify img{
+    width: 90%;
+    height: 90%;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.classify-box .classify .select{
+    width: 100%;
+    /*height: 100%;*/
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    margin-top: -10px;
+}
+
+.classify-box .classify .select img{
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+}
+
+.content .title{
+    border-bottom: 1px solid #ededee;
+
+    /*margin-bottom: 0.8em;*/
+    margin-bottom: -0.5em;
+}
+
+.content .title img{
+    width: 7.7em;
+    height: 2.29em;
+    /*height: 1em;*/
+}
+
+.content .list{
+    width: 103%;
+}
+
+.content .list .film{
+    display: inline-block;
+    /*width: 100px;*/
+    width: 31%;
+    height: 10.75em;
+
+    margin-top: 1em;
+    margin-right: 5px;
+    padding-bottom: 25%;
+}
+
+.list .film .imgBox{
+    width: 100%;
+
+    position: relative;
+}
+
+.film .imgBox .background{
+    width: 100%;
+}
+
+.film .imgBox .background img{
+    width: 100%;
+}
+
+.film .imgBox .mark{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.film .imgBox .evaluate{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+
+    color: #ffffff;
+    font-size: 2em;
+}
+.content .list .film .film-title{
+    color: #177ccc;
+    font-size: 1.2em;
+    text-align: center;
+
+    height: 2.875em;
+}
+
+.content .list .film .film-des{
+    color: #737373;
+    font-size: 1em;
+    text-align: center;
+
+    margin-top: -0.3em;
+}
+
+@media (min-width: 640px)  {
+    .item .pic-rating {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 640px)  {
+    body {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px)  {
+    body {
+        font-size: 12px;
+    }
+
+    .header .logo{
+        margin-left: -30%;
+    }
+}
+@media (max-width: 375px)  {
+
+    .header .logo {
+        margin-left:-35%;
+    }
+    .item-box .title .menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        padding-top: 0.5em;
+    }
+}
+@media (max-width: 320px)  {
+    body {
+        font-size: 10px;
+    }
+    .item .pic-rating {
+        font-size: 0.8em;
+    }
+
+    .header .logo{
+        margin-left: -45%;
+    }
+}

@@ -1,0 +1,787 @@
+@charset "UTF-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,nav,section,summary{display:block}body{overflow-x:hidden;overflow-y:auto}body,button,input,select,textarea{font:16px/1 "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;color:#222}button,input,select,textarea{font-size:100%}textarea{overflow:auto;vertical-align:top}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}input[type="checkbox"],input[type="radio"]{vertical-align:middle}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}a{color:#177ccc}a:hover{text-decoration:underline}mark{background-color:transparent}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp,tt{font-family:"Courier New", Courier, monospace}small{font-size:12px}ul,ol{list-style:none}abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}q:before,q:after{content:''}legend{color:#000}fieldset,img{border:none}table{border-collapse:collapse;border-spacing:0}i{font-style:normal}
+.clearfix:before,.clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+html,body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.header {
+    height: 126px;
+    background: url("../images/phone/header-bg.png") repeat-x left top;
+    background-size: auto 100%;
+    margin-bottom: 1em;
+}
+.banner img{
+    width: 100%;
+}
+.banner .item {
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-control .L-btn{
+    background: url("../images/L-btn.png")no-repeat;
+    position: absolute;
+    height: 36.5px;
+    left: 0;
+    /*top:140px;*/
+    z-index: 999;
+    width:18px;
+    background-size: 100% auto;
+}
+.carousel-control .R-btn{
+    background: url("../images/R-btn.png")no-repeat;
+    position: absolute;
+    height: 36.5px;
+    right: 0;
+    /*top:140px;*/
+    z-index: 999;
+    width:18px;
+    background-size: 100% auto;
+
+}
+.header .wrapper {
+    max-width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    position: relative;
+    height: 100%;
+}
+.header .logo {
+    position: relative;
+    height: 100%;
+    margin-left: -22%;
+}
+.header .logo img {
+    display: block;
+    height: 100%;
+}
+.container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.banner{
+    overflow: hidden;
+    position: relative;
+}
+.carousel-inner img{
+    width: 100%;
+}
+
+.banner-brief-box{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.banner-brief-bg{
+    background-color:#000000;
+    filter:Alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    width: 100%;
+    height: 3em;
+}
+
+.banner-brief{
+    /*position: fixed;*/
+    position: absolute;
+    left: 2%;
+    top: 35%;
+    color: #ffffff;
+}
+
+.banner-detail-info{
+    position: relative;
+    line-height: 1.5em;
+}
+
+.banner .banner-detail-bg{
+    width: 100%;
+    height: 13em;
+    background-color: #000000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity:0.7;
+}
+
+.banner-detail .hand img, .left-box .hand img{
+    width: 1.5625em;
+    height: 1.9375em;
+}
+
+.banner-detail{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+
+    width: 95%;
+    height: 13em;
+    color: #ffffff;
+
+    /*line-height: 1.5em;*/
+}
+
+/*.banner-box{*/
+    /*position: relative;*/
+/*}*/
+
+.banner-detail .hand{
+    position: absolute;
+    right: 2em;
+    bottom: 1.5em;
+}
+
+/*.banner-box .hand img{*/
+    /*width: 25px;*/
+    /*height: 31px;*/
+/*}*/
+
+.banner-title{
+    font-size: 1.3em;
+}
+
+.banner-introduction{
+    font-size: 1.1em;
+}
+.banner-detail-detail{
+    width: 90%;
+    font-size: 0.9em;
+}
+
+.banner-star span{
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.wjx span{
+    font-size: 2em;
+}
+
+.new-praise, .banner-praise{
+    font-size: 1.2em;
+}
+
+
+.banner-star img, .wjx img{
+    width: 2.375em;
+    height: 2.375em;
+}
+
+.banner-praise img{
+    width: 50px;
+    height: 62px;
+}
+
+
+.container .classify-top, .container .content{
+    width: 100%;
+}
+
+.container .classify-top{
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+}
+
+.container .classify-top .classify-box{
+    width: 107%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .classify{
+    display: inline-block;
+}
+
+.classify-top .classify-box .classify{
+    width: 45%;
+    /*height: 94px;*/
+    margin-right: 0.5em;
+    margin-bottom: 0.8em;
+
+    cursor: pointer;
+}
+
+.classify-top .classify-box .classify img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.item-box {
+    margin-top: 1em;
+    clear: both;
+    position: relative;
+}
+.item-box > .title {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+.item-box .title .txt {
+    margin-left: 7em;
+    padding-right: 4em;
+    height: 3em;
+    border-bottom: 1px solid #cccccc;
+}
+.item-box .title .txt span {
+    position: relative;
+    display: block;
+    padding-top: 0.833em;
+    line-height: 1.666em;
+    font-size: 1.2em;
+    padding-left: 1em;
+}
+.item-box .title .icon,.item-box .title .more  {
+    position: absolute;
+    top: 0;
+}
+.item-box .title .icon {
+    left: 0;
+    height: 3em;
+    margin-top: 1em;
+}
+.item-box .title .icon img {
+    width: 7.7em;
+    height: 2.29em;
+}
+.item-box .title .more {
+    top: 1em;
+    right: 0;
+    height: 1.5em;
+    line-height: 1.5em;
+    background-color: #177ccc;
+    border-radius: 4px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: #ffffff;
+}
+.item-box .title .menu {
+    position: absolute;
+    top: 1.5em;
+    right: 0;
+    height: 1em;
+}
+.item-box .title .menu li {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-left: 1px solid #dddddd;
+}
+.item-box .title .menu span {
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.item-box .title .menu .cur {
+    background-color: #177ccc;
+    color: #ffffff;
+}
+.item-box .pic {
+    position: relative;
+    height: 0;
+    padding-bottom: 120.4%;
+    overflow: hidden;
+}
+.item-box .pic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.content,.more-box {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    position: relative;
+}
+.movies-list li {
+    width: 33.3%;
+    float: left;
+}
+.item-large,.item {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.item a {
+    text-decoration: none;
+}
+.item img {
+    display: block;
+    width: 100%;
+}
+.item .info,.item-large .info{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.item .pic-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    color: #ffffff;
+    text-align: center;
+    line-height: 2.4em;
+    height: 2.4em;
+    overflow: hidden;
+}
+.item .pic-rating {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.item .pic-rating .rating {
+    position: relative;
+    display: block;
+    color: #ffffff;
+    height: 2em;
+    line-height: 2em;
+    padding-left: 0.5em;
+    z-index: 10;
+}
+.item .pic-rating .bg {
+    position: absolute;
+    display: block;
+    bottom: -2.5em;
+    left: -2.5em;
+    width: 5em;
+    height: 5em;
+    /*background-color: rgba(0,0,0,0.5);*/
+    background-color: rgba(13,124,204,0.5);
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);	/* IE 9 */
+    -moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg);/* Safari 和 Chrome */
+    -o-transform:rotate(45deg);
+}
+.item-large .info {
+    text-align: left;
+    position: relative;
+}
+.item-large .title,.item-large p {
+    padding-right: 40%;
+}
+.item-large .hand {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    height: 2em;
+}
+/*.item-large .hand img {*/
+    /*height: 100%;*/
+/*}*/
+.item-large .wjx {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+/*.item-large .wjx img {*/
+    /*height: 2.4em;*/
+/*}*/
+.item .title,.item-large .title {
+    height: 1.5em;
+    line-height: 1.5em;
+    overflow: hidden;
+    color: #177ccc;
+}
+.item p,.item-large p {
+    font-size: 0.8em;
+    height: 1.5em;
+    line-height: 1.5em;
+    overflow: hidden;
+    color: #777777;
+}
+.item-large p {
+    height: 2.6em;
+    line-height: 2.6em;
+    border-bottom: 1px solid #cccccc;
+}
+.newest .left-box{
+    width: 66.6%;
+    margin-right: 33.3%;
+}
+.newest .right-box{
+    width: 33.3%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media (min-width: 640px)  {
+    .item .pic-rating {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 640px)  {
+    body {
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px)  {
+    body {
+        font-size: 12px;
+    }
+}
+@media (max-width: 420px)  {
+    .header {
+        /*height: 6em;*/
+    }
+    .header .logo {
+        margin-left:-18%;
+    }
+    .item-box .title .menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        padding-top: 0.5em;
+    }
+}
+
+@media  (max-width: 414px){
+    .header .logo{
+        margin-left: -30%;
+    }
+}
+
+@media (max-width: 375px) {
+    .header .logo{
+        margin-left: -35%;
+    }
+}
+
+@media (max-width: 320px)  {
+    body {
+        font-size: 10px;
+    }
+
+    .header .logo{
+        margin-left: -45%;
+    }
+
+    .item .pic-rating {
+        font-size: 0.8em;
+    }
+}
+/*
+
+.Newest .right-box li {
+    width: 100%;
+    float: left;
+}
+.Newest .right-box .item {
+    margin-left: 50px;
+}
+.Newest .right-box a {
+    display: block;
+}
+.Newest .info p{
+    font-size: 1.125em;
+    color: #204d74;
+    line-height: 1.5em;
+    margin-right: 30%;
+    border-bottom: 1px solid #ededee;
+}
+.Newest .info{
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.Newest .hand{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:30%;
+}
+.Newest .hand img{
+    width: 100%;
+}
+.Newest .info p span{
+    font-size: 1em;
+    color: #9d9d9d;
+}
+.Newest .wjx{
+    width: 45%;
+    height: 2.5em;
+    position: relative;
+    background-size: 70%;
+    right: 0;
+    margin-left: 1em;
+}
+.Newest .wjx img{
+    width: 100%;
+}
+.Newest .menu li{
+    width: 33.3%;
+    float: left;
+}
+.Newest .menu .item{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.Newest .menu h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+}
+.Newest .menu h6{
+    font-size: 0.75em;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #737373;
+}
+/!*最热*!/
+.Hottest{
+    margin-bottom: 2em;
+    position: relative;
+    clear: both;
+}
+.Hottest .title {
+    position: relative;
+    margin-right: 1em;
+}
+.Hottest .title .txt{
+    margin-left: 9em;
+    margin-right: 4em;
+    height: 4em;
+}
+.Hottest .title .txt span {
+    position: relative;
+    display: block;
+    padding-top: 1.5em;
+    line-height: 2em;
+    border-bottom: 1px solid #cccccc;
+    font-size: 1em;
+}
+.Hottest .title .icon,.Hottest .title .more  {
+    position: absolute;
+    top: 0;
+}
+.Hottest .title .icon {
+    left: 0;
+    height: 4em;
+}
+.Hottest .title .icon img {
+    height: 100%;
+    width: auto;
+}
+.Hottest .title .more {
+    top: 1em;
+    right: 0;
+    height: 2em;
+    line-height: 2em;
+    background-color: #177ccc;
+    border-radius: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #ffffff;
+}
+.Hottest .content li {
+    width: 33.33%;
+    float: left;
+}
+.Hottest .content .item {
+    margin-right:10px;
+    margin-left: 10px;
+}
+.Hottest .content a {
+    display: block;
+}
+.Hottest img {
+    width: 100%;
+}
+.Hottest  h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+}
+.Hottest  h6{
+    font-size: .75em;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #737373;
+}
+/!*即将上映*!/
+.Immediately{
+    margin-bottom: 2em;
+    position: relative;
+    clear: both;
+}
+.Immediately .title {
+    position: relative;
+    margin-right: 1em;
+}
+.Immediately .title .txt{
+    margin-left: 9em;
+    margin-right: 4em;
+    height: 4em;
+}
+.Immediately .title .txt span {
+    position: relative;
+    display: block;
+    padding-top: 1.5em;
+    line-height: 2em;
+    border-bottom: 1px solid #cccccc;
+    font-size: 1em;
+}
+.Immediately .title .icon,.Immediately .title .more  {
+    position: absolute;
+    top: 0;
+}
+.Immediately .title .icon {
+    left: 0;
+    height: 4em;
+}
+.Immediately .title .icon img {
+    height: 100%;
+    width: auto;
+}
+.Immediately .title .more {
+    top: 1em;
+    right: 0;
+    height: 2em;
+    line-height: 2em;
+    background-color: #177ccc;
+    border-radius: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #ffffff;
+}
+.Immediately .content li {
+    width: 33.33%;
+    float: left;
+}
+.Immediately .content .item {
+    margin-right: 20px;
+}
+.Immediately .content a {
+    display: block;
+}
+.Immediately img {
+    width: 100%;
+}
+.Immediately  h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+}
+.Immediately  h6{
+    font-size: .75em;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #737373;
+}
+/!*分类*!/
+.Classify{
+    margin-bottom: 4em;
+    position: relative;
+    clear: both;
+}
+.Classify .title {
+    position: relative;
+    margin-right: 1em;
+}
+.Classify .title .txt{
+    margin-left: 9em;
+    margin-right: 80%;
+    height: 4em;
+}
+.Classify .title .txt span {
+    position: relative;
+    display: block;
+    padding-top: 1.5em;
+    line-height: 2em;
+    font-size: 1em;
+    width: 50px;
+}
+.Classify .title .icon,.Classify .title .more  {
+    position: absolute;
+    top: 0;
+}
+.Classify .title .icon {
+    left: 0;
+    height: 4em;
+
+}
+.Classify .title .icon img {
+    height: 100%;
+    width: auto;
+}
+.Classify .title .more {
+    top: 1em;
+    right: 0;
+    height: 2em;
+    line-height: 2em;
+    background-color: #177ccc;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #ffffff;
+}
+.Classify .content li {
+    width: 33.33%;
+    float: left;
+}
+.Classify .content .item {
+    margin-right: 20px;
+}
+.Classify .content a {
+    display: block;
+}
+.Classify img {
+    width: 100%;
+}
+.Classify  h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+}
+.Classify  h6{
+    font-size: .75em;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #737373;
+}
+.Classify .title{
+    position: relative;
+
+}
+.Classify .title ul{
+    position: absolute;
+    left:13em;
+    top:1.8em;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Classify .show li{
+    display: inline;
+    border-left: 1px solid #ccc;
+    padding-right: .5em;
+    padding-left: .5em;
+    color: #177ccc;
+    font-size: 1.2em;
+}
+.Classify .show li:hover{
+    color: #ffffff;
+}
+.Classify .show .bg{
+    background-color: #177ccc;
+    color: #ffffff;
+}
+@media screen {
+    
+}
+*/

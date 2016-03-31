@@ -1,0 +1,370 @@
+request start time:2016-03-17 10:51:11
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=50%20min&at=1458183070&type=0&ptime=&code=MF0DEF12349F8&sign=579e4c558e28185adcf9fe36b6bf36292da9b2f9
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:51:58
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=51%20min&at=1458183118&type=0&ptime=&code=MF0DEF12349F8&sign=e94e2ea819a6456b70bd22397916a18f3624396d
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:57:11
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=56%20min&at=1458183431&type=0&ptime=&code=MF0DEF12349F8&sign=3c18a5d7acbc102adb2d583b030b7552d8d2f5b7
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:57:21
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=56%20min&at=1458183441&type=0&ptime=&code=MF0DEF12349F8&sign=d359947919cf7a669bab1e0f822ef47b43f68bdc
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:57:31
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=56%20min&at=1458183451&type=0&ptime=&code=MF0DEF12349F8&sign=75fb01a949b9784c1380c97477f20ea83f80dd59
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:57:41
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=57%20min&at=1458183461&type=0&ptime=&code=MF0DEF12349F8&sign=f70b98cf9427ff65ae6b4a25c2c2d95d3d71f4fb
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:57:51
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=57%20min&at=1458183471&type=0&ptime=&code=MF0DEF12349F8&sign=f155636856ff781df27bdc2c4590e8a96ea8b9ef
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:58:01
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=57%20min&at=1458183481&type=0&ptime=&code=MF0DEF12349F8&sign=14e09bb6abbc01d95d4859a94b4cdf25f9d6d62a
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:59:45
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=59%20min&at=1458183585&type=0&ptime=&code=MF0DEF12349F8&sign=26728478e0ca2d22f8c93823e7639c81e15e0798
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 10:59:55
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=59%20min&at=1458183595&type=0&ptime=&code=MF0DEF12349F8&sign=bf095e3bfc8779bc686e39dc926056b9c2f423d1
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 11:01:52
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=1:01&at=1458183712&type=0&ptime=&code=MF0DEF12349F8&sign=76e0611637ef21ea5e92c9cc90f4d1a230b5aad1
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 11:02:03
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=1:01&at=1458183722&type=0&ptime=&code=MF0DEF12349F8&sign=b61a215a2bd87ef5610433964f1143614b60f8b0
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 11:02:13
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=1:01&at=1458183733&type=0&ptime=&code=MF0DEF12349F8&sign=6fee74279da3d85979c22c35a251be4d36f36277
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 11:02:23
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=1:01&at=1458183743&type=0&ptime=&code=MF0DEF12349F8&sign=eedb616a317da7f1618faf41fb3fc9033680e8c6
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 11:02:33
+request url:http://www.tvm_code.com/tvmvclient/?info=__&vf=NO&ip=172.16.1.18&version=%7B%7D&m=2050&rate=&HDMI=NO&marker=&runtime=1:01&at=1458183753&type=0&ptime=&code=MF0DEF12349F8&sign=0c40f4ad363e2d50f5621f8a1ab1f2d26766adb7
+return value: {"data":"","msg":"MAC\u4e3a\u7a7a","status":0}
+request end
+
+request start time:2016-03-17 11:21:06
+request url:http://www.tvm_code.com/tvmvclient/?time=1:20&ip=172.16.1.18&version=%7B%7D&at=1458184866&m=2050&mac=MF0DEF12349F8&sign=05401c312cc5c46f4affc75252607dbd54480ed4
+return value: {"data":"100005","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:37:18
+request url:http://www.tvm_code.com/tvmvclient/?time=1:36&ip=172.16.1.18&version=%7B%7D&at=1458185838&m=2050&mac=MF0DEF12349F8&sign=d2e8c087d36f2eb2772303f3ed30a47d6f0f2781
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:37:28
+request url:http://www.tvm_code.com/tvmvclient/?time=1:36&ip=172.16.1.18&version=%7B%7D&at=1458185848&m=2050&mac=MF0DEF12349F8&sign=95bb2ff343ea9da6b601e22cbc77be61cffe9410
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:39:46
+request url:http://www.tvm_code.com/tvmvclient/?time=1:39&ip=172.16.1.18&version=%7B%7D&at=1458185985&m=2050&mac=MF0DEF12349F8&sign=beabab176a8220a2b961f52f65ea564caf7794dc
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:43:16
+request url:http://www.tvm_code.com/tvmvclient/?time=1:42&ip=172.16.1.18&version=%7B%7D&at=1458186195&m=2050&mac=MF0DEF12349F8&sign=27bcfd5ba389cf7e89703f1bafabe1bc68831345
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:43:26
+request url:http://www.tvm_code.com/tvmvclient/?time=1:42&ip=172.16.1.18&version=%7B%7D&at=1458186206&m=2050&mac=MF0DEF12349F8&sign=76a1f95f8bfcf69d66994764abafa6a7a79c8868
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:43:36
+request url:http://www.tvm_code.com/tvmvclient/?time=1:42&ip=172.16.1.18&version=%7B%7D&at=1458186216&m=2050&mac=MF0DEF12349F8&sign=27eaad55226f3cae96be3f1bfc5922e23843f4f6
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:50:38
+request url:http://www.tvm_code.com/tvmvclient/?time=1:50&ip=172.16.1.18&version=%7B%7D&at=1458186638&m=2050&mac=MF0DEF12349F8&sign=4c799cf8c7caef427560ee77f2b6c3c9547d4969
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:50:38
+request url:http://www.tvm_code.com/tvmvclient/?at=1458186638&m=13051&mac=MF0DEF12349F8&sign=ed29af0f255da8c69b3850faf27d888fea3fd154
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:50:48
+request url:http://www.tvm_code.com/tvmvclient/?time=1:50&ip=172.16.1.18&version=%7B%7D&at=1458186648&m=2050&mac=MF0DEF12349F8&sign=6ec9d7efe459919871e25787df05982bc771e991
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:50:48
+request url:http://www.tvm_code.com/tvmvclient/?at=1458186648&m=13051&mac=MF0DEF12349F8&sign=a067b37c30af024a3c149950fbdb37c369229f42
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:52:04
+request url:http://www.tvm_code.com/tvmvclient/?time=1:51&ip=172.16.1.18&version=%7B%7D&at=1458186723&m=2050&mac=MF0DEF12349F8&sign=9b96b8ed6032e8b375b0e202fc697139d4f1c4f8
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:52:04
+request url:http://www.tvm_code.com/tvmvclient/?at=1458186724&m=13051&mac=MF0DEF12349F8&sign=577225fa6937d3b21a124dcde2df36d2d80a44ed
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:52:14
+request url:http://www.tvm_code.com/tvmvclient/?time=1:51&ip=172.16.1.18&version=%7B%7D&at=1458186734&m=2050&mac=MF0DEF12349F8&sign=b20c5954f13be20a1ba50b28dfd0ff90b5065490
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:52:14
+request url:http://www.tvm_code.com/tvmvclient/?at=1458186734&m=13051&mac=MF0DEF12349F8&sign=97937e466ea9a6cde48e5343521c9f0fec36715a
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:52:38
+request url:http://www.tvm_code.com/tvmvclient/?time=1:52&ip=172.16.1.18&version=%7B%7D&at=1458186758&m=2050&mac=MF0DEF12349F8&sign=19973fa1ffe3337cf7b302ccc037487abb814468
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:52:38
+request url:http://www.tvm_code.com/tvmvclient/?at=1458186758&m=13051&mac=MF0DEF12349F8&sign=ad0ed37f4d941e399ebe689709f2609fa17280a0
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:54:04
+request url:http://www.tvm_code.com/tvmvclient/?time=1:53&ip=172.16.1.18&version=%7B%7D&at=1458186843&m=2050&mac=MF0DEF12349F8&sign=7080904d5509a98228586b75fbaec6235034e878
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:54:04
+request url:http://www.tvm_code.com/tvmvclient/?at=1458186844&m=13051&mac=MF0DEF12349F8&sign=efc4b7014fac84dbfcd3d5e90a7d62b36887c102
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:55:18
+request url:http://localhost/tvmvclient/?time=1:54&ip=172.16.1.18&version=%7B%7D&at=1458186918&m=2050&mac=MF0DEF12349F8&sign=7acec82a6b596319d7c92dbd6ae0c214821989eb
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:55:18
+request url:http://localhost/tvmvclient/?at=1458186918&m=13051&mac=MF0DEF12349F8&sign=b9df2abf3b0eafd19f100db3c706f6c395d20c80
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:55:28
+request url:http://localhost/tvmvclient/?time=1:54&ip=172.16.1.18&version=%7B%7D&at=1458186928&m=2050&mac=MF0DEF12349F8&sign=8837b9a93ccd643c00c76556e941774d8905a20d
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:55:28
+request url:http://localhost/tvmvclient/?at=1458186928&m=13051&mac=MF0DEF12349F8&sign=8181d0e14c71a3b5068c87c3ddf9e1c8a3a8c1bd
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:55:38
+request url:http://localhost/tvmvclient/?time=1:55&ip=172.16.1.18&version=%7B%7D&at=1458186938&m=2050&mac=MF0DEF12349F8&sign=cf88c2da4aa11426c1ba7a3f006545266b91b595
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 11:55:38
+request url:http://localhost/tvmvclient/?at=1458186938&m=13051&mac=MF0DEF12349F8&sign=68cea0a2a572a9e5d4dd2e61c77e9631612acacd
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 12:16:03
+request url:http://localhost/tvmvclient/?time=2:15&ip=172.16.1.18&version=%7B%7D&at=1458188163&m=2050&mac=MF0DEF12349F8&sign=e7b5c5d296e55f0ec71afcf713653ee3d8eef72b
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 12:16:03
+request url:http://localhost/tvmvclient/?at=1458188163&m=13051&mac=MF0DEF12349F8&sign=065bb579b55553d9bfc7598a42c098872f9bc436
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:35:09
+request url:http://localhost/tvmvclient/?time=4:34&ip=172.16.1.18&version=%7B%7D&at=1458196508&m=2050&mac=MF0DEF12349F8&sign=d6fe7a422b77e22768913f10773bdacdf832292f
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:35:09
+request url:http://localhost/tvmvclient/?at=1458196509&m=13051&mac=MF0DEF12349F8&sign=2e147595ccf4d8aaa92002f71fe96ce96f4360cc
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:35:19
+request url:http://localhost/tvmvclient/?time=4:34&ip=172.16.1.18&version=%7B%7D&at=1458196519&m=2050&mac=MF0DEF12349F8&sign=f2bdf7d994aab215642d431bd563f5b4e75da35e
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:35:19
+request url:http://localhost/tvmvclient/?at=1458196519&m=13051&mac=MF0DEF12349F8&sign=65ce3f501cd4bb711bde8b54eb71eeff6ce5a982
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:35:29
+request url:http://localhost/tvmvclient/?time=4:34&ip=172.16.1.18&version=%7B%7D&at=1458196529&m=2050&mac=MF0DEF12349F8&sign=f0fbd181c163193d1bfd79b788f59ded3c9a7a11
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:35:29
+request url:http://localhost/tvmvclient/?at=1458196529&m=13051&mac=MF0DEF12349F8&sign=2a62bef2451084cda487a40f4f553662afaae6c3
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:35:39
+request url:http://localhost/tvmvclient/?time=4:35&ip=172.16.1.18&version=%7B%7D&at=1458196539&m=2050&mac=MF0DEF12349F8&sign=5c927b304f50accf5d7262f2741facc646a56acf
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:35:39
+request url:http://localhost/tvmvclient/?at=1458196539&m=13051&mac=MF0DEF12349F8&sign=402169e6892bad525b636b61cbe6769a211c3e84
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:52:05
+request url:http://localhost/tvmvclient/?time=4:51&ip=172.16.1.18&version=%7B%7D&at=1458197525&m=2050&mac=MF0DEF12349F8&sign=af38e5059eea003cfe42c166747e5c5379e49000
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:52:05
+request url:http://localhost/tvmvclient/?at=1458197525&m=13051&mac=MF0DEF12349F8&sign=267388e6cd765ae99dce1364befd3865434a4e78
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:52:15
+request url:http://localhost/tvmvclient/?time=4:51&ip=172.16.1.18&version=%7B%7D&at=1458197535&m=2050&mac=MF0DEF12349F8&sign=97c91aafd3de09e75c96bf8538ca52a0f3945ae8
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 14:52:15
+request url:http://localhost/tvmvclient/?at=1458197535&m=13051&mac=MF0DEF12349F8&sign=23dbbadcfae4379cab8babced6de610a210e7ff0
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:00:10
+request url:http://localhost/tvmvclient/?time=4:59&ip=172.16.1.18&version=%7B%7D&at=1458198010&m=2050&mac=MF0DEF12349F8&sign=4ac6595b89ef5250029c235c4d486cab7f4c9aab
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:00:10
+request url:http://localhost/tvmvclient/?at=1458198010&m=13051&mac=MF0DEF12349F8&sign=149e395015620750edb505bfc84548902fa228c3
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:00:20
+request url:http://localhost/tvmvclient/?time=4:59&ip=172.16.1.18&version=%7B%7D&at=1458198020&m=2050&mac=MF0DEF12349F8&sign=f3b95348167cb4498bc3fc561f1db5cde5e3080b
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:00:20
+request url:http://localhost/tvmvclient/?at=1458198020&m=13051&mac=MF0DEF12349F8&sign=356dcf883df4f81c4a09144c831e3e63509aab61
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:00:31
+request url:http://localhost/tvmvclient/?time=4:59&ip=172.16.1.18&version=%7B%7D&at=1458198030&m=2050&mac=MF0DEF12349F8&sign=ca7fce1f28ad2546c314a883d3418cd74008616f
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:00:31
+request url:http://localhost/tvmvclient/?at=1458198031&m=13051&mac=MF0DEF12349F8&sign=d6446fab836ee9dc56790bec5b2060e38805a97b
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:08
+request url:http://localhost/tvmvclient/?time=5:18&ip=172.16.1.18&version=%7B%7D&at=1458199148&m=2050&mac=MF0DEF12349F8&sign=2e5b5923facd204257842e3a47dfcd9f78a867c2
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:08
+request url:http://localhost/tvmvclient/?at=1458199148&m=13051&mac=MF0DEF12349F8&sign=faf988cd6da276d67551c103e8efe88297a8f110
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:18
+request url:http://localhost/tvmvclient/?time=5:18&ip=172.16.1.18&version=%7B%7D&at=1458199158&m=2050&mac=MF0DEF12349F8&sign=012b9ced9f499881844ce5a1219ba842fa29e26e
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:18
+request url:http://localhost/tvmvclient/?at=1458199158&m=13051&mac=MF0DEF12349F8&sign=582a8cee067830bc61c586705523bfe7ef1844e7
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:29
+request url:http://localhost/tvmvclient/?time=5:18&ip=172.16.1.18&version=%7B%7D&at=1458199168&m=2050&mac=MF0DEF12349F8&sign=e57388ea98678b04f64de0f8161dc7109acc3cdb
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:29
+request url:http://localhost/tvmvclient/?at=1458199169&m=13051&mac=MF0DEF12349F8&sign=ca6aeacd8494a8c15455af98c3c03707160d72e9
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:39
+request url:http://localhost/tvmvclient/?time=5:19&ip=172.16.1.18&version=%7B%7D&at=1458199179&m=2050&mac=MF0DEF12349F8&sign=add636f62205b97cdf9b9d7eff2bf05db820dcec
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:39
+request url:http://localhost/tvmvclient/?at=1458199179&m=13051&mac=MF0DEF12349F8&sign=e61f0bfd0863b2b1f40386c39cf6f93d5414f8eb
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:49
+request url:http://localhost/tvmvclient/?time=5:19&ip=172.16.1.18&version=%7B%7D&at=1458199189&m=2050&mac=MF0DEF12349F8&sign=a736c33cb27e525de6f036bedff283c7f010793c
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:19:49
+request url:http://localhost/tvmvclient/?at=1458199189&m=13051&mac=MF0DEF12349F8&sign=cd1d76def3cdcd0e5f358d27c9974aa8065b80b0
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:20:28
+request url:http://localhost/tvmvclient/?time=5:19&ip=172.16.1.18&version=%7B%7D&at=1458199228&m=2050&mac=MF0DEF12349F8&sign=353a3d1d1d80575aa9179b97c03fea03843a1971
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:20:28
+request url:http://localhost/tvmvclient/?at=1458199228&m=13051&mac=MF0DEF12349F8&sign=70a580c6e6b0e19a4e0f1645618ec0f2df8b457d
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:21:29
+request url:http://localhost/tvmvclient/?time=5:20&ip=172.16.1.18&version=%7B%7D&at=1458199288&m=2050&mac=MF0DEF12349F8&sign=006a63937eb44064224a187b57e80d64a771e538
+return value: {"data":{"boxid":"100005","status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-17 15:21:29
+request url:http://localhost/tvmvclient/?at=1458199289&m=13051&mac=MF0DEF12349F8&sign=f61fa89793dc3ae5058c6dac6f3a1c9b034fddad
+return value: {"data":"","msg":"ok","status":1}
+request end
+

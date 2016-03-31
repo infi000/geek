@@ -1,0 +1,55 @@
+@charset "utf-8";
+.integral { float:left; width:99.9375%;height:90%;border-bottom:#a3a5a9 1px solid;margin-bottom:0.85em;}
+.integral ul{ float:left;width:99.9375%;height:90%; margin:1.1em 0;}
+.integral ul li{ float:left;width:33.3%;  text-align:center;}
+.integral ul li span{font-family:"微软雅黑";font-size:1.2em;  color:#ff5f5f;line-height:1.5em;}
+.integral ul li img{max-width:100%;height:auto;display:block;}
+.banner{ width:100%; height:auto;}
+.banner ul li{width:100%; height:auto;}
+
+
+.container ul li{width:100%; height:auto;}
+.container img{border:0;vertical-align:top;}
+
+
+
+
+
+.product{font-family: "微软雅黑"; width:100%;color: #666;background:  no-repeat 0 50%;font-size: 1.4em;text-transform: lowercase;margin: 0.75em 0 1em 0;}
+.product img{max-width:100%;height:auto;}
+.product .img{float:left;width:30%;}
+.product01{ float:left;width:60%;}
+.product01 img{ float:right;}
+.product01 p{font-family:"微软雅黑";font-size:18px;color:#666;line-height:30px;padding-left:1em;}
+.ptittle{font-size:1.2em; color:#000; margin:6px 0;padding-left:.7em;}
+@media(max-width:450px){
+	.ptittle{font-size:1em;}
+}
+
+
+.pro_con{ float:left; width:100%; height:auto;font-family:"微软雅黑";font-size:1.5em; margin-top:20px;color:#666; line-height:26px;border-top:#a3a5a9 1px solid;padding-top:8px; }
+.pro_con span{ color:#000; font-weight:600;}
+
+
+
+.before{font-family: "微软雅黑"; width:100%;font-size:1.25em;color: #666;margin: 0.75em 0 1em; text-align:center;}
+.before span{ color:#3bbfff;}
+.detailed{font-family: "微软雅黑"; width:100%;font-size:1.25em;color: #666;background:  no-repeat 0 50%;text-transform: lowercase;margin:-0.1em 0 0.4em;}
+.deta_t{ background-image:url(../../images/phone/bg.jpg); width:100%; height:48px; line-height:2.3em;}
+@media(max-width:450px){.deta_t{font-size:0.9em; line-height:48px;}}
+
+.deta_t1{ float:left; margin-left:3.5%; font-weight:600; color:#000;}
+.deta_t1 img{vertical-align: text-bottom; margin-left:4px;}
+.deta_t2{width:78%; text-align:center;margin-left: 11%;}
+@media(max-width:650px){
+	.deta_t2{margin-left:0;}
+}
+.deta_t3{ float:right;margin:-2.25em 3.5% 0 0;}
+@media(max-width:450px){
+	.deta_t3{float:right;margin:-2.65em 3.5% 0 0;}
+}
+.newsmain2 ul li{font-family: "微软雅黑"; width:100%;font-size:1.5em;color:#666; line-height:42px;border-bottom:#d7d7d7 1px solid;}
+@media(max-width:450px){
+	.newsmain2 ul li{font-size:1.2em; line-height:48px;}
+}
+.newsmain2 ul li span{ float:right;}

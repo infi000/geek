@@ -1,0 +1,104 @@
+@charset "utf-8";
+/**
+ * Filename: reset.css
+ * Description: init default browser's style
+ * Version: 1.0.0
+*/
+
+/* index style */
+.banner_bg {
+        width:99.9375%;
+	height:90%;
+	background:#EFEFEF;}
+.back{
+	width:20%;
+	height:90%;
+	background: url("../../images/phone/back1.png") no-repeat 0 50%;
+	margin-left:0.6em;
+	}
+.banner {
+	height: 4em;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.menu {
+	margin-top: -672px;
+}
+.newsmain .date{
+	font-size:18px;
+	text-align:center;
+	font-family: "微软雅黑";
+	}
+.newsmain .divli{
+	font-size:18px;
+	text-align:center;
+	font-family: "微软雅黑";
+	padding-top:0.1em;
+	padding-bottom:0.1em;
+	margin-bottom:0.6em;
+	}
+.newsmain .divmessage{
+	font-size:14px;
+	text-align:center;
+	font-family: "微软雅黑";
+	padding-top:0.1em;
+	padding-bottom:0.1em;
+	margin-bottom:0.6em;
+	}
+.newsmain img{
+	margin:0 auto;
+	padding-top:0.01em;
+	padding-bottom:0.01em;
+	}
+.newsmain p{
+	font-family: "微软雅黑";
+	color:#666666;
+	font-size:18px;
+	}
+
+.index_Con_bg {
+width:100%;
+padding-bottom:20px;
+}
+
+.index_Con{
+width:100%;
+	position:relative;
+	background: url("") center bottom ;
+}
+.main-center{
+	background: url("../../images/phone/img_07.png") no-repeat center;}
+.index_long{
+
+
+}
+.index_tm{
+	width:100%;
+	height:59px;
+	position:relative;
+	top:-96px;
+	background:url("../../images/phone/tm.png") no-repeat;
+	z-index:999;
+	margin-bottom: -59px;
+	margin-left:0.5em;
+}
+.newsmain h1{
+	font-family: "微软雅黑";
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+	padding-top:20px;
+	padding-bottom:10px;
+	}
+.newsmain h2{
+	font-family: "微软雅黑";
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+	}
+
+.main {
+	width:100%;
+	
+
+}

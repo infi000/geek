@@ -1,0 +1,648 @@
+@charset "UTF-8";
+body,h1,h2,h3,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,nav,section,summary{display:block}body{overflow-x:hidden;overflow-y:auto}body,button,input,select,textarea{font:16px/1 "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;color:#222}button,input,select,textarea{font-size:100%}textarea{overflow:auto;vertical-align:top}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}input[type="checkbox"],input[type="radio"]{vertical-align:middle}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}a{color:#177ccc}a:hover{text-decoration:underline}mark{background-color:transparent}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp,tt{font-family:"Courier New", Courier, monospace}small{font-size:12px}ul,ol{list-style:none}abbr[title],acronym[title]{border-bottom:1px dotted;cursor:help}q:before,q:after{content:''}legend{color:#000}fieldset,img{border:none}table{border-collapse:collapse;border-spacing:0}i{font-style:normal}
+html, body{
+    width: 100%;
+    height: 100%;
+
+    font-size: 16px;
+}
+.logo{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+}
+
+.wrapper{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+}
+
+.banner-detail{
+    width: 350px;
+    height: 353px;
+    background-color: #000000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity:0.7;
+
+    line-height: 1em;
+}
+
+.banner-detail-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 350px;
+    height: 353px;
+}
+
+.banner-detail-text{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+    z-index: 99;
+    width: 95%;
+
+    line-height: 2em;
+}
+
+.banner-detail-text .title{
+    font-size: 2em;
+    /*margin-bottom: 1.5em;*/
+}
+
+.banner-detail-text .tv-title{
+    font-size: 1.5em;
+    /*margin-bottom: 1.5em;*/
+}
+
+.banner-detail-text .detail-box{
+    height: 112px;
+}
+
+.banner-detail-text .banner-gap{
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 6%;
+}
+
+.banner-detail-text .actor{
+    font-size: 1.5em;
+}
+
+.banner-detail-text .actor-content{
+    font-size: 1.2em;
+}
+
+.banner-detail-text .hand{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+
+    width: 106px;
+    height: 41px;
+}
+
+.banner-detail-text .hand .banner-praise{
+    position: absolute;
+    bottom: 0;
+}
+
+.banner-detail-text .hand img, .left-box .info .hand img{
+    width: 2.4225em;
+    height: 2.9777em;
+}
+
+.bannerStar img, .wjx img{
+    width: 2.5em;
+    height: 2.3125em;
+}
+
+.bannerStar span{
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.wjx span{
+    font-size: 2em;
+}
+
+.new-praise, .banner-praise{
+    font-size: 1.5em;
+}
+
+.carousel-control {
+    z-index: 999;
+}
+
+.carousel{
+    position: relative;
+}
+
+.banner-brief-box{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.banner-brief-bg{
+    background-color:#000000;
+    filter:Alpha(opacity=72);
+    -moz-opacity: 0.72;
+    opacity: 0.72;
+    width: 100%;
+    height: 50px;
+}
+
+.banner-brief{
+    position: absolute;
+    left: 2%;
+    top: 35%;
+    color: #ffffff;
+    /*z-index: 999;*/
+}
+
+.wrapper .classify-top{
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+}
+
+.wrapper .classify-top .classify-box{
+    width: 103%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+.classify-top .classify-box .classify{
+    display: inline-block;
+    /*margin-right: 10px;*/
+    width: 23.5%;
+    margin-right: 8px;
+    margin-bottom: 13px;
+
+    cursor: pointer;
+}
+
+.classify-top .classify-box .classify img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.Newest{
+    width: 100%;
+    /*margin-bottom: 1.5em;*/
+}
+.Newest .title {
+    width: 100%;
+    height: 4em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.title .icon{
+    float: left;
+    width: 10%;
+    height: 100%;
+
+    position: relative;
+}
+
+.title .icon img{
+    width: 100%;
+    height: 67%;
+
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+}
+
+.bottom-back{
+    float: left;
+
+    width: 90%;
+    height: 100%;
+
+    border-bottom:1px solid #cccccc;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.bottom-back .bottom-box{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.bottom-back .bottom-box .txt{
+    position: absolute;
+    bottom: 0;
+
+    font-size: 1.3em;
+}
+
+.bottom-back .bottom-box .more{
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+
+    height: 2em;
+    line-height: 2em;
+    background-color: #177ccc;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #ffffff;
+}
+.Newest .content{
+    clear: both;
+}
+.Newest .left-box{
+    width: 31.7%;
+
+    float: left;
+}
+.Newest .pic img {
+    width: 100%;
+    /*padding-bottom: 120.4%;*/
+}
+
+.Newest .right-box img{
+    width: 100%;
+}
+
+.Newest .right-box{
+    width: 68.3%;
+    float: right;
+}
+.Newest .right-box h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+}
+.Newest .right-box h6{
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #737373;
+}
+.Newest .right-box .text{
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2em;
+    color: #737373;
+}
+.Newest .right-box li {
+    width: 25%;
+    float: left;
+}
+.Newest .right-box .item {
+    margin-left: 20px;
+}
+.Newest .right-box a {
+    display: block;
+}
+
+.Newest .info .info-top{
+    margin-bottom: 15px;
+
+    line-height: 2em;
+}
+
+.Newest .info p{
+    font-size: 18px;
+    color: #204d74;
+    line-height: 1.5em;
+    margin-right: 30%;
+    border-bottom: 1px solid #ededee;
+}
+.Newest .info{
+    position: relative;
+}
+
+.Newest .hand{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 2em;
+
+    width: 110px;
+    height: 41px;
+    /*width:30%;*/
+}
+
+.Newest .hand .new-praise{
+    position: absolute;
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*margin-top: 5em;*/
+    bottom: 0;
+}
+
+.Newest .info p span{
+    font-size: 16px;
+    color: #9d9d9d;
+}
+
+/*最热*/
+.Hottest{
+    /*margin-bottom: 2em;*/
+    width: 100%;
+}
+
+.Hottest .title {
+    width: 100%;
+    height: 4em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.Hottest .content li {
+    width: 16.66%;
+    float: left;
+}
+.Hottest .content .item {
+    margin-left: 0.93em;
+    position: relative;
+}
+
+.Hottest .mark{
+    position: absolute;
+    background: url("../images/mark.png") no-repeat;
+    bottom: 81px;
+    width: 50px;
+    height:50px;
+    background-size: 100% auto;
+}
+
+.Hottest .content a {
+    display: block;
+}
+.Hottest img {
+    width: 100%;
+}
+.Hottest  h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+}
+.Hottest  h6{
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #737373;
+}
+/*即将上映*/
+.Immediately{
+    /*margin-bottom: 2em;*/
+    width: 100%;
+}
+
+.Immediately .title {
+    width: 100%;
+    height: 4em;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.Immediately .content li {
+    width: 16.66%;
+    float: left;
+}
+.Immediately .content .item {
+    margin-left: 15px;
+}
+.Immediately .content a {
+    display: block;
+}
+.Immediately img {
+    width: 100%;
+}
+.Immediately  h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+}
+.Immediately  h6{
+    font-size: 10px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: #737373;
+}
+/*分类*/
+.Classify{
+    margin-bottom: 4em;
+}
+.Classify .title {
+    position: relative;
+}
+.Classify .title .txt{
+    margin-left: 9em;
+   margin-right: 80%;
+    height: 4em;
+}
+.Classify .title .txt span {
+    position: relative;
+    display: block;
+    padding-top: 1.5em;
+    line-height: 2em;
+
+    font-size: 16px;
+}
+.Classify .title .icon,.Classify .title .more  {
+    position: absolute;
+    top: 0;
+}
+.Classify .title .icon {
+    left: 0;
+    height: 4em;
+    margin-top: 1em;
+}
+.Classify .title .icon img {
+    height: 70%;
+    width: 70%;
+}
+.Classify .title .more {
+    top: 1em;
+    right: 0;
+    height: 2em;
+    line-height: 2em;
+    background-color: #177ccc;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #ffffff;
+}
+.Classify .content li {
+    width: 16.66%;
+    float: left;
+}
+.Classify .content .item {
+    margin-left: 15px;
+}
+.Classify .content a {
+    display: block;
+    position: relative;
+    height: 0;
+    padding-bottom: 128.4%;
+}
+.Classify img {
+    width: 100%;
+}
+.Classify  h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+    height: 2em;
+    overflow: hidden;
+}
+.Classify  h6{
+    font-size: 10px;
+    text-align: center;
+    height: 2.4em;
+    line-height: 1.2em;
+    overflow: hidden;
+    padding-bottom: 1em;
+    color: #737373;
+}
+.Classify .title{
+    position: relative;
+
+}
+.Classify .title ul{
+    position: absolute;
+   left:12em;
+    top:1.8em;
+}
+.Classify .show li{
+    display: inline;
+    border-left: 1px solid #ccc;
+    padding-right: 1em;
+    padding-left: 1em;
+    color: #177ccc;
+    font-size: 1.3em;
+}
+.Classify .show li:hover{
+    color: #ffffff;
+
+}
+.Classify .show .bg{
+    background-color: #177ccc;
+    width: 10px;
+    height: 10px;
+    color: #ffffff;
+}
+.moreFilm {
+    clear: both;
+}
+.moreFilm:after {
+    content: "";
+    display: block;
+    height: 1px;
+    clear: both;
+}
+.moreFilm .content a{
+    display: block;
+    position: relative;
+    height: 0;
+    padding-bottom: 128.4%;
+}
+
+
+.moreFilm li {
+    width: 16.66%;
+    float: left;
+}
+
+.moreFilm .item {
+    margin-left: 15px;
+}
+
+.moreFilm img {
+    width: 100%;
+}
+.moreFilm  h4{
+    color: #177ccc;
+    text-align: center;
+    line-height: 2em;
+    height: 2em;
+    overflow: hidden;
+}
+.moreFilm  h6{
+    font-size: 10px;
+    text-align: center;
+    height: 2.4em;
+    line-height: 1.2em;
+    overflow: hidden;
+    padding-bottom: 1em;
+    color: #737373;
+}
+
+.moreFilm ul{
+    left:12em;
+}
+.moreFilm .show li{
+    display: inline;
+    border-left: 1px solid #ccc;
+    padding-right: 1em;
+    padding-left: 1em;
+    color: #177ccc;
+    font-size: 1.3em;
+}
+.moreFilm .show li:hover{
+    color: #ffffff;
+
+}
+.moreFilm .show .bg{
+    background-color: #177ccc;
+    width: 10px;
+    height: 10px;
+    color: #ffffff;
+}
+.right-box ul{
+    margin-bottom: 0;
+}
+
+.right-box .item a {
+    display: block;
+    position: relative;
+}
+.right-box .item img {
+    display: block;
+    width: 100%;
+}
+.right-box .item .mark {
+    background: url("../images/mark.png") no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height:60px;
+    background-size: 100% auto;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 3.6em;
+    color: #ffffff;
+}
+.item a{
+    display: block;
+    position: relative;
+}
+.item img{
+    display: block;
+    width: 100%;
+}
+.item .mark{
+    background: url("../images/mark.png") no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height:60px;
+    background-size: 100% auto;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 3.6em;
+    color: #ffffff;
+}
+
+.carousel-inner, .list li{
+    cursor: pointer;
+}
+

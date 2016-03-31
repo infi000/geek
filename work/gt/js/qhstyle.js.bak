@@ -1,0 +1,88 @@
+$(function(){
+		 var innerwidth=860;
+         //��껬��banner�����Ұ�ť������ʾ������
+
+         $(".banner").hover(function(){
+
+                   $(".lr").show();
+
+         },function(){
+
+                   $(".lr").hide();
+
+         });
+
+
+         var a=0;
+         //��������С��ť��ͼƬ���������л�Ч��
+
+         $(".anniu li").click(function(){
+
+                   $(this).addClass("on").siblings().removeClass("on");
+					//innerwidth=document.body.clientWidth-200;
+                   var num=$(this).index();
+				   a=num;
+
+                   $(".pic").animate({marginLeft:-innerwidth*num},"slow");
+				//document.getElementById('lb_des').value =  document.getElementById('t'+(num+1)+'_des').value;
+				   var value=$("#t"+(a+1)+"_des").html();
+				   $("#lb_des").html(value);
+
+         });
+		 
+		 $(".play_video").click(function(){
+                 window.location.href="play-video.html?playid=t"+(a+1); 
+         });
+
+
+         //ͼƬ�Զ��ֲ�Ч��
+
+         var automatic=setInterval(function(){
+
+                   a++;
+
+                   a=a%5;
+
+					//innerwidth=document.body.clientWidth-200;
+                   $(".pic").animate({marginLeft:-innerwidth*a},"slow");
+
+                   $(".anniu li").eq(a).addClass("on").siblings().removeClass("on");
+				   var value=$("#t"+(a+1)+"_des").html();
+				   $("#lb_des").html(value);
+				//document.getElementById('lb_des').value =  document.getElementById('t'+(num+1)+'_des').value;
+
+         },2000);
+
+         //������Ұ�ť��ͼƬ�����л�Ч��
+
+         $(".pre").click(function(){
+
+                   a--;
+
+                   a=(a+5)%5;
+
+					//innerwidth=document.body.clientWidth-200;
+                   $(".pic").animate({marginLeft:-innerwidth*a},"slow");
+
+                   $(".anniu li").eq(a).addClass("on").siblings().removeClass("on");
+				   var value=$("#t"+(a+1)+"_des").html();
+				   $("#lb_des").html(value);
+
+         });
+
+         $(".next").click(function(){
+
+                   a++;
+
+                   a=a%5;
+
+					//innerwidth=document.body.clientWidth-200;
+                   $(".pic").animate({marginLeft:-innerwidth*a},"slow");
+
+                   $(".anniu li").eq(a).addClass("on").siblings().removeClass("on");
+				   var value=$("#t"+(a+1)+"_des").html();
+				   $("#lb_des").html(value);
+
+         });
+		 
+});

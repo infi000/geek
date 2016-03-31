@@ -1,0 +1,40 @@
+request start time:2016-03-18 00:36:18
+request url:http://localhost/tvmvclient/?time=6%20min&ip=172.16.1.18&version=%7B%7D&at=1458232577&m=2050&mac=MF0DEF12349F8&sign=bb385152b15d04852cda589a9fcf66f4abb35b2e
+return value: {"data":{"boxid":{"boxid":"100005","status":"1"},"status":1},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-18 00:36:18
+request url:http://localhost/tvmvclient/?at=1458232578&m=13051&mac=MF0DEF12349F8&sign=a987ee602d4e5f659c9ab646e070ffb1514f098b
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-18 00:42:21
+request url:http://localhost/tvmvclient/?time=12%20min&ip=172.16.1.18&version=%7B%7D&at=1458232941&m=2050&mac=MF0DEF12349F8&sign=5ba53317b4e3bf425f836db31569097a6b5ab70a
+return value: {"data":{"status":"1"},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-18 00:42:21
+request url:http://localhost/tvmvclient/?at=1458232941&m=13051&mac=MF0DEF12349F8&sign=9773c47b7168605d9480fd05f6c4c99f71653922
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-18 00:43:29
+request url:http://localhost/tvmvclient/?time=13%20min&ip=172.16.1.18&version=%7B%7D&at=1458233009&m=2050&mac=MF0DEF12349F8&sign=ffc5f732d677fcc834e04492cf590308aca7aeb2
+return value: {"data":{"boxid":"100005","status":"1"},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-18 00:43:29
+request url:http://localhost/tvmvclient/?at=1458233009&m=13051&mac=MF0DEF12349F8&sign=d4cde07cb1d27347c7148f979b01cdf346be95b3
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+request start time:2016-03-18 00:46:01
+request url:http://localhost/tvmvclient/?time=16%20min&ip=172.16.1.18&version=%7B%7D&at=1458233161&m=2050&mac=MF0DEF12349F8&sign=2e0651e3e700c466b22998e9a475486624a48a28
+return value: {"data":{"boxid":"100005","status":"1"},"msg":"ok","status":1}
+request end
+
+request start time:2016-03-18 00:46:01
+request url:http://localhost/tvmvclient/?at=1458233161&m=13051&mac=MF0DEF12349F8&sign=f1af977baad97b25b32d841d6a90c7b278696d14
+return value: {"data":"","msg":"ok","status":1}
+request end
+
