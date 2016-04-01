@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+a:visited {
+    color: #777;
+}
+
+a {
+    color: #a8afb3;
+    text-decoration: none;
+}
+
+.wrapper {
+    background: #3b2a32;
+}
+
+
+/*header++++++++++++++++++++++++++*/
+
+header {
+    height: 50px;
+    line-height: 50px;
+    background: #4d4046;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: #a8afb3;
+/*    position: fixed;
+    top: 0;*/
+}
+header a{
+    float: left;
+}
+header .fontSizeBox{
+    float: right;
+    color:white;
+    font-weight: bold;
+    font-size:0.5em;
+}
+header .fontSizeBox span{
+    cursor: pointer;
+}
+header .fontSizeBox span:hover{
+   color: #ccc;
+}
+/*header end++++++++++*/
+
+
+/*content +++++++++++++++++++*/
+
+.content {
+    background: #3b2a32;
+    width: 860px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#newspage h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 1em;
+}
+
+#newspage p {
+    line-height: 2em;
+    text-indent: 2em;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 1em;
+}
+
+
+/* 判断移动设备*/
+
+@media only screen and (max-device-width: 860px) {
+    .content {
+        width: 95%;
+        background: #3b2a32;
+    }
+    header {
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+
+
+/*某些特定样式重写*/
+
+@media only screen and (min-width:860px) {
+}
+
+
+/*content end+++++++++++++++*/
+
+
+/*footter*/
+
+footer {
+    text-align: center;
+    margin: 0px;
+    height: 50px;
+    line-height: 50px;
+    background: #553244;
+    color: #a8afb3;
+    position: relative;
+}
