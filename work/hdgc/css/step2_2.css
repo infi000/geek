@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 50px;
+}
+
+.content {
+    width: 1196px;
+    height: 420px;
+ 
+
+    margin: 0 auto;
+    position: relative;
+}
+.content img{
+margin: 0 auto;
+display: block;
+}
+.nextPage {
+    display: block;
+    background: #09AAEC;
+    color: white;
+    border: 0;
+    position: absolute;
+    bottom: 0;
+    left: 600px;
+    height: 33px;
+    line-height: 33px;
+    width: 87px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>下单</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/step1.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>下单页面</header>
+        <div class="content">
+            <img src="../img/food20.png">
+            <div>
+                <select>
+                    <option value="price5">5元套餐 香软米饭+时令蔬菜+红烧肉
+                    </option>
+                    <option value="price10">10元套餐 香软米饭+时令蔬菜+鸡肉+鱼</option>
+                    <option value="price20">20元套餐 香软米饭+时令蔬菜+海鲜+小吃</option>
+                    <option value="addPrice2">2元酸奶</option>
+                    <option value="addPrice5">5元果杯</option>
+                </select>
+                <input type='text' placeholder="1">
+                <select id="payWay">
+                    <option value="step2.html">扫码支付
+                    </option>
+                    <option value="step2_2.html">密码支付</option>
+                </select>
+                <button onclick="choose()"><span>加入购物车</span></button>
+            </div>
+    
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+function choose() {
+var a = document.getElementById("payWay").value;
+    location.href = a;
+}
+</script>
+
+</html>

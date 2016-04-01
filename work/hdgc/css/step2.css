@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-width: 1320px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    height: 50px;
+}
+
+.content {
+    width: 1196px;
+    height: 389px;
+    background: url("../img/saoma.png");
+    margin: 0 auto;
+    position: relative;
+}
+
+.foodMsg {
+    background: #EEEFF0;
+    position: absolute;
+    width: 600px;
+    height: 60px;
+    top: 90px;
+    left: 302px;
+}
+
+.foodPrice {
+    position: absolute;
+    text-align: right;
+    padding-right: 6px;
+    right: 101px;
+    top: 96px;
+    width: 65px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #FF8110;
+    background: #EEEFF0;
+}
+
+.foodPrice2 {
+    position: absolute;
+    text-align: right;
+    padding-right: 11px;
+    right: 101px;
+    top: 216px;
+    width: 39px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #FF8110;
+    background: #FFFFFF;
+}
+
+.foodMsgL {
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 18px;
+    font-size: 16px;
+}
+
+.nextPage {
+    display: block;
+    background: #09AAEC;
+    color: white;
+    border: 0;
+    position: absolute;
+    bottom: 39px;
+    left: 222px;
+    height: 33px;
+    line-height: 33px;
+    width: 87px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}

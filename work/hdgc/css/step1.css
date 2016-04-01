@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0; 
+    background: #ccc;
+}
+
+.wrapper {
+    position: relative;
+    min-width: 1320px;
+
+}
+a{
+	text-decoration: none;
+	 color: white;
+}
+
+header{
+    text-align: center;
+    font-size: 2em;
+    height: 100px;
+    line-height: 100px;
+      background: #ccc;
+}
+.content{
+	width: 80%;
+	height: 400px;
+	margin: 0 auto;
+	   background: white;
+	       box-shadow: 1px 1px 1px black;
+	
+}
+.content img{
+	float: left;
+}
+.content div{
+	padding-top:100px;
+}
+.content select{
+    height: 30px;
+}
+.content input{
+    width: 20px;
+    height: 25px;
+}
+.content button{
+    background: red;
+    height: 30px;
+    border: 0;
+   cursor: pointer;
+    font-weight: bold;
+
+}
+.content button span{
+    color: white;
+
+}
+

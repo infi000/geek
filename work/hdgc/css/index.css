@@ -17,6 +17,26 @@ body {
     width: 100%;
 }
 
+.order {
+    position: fixed;
+    left: 2%;
+    bottom: 20%;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px white;
+}
+.order a:hover{
+    /*background: yellow;*/
+color: #7D7D40
+}
+.order a {
+    font-size: 2em;
+    font-weight: bold;
+    color: yellow;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+
 
 /*手机框++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -121,7 +141,6 @@ body {
 .content-food {
     width: 80%;
     margin: 0 auto;
-    background: blue;
     position: relative;
     margin-top: 5%;
 }
@@ -150,7 +169,7 @@ body {
 }
 
 .content-foodLongBox {
-      position: relative;
+    position: relative;
     width: 45%;
     float: left;
     margin-left: 2%;
@@ -163,11 +182,12 @@ body {
 }
 
 .foodLong {
-       margin-left: -25%;
+    margin-left: -25%;
     margin-top: -15%;
     width: 40%;
     float: left;
-    }
+}
+
 
 /*.priceBox {
     display: block;
@@ -175,7 +195,6 @@ body {
     width: 70%;
 }
 */
-
 
 
 /*content end+++++++++++++++++++++++++++++++++++++*/
