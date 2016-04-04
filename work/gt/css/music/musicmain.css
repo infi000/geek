@@ -1,23 +1,11 @@
 * {
-    margin: 0px;
-    padding: 0px
-}
-
-a:visited {
-    color: #777;
-}
-
-a {
-    color: #a8afb3;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 .wrapper {
     background: #3b2a32;
 }
-
-
-/*header++++++++++++++++++++++++++*/
 
 header {
     background: #4d4046;
@@ -30,19 +18,23 @@ header {
     position: relative;
 }
 
-
-/*header end++++++++++*/
-
-
-/*content +++++++++++++++++++*/
-
 .content {
-    /*min-width: 860px;*/
     background: #3b2a32;
     width: 860px;
     margin: 0 auto;
 }
 
+/*footter*/
+
+footer {
+    text-align: center;
+    margin: 0px;
+    height: 50px;
+    line-height: 50px;
+    background: #553244;
+    color: #a8afb3;
+    position: relative;
+}
 
 /* 判断移动设备*/
 
@@ -61,7 +53,7 @@ header {
     .title p {
         text-align: right;
     }
-    .resetFontsize{
+    .resetFontsize {
         float: left;
     }
 }
@@ -72,9 +64,6 @@ header {
 @media only screen and (min-width:860px) {
     .title {
         height: 50px;
-    }
-    .title p {
-        float: right;
     }
 }
 
@@ -93,20 +82,15 @@ header {
     display: inline;
 }
 
-.title p {
-    height: 100%;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+
+/*
+banner样式
+ */
+
+.bannerImg {
+    width: 100%;
 }
-
-.title p span:hover {
-    color: #ccc;
-}
-
-
-/*content article*/
-
+/*.aritcle样式*/
 .article {
     border-top: 1px dashed #a8afb3;
     margin-bottom: 10px;
@@ -139,24 +123,28 @@ header {
     color: #a8afb3;
     font-size: 20px;
     text-decoration: none;
+    display: block;
+
 }
 
 .article-content span {
     color: #616161;
 }
+.article-content ul{
+	width: 100%;
 
-
-/*content end+++++++++++++++*/
-
-
-/*footter*/
-
-footer {
-    text-align: center;
-    margin: 0px;
-    height: 50px;
-    line-height: 50px;
-    background: #553244;
-    color: #a8afb3;
-    position: relative;
+}
+.article-content li{
+	list-style: none;
+	float: left;
+	width:25%;
+}
+.article-content img{
+	width:50%;
+	border-radius: 50%;
+}
+.article-content .songNameBox{
+	width: 50%;
+	    float: right;
+    font-size: 0.5em;
 }
