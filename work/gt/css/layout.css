@@ -11,7 +11,9 @@ body {
 a:visited {
     color: #777;
 }
-
+a:hover{
+    text-decoration: none;
+}
 a {
     color: #a8afb3;
     text-decoration: none;
@@ -28,7 +30,8 @@ header {
     background: #4d4046;
     font-size: 50px;
     width: 100%;
-    line-height: 100px;
+    height:50px;
+    line-height: 50px;
     float: center;
     text-align: center;
     color: #a8afb3;
@@ -42,12 +45,12 @@ header a {
 }
 /*头部样式结束*/
 
-/*主体内容*/
+/*主体内容 padding-bottom预设值 content预留与footer之间的空隙*/
 .content {
     background: #3b2a32;
     width: 860px;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 110px;
 }
 
 /*主体内容结束*/
@@ -70,10 +73,39 @@ header a {
     color: #a8afb3;
     display: inline;
 }
+.title p {
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+.title p span:hover {
+    color: #ccc;
+}
 
 
 /*title样式结束*/
+/*
+banner样式
+ */
 
+.bannerImg {
+    width: 100%;
+}
+
+.play_video {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -61.5px;
+    margin-left: -62.5px;
+    width: 125px;
+    height: 123px;
+}
+/*banner end*/
 
 /*
 article总样式
@@ -183,12 +215,15 @@ footer {
     }
     .title {
         line-height: 25px!important;
+
     }
     .title h2 {
         font-size: 14px;
     }
     .title p {
         text-align: right;
+        float: none;
+
     }
     .resetFontsize {
         float: left;

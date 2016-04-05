@@ -1,0 +1,19 @@
+
+/*content article*/
+
+.article-content span {
+    color: #616161;
+}
+
+/*content end+++++++++++++++*/
+
+
+/* 判断移动设备*/
+
+@media only screen and (max-device-width: 860px) {
+    .title {
+      
+    height: 100%;
+    }
+
+}
