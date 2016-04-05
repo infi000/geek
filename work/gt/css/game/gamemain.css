@@ -1,8 +1,10 @@
 * {
-    margin: 0px;
-    padding: 0px
+    padding: 0;
+    margin: 0;
 }
-
+html,body{
+    height: 100%;
+}
 a:visited {
     color: #777;
 }
@@ -14,10 +16,9 @@ a {
 
 .wrapper {
     background: #3b2a32;
+    min-height: 100%;
+    margin-bottom:-50px;
 }
-
-
-/*header++++++++++++++++++++++++++*/
 
 header {
     background: #4d4046;
@@ -36,30 +37,11 @@ header a {
     font-size: 0.5em;
 }
 
-
-/*header end++++++++++*/
-
-
-/*content +++++++++++++++++++*/
-
 .content {
-    /*min-width: 860px;*/
     background: #3b2a32;
     width: 860px;
     margin: 0 auto;
-}
-
-
-/*footter*/
-
-footer {
-    text-align: center;
-    margin: 0px;
-    height: 50px;
-    line-height: 50px;
-    background: #553244;
-    color: #a8afb3;
-    position: relative;
+    padding-bottom: 10px;
 }
 
 
@@ -86,22 +68,28 @@ footer {
     .resetFontsize {
         float: left;
     }
+    .artName {
+        color: white;
+        font-size: 0.5em!important;
+        font-weight: bold;
+    }
+    .onlyTvm {
+        width: 60px;
+    }
+    .bannerMsg{
+    bottom: 10%!important;
+    left: 10%!important;
+    font-size: 1em!important;
+    }
+
+ 
 }
 
-
-/*某些特定样式重写*/
-
-@media only screen and (min-width:860px) {
-    .title {
-        height: 50px;
-    }
-    .title p {
-        float: right;
-    }
-}
+/*TITLE样式*/
 
 .title {
     line-height: 50px;
+    height: 50px;
 }
 
 .title img {
@@ -115,19 +103,11 @@ footer {
     display: inline;
 }
 
-.title p {
-    height: 100%;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
 
-.title p span:hover {
-    color: #ccc;
-}
-
-
-/*content article*/
+/*title样式结束*/
+/*
+article总样式
+*/
 
 .article {
     border-top: 1px dashed #a8afb3;
@@ -139,7 +119,7 @@ footer {
     line-height: 40px;
 }
 
-.icon-line {
+.article .icon-line {
     float: left
 }
 
@@ -149,7 +129,7 @@ footer {
     display: inline;
 }
 
-.icon-arrow {
+.article .icon-arrow {
     float: right
 }
 
@@ -161,11 +141,57 @@ footer {
     color: #a8afb3;
     font-size: 20px;
     text-decoration: none;
-}
-
-.article-content span {
-    color: #616161;
+    display: block;
 }
 
 
-/*content end+++++++++++++++*/
+/*
+article总样式结束
+*/
+
+
+/*
+articleMainStyle样式
+*/
+
+.articleMainStyle .article-content img {
+    width: 100%;
+
+}
+
+.articleMainStyle .article-content .artNameBox {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1em;
+}
+
+.articleMainStyle .article-content .artNameBox .artName {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+}
+
+.articleMainStyle .article-content .artNameBox .artist {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 0.5em;
+}
+
+
+/*
+articleMainStyle结束*/
+
+
+/*footter*/
+
+footer {
+    text-align: center;
+    margin: 0px;
+    height: 50px;
+    line-height: 50px;
+    background: #553244;
+    color: #a8afb3;
+}

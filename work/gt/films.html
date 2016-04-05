@@ -1,164 +1,249 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <title>高铁影音平台-电影</title>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/case-style.css"/>
-    <link rel="stylesheet" href="css/default_skin.css"/>
-	 <link rel="stylesheet" type="text/CSS" href="css/qhstyle.css">
-
-	<script src="js/jquery.min.js"></script>
-    <script src="js/jquery.cycle2.min.js"></script>
-    <script src="js/jquery.sky.carousel-1.0.2.min.js"></script>
-    <script src="js/lib.js"></script>
-    <script src="js/scripts.js"></script> 
-  	<script type="text/Javascript" src="js/qhstyle.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/film/filmmain.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-3.3.1.jquery.min.js"></script>
 </head>
-<body style=" margin:-2px; width:101%">
-<!--<div style="line-height:40px; background-color:#000000">
-	<label style="font-size:24px; margin-left:10px; color:#FFFFFF">标题栏</label>
-</div>-->
-<div id="site-wrapper" style="margin:0px auto 0px">
-	<div style="height:100px; width:100%; background-color:#4d4046">
-		<p style="font-size:50px; line-height:100px; float:center;text-align:center; position:relative;">电影</p>
-	</div>
-    <!--<section id="section-header" data-coloroverlap="dark"></section>-->
-    <section id="second-phase" class="phase-row" data-title="Illustrations"style="background-color:#3b2a32;background-position:center; background-repeat:no-repeat; background-size:cover;padding-top:0px; data-coloroverlap=light">
 
-        <div class="shell" style="margin-left:auto; margin-right:auto; width:860px; position:relative;">	
-			<div style="line-height:50px;margin-bottom:0px; height:50px;">
-				<img src="resources/utitls/logo.png" style="  line-height:50px;vertical-align:middle;position:relative;float:left;"/>
-				<label class="lb" style=" font-size:34px; bottom:-7px;vertical-align: middle; position:relative;">欢迎登陆高铁影音平台，点击图片即可观看电影</label>
-			</div>
-            <div class="second-row">
-			<div class="banner">
-                   <ul id="piccons" class="pic">
-                            <li><img class="pc1" imgtype="film" src="gt_data\film\images\top\1.png" alt="图片未加载" width="100%" height="auto" ondragstart="return false"></li>
-                            <li><img class="pc1" imgtype="film" src="gt_data\film\images\top\2.png" alt="图片未加载" width="100%" height="auto" ondragstart="return false"> </li>
-                            <li><img class="pc1" imgtype="film" src="gt_data\film\images\top\3.png" alt="图片未加载" width="100%" height="auto" ondragstart="return false"> </li>
-                            <li> <img class="pc1" imgtype="film" src="gt_data\film\images\top\4.png" alt="图片未加载" width="100%" height="auto" ondragstart="return false"> </li>
-							<div style="display:hiddlen;">
-							<p id="t1_des">你我的青春，很疼</p>
-							<p id="t2_des">注定成为一代宗师的黄飞鸿年轻时的故事</p>
-							<p id="t3_des">在狗熊岭百年不遇的大雪中，熊二鼓起勇气拯救大家的故事</p>
-							<p id="t4_des">萌萌哒小熊帕丁顿的奇妙旅行</p></p>
-							<div/>
-                   </ul>
-				   
-                   <ul class="anniu">
-                            <li class="on"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                   </ul>
-				   <ul style="width:100%;height:100px; position:absolute;bottom:0px;left:10px;">
-				   		<div >
-							<label id="lb_des" style="font-size:24px; float:left;  left:10px;line-height:50px;" >你我的青春，很疼</label>
-						</div>
-				  </ul>
-                  <!-- <ul class="lr">
-                            <li class="PRe"><a href="#"> < </a></li>
-                            <li class="next"><a href="#"> > </a></li>
-				   </ul>-->
-					 <ul class="play">
-						<img class="play_video" src="resources\utitls\play.png" style="position:relative;cursor:pointer; bottom:250px;" imgtype="film"></img>
-					</ul>
-         		</div>
-
+<body>
+    <div class="wrapper">
+        <header> <a href="index.html">返回首页</a>电影</header>
+        <div class="content">
+            <div class="title">
+                <img src="resources/utitls/logo.png">
+                <h2>欢迎登陆高铁影音平台，点击图片即可观看电影</h2>
             </div>
-			<div style="top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-				<div style="border-bottom:1px #5a4f55 dashed; "></div>
-			</div>
-			<div style="width:100%;height:40px;top:5px;margin-bottom:5px;position:relative; overflow:hidden">				
-					<img src="resources\utitls\category.png" style="vertical-align:middle;position:relative; float:left;left:10px;"></img>
-					<p style=" font-size:26px;position:relative;  float:left;left:26px; top:5px; color:#00fffd;">内地</p>
-					<a href="#"> 
-						<img src="resources\utitls\expend.png" style="vertical-align:middle;position:relative; float:right;left:10px;"></img>
-				   </a>			
-			</div>
-			<div style="width:100%;height:auto;top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-			 			<ul style="width:100%;height:auto;position:relative;">
-                            <li style="width:200px; float:left; "><a href="play-file.html?type=film&playid=1"><img src="gt_data\film\images\thums\1.png" alt="图片未加载" width="200" height="auto"></a><label>大宅男</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="play-file.html?type=film&playid=2"><img src="gt_data\film\images\thums\2.png" alt="图片未加载" width="200" height="auto"></a> <label>撒娇女人最好命</label></li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="play-file.html?type=film&playid=3"><img src="gt_data\film\images\thums\3.png" alt="图片未加载" width="200" height="auto"></a><label>赛琳娜</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"> <a href="play-file.html?type=film&playid=4"><img src="gt_data\film\images\thums\4.png" alt="图片未加载" width="200" height="auto"></a> <label>奔跑吧兄弟大电影</label> </li>
-                   </ul>
-			</div>
-				   <div style="top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-				<div style="border-bottom:1px #5a4f55 dashed; "></div>
-			</div>
-			<div style="width:100%;height:40px;top:5px;margin-bottom:5px;position:relative; overflow:hidden">				
-					<img src="resources\utitls\category.png" style="vertical-align:middle;position:relative; float:left;left:10px;"></img>
-					<p style=" font-size:26px;position:relative;  float:left;left:26px; top:5px;color:#00fffd;">港台</p>
-					<a href="#"> 
-						<img src="resources\utitls\expend.png" style="vertical-align:middle;position:relative; float:right;left:10px;"></img>
-				   </a>			
-			</div>
-			
-				<div style="width:100%;height:auto;top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-			 		<ul style="width:100%;height:auto;position:relative;">
-                            <li style="width:200px; float:left; "><a href="play-file.html?type=film&playid=5"><img src="gt_data\film\images\thums\5.png" alt="图片未加载" width="200" height="auto"></a><label>咱们结婚吧</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="play-file.html?type=film&playid=6"><img src="gt_data\film\images\thums\6.png" alt="图片未加载" width="200" height="auto"></a> <label>露水红颜</label></li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="play-file.html?type=film&playid=7"><img src="gt_data\film\images\thums\7.png" alt="图片未加载" width="200" height="auto"></a><label>智取威虎山</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"> <a href="play-file.html?type=film&playid=8"><img src="gt_data\film\images\thums\8.png" alt="图片未加载" width="200" height="auto"></a> <label>在我入睡前</label> </li>
-                   </ul>
-				   </div>
-			<div style="top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-				<div style="border-bottom:1px #5a4f55 dashed; "></div>
-			</div>
-			<div style="width:100%;height:40px;top:5px;margin-bottom:5px;position:relative; overflow:hidden">				
-					<img src="resources\utitls\category.png" style="vertical-align:middle;position:relative; float:left;left:10px;"></img>
-					<p style=" font-size:26px;position:relative;  float:left;left:26px; top:5px;color:#00fffd;">欧美</p>
-					<a href="#"> 
-						<img src="resources\utitls\expend.png" style="vertical-align:middle;position:relative; float:right;left:10px;"></img>
-				   </a>			
-			</div>
-				<div style="width:100%;height:auto;top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-				   
-			 		<ul style="width:100%;height:auto;">
-                            <li style="width:200px; float:left; "><a href="play-file.html?type=film&playid=9"><img src="gt_data\film\images\thums\9.png" alt="图片未加载" width="200" height="auto"></a><label>喜羊羊灰太狼飞马奇遇记</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="play-file.html?type=film&playid=10"><img src="gt_data\film\images\thums\10.png" alt="图片未加载" width="200" height="auto"></a> <label>死亡派对</label></li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="play-file.html?type=film&playid=11"><img src="gt_data\film\images\thums\11.png" alt="图片未加载" width="200" height="auto"></a><label>整容日记</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"> <a href="play-file.html?type=film&playid=12"><img src="gt_data\film\images\thums\12.png" alt="图片未加载" width="200" height="auto"></a> <label>秘术</label> </li>
-                   </ul>
-				   </div>
-			<div style="top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-				<div style="border-bottom:1px #5a4f55 dashed; "></div>
-			</div>
-			<div style="width:100%;height:40px;top:5px;margin-bottom:5px;position:relative; overflow:hidden">				
-					<img src="resources\utitls\category.png" style="vertical-align:middle;position:relative; float:left;left:10px;"></img>
-					<p style=" font-size:26px;position:relative;  float:left;left:26px; top:5px;color:#00fffd;">日韩</p>
-					<a href="#"> 
-						<img src="resources\utitls\expend.png" style="vertical-align:middle;position:relative; float:right;left:10px;"></img>
-				   </a>			
-			</div>
-				<div style="width:100%;height:auto;top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-				   
-			 		<ul style="width:100%;height:auto;">
-                            <li style="width:200px; float:left; "><a href="play-file.html?type=film&playid=13"><img src="gt_data\film\images\thums\13.png" alt="图片未加载" width="200" height="auto"></a><label>疯狂动物城</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="play-file.html?type=film&playid=14"><img src="gt_data\film\images\thums\14.png" alt="图片未加载" width="200" height="auto"></a> <label>过年好</label></li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="play-file.html?type=film&playid=15"><img src="gt_data\film\images\thums\15.png" alt="图片未加载" width="200" height="auto"></a><label>美人鱼</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"> <a href="play-file.html?type=film&playid=16"><img src="gt_data\film\images\thums\16.png" alt="图片未加载" width="200" height="auto"></a> <label>叶问3</label> </li>
-                   </ul>
-				   </div>
-						
-		<!--	<div style="top:15px;margin-bottom:50px;position:relative; overflow:hidden">
-				<hr style="height:2px;border:none;border-top:2px solid #555555;" ></hr>
-			</div>-->
-			<div style="height:20px;position:relative; overflow:hidden">
-			</div>
+            <!-- banner轮播 -->
+            <div class="banner swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\1.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png">
+                        <div class="bannerMsg"><span>你我的青春，很疼</span></div>
+                    </div>
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\2.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png">
+                        <div class="bannerMsg"><span>注定成为一代宗师的黄飞鸿年轻时的故事</span></div>
+                    </div>
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\3.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png">
+                        <div class="bannerMsg"><span>在狗熊岭百年不遇的大雪中，熊二鼓起勇气拯救大家的故事</span></div>
+                    </div>
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\4.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png">
+                        <div class="bannerMsg"><span>萌萌哒小熊帕丁顿的奇妙旅行</span></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- banner轮播结束 -->
+            <!-- 内地 -->
+            <div class="article articleMainStyle">
+                <div class="article-header">
+                    <img src="resources\utitls\category.png" class="icon-line">
+                    <h2>内地</h2>
+                    <a href="#"><img src="resources\utitls\expend.png" class="icon-arrow"></a>
+                </div>
+                <div class="article-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6 songBox">
+                                <a href="play-file.html?type=film&playid=1">
+                                    <img src="gt_data\film\images\thums\1.png" alt="图片未加载">
+                                    <div class="artNameBox">
+                                        <span class="artName">大宅男</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox">
+                                <a href="play-file.html?type=film&playid=2">
+                                    <img src="gt_data\film\images\thums\2.png" alt="图片未加载">
+                                    <div class="artNameBox">
+                                        <span class="artName">撒娇女人最好命</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox">
+                                <a href="play-file.html?type=film&playid=3">
+                                    <img src="gt_data\film\images\thums\3.png" alt="图片未加载">
+                                    <div class="artNameBox">
+                                        <span class="artName">赛琳娜</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox">
+                                <a href="play-file.html?type=film&playid=4">
+                                    <img src="gt_data\film\images\thums\4.png" alt="图片未加载">
+                                    <div class="artNameBox">
+                                        <span class="artName">奔跑吧兄弟大电影</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- article-content end -->
+            </div>
+            <!--内地结束 -->
+            <!-- 港台首发 -->
+            <div class="article articleMainStyle">
+                <div class="article-header">
+                    <img src="resources\utitls\category.png" class="icon-line">
+                    <h2>港台</h2>
+                    <a href="#"><img src="resources\utitls\expend.png" class="icon-arrow"></a>
+                </div>
+                <div class="article-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=5">
+                                    <img src="gt_data\film\images\thums\5.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">咱们结婚吧</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=6">
+                                    <img src="gt_data\film\images\thums\6.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">露水红颜</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=7">
+                                    <img src="gt_data\film\images\thums\7.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">智取威虎山</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=8">
+                                    <img src="gt_data\film\images\thums\8.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">在我入睡前</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- article-content end -->
+            </div>
+            <!-- arricle end -->
+            <!-- 港台结束 -->
+            <!-- 欧美 -->
+            <div class="article articleMainStyle">
+                <div class="article-header">
+                    <img src="resources\utitls\category.png" class="icon-line">
+                    <h2>欧美</h2>
+                    <a href="#"><img src="resources\utitls\expend.png" class="icon-arrow"></a>
+                </div>
+                <div class="article-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=9">
+                                    <img src="gt_data\film\images\thums\9.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">喜羊羊灰太狼飞马奇遇记</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=10">
+                                    <img src="gt_data\film\images\thums\10.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">死亡派对</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=11">
+                                    <img src="gt_data\film\images\thums\11.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">整容日记</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=12">
+                                    <img src="gt_data\film\images\thums\12.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">秘术</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- article-content end -->
+            </div>
+            <!-- 欧美结束 -->
+            <!-- 日韩-->
+            <div class="article articleMainStyle">
+                <div class="article-header">
+                    <img src="resources\utitls\category.png" class="icon-line">
+                    <h2>日韩</h2>
+                    <a href="#"><img src="resources\utitls\expend.png" class="icon-arrow"></a>
+                </div>
+                <div class="article-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=13">
+                                    <img src="gt_data\film\images\thums\13.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">疯狂动物城</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=14">
+                                    <img src="gt_data\film\images\thums\14.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">过年好</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=15">
+                                    <img src="gt_data\film\images\thums\15.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">美人鱼</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox artBox">
+                                <a href="play-file.html?type=film&playid=16">
+                                    <img src="gt_data\film\images\thums\16.png" alt="图片未加载">
+                                    <div class=" artNameBox">
+                                        <span class=" artName">叶问3</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- article-content end -->
+            </div>
+            <!-- 日韩结束 -->
         </div>
-    </section>
-
-<div style="text-align:center;margin:0px; height:100px;background-color:#553244;position:relative;">
-<p style="line-height:100px;">天脉聚源（北京）教育科技有限公司</p>
-</div>
-
-</div>
-
+        <!--  </div></div> -->
+        <footer>天脉聚源(北京)教育科技有限公司</footer>
+    </div>
 </body>
-
+<script type="text/javascript">
+//swiper 循环banner插件
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 2000, //可选选项，自动滑动
+    pagination: '.swiper-pagination',
+    paginationType: 'bullets',
+})
+</script>
 
 </html>

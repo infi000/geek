@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    background: #ccc;
+}
+
 .wrapper {
     background: #3b2a32;
 }
@@ -27,24 +31,33 @@ header {
     width: 100%;
     text-align: center;
     color: #a8afb3;
-/*    position: fixed;
+    /*    position: fixed;
     top: 0;*/
 }
-header a{
-    float: left;
+
+header a {
+       position: absolute;
+    left: 0;
+    font-size: 0.5em;
 }
-header .fontSizeBox{
+
+header .fontSizeBox {
     float: right;
-    color:white;
+    color: white;
     font-weight: bold;
-    font-size:0.5em;
+    font-size: 0.5em;
 }
-header .fontSizeBox span{
+
+header .fontSizeBox span {
     cursor: pointer;
+        margin-right: 10px
 }
-header .fontSizeBox span:hover{
-   color: #ccc;
+
+header .fontSizeBox span:hover {
+    color: #ccc;
 }
+
+
 /*header end++++++++++*/
 
 
@@ -64,11 +77,11 @@ header .fontSizeBox span:hover{
 }
 
 #newspage p {
-    line-height: 2em;
-    text-indent: 2em;
+    line-height: 2em!important;
+    text-indent: 2em!important;
     font-size: 20px;
-    color: #ffffff;
-    margin-top: 1em;
+    color: #ffffff!important;
+    margin-top: 1em!important;
 }
 
 
@@ -83,12 +96,22 @@ header .fontSizeBox span:hover{
         font-size: 30px;
         line-height: 50px;
     }
+
+    .resetFontsize {
+        float: left;
+    }
+    .content p {
+        width: 100% !important;
+    }
 }
 
 
 /*某些特定样式重写*/
 
 @media only screen and (min-width:860px) {
+    .content p {
+        width: 100% !important;
+    }
 }
 
 
@@ -105,4 +128,6 @@ footer {
     background: #553244;
     color: #a8afb3;
     position: relative;
+    /*    width: 100%;
+    bottom: 0;*/
 }

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 a:visited {
     color: #777;
 }
@@ -25,28 +26,17 @@ header {
     color: #a8afb3;
     position: relative;
 }
+
 header a {
-       position: absolute;
+    position: absolute;
     left: 0;
     font-size: 0.5em;
 }
+
 .content {
     background: #3b2a32;
     width: 860px;
     margin: 0 auto;
-}
-
-
-/*footter*/
-
-footer {
-    text-align: center;
-    margin: 0px;
-    height: 50px;
-    line-height: 50px;
-    background: #553244;
-    color: #a8afb3;
-    /*position: relative;*/
 }
 
 
@@ -81,16 +71,16 @@ footer {
     .onlyTvm {
         width: 60px;
     }
-}
-
-
-/*某些特定样式重写*/
-
-@media only screen and (min-width:860px) {
-    .title {
-        /* height: 50px;*/
+    .bannerMsg{
+    bottom: 10%!important;
+    left: 10%!important;
+    font-size: 1em!important;
     }
+
+ 
 }
+
+/*TITLE样式*/
 
 .title {
     line-height: 50px;
@@ -107,6 +97,9 @@ footer {
     color: #a8afb3;
     display: inline;
 }
+
+
+/*title样式结束*/
 
 
 /*
@@ -128,12 +121,21 @@ banner样式
     height: 123px;
 }
 
-.onlyTvm {
+.bannerMsg {
     position: absolute;
-    left: 0px;
-    top: 10px;
-    z-index: 1000
+    text-align: center;
+    width: 80%;
+    bottom: 5%;
+    left: 10%;
+    font-size: 20px;
+    color: white;
 }
+
+
+
+/*
+banner样式 结束
+ */
 
 
 /*
@@ -181,50 +183,14 @@ article总样式结束
 */
 
 
-/*今日推荐样式*/
-
-.recommendation .article-content img {
-    width: 45%;
-    border-radius: 50%;
-}
-
-.recommendation .artNameBox {
-    width: 50%;
-    float: right;
-    color: yellow;
-}
-
-.recommendation .artBox {
-    margin-top: 10px;
-}
-
-.recommendation .artName,
-.recommendation .artist {
-    display: block;
-}
-
-.recommendation .artName {
-    color: white;
-    font-size: 1em;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.recommendation .artist {
-    margin-top: 10px;
-    color: #ccc;
-    font-size: 0.5em;
-}
-
-
-/*今日推荐样式结束*/
-
-
-/*新碟首发,榜单，MV样式*/
+/*
+articleMainStyle样式
+*/
 
 .articleMainStyle .article-content img {
     width: 100%;
 }
+
 .articleMainStyle .article-content .artNameBox {
     width: 100%;
     text-align: center;
@@ -240,11 +206,25 @@ article总样式结束
     display: block;
 }
 
-.articleMainStyle .article-content  .artNameBox .artist {
+.articleMainStyle .article-content .artNameBox .artist {
     margin-top: 10px;
     color: #ccc;
     font-size: 0.5em;
 }
 
 
-/*新碟首发，榜单，MV样式结束*/
+/*
+articleMainStyle结束*/
+
+
+/*footter*/
+
+footer {
+    text-align: center;
+    margin: 0px;
+    height: 50px;
+    line-height: 50px;
+    background: #553244;
+    color: #a8afb3;
+    /*position: relative;*/
+}

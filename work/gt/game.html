@@ -1,68 +1,76 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <title>高铁影音平台-游戏</title>
-    <link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/case-style.css"/>
-    <link rel="stylesheet" href="css/default_skin.css"/>
-	 <link rel="stylesheet" type="text/CSS" href="css/qhstyle.css">
-
-	<script src="js/jquery.min.js"></script>
-    <script src="js/jquery.cycle2.min.js"></script>
-    <script src="js/jquery.sky.carousel-1.0.2.min.js"></script>
-    <script src="js/lib.js"></script>
-    <script src="js/scripts.js"></script> 
-  	<script type="text/Javascript" src="js/qhstyle.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/game/gamemain.css">
+    <script src="js/jquery.min.js"></script>
 </head>
-<body style=" margin:-2px; width:101%;min-height:100%; background-color:#3b2a32;">
-<!--<div style="line-height:40px; background-color:#000000">
-	<label style="font-size:24px; margin-left:10px; color:#FFFFFF">标题栏</label>
-</div>-->
-<div id="site-wrapper" style="margin:0px auto 0px;min-height:100%; height:100%;">
-	<div style="height:100px; width:100%; background-color:#4d4046">
-		<p style="font-size:50px; line-height:100px; float:center;text-align:center; position:relative;">游戏</p>
-	</div>
-    <!--<section id="section-header" data-coloroverlap="dark"></section>-->
-    <section id="second-phase" class="phase-row" data-title="Illustrations"style="background-color:#3b2a32;background-position:center; background-repeat:no-repeat; background-size:cover;padding-top:0px; data-coloroverlap="light">
 
-         <div class="shell" style="margin-left:auto; margin-right:auto; width:860px; position:relative;">	
-			<div style="line-height:50px;margin-bottom:0px; height:50px;">
-				<img src="resources/utitls/logo.png" style="  line-height:50px;vertical-align:middle;position:relative;float:left;"/>
-				<label class="lb" style=" font-size:34px; bottom:-7px;vertical-align: middle; position:relative;">欢迎登陆高铁影音平台，点击图片即玩游戏</label>
-			</div>
-			<div style="top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-				<div style="border-bottom:1px #5a4f55 dashed; "></div>
-			</div>
-			<div style="width:100%;height:40px;top:5px;margin-bottom:5px;position:relative; overflow:hidden">				
-					<img src="resources\utitls\category.png" style="vertical-align:middle;position:relative; float:left;left:10px;"></img>
-					<p style=" font-size:26px;position:relative;  float:left;left:26px; top:5px; color:#00fffd;">热门游戏</p>
-					<a href="#"> 
-						<img src="resources\utitls\expend.png" style="vertical-align:middle;position:relative; float:right;left:10px;"></img>
-				   </a>			
-			</div>
-			<div style="width:100%;height:auto;top:5px;margin-bottom:5px;position:relative; overflow:hidden">
-			 			<ul style="width:100%;height:auto;position:relative;">
-                            <li style="width:200px; float:left; "><a href="game\DangerRanger\index.html"><img src="gt_data\game\images\DangerRanger.png" alt="图片未加载" width="200" height="300"></a><label>危险的突击队员</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="game\Dragons\index.html"><img src="gt_data\game\images\Dragons.png" alt="图片未加载" width="200" height="300"></a> <label>龙族</label></li>
-                            <li style="width:200px;float:left; margin-left:20px;"><a href="game\Galactians\index.html"><img src="gt_data\game\images\Galactians.png" alt="" width="200" height="300"></a><label>Galactians</label> </li>
-                            <li style="width:200px;float:left; margin-left:20px;"> <a href="game\HyperGunner\index.html"><img src="gt_data\game\images\HyperGunner.png" alt="图片未加载" width="200" height="300"></a> <label>超级枪手</label> </li>
-                   </ul>
-			</div>
-				  
-			<div style="height:20px;position:relative; overflow:hidden">
-			</div>
+<body>
+    <div class="wrapper">
+        <header> <a href="index.html">返回首页</a>游戏</header>
+        <div class="content">
+            <div class="title">
+                <img src="resources/utitls/logo.png">
+                <h2>欢迎登陆高铁影音平台，点击图片即玩游戏</h2>
+            </div>
+            <!-- 热门游戏 -->
+            <div class="article articleMainStyle">
+                <div class="article-header">
+                    <img src="resources\utitls\category.png" class="icon-line">
+                    <h2>热门游戏</h2>
+                    <a href="#"><img src="resources\utitls\expend.png" class="icon-arrow"></a>
+                </div>
+                <div class="article-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6 songBox">
+                                <a href="game\DangerRanger\index.html">
+                                    <img src="gt_data\game\images\DangerRanger.png" alt="图片未加载">
+                                    <div class="artNameBox">
+                                        <span class="artName">危险的突击队员</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox">
+                                <a href="game\Dragons\index.html">
+                                    <img src="gt_data\game\images\Dragons.png" alt="图片未加载">
+                                    <div class="artNameBox">
+                                        <span class="artName">龙族</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox">
+                                <a href="game\Galactians\index.html">
+                                    <img src="gt_data\game\images\Galactians.png" alt="图片未加载">
+                                    <div class="artNameBox">
+                                        <span class="artName">Galactians</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-xs-6 songBox">
+                                <a href="game\HyperGunner\index.html">
+                                    <img src="gt_data\game\images\HyperGunner.png" alt="图片未加载">
+                                    <div class="artNameBox">
+                                        <span class="artName">超级枪手</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- article-content end -->
+            </div>
+           
         </div>
-    </section>
-
-<div style="text-align:center;margin:0px;bottom:0px; width:101%; height:100px;background-color:#553244;position:absolute;">
-<p style="line-height:100px;">天脉聚源（北京）教育科技有限公司</
-</div>
-
-</div>
-
+        <!--  </div></div> -->
+      
+    </div> 
+     <footer>天脉聚源(北京)教育科技有限公司</footer>
 </body>
-
 
 </html>
