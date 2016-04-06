@@ -15,7 +15,16 @@
 
 <body>
     <div class="wrapper">
-        <header> <a href="index.html">返回首页</a>音乐</header>
+        <header> <a href="index.html">返回首页</a>
+            <div class="navBox">
+                <ul>
+                    <li><a class="nav_a" href="news.html">新闻</a></li>
+                    <li class="nowPage"><a class="nav_a" href="music.html">音乐</a></li>
+                    <li><a class="nav_a" href="films.html">电影</a></li>
+                    <li><a class="nav_a" href="game.html">游戏</a></li>
+                </ul>
+            </div>
+        </header>
         <div class="content">
             <div class="title">
                 <img src="resources/utitls/logo.png">
@@ -25,10 +34,10 @@
             <div class="banner swiper-container">
                 <img src="resources\utitls\onlytvm.png" class="onlyTvm">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\music\images\top\1.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png"></div>
-                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\music\images\top\2.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png"></div>
-                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\music\images\top\3.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png"></div>
-                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\music\images\top\4.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png"></div>
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\music\images\top\1.png" alt="图片未加载"><a href="play-file.html?type=music&playid=t1"><img class="play_video" src="resources\utitls\play.png"></a></div>
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\music\images\top\2.png" alt="图片未加载"><a href="play-file.html?type=music&playid=t2"><img class="play_video" src="resources\utitls\play.png"></a></div>
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\music\images\top\3.png" alt="图片未加载"><a href="play-file.html?type=music&playid=t3"><img class="play_video" src="resources\utitls\play.png"></a></div>
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\music\images\top\4.png" alt="图片未加载"><a href="play-file.html?type=music&playid=t4"><img class="play_video" src="resources\utitls\play.png"></a></div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>

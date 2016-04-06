@@ -2,8 +2,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <!--  <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"> -->
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
     <title>高铁影音平台-电影</title>
     <link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -15,7 +20,16 @@
 
 <body>
     <div class="wrapper">
-        <header> <a href="index.html">返回首页</a>电影</header>
+        <header> <a href="index.html">返回首页</a>
+            <div class="navBox">
+                <ul>
+                    <li><a class="nav_a" href="news.html">新闻</a></li>
+                    <li><a class="nav_a" href="music.html">音乐</a></li>
+                    <li class="nowPage"><a class="nav_a" href="films.html">电影</a></li>
+                    <li><a class="nav_a" href="game.html">游戏</a></li>
+                </ul>
+            </div>
+        </header>
         <div class="content">
             <div class="title">
                 <img src="resources/utitls/logo.png">
@@ -24,16 +38,20 @@
             <!-- banner轮播 -->
             <div class="banner swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\1.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png">
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\1.png" alt="图片未加载">
+                        <a href="play-file.html?type=film&playid=t1"><img class="play_video" src="resources\utitls\play.png"></a>
                         <div class="bannerMsg"><span>你我的青春，很疼</span></div>
                     </div>
-                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\2.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png">
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\2.png" alt="图片未加载">
+                        <a href="play-file.html?type=film&playid=t2"><img class="play_video" src="resources\utitls\play.png"></a>
                         <div class="bannerMsg"><span>注定成为一代宗师的黄飞鸿年轻时的故事</span></div>
                     </div>
-                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\3.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png">
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\3.png" alt="图片未加载">
+                        <a href="play-file.html?type=film&playid=t3"><img class="play_video" src="resources\utitls\play.png"></a>
                         <div class="bannerMsg"><span>在狗熊岭百年不遇的大雪中，熊二鼓起勇气拯救大家的故事</span></div>
                     </div>
-                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\4.png" alt="图片未加载"><img class="play_video" src="resources\utitls\play.png">
+                    <div class="swiper-slide"><img class="bannerImg" src="gt_data\film\images\top\4.png" alt="图片未加载">
+                        <a href="play-file.html?type=film&playid=t4"><img class="play_video" src="resources\utitls\play.png"></a>
                         <div class="bannerMsg"><span>萌萌哒小熊帕丁顿的奇妙旅行</span></div>
                     </div>
                 </div>
@@ -235,8 +253,8 @@
             <!-- 日韩结束 -->
         </div>
         <!--  </div></div> -->
-
-    </div>        <footer>天脉聚源(北京)教育科技有限公司</footer>
+    </div>
+    <footer>天脉聚源(北京)教育科技有限公司</footer>
 </body>
 <script type="text/javascript">
 //swiper 循环banner插件

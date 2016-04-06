@@ -1,64 +1,55 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 
 <head>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <meta charset="utf-8" />
     <title>播放电影</title>
-    <script type="text/Javascript" src="js/qhstyle.js"></script>
-    <script>
-    var thisURL = document.URL;
-    var filename = "";
-    var filetype = "";
-    var getval = thisURL.split('?')[1];
-    var array_parm = getval.split("\&");
-    for (var i = 0; i < array_parm.length; i++) {
-        var keyvalues = array_parm[i].split("=");
-        var key = keyvalues[0];
-        var value = keyvalues[1];
-        if (key == "playid") {
-            filename = value;
-        } else if (key == "type") {
-            filetype = value;
-        }
-    }
-    var showval = "";
-    if (filetype == "film") {
-        showval = "gt_data\\film\\videos\\" + filename + ".mp4";
-    } else if (filetype == "tv") {
-        showval = "gt_data\\tv\\videos\\" + filename + ".mp4";
-    } else if (filetype == "music_rcm") {
-        showval = "gt_data\\music\\musics\\rcm_" + filename + ".mp3";
-    } else if (filetype == "music") {
-        showval = "gt_data\\music\\musics\\" + filename + ".mp3";
-    }
+    <link rel="stylesheet" type="text/CSS" href="css/layout.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <style type="text/css">
+    .content,.wrapper {
+        background: black;
 
-    function setvideopath() {
-        //alert(showval);  
-        document.getElementById('video').src = showval;
     }
+    .content{
+        position: relative;
+    }
+    video{
+        width: 100%;
+        margin-top: 10px;
 
-    function backurl() {
-        //alert(showval);  
-        if (filetype == "film") {
-            window.location.href = "films.html";
-        } else if (filetype == "tv") {
-            window.location.href = "tv.html";
-        } else if (filetype == "music_rcm") {
-            window.location.href = "music.html";
-        } else if (filetype == "music") {
-            window.location.href = "music.html";
-        }
     }
-    </script>
+    .adImg{
+           width: 200px;
+    height: 200px;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
+    }
+    .adLasttime{
+        position: absolute;;
+        color: black;
+        font-family: "微软雅黑";
+        top: 10px;
+        right: 0;
+        background: #ccc;
+    }
+    </style>
 </head>
 
-<body onload="setvideopath()" style="height:100%; background-color:#000000">
-    <div style="line-height:40px; background-color:#000000">
-        <label onclick="backurl()" style="font-size:24px; margin-left:10px; color:#FFFFFF;cursor:pointer;">返回</label>
+<body onload="setVideoAd()">
+    <div class="wrapper">
+        <header><a onclick="backurl()">返回</a></header>
+        <div class="content">
+            <video id="video" src="" controls></video>
+         <!--    <div class="addLasttime"></div> -->
+        </div>
     </div>
-    <div id="second-phase" class="phase-row" data-title="Illustrations" style="padding-top:0px;" data-coloroverlap='light'>
-        <video id="video" src="" style=" display:block; margin:0 auto;width:80%;height:auto; max-width:100%;" autoplay="autoplay" controls></video>
-    </div>
+    <footer>天脉聚源(北京)教育科技有限公司</footer>
 </body>
+<script type="text/javascript" src="js/playfile/playfile.js"></script>
 
 </html>
