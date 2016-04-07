@@ -32,7 +32,8 @@
 
   function setvideopath() {
       document.getElementById('video').src = showval;
-      video.attr({ "autoplay": "autoplay" }); //设置自动播放
+      // video.attr({ "autoplay": "autoplay" }); //设置自动播放
+       video.attr({ "controls": "controls" }); //设置自动播放
   } //播放
 
   function backurl() {
