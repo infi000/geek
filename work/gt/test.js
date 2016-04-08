@@ -6,7 +6,7 @@
   var getval = thisURL.split('?')[1]; //切割IP取问号后面部分
   var video = $("#video");
   var videoTime;
-  var h1= $("h1");
+  var h1 = $("h1");
   // var array_parm = getval.split("\&");
   // //切割路由 
   // for (var i = 0; i < array_parm.length; i++) {
@@ -34,7 +34,7 @@
   function setvideopath() {
       document.getElementById('video').src = "/gt/gt_data/film/videos/3.mp4";
       // video.attr({ "autoplay": "autoplay" }); //设置自动播放
-       // video.attr({ "controls": "controls" }); //设置自动播放
+      // video.attr({ "controls": "controls" }); //设置自动播放
   } //播放
 
   function backurl() {
@@ -52,13 +52,25 @@
       document.getElementById('video').src = adUrl; //获取广告URL
       $("<div class='adLasttime'>").appendTo($(".content")); //广告倒计时元素
       video.on('loadedmetadata', function() {
-          videoTime = video[0].duration;
+          // videoTime = video[0].duration;
+          //安卓部部分手机无法再该事件下获取食品总时间
       }); //广告长度
       video.on('timeupdate', function() {
-          var adLasttime = $(".adLasttime");
-          var nowTime = video[0].currentTime;
+          videoTime = video[0].duration;
+           var adLasttime = $(".adLasttime");
+          var nowTime = video[0].currentTime; //当前时间
           var lastTime = videoTime - nowTime;
-          h1.html("广告剩余时间：" + parseInt(lastTime));
+          // 延迟1000ms后显示广告，
+          // setTimeout(function() {
+         
+          //     adLasttime.html("广告剩余时间：" + parseInt(lastTime));
+
+          // }, 3000)
+
+          h1.eq(0).html("广告剩余时间：" + parseInt(lastTime));
+          h1.eq(1).html("广告总时间：" + parseInt(videoTime));
+          h1.eq(2).html("广告当前时间：" + parseInt(nowTime));
+          h1.eq(3).html("当前食品状态：" + video[0].readyState);
           adLasttime.html("广告剩余时间：" + parseInt(lastTime));
           if (lastTime == 0) {
 
