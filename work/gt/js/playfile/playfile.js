@@ -30,12 +30,18 @@
       showval = "\\gt\\gt_data\\music\\musics\\" + filename + ".mp3";
   }
 
+
+
+  //设置点播文件地址
   function setvideopath() {
       document.getElementById('video').src = showval;
       // video.attr({ "autoplay": "autoplay" }); //设置自动播放
-       video.attr({ "controls": "controls" }); //设置自动播放
-  } //播放
 
+  }
+
+
+
+  //退回点播页
   function backurl() {
       if (filetype == "film") {
           window.location.href = "films.html";
@@ -46,41 +52,51 @@
       } else if (filetype == "music") {
           window.location.href = "music.html";
       }
-  } //退回
-  function setVideoAd() {
-      document.getElementById('video').src = adUrl; //获取广告URL
-      $("<div class='adLasttime'>").appendTo($(".content")); //广告倒计时元素
-      video.on('loadedmetadata', function() {
-          videoTime = video[0].duration;
-      }); //广告长度
-      video.on('timeupdate', function() {
-          var adLasttime = $(".adLasttime");
-          var nowTime = video[0].currentTime;
-          var lastTime = videoTime - nowTime;
-          adLasttime.html("广告剩余时间：" + parseInt(lastTime));
-          if (lastTime == 0) {
-
-              removeVideo();
-          }
-      }); //广告剩余时间
-
   }
 
   function removeVideo() {
-      $(".adLasttime").remove(); //去除广告倒计时
+      $(".adLasttime").remove(); //去除广告倒计时dom元素
+      // video.attr({ "controls": "controls" }); //设置控制台
+      // video.removeAttr( "autoplay" ); //关闭自动播放
       setvideopath(); //播放点播文件
   };
 
   function removeImg() {
       $(".adLasttime").remove(); //去除广告倒计时
       $(".adImg").remove(); //去除广告
+       // video.removeAttr( "autoplay" ); //关闭自动播放
       setvideopath()
   }
 
+  //设置视频广告
+  function setVideoAd() {
+      document.getElementById('video').src = adUrl; //获取广告URL
+      $("<div class='adLasttime'>").appendTo($(".content")); //广告倒计时元素
+      video.on('loadedmetadata', function() {
+          // videoTime = video[0].duration;
+          //安卓部部分手机无法再该事件下获取食品总时间
+      }); //广告长度
+      video.on('timeupdate', function() {
+          videoTime = video[0].duration; //视频总时间
+          var adLasttime = $(".adLasttime"); //获取广告市场dom元素
+          var nowTime = video[0].currentTime; //现在广告时间
+          var lastTime = videoTime - nowTime; //剩余广告时间
+          adLasttime.html("广告剩余时间：" + parseInt(lastTime));
+        
+          if (lastTime == 0) {
+
+              removeVideo();
+          }
+      });
+
+  }
+
+
+  //设置图片广告
   function setImgAd() {
       var xtime = 5;
-      $("<div class='adLasttime'>").appendTo($(".content")); //广告倒计时元素
-      $("<img class='adImg'>").appendTo($(".content")).attr({ "src": adUrl });
+      $("<div class='adLasttime'>").appendTo($(".content")); //创建广告倒计时元素
+      $("<img class='adImg'>").appendTo($(".content")).attr({ "src": adUrl });//创建广告
       $(".adLasttime").html("广告剩余时间：" + 5);
 
 

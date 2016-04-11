@@ -2,40 +2,57 @@
 <html>
 
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+<!-- #以上代码告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。  -->
     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <meta charset="utf-8" />
     <title>播放电影</title>
     <link rel="stylesheet" type="text/CSS" href="css/layout.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <style type="text/css">
-    .content,.wrapper {
+    .content,
+    .wrapper {
         background: black;
-
     }
-    .content{
+    
+    .content {
         position: relative;
     }
-    video{
+    
+    video {
         width: 100%;
         margin-top: 10px;
-
     }
-    .adImg{
-           width: 200px;
-    height: 200px;
-    /* margin: 0 auto; */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -50px;
+    
+    .adImg {
+        width: 200px;
+        height: 200px;
+        /* margin: 0 auto; */
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -50px;
     }
-    .adLasttime{
-        position: absolute;;
+    
+    .adLasttime {
+        position: absolute;
         color: black;
         font-family: "微软雅黑";
         top: 10px;
         right: 0;
         background: #ccc;
+    }
+    
+    @media only screen and (max-device-width: 860px) {
+        .adLasttime {
+            color: black;
+            top: 0!important;
+            height: 30px;
+            line-height: 30px;
+        }
+        video{
+            margin-top: 30px!important;
+        }
     }
     </style>
 </head>
@@ -44,9 +61,10 @@
     <div class="wrapper">
         <header><a onclick="backurl()">返回</a></header>
         <div class="content">
-            <video id="video" src="" autoplay ></video>
-         <!--    <div class="addLasttime"></div> -->
+            <video id="video" src="" autoplay controls></video>
+            <!--    <div class="addLasttime"></div> -->
         </div>
+
     </div>
     <footer>华动高车</footer>
 </body>
