@@ -20,7 +20,9 @@ a {
     color: #a8afb3;
     text-decoration: none;
 }
-
+img{
+    border: 0;
+}
 .wrapper {
     background: #3b2a32;
     min-height: 100%;

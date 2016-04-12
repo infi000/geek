@@ -21,13 +21,13 @@
 
   var showval = ""; //播放路径
   if (filetype == "film") {
-      showval = "\\gt\\gt_data\\film\\videos\\" + filename + ".mp4";
+      showval = "/gt/gt_data/film/videos/" + filename + ".mp4";
   } else if (filetype == "tv") {
-      showval = "\\gt\\gt_data\\tv\\videos\\" + filename + ".mp4";
+      showval = "/gt/gt_data/tv/videos/" + filename + ".mp4";
   } else if (filetype == "music_rcm") {
-      showval = "\\gt\\gt_data\\music\\musics\\rcm_" + filename + ".mp3";
+      showval = "/gt/gt_data/music/musics/rcm_" + filename + ".mp3";
   } else if (filetype == "music") {
-      showval = "\\gt\\gt_data\\music\\musics\\" + filename + ".mp3";
+      showval = "/gt/gt_data/music/musics/" + filename + ".mp3";
   }
 
 

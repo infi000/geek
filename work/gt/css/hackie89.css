@@ -1,0 +1,33 @@
+.banner{
+    width: 100%;
+    height: 577px;
+    position: relative;
+}
+.banner .swiper-slide{
+    position: relative;
+}
+
+img{ 
+border-style:none; 
+} 
+
+
+
+
+/*<script type="text/javascript">
+   //swiper 循环banner插件
+var mySwiper = new Swiper('.swiper-container', {
+
+    loop: true,
+
+})
+</script>
+
+<script type="text/javascript">
+//swiper 循环banner插件
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 2000, //可选选项，自动滑动
+    pagination: '.swiper-pagination',
+    paginationType: 'bullets',
+})
+</script>*/

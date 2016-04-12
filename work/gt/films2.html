@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -13,21 +14,30 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/film/filmmain.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/html5shiv.min.js"></script>
-    <script src="js/respond.min.js"></script>
-    <!--[if IE 8]>   <link rel="stylesheet" type="text/css" href="css/hackie89.css">
-    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
-    <script src="js/idangerous.swiper.min.js"></script><![endif]-->
-    <!--[if IE 9]>  <link rel="stylesheet" type="text/css" href="css/hackie89.css">
-    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
-    <script src="js/idangerous.swiper.min.js"></script><![endif]-->
+
+ <!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="css/hackie89.css">
+<link rel="stylesheet" type="text/css" href="css/sidangerous.swiper.css">
+     <script src="js/idangerous.swiper.min.js"></script>
+<![endif]-->
+ <!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/hackie89.css">
+<link rel="stylesheet" type="text/css" href="css/sidangerous.swiper.css">
+     <script src="js/idangerous.swiper.min.js"></script>
+<![endif]-->
+
+    <!--[if gt IE 9]> 
+<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+     <script src="js/swiper-3.3.1.jquery.min.js"></script>
+  <![endif]-->
+
     <!--[if !IE]><!-->
     <link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
     <script src="js/swiper-3.3.1.jquery.min.js"></script>
     <!--<![endif]-->
 </head>
 
-<body>
+<body>   
     <div class="wrapper">
         <header> <a href="index.html">返回首页</a>
             <div class="navBox">
@@ -265,34 +275,26 @@
     </div>
     <footer>天脉聚源(北京)教育科技有限公司</footer>
 </body>
-<!--[if IE 8]>  
 <script type="text/javascript">
-   //swiper 循环banner插件
-var mySwiper = new Swiper('.swiper-container', {
+if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.match(/8./i) == "8.") {
+    var mySwiper = new Swiper('.swiper-container', {
 
-    autoplay : 2000,
+        loop: true,
 
-})
+    })
+} else if (navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.match(/9./i) == "9.") {
+    var mySwiper = new Swiper('.swiper-container', {
+
+        loop: true,
+
+    })
+} else {
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 2000, //可选选项，自动滑动
+        pagination: '.swiper-pagination',
+        paginationType: 'bullets',
+    })
+}
 </script>
-<![endif]-->
-<!--[if IE 9]>  <<script type="text/javascript">
-   //swiper 循环banner插件
-var mySwiper = new Swiper('.swiper-container', {
-
-   autoplay : 2000,
-
-})
-</script>
-<![endif]-->
-<!--[if !IE]><!-->
-<script type="text/javascript">
-//swiper 循环banner插件
-var mySwiper = new Swiper('.swiper-container', {
-    autoplay: 2000, //可选选项，自动滑动
-    pagination: '.swiper-pagination',
-    paginationType: 'bullets',
-})
-</script>
-<!--<![endif]-->
 
 </html>
