@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>我的课堂</title>
+    <script src="./js/jquery-1.7.2.js"></script>
+    <script src="./js/quo.js"></script>
+    <script src="./jc/loading.js" type="text/javascript"></script>
+    <script src="./jc/logincheck.js" type="text/javascript"></script>
+    <script src="./jc/util.js"></script>
+    <link href="./jc/eqmain.css" rel="stylesheet" type="text/css">
+    <script src="./jc/eqmainnew.js"></script>
+    <script src="./jc/imgloadnewnew.js" type="text/javascript"></script>
+    <script src="./jc/InkStreamnew.js"></script>
+    <script type="text/javascript" src="./js/jquery.qrcode.js"></script>
+    <script type="text/javascript" src="./js/qrcode.js"></script>
+    <script>
+    function touchmove_func(typev) {
+
+        var touchok = true;
+        try {
+            var obj = event.srcElement; //event是window的对象，srcELement是event的一个属性，作用是获得触发事件的元素
+            while (obj != null) {
+                if (obj.style.overflowY && obj.style.overflowY != "hidden") {
+                    touchok = false;
+                    break;
+                }
+                obj = obj.parentNode; //父节点
+            }
+            if (touchok) {
+                event.preventDefault(); //阻止元素事件触发
+            }
+        } catch (ex) {}
+        return !touchok;
+    }
+
+    function onbodyscroll(flagval) {
+        if (document.body.scrollTop != 0) { //滚轮相对顶部位置
+            if (document.body.scrollTop == 20 || flagval || document.activeElement.nodeName == "BODY") {
+                document.body.scrollTop = 0;
+            }
+        }
+        return false;
+    } //鼠标滚轮回顶
+
+    function setviewport(scalable) {
+        var viewportobj = document.getElementById('viewport');
+
+        if (scalable == 0) {
+            viewportobj.setAttribute('content', 'width=device-width,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0,user-scalable=' + scalable);
+        } else {
+            viewportobj.setAttribute('content', 'width=device-width,minimum-scale=1.0,initial-scale=1.0,user-scalable=' + scalable);
+        }
+    } //设viewport
+
+    function createQRCodeOfPay() {
+        //console.log("linkUrl="+linkUrl);
+        $("#paylink").html('<p style="color: #FFFFFF;font-size: 20px;margin-bottom: 20px;">扫码支付，支付完成后请刷新页面</p>');
+        $('#paylink').qrcode({
+            text: linkUrl,
+            width: 256,
+            height: 256,
+            background: "#ffffff", //背景颜色
+            foreground: "#000000" //前景颜色
+        });
+    } //扫码支付
+
+    var linkUrl = "";
+    window.showPay = function(linkInfo) {
+        linkUrl = linkInfo.link;
+        $(document.body).html('<table class="pay_tab" id="pay_tab"><tr><td id="paylink"  align="center" valign="middle" style="padding: 0;margin: 0;">' +
+            '<a onclick="createQRCodeOfPay()"><img src="' + linkInfo.imgUrl + '"></a></td></tr></table>');
+    }
+
+    function bindMove(v) { //拖拽
+        dragItem = $(".setBtnwrap").get(0); //get返回HTML对象，eq返回jquery对象
+        if (!v) {
+            $(dragItem).unbind("click mousedown");
+            $(document).unbind("mouseup mousemove");
+        } else {
+            var posX, posY,
+                isdown = false,
+                isdrag = 0,
+                dragItem_w = 120,
+                dragItem_h = 35;
+            $(dragItem).bind("mousedown", function(c) {
+                //mousedown当鼠标指针移动到元素上方，并按下鼠标按键时，会发生 mousedown 事件。与 click 事件不同，mousedown 事件仅需要按键被按下，而不需要松开即可发生。mouseup毅然；
+                if (!isdown) {
+                    var b = $(this).offset(); //对象坐标的像素
+                    posX = c.clientX - parseInt(b.left); //clientX 事件属性返回当事件被触发时鼠标指针向对于浏览器页面（或客户区）的水平坐标。
+                    posY = c.clientY - parseInt(b.top);
+                    isdown = true;
+                }
+            });
+            $(document).bind("mousemove", function(b) {
+                //当鼠标指针在指定的元素中移动时，就会发生 mousemove 事件。;
+                b.preventDefault();
+                if (isdown) {
+                    var c = b.clientX - posX,
+                        d = b.clientY - posY;
+                    ontouchmove(c, d);
+                    isdrag = 1;
+                }
+            });
+            $(document).bind("mouseup", function(a) {
+                //console.log("mouseup");
+                a.preventDefault();
+                isdown = false;
+                setTimeout(function() {
+                    isdrag = 0;
+                }, 100);
+            });
+            $(dragItem).bind("click", function(e) {
+                e.preventDefault();
+                if (!isdrag) {
+                    goindex();
+                }
+            });
+
+            function ontouchmove(a, b) {
+                var drag_l_max = $(window).width() - dragItem_w,
+                    drag_t_max = $(window).height() - dragItem_h;
+                if (a < 0) {
+                    a = 0;
+                }
+                if (b < 0) {
+                    b = 0;
+                }
+                dragItem.style.bottom = "auto";
+                dragItem.style.right = "auto";
+                a >= drag_l_max ? dragItem.style.left = drag_l_max + "px" : dragItem.style.left = a + "px";
+                b >= drag_t_max ? dragItem.style.top = drag_t_max + "px" : dragItem.style.top = b + "px";
+            }
+        }
+    }
+    </script>
+    <style type="text/css">
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        /*
+        -webkit-tab-highlight-color:rgba(0,0,0,0);
+        */
+        -webkit-user-select: none;
+    }
+    
+    #contentbodybodytab {
+        display: table;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #contentbodybodytab #myConainerDiv {
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%;
+        background-color: #dfdfdf;
+    }
+    
+    #contentbodybodytab #myConainerDiv img {
+        border: none;
+        display: block;
+        position: relative;
+    }
+    
+    .msgtextarea::-moz-placeholder:after {
+        content: "\A 发送：Ctrl+Enter 保存：Ctrl+S";
+        /*  \A 表示换行  */
+    }
+    
+    .msgtextarea::-webkit-input-placeholder:after {
+        content: "\A 发送：Ctrl+Enter 保存：Ctrl+S";
+        /*  \A 表示换行  */
+    }
+    
+    .msgtextarea::placeholder:after {
+        content: "\A 发送：Ctrl+Enter 保存：Ctrl+S";
+        /*  \A 表示换行  */
+    }
+    
+    .newimgbut {
+        background: transparent url('./images/butbg3.png') no-repeat left top;
+        border: none;
+        padding: 0px 16px 0px 16px;
+        margin: 8px;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        height: 33px;
+        width: 63px;
+    }
+    
+    .setBtnwrap {
+        display: none;
+        position: fixed;
+        width: 120px;
+        height: 35px;
+        right: 270px;
+        bottom: 150px;
+        z-index: 199;
+    }
+    
+    .setBtnwrap .sw_button {
+        position: absolute;
+        z-index: 1;
+        width: 120px;
+        height: 35px;
+        line-height: 35px;
+        bottom: 0;
+        border-radius: 5px;
+        background: rgba(67, 67, 67, 0.8);
+        text-align: center;
+        color: #FFF;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(67, 67, 67, 0.8);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+    }
+    
+    .pay_tab {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 999;
+        display: "";
+        border-spacing: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    
+    .pay_tab img {
+        border: 0;
+        width: 500px;
+        height: auto;
+        display: block;
+    }
+    
+    .pay_tab canvas {
+        border: 10px solid #FFFFFF;
+    }
+    
+    .rtd {
+        background-color: #FFFFFF;
+        position: relative;
+        padding: 0 10px;
+    }
+    
+    .rtd,
+    .rtd * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .btd {
+        height: 10px;
+        width: 100%;
+        background-color: #e0f0e0;
+    }
+    
+    .imgbartab {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .imgbar {
+        height: 41px;
+        cursor: pointer;
+        margin: 0px 8px 0px 8px;
+    }
+    
+    .imgbar_upform {
+        float: left;
+        cursor: pointer;
+        height: 41px;
+        width: 30px;
+        border: 0px solid;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        overflow: hidden;
+        margin-left: -35px;
+    }
+    
+    .bjbtn {
+        width: 46%;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        display: inline-block;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    #switchdiv {
+        height: 230px;
+    }
+    
+    #switchdiv span {
+        display: inline-block;
+        position: absolute;
+    }
+    /****/
+    
+    .tabcontdiv {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .leftcont {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 265px;
+        height: 100%;
+        background-color: gray;
+    }
+    
+    .rightcont {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 265px;
+        height: 100%;
+    }
+    
+    .leftcont .contetntr {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 100px;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+    
+    .leftcont .topzhuxiangtr {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .leftcont .contetntr .itemviewplane {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .leftcont .contetntr .itemviewplane .contentbody {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    </style>
+    <meta charset="UTF-8" />
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,user-scalable=0">
+</head>
+
+<body ontouchmove="return touchmove_func(1)" onresize="return onbodyscroll()" onload="init();onbodyscroll(1);" onscroll="return onbodyscroll()">
+    <input type="hidden" value="new" id="mainnew">
+    <table id="maindiv" style="width:100%;height:100%;" cellpadding="0" cellspacing="0" border="0">
+        <colgroup>
+            <col width="260px">
+            <col width="">
+            <col width="260px">
+        </colgroup>
+        <tr height="45px" class="barbg">
+            <td style="color:white;font-size:14pt;padding-left:20px">首页</td>
+            <td>&nbsp;</td>
+            <td align="right"><a href="javascript:LOGOUT()" style="color:white;font-size:14pt;">退出</a>&nbsp;</td>
+        </tr>
+        <tr height="100%">
+            <td valign="top" style="border-right:1px solid #b9b9b9">
+                <div style="padding:8px;border-bottom:1px solid #b9b9b9;height:60px">
+                    <img src="" id="loginuserheadimgdiv" style="float:left;width: 60px;height: 60px;border-radius:30px;border:1px solid #cccccc">
+                    <div style="color:#2b4458;font-size:14pt;margin:6px;float:left" id="loginuserdiv"></div>
+                    <div style="color:#8c9195;font-size:12px;float:left;padding:0px 0px 0px 6px" id="beforelogindatediv"></div>
+                    <div style="clear:both;height:0px;"></div>
+                </div>
+                <div style="margin:8px">
+                    <form id="searchf" name="searchf" method="post" onsubmit="searchactivityjoin();return false;">
+                        <input type="text" onblur="return onbodyscroll(1)" id="searchactivityname" style="border-radius:3px;padding:3px;width:160px;margin:15px 0px 0px 15px" placeholder="请您输入课程ID">
+                        <button class="newimgbut" style="margin:15px 10px 0px 115px;padding:0px;font-size:12px">参与课程</button>
+                    </form>
+                </div>
+            </td>
+            <td colspan="2" valign="top" style="border-left:1px solid #b9b9b9;">
+                <table id="coretab" style="width:100%;height:100%;display1:block;" cellpadding="0" cellspacing="0" border="0">
+                    <colgroup>
+                        <col width="60px">
+                        <col width="80px">
+                        <col width="120px">
+                        <col width="">
+                    </colgroup>
+                    <tr height="45px">
+                        <td align="center"><img src="./images/clock.png"></td>
+                        <td>
+                            <a href="javascript:getActivityList()"><img src="./images/core.png"></a>
+                        </td>
+                        <td align="center"><a href="./main.htm" class="swhVersionBtn">切换到旧版</a></td>
+                        <td id="searchkeyworddiv" style="font-size:13pt;">&nbsp; </td>
+                    </tr>
+                    <tr height="100%">
+                        <td colspan="4" valign="top">
+                            <div style="-webkit-overflow-scrolling:touch;height:100%;width:100%;overflow-x:hidden;overflow-y:auto;background-color:#fafafa" id="courselistdiv">
+                                <div style="margin:30px;width:300px;height:300px">加载中...</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table id="coursediv" style="width:100%;height:100%;display:none;" cellpadding="0" cellspacing="0" border="0">
+        <colgroup>
+            <col width="230px">
+            <col width="">
+            <col width="265px">
+        </colgroup>
+        <tr class="barbg" style="height: 45px;">
+            <td style="padding-left:20px">
+                <a href="javascript:goindex()"><img src="./images/goindex.png"></a>
+            </td>
+            <td align="center" style="color:white;font-size:14pt" id="coursetitlediv">&nbsp;</td>
+            <td id="pagenumdiv">&nbsp;</td>
+        </tr>
+        <tr id="tabtrcont" align="center" style="height: 100%;width: 100%;">
+            <td colspan="3" style="height:100%;width: 100%;">
+                <div class="tabcontdiv">
+                    <div class="leftcont">
+                        <div id="contetntr" class="contetntr">
+                            <div id="itemviewplanediv" class="itemviewplane">
+                                <div id="contentbodydiv" class="contentbody">
+                                    <div id="pptpreviewdiv" style="width:100%;height:100%;overflow: hidden;">
+                                        <div id="contentbodybodytab">
+                                            <div yj="1" id="myConainerDiv">...</div>
+                                        </div>
+                                        <img src="./images/leftarrow.png" class="leftarrow" id="leftarrow2" style="left:0px;">
+                                        <img src="./images/rightarrow.png" class="rightarrow" id="rightarrow2" style="right:0px;">
+                                    </div>
+                                    <div id="previewdiv" style="border:1px solid #595959;border-radius:0px;display:none;background-color:white;padding:2px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="topzhuxiangtr" class="topzhuxiangtr">
+                            <div class="itempanel">
+                                <img src="./images/leftarrow.png" class="leftarrow" id="leftarrow1">
+                                <div class="itempanel2" id="itempanel2" style="padding-top:2px">
+                                    <div id="itemscrolldiv" style="border-top:0px solid red;height:100%;overflow:hidden"></div>
+                                </div>
+                                <img src="./images/rightarrow.png" class="rightarrow" id="rightarrow1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightcont" id="bottomtr">
+                        <div style="position:relative;width:100%;height: 100%;" id="bottombardiv">
+                            <div id="upf1" style="height: 100%;box-shadow:0px -1px 3px gray;text-align: center;">
+                                <table cellpadding="0" cellspacing="0" border="0" style="height: 100%;">
+                                    <tr>
+                                        <td class="btd"></td>
+                                    </tr>
+                                    <tr id="switchdiv">
+                                        <td class="rtd">
+                                            <div style="position:absolute; width:245px;height: 35px;line-height:35px;top:0;padding: 5px 0;">
+                                                <span style="left:0;top:12px;width:17px;height:12px;background-image: url('./images/p_v.png');background-size:contain; "></span>
+                                                <span style="left:25px;height:25px;line-height: 25px;" id="switchtext" data-type="0">视频</span>
+                                                <span style="right:0;width:60px;height:25px;line-height: 25px;border-radius:5px; background-color: #32C671;color: white;cursor: pointer;" onclick="switchPPTTxt();">切换</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr id="switchdivbotm">
+                                        <td class="btd"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rtd">
+                                            <textarea rows="5" class="msgtextarea" placeholder="点击开始发言或者记录课堂笔记" style="/*box-shadow:inset 0px 1px 6px #9c9c9c;*/border-radius:5px;width:100%;padding:3px; resize:none;overflow-x:hidden;overflow-y:auto;" id="msgcontent" name="msgcontent" onblur="return onbodyscroll(1)"></textarea>
+                                            <span class="bjbtn" style="background-color: #32C671;margin-right: 3%;" id="sendmsgbut" onclick="sendmessage2wall(2)">发送</span>
+                                            <span class="bjbtn" style="background-color: #2f84d3;margin-left: 3%;" id="savenotemsgbut" onclick="sendmessage2wall(1)">保存笔记</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="btd"></td>
+                                    </tr>
+                                    <tr>
+                                        <td nowrap class="rtd" style="height:auto;">
+                                            <table class="imgbartab" cellpadding="0" cellspacing="0" border="0">
+                                                <!-- 
+                                            <tr>
+                                                <td colspan="2">
+                                                    <img id="showvideoimgbut" alt="显示隐藏直播流" onclick="showHidd_m3u8()" src="./images/video.png">
+                                                </td>
+                                            </tr>
+                                         -->
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <img class="imgbar" id="playpptimgbut" title="播放ppt" onclick="playcourse()" src="./images/play.png">
+                                                    </td>
+                                                    <td colspan="2">
+                                                        <img id="showvideoimgbut" alt="显示隐藏直播流" onclick="showHidd_m3u8()" src="./images/video.png">
+                                                    </td>
+                                                    <td>
+                                                        <!-- 
+                                                    <img class="imgbar" id="checkmuteimgbut" title="是否静音" onclick="checkMute(this)"  style="width:26px;" src="./images/voicestart.png" data-mute="1">
+                                                     -->
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center">
+                                                        <div class="imgbar" style="background-image: url('./images/up.png');background-repeat: no-repeat;background-size: cover;width: 25px;">
+                                                            <form id="upf" name="upf" method="post" style="width: 100%;height: 100%;opacity: 0;">
+                                                                <input type="file" id="files" name="upload" size="1" style="width: 100%;height: 100%;cursor: pointer;" onchange="onselectactivityfile(this)" accept=".jpg,.png">
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <img class="imgbar" onclick="showzl()" src="./images/zl.png">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img class="imgbar" onclick="shownoteinfo()" src="./images/biji.png">
+                                                    </td>
+                                                    <td>
+                                                        <img class="imgbar" id="quanhua" onclick="modifyimage1()" src="./images/quanhua.png">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="btd"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div id="modifyimgdiv1" style="background-color:#FFFFFF;display:none;height:100%;width:100%;position:absolute;top:0px;left:0px;z-index:8889;">
+                                <div class="toolsbar" id="toolsbardiv" style="width:100%;background-size: contain;background-repeat: no-repeat;margin-top: 70%;">
+                                    <div value="#FFFFFF" class="coloritem colorwhite"></div>
+                                    <div value="#000000" class="coloritem colorblack"></div>
+                                    <div value="#0000ff" class="coloritem colorblue"></div>
+                                    <div value="#ff0000" class="coloritem colorred coloritemon"></div>
+                                    <div value="#ffff00" class="coloritem coloryellow"></div>
+                                    <div value="#00ff00" class="coloritem colorgreen"></div>
+                                    <div value="1" class="penitem pen1"></div>
+                                    <div value="2" class="penitem pen2 penitemon"></div>
+                                    <div value="3" class="penitem pen3"></div>
+                                    <div value="4" class="penitem pen4"></div>
+                                </div>
+                                <div style="clear:both;height:0px;"></div>
+                                <div class="buttonbar" id="buttonbardiv" style="background-color:#FFFFFF;width: 100%;margin-top: 40%;">
+                                    <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;height: 100%;text-align: center;">
+                                        <tr style="height: 80px;">
+                                            <td>
+                                                <input type="button" style="background-position:-92px 0px;width:28px;" class="imgbgbut" id="okcanvasbut" onclick="modifyimage1ifr.okcanvasbutfunc(2)" title="推 送">
+                                            </td>
+                                            <td>
+                                                <input type="button" style="background-position:-45px 0px;width:28px;" class="imgbgbut" id="rescanvasbut" onclick="modifyimage1ifr.rescanvasbutfunc()" title="清 空">
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 80px;">
+                                            <td>
+                                                <input type="button" style="background-position:-141px 0px;width:28px;" class="imgbgbut" id="rescanvasbut2" onclick="modifyimage1ifr.blankcanvasbutfunc()" title="白 纸">
+                                            </td>
+                                            <td>
+                                                <input type="button" style="background-position:-192px 0px;width:28px;" class="imgbgbut" id="oksavecanvasbut" onclick="modifyimage1ifr.okcanvasbutfunc(1)" title="返回并保存">
+                                            </td>
+                                        </tr>
+                                        <tr style="height: 80px;">
+                                            <td colspan="2">
+                                                <input type="button" style="background-position:0px 0px;width:28px;display:none" id="chexiaocanvasbut" class="imgbgbut" title="撤 销">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr height="100%" id="yxcontenttr">
+            <td colspan="3" style="background-color:#c4c4c4">
+                <iframe id="yxcontentifr" name="yxcontentifr" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0" src=""></iframe>
+            </td>
+        </tr>
+    </table>
+    <table id="zlmaindiv" style="z-index:201;width:100%;height:100%;position:absolute;top: 0px;left:0px;display:none" cellpadding="0" cellspacing="0" border="0">
+        <tr height="45px">
+            <td>
+                <div onclick="hidezldiv()" style="position:relative;width:100%;height:45px;background-color:#000000;opacity:0.75;filter:alpha(opacity=75);">&nbsp;</div>
+            </td>
+            <td style="width:300px;" class="barbg">&nbsp;</td>
+        </tr>
+        <tr height="35px">
+            <td rowspan="2" valign="top">
+                <table onclick="hidezldiv()" id="zlmainbgdiv" style="position:relative;width:100%;height:100%;background-color:#000000;opacity:0.75;filter:alpha(opacity=75);" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td align="center">
+                            <div id="packfileviewplane">&nbsp;</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="height:35px;background-color:#212121;width:300px;color:white;font-size:12pt;padding-left:12px" id="packtitlediv" valign="top">资料下载</td>
+        </tr>
+        <tr height="100%">
+            <td valign="top" style="background-color:#212121;width:300px;" id="zlpacklisttd">
+                <div id="zlpacklistdiv" onscroll="zldivscroll(this)" style="-webkit-overflow-scrolling:touch;position:relative;width:300px;height:100%;overflow-x:hidden;overflow-y:auto;"></div>
+            </td>
+        </tr>
+    </table>
+    <!-- 全屏显示 -->
+    <div id="fullmaindiv" style="background-color:black;z-index:202;width:100%;height:100%;position:absolute;top: 0px;left:0px;display:none">
+        <input type="button" class="newimgbut" style="position:absolute;top:6px;right:6px;z-index:202" onclick="exitfullviewimage()" value="退出">
+        <!-- 
+<input type="button" class="imgbut" style="position:absolute;top:6px;right:156px;z-index:202" onclick="socketiframe.init1()" value="hhhh" > 
+-->
+    </div>
+    <iframe id="downiframe" name="downiframe" src="about:blank" style="display:none" marginheight=0 marginwidth=0 frameborder=0></iframe>
+    <iframe id="socketiframe" name="socketiframe" src="about:blank" style="display:none" frameborder="0"></iframe>
+    <audio id="playyjaudio" style="position:absolute;right:-100px;top:-100px;z-index:1111111;" src="empty.mp3" controls=""></audio>
+    <!-- 
+<table class="pay_tab" id="pay_tab">
+    <tr>
+        <td id="paylink"  align="center" valign="middle" style="padding: 0;margin: 0;">
+            <p style="color: #FFFFFF;font-size: 20px;margin-bottom: 5px;">扫码支付，支付完成后请刷新页面！</p>
+            <a onclick="createQRCodeOfPay()"><img src="http://img3.3lian.com/2006/013/02/010.jpg"></a>
+        </td>
+    </tr>
+</table>
+ -->
+    <div class="setBtnwrap">
+        <a class="sw_button" id="sw_button" unselectable="on">点击，回看更多</a>
+    </div>
+</body>
+
+</html>
