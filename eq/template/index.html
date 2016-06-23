@@ -1,0 +1,80 @@
+<!-- 班级年级消息框 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    body {
+        font-size: 14px;
+        font-family: "微软雅黑"
+    }
+    
+    .box {
+        width: 220px;
+        height: 160px;
+        position: relative;
+        opacity: 0.8;
+        background-color: rgb(23, 146, 155);
+    }
+    
+    .box2_left {
+        float: left;
+        margin-left: 23px;
+        margin-top: 40px;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .box2_right {
+        float: left;
+        margin-top: 52px;
+        margin-left: 5px;
+        color: white;
+    }
+    
+    .box2_right li {
+        list-style: none;
+    }
+    
+    .box2_right_span1 {
+        list-style: none;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    
+    .box2_right_span2 {
+        text-align: left;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    
+    .box3 {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        right: -26px;
+        top: 65px;
+        border-top: 13px solid rgba(255, 0, 0, 0);
+        border-left: 13px solid rgb(23, 146, 155);
+        border-right: 13px solid rgba(255, 0, 0, 0);
+        border-bottom: 13px solid rgba(255, 0, 0, 0)
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box2_left"><span>2014</span></div>
+        <div class="box2_right">
+            <li><span class="box2_right_span1">级</span></li>
+            <li><span class="box2_right_span2">1班</span></li>
+        </div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>

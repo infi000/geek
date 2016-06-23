@@ -1,0 +1,470 @@
+/*++++++++++++++++++++content-up++++++++++++++++++++++++*/
+
+.content-up {
+    width: 100%;
+    height: 258px;
+    background: url(../images/shape5.png) 100%;
+}
+
+.content-up-bgbox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    height: 258px;
+    background: url(../images/shape5.png) 100%;
+    z-index: 0;
+}
+
+.content-up-bgbox img {
+    position: absolute;
+    top: 0px;
+    right: -2px;
+}
+
+.content-up .qr {
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*headerBox */
+
+.headerBox {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 442px;
+    border: 12px solid #118a93;
+}
+
+.headerBox-2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.headerBox-2 img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerBox-bar {
+    height: 116px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 0, 0.29);
+}
+
+.headerBox-bar-share {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 60px;
+}
+
+.headerBox-bar-star {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 60px;
+}
+
+.headerBox-bar-eye {
+    position: absolute;
+    width: 60px;
+    bottom: 0;
+    left: -10px
+}
+
+.headerBox-bar {
+    color: white;
+}
+
+
+/*雪碧图样式*/
+
+.sprite_share3_outer {
+    height: 21px;
+    width: 22px;
+    overflow: hidden;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.sprite_share3 {
+    background: url(../images/sprite/sprite.png) -245px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 245px;
+    _margin-left: -245px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+.sprite_star4_outer {
+    height: 22px;
+    width: 22px;
+    overflow: hidden;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.sprite_star4 {
+    background: url(../images/sprite/sprite.png) -158px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 158px;
+    _margin-left: -158px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+.sprite_eye4_outer {
+    height: 21px;
+    width: 22px;
+    overflow: hidden;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.sprite_eye4 {
+    background: url(../images/sprite/sprite.png) -289px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 289px;
+    _margin-left: -289px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+
+/*雪碧图样式 end*/
+
+
+/*headerBox  end*/
+
+.loginMsg {
+    width: 240px;
+    height: 70px;
+    position: absolute;
+    left: 392px;
+    top: 175px;
+    z-index: 1;
+    line-height: 35px;
+    text-align: center;
+}
+
+.loginMsg span {
+    font-size: 15px;
+    color: white;
+}
+
+.loginMsg .msgNum {
+    color: #f8b551;
+}
+
+
+/*++++++++++++++++++++content-up  end++++++++++++++++++++++++*/
+
+
+/*+++++++++++++++++++++content-down */
+
+.content-down {
+    width: 1024px;
+    margin: 40px auto 0;
+/*    background: yellow;*/
+}
+
+.content-down-L {
+    float: left;
+    width: 655px;
+}
+
+.content-down-R {
+    float: right;
+    width: 320px;
+    background: red;
+}
+
+.content-down-Lhead {
+    width: 100%;
+    height: 55px;
+}
+
+.content-down-Lhead .className {
+    height: 55px;
+    width: 260px;
+    background: url("../images/pic4.png") 100%;
+    text-align: center;
+    line-height: 55px;
+    float: left;
+}
+
+.className-Span {
+    color: #d9dcdc;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content-down-Lhead .classList {
+    height: 55px;
+    width: 385px;
+    float: right;
+    border-left: 5px solid #199ca6;
+    text-align: center;
+    line-height: 55px;
+    background: #eeeeee;
+}
+
+.classList-Span {
+    color: #199ca6;
+    font-size: 28px;
+}
+
+.content-down-Llist {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.content-down-Llist li {
+    list-style: none;
+    height: 85px;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.classInfoBox {
+    width: 400px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.classInfoBox-img {
+    height: 100%;
+    float: left;
+}
+
+.classInfoBox-Div {
+    float: left;
+    height: 100%;
+    width: 230px;
+    position: relative
+}
+
+.classInfoBox-Div span {
+    font-size: 14px;
+}
+
+.classInfoBox-className {
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+.classInfoBox-className span{
+	font-size:19px;
+	color: #48596c;
+}
+.classInfoBox-classTime {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+   color: #8b8b8b;
+}
+
+.classInfoBox-writter {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #8b8b8b;
+}
+
+.sprite_news2_outer {
+    height: 19px;
+    width: 15px;
+    overflow: hidden;
+    float: left;
+        margin-top: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+}
+
+.sprite_news2 {
+    background: url(../images/sprite/sprite.png) -407px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 407px;
+    _margin-left: -407px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+.sprite_pic_outer {
+    height: 18px;
+    width: 18px;
+    overflow: hidden;
+    float: left;
+        margin-top: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+}
+
+.sprite_pic {
+    background: url(../images/sprite/sprite.png) -422px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 422px;
+    _margin-left: -422px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+
+/*++++++++++++*/
+
+.classAction {
+    float: right;
+    height: 100%;
+    width: 160px;
+    position: relative;
+}
+
+.classAction span {
+    font-size: 14px;
+}
+
+.classAction-watch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.classAction-watch span{
+	color:#199ca6;
+}
+.classAction-cancle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.classAction-cancle span{
+	color:#f8b551;
+}
+.sprite_star1_outer {
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.sprite_star1 {
+    background: url(../images/sprite/sprite.png) -507px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 507px;
+    _margin-left: -507px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+.sprite_eye5_outer {
+    height: 13px;
+    width: 18px;
+    overflow: hidden;
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.sprite_eye5 {
+    background: url(../images/sprite/sprite.png) -77px -25px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 77px;
+    _margin-left: -77px;
+    _padding-top: 25px;
+    _margin-top: -25px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+.classAction-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.classAction-more span {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/*++++++++content-down-R start*/
+.searchBox{
+	    padding-left: 15px;
+    float: right;
+    width: 270px;
+    position: relative;
+    height: 31px;
+    /* margin-left: 25px; */
+    border: 1px solid #ccc;
+}
+.searchBox input{
+	width: 240px;
+    height: 30px;
+    line-height: 33px;
+    border: 0;
+}
+.searchBox_search_outer{
+      position: absolute;
+    right: 0;
+    top: 4px;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    overflow: hidden;
+}
+.sprite_search{
+	    background: url(../images/sprite/sprite.png) -92px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 92px;
+    _margin-left: -92px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+/*+++++++++++++++++++++content-down end++++++++++++++++++++*/

@@ -1,0 +1,146 @@
+ /*包括header footer 和统一声明的*/
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ a{
+  text-decoration: none;
+  color: black;
+ }
+ body {
+     font-family: "微软雅黑";
+ }
+ 
+ header {
+     height: 70px;
+     width: 1024px;
+     margin: 0 auto;
+     position: relative;
+     padding-top: 40px;
+ }
+ 
+ footer {
+     height: 135px;
+ }
+ 
+ input {
+     outline: none;
+ }
+ 
+ .content {
+     width: 1024px;
+     margin: 0 auto;
+     position: relative;
+     color: #48596c;
+ }
+ /*+++++++++++++++++header start*/
+    header a:hover{
+        color: #f8b551;
+    }
+    .logoImg {
+      position: absolute;
+    top: 30px;
+    width: 250px;
+    }
+    
+    .nav {
+        height: 40px;
+        line-height: 38px;
+        width: 450px;
+        margin: 0 auto;
+    }
+    
+    .nav li {
+        list-style: none;
+        float: left;
+        margin: 0px 12px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .nav li:hover {
+        
+         border-bottom: 2px solid #f8b551;
+    }
+    
+    .nowPage {
+        
+        border-bottom: 2px solid #f8b551;
+    }
+    .nowPage a{
+        color: #f8b551;
+    }
+    .headerMenu {
+        width: 293px;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 40px;
+    }
+    
+    .userBox li {
+        float: left;
+        list-style: none;
+        font-size: 14px;
+        cursor:pointer;
+        margin-left: 10px;
+    }
+    .userBox li:hover {
+           color: #f8b551;
+    }
+    .userBox ul {
+        float: right;
+    }
+    
+    .sprite_search_outer {
+        height: 23px;
+        width: 23px;
+        overflow: hidden;
+    }
+    
+    .userBox {
+        width: 115px;
+        height: 40px;
+        line-height: 40px;
+        float: right;
+
+    }
+    
+    .headerMenu-checkBox {
+    padding-left: 15px;
+    float: left;
+    width: 160px;
+    position: relative;
+    height: 31px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    }
+    
+    .headerMenu-checkBox input {
+      width: 135px;
+    height: 30px;
+    line-height: 33px;
+    border: 0;
+    }
+    
+    .headerMenu-checkBox-check {
+ position: absolute;
+    right: 0;
+    top: 4px;
+    cursor: pointer;
+    }
+    
+    .sprite_search {
+        background: url(../images/sprite/sprite.png) -92px -0px no-repeat;
+        width: 100%;
+        height: 100%;
+        _background: none;
+        _padding-left: 92px;
+        _margin-left: -92px;
+        _padding-top: 0px;
+        _margin-top: -0px;
+        _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="images/sprite/sprite.png");
+    }
+    
+    .headerMenu-checkBox-check {}
+    /*+++++++++++++++++header end*/
