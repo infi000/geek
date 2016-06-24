@@ -12,7 +12,7 @@
  function newsinfo1() {
      Atext1 = $.ajax({
          type: "GET",
-          url:  "http://115.159.150.183:3900/1",
+          url:  "http://104.194.79.133:3900/1",
          dataType: "json",
          success: function() {
              jsontext1 = JSON.parse(Atext1.responseText);
@@ -68,7 +68,7 @@
      Atext2 = $.ajax({
          type: "GET",
          // contentType : 'application/json',
-          url:  "http://115.159.150.183:3900/2",
+          url:  "http://104.194.79.133:3900/2",
          dataType: "json",
          success: function() {
              jsontext2 = JSON.parse(Atext2.responseText);
@@ -116,7 +116,7 @@
  function newsinfo3() {
      Atext3 = $.ajax({
          type: "GET",
-          url:  "http://115.159.150.183:3900/3",
+          url:  "http://104.194.79.133:3900/3",
          dataType: "json",
          success: function() {
              jsontext3 = JSON.parse(Atext3.responseText);

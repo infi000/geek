@@ -102,7 +102,7 @@ $(".addtag1").click(function() {
     time = getNewDate();
     ul = (1 + ",:," + "" + ",:," + title + ",:," + newsfrom + ",:," + img + ",:," + "" + ",:," + time);
     $.ajax({
-        url: "http://115.159.150.183:3900/0/" + ul,
+        url: "http://104.194.79.133:3900/0/" + ul,
         type: "post",
         success: function() {
             alert("上传文件成功！");
@@ -119,7 +119,7 @@ $(".addtag2").click(function() {
     time = getNewDate();
     ul = (2 + ",:," + "" + ",:," + title + ",:," + "" + ",:," + img + ",:," + "" + ",:," + time);
     $.ajax({
-        url: "http://115.159.150.183:3900/0/" + ul,
+        url: "http://104.194.79.133:3900/0/" + ul,
         type: "post",
         success: function() {
             alert("上传文件成功！");
@@ -135,7 +135,7 @@ $(".addtag3").click(function() {
     time = getNewDate();
     ul = (3 + ",:," + "" + ",:," + title + ",:," + "" + ",:," + "" + ",:," + content + ",:," + time);
     $.ajax({
-        url: "http://115.159.150.183:3900/0/" + ul,
+        url: "http://104.194.79.133:3900/0/" + ul,
         type: "post",
         success: function() {
             alert("上传文件成功！");
@@ -161,7 +161,7 @@ function changeNews1() {
         time = getNewDate();
         ul = (1 + ",:," + id + ",:," + title + ",:," + newsfrom + ",:," + img + ",:," + "" + ",:," + time);
         $.ajax({
-            url: "http://115.159.150.183:3900/1/" + ul,
+            url: "http://104.194.79.133:3900/1/" + ul,
             type: "post",
             success: function() {
                 alert("上传文件成功！");
@@ -185,7 +185,7 @@ function changeNews2() {
         time = getNewDate();
         ul = (2 + ",:," + id + ",:," + title + ",:," + "" + ",:," + img + ",:," + "" + ",:," + time);
         $.ajax({
-            url: "http://115.159.150.183:3900/1/" + ul,
+            url: "http://104.194.79.133:3900/1/" + ul,
             type: "post",
             success: function() {
                 alert("上传文件成功！");
@@ -205,7 +205,7 @@ function changeNews3() {
         time = getNewDate();
         ul = (3 + ",:," + id + ",:," + title + ",:," + "" + ",:," + img + ",:," + content + ",:," + time);
         $.ajax({
-            url: "http://115.159.150.183:3900/1/" + ul,
+            url: "http://104.194.79.133:3900/1/" + ul,
             type: "post",
             success: function() {
                 alert("上传文件成功！");
@@ -242,7 +242,7 @@ setTimeout("change()",500);
 //         time = getNewDate();
 //         ul = (1 + ",:," + id + ",:," + title + ",:," + newsfrom + ",:," + img + ",:," + "" + ",:," + time);
 //         $.ajax({
-//             url: "http://115.159.150.183:3900/1/" + ul,
+//             url: "http://104.194.79.133:3900/1/" + ul,
 //             type: "post",
 //             success: function() {
 //                 alert("上传文件成功！");
@@ -261,7 +261,7 @@ setTimeout("change()",500);
 //         time = getNewDate();
 //         ul = (2 + ",:," + id + ",:," + title + ",:," + "" + ",:," + img + ",:," + "" + ",:," + time);
 //         $.ajax({
-//             url: "http://115.159.150.183:3900/1/" + ul,
+//             url: "http://104.194.79.133:3900/1/" + ul,
 //             type: "post",
 //             success: function() {
 //                 alert("上传文件成功！");
@@ -280,7 +280,7 @@ setTimeout("change()",500);
 //         time = getNewDate();
 //         ul = (3 + ",:," + id + ",:," + title + ",:," + "" + ",:," + img + ",:," + content + ",:," + time);
 //         $.ajax({
-//             url: "http://115.159.150.183:3900/1/" + ul,
+//             url: "http://104.194.79.133:3900/1/" + ul,
 //             type: "post",
 //             success: function() {
 //                 alert("上传文件成功！");

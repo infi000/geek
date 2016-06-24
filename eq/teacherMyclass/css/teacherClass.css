@@ -1,0 +1,774 @@
+/*++++++++++++++++++++content-up++++++++++++++++++++++++*/
+
+.content-up {
+    width: 100%;
+    height: 258px;
+}
+
+.content-up-bgbox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    height: 258px;
+    background: url(../images/shape4.png) 100%;
+    z-index: 0;
+}
+
+.content-up-bgbox img {
+    position: absolute;
+    top: 0px;
+    right: -2px;
+}
+
+.content-up .qr {
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*headerBox */
+
+.headerBox {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 442px;
+    border: 12px solid #2B3744;
+}
+
+.headerBox-2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.headerBox-2 img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerBox-bar {
+    height: 116px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 0, 0.29);
+}
+
+.headerBox-bar-share {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 60px;
+}
+
+.headerBox-bar-star {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 60px;
+}
+
+.headerBox-bar-eye {
+    position: absolute;
+    width: 60px;
+    bottom: 0;
+    left: -10px
+}
+
+.headerBox-bar {
+    color: white;
+}
+
+
+/*雪碧图样式*/
+
+.sprite_share2_outer {
+    height: 21px;
+    width: 22px;
+    overflow: hidden;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.sprite_share2 {
+    background: url(../images/sprite/sprite.png) -267px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 267px;
+    _margin-left: -267px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+
+.sprite_star3_outer {
+height: 22px;
+width: 22px;
+overflow: hidden;
+  margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+.sprite_star3 {
+background: url(../images/sprite/sprite.png) -136px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 136px;
+_margin-left: -136px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="../images/sprite/sprite.png");
+}
+
+
+.sprite_eye3_outer {
+height: 21px;
+width: 22px;
+overflow: hidden;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+.sprite_eye3 {
+background: url(../images/sprite/sprite.png) -311px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 311px;
+_margin-left: -311px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="../images/sprite/sprite.png");
+}
+
+/*雪碧图样式 end*/
+
+
+/*headerBox  end*/
+
+.loginMsg {
+    width: 240px;
+    height: 70px;
+    position: absolute;
+    left: 392px;
+    top: 175px;
+    z-index: 1;
+    line-height: 35px;
+    text-align: center;
+}
+
+.loginMsg span {
+    font-size: 15px;
+    color: white;
+}
+
+.loginMsg .msgNum {
+    color: #f8b551;
+}
+
+
+/*++++++++++++++++++++content-up  end++++++++++++++++++++++++*/
+
+
+/*+++++++++++++++++++++content-down */
+
+.content-down {
+    width: 1024px;
+    margin: 40px auto 0;
+    /*    background: yellow;*/
+}
+
+.content-down-L {
+    float: left;
+    width: 655px;
+}
+
+.content-down-R {
+    float: right;
+    width: 285px;
+}
+
+.content-down-Lhead {
+    width: 100%;
+    height: 55px;
+}
+
+.content-down-Lhead .className {
+    height: 55px;
+    width: 260px;
+    background: url("../images/pic4.png") 100%;
+    text-align: center;
+    line-height: 55px;
+    float: left;
+}
+
+.className-Span {
+    color: #d9dcdc;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+
+
+/*++++++++++++*/
+
+
+/*++++++++content-down-R start*/
+
+.searchBox {
+    padding-left: 15px;
+    width: 265px;
+    position: relative;
+    height: 31px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+
+.searchBox input {
+    width: 240px;
+    height: 30px;
+    line-height: 33px;
+    border: 0;
+}
+
+.searchBox_search_outer {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    overflow: hidden;
+}
+
+.sprite_search {
+    background: url(../images/sprite/sprite.png) -92px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 92px;
+    _margin-left: -92px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+
+/*+++++++*/
+
+.hotTagsBox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hotTagsBox-title {
+    margin-bottom: 20px;
+}
+
+.hotTagsBox-content table {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border: 2px solid white;
+    border-collapse: collapse
+}
+
+.hotTagsBox-content table td {
+    border: 2px solid white;
+    background: #ededed;
+    color: #607D8B;
+    cursor: pointer;
+}
+
+.hotTagsBox-content table td:hover {
+    background: #EDE4E4;
+    color: black;
+}
+
+.sprite_hotTag_outer {
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    position: absolute;
+    top: 3px;
+    left: -35px;
+}
+
+.sprite_hotTag {
+    background: url(../images/sprite/sprite.png) -22px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 22px;
+    _margin-left: -22px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+
+/*+++++++++++*/
+
+.hotNewsBox {
+    position: relative;
+}
+
+.hotNewsBox ol {
+    width: 95%;
+    float: right;
+    margin-top: 25px;
+}
+
+.hotNewsBox ol li {
+    font-size: 14px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.hotNewsBox li:hover {
+    color: black;
+}
+
+.hotNewsBox-content-writter {
+    float: right;
+}
+
+
+/*+++++++++++++++++++++content-down end++++++++++++++++++++*/
+
+
+/*录制课程插入课程*/
+
+.content-down-Lhead .classList {
+    height: 55px;
+    width: 385px;
+    float: right;
+    border-left: 5px solid #199ca6;
+    text-align: center;
+    line-height: 55px;
+    background: #eeeeee;
+}
+
+.classList span:hover {
+    color: #199ca6;
+}
+
+.makeClass {
+    color: #199ca6;
+    font-size: 22px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.makeClassOver {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+/*录制课程插入课程 end*/
+
+
+/*上传与确定*/
+
+.uploadBox {
+    margin-top: 30px;
+}
+
+.uploadClass-box {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 20px;
+}
+
+.uploadClass-box .uploadClass {
+    width: 85%;
+    /*background: yellow;*/
+    float: left;
+    height: 32px;
+    border: 1px solid #ccc;
+}
+
+.uploadClass input {
+    float: right;
+    width: 97%;
+    height: 30px;
+    border: 0;
+}
+
+.uploadClass-box .uploadClass-btn {
+    width: 10%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    float: right;
+    color: white;
+    background: #f8b551;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.uploadClass-btn:hover {
+    color: #EAE0E0
+}
+
+.uploadClass-btn:active {
+    box-shadow: none;
+}
+
+.uploadClass-box .finish-btn {
+    background: #70c4ff
+}
+
+
+/*上传与确定 end*/
+
+
+/*课件上传列表*/
+
+.uploadList {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+}
+
+.uploadList-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-left: 5px solid #199ca6;
+    padding-left: 20px
+}
+
+.uploadList-form {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.uploadList-form table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.uploadList-form tr {
+    height: 70px;
+}
+
+.uploadList-form td {
+    position: relative;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.uploadList-form-className {
+    width: 190px;
+}
+
+.uploadList-form-time {
+    width: 100px;
+}
+
+.uploadList-form-teacher {
+    width: 85px;
+}
+
+.uploadList-form-rate {
+    width: 160px
+}
+
+.uploadList-form-btn {
+    width: 60px;
+}
+
+.uploadList-form-saveBtn,
+.uploadList-form-cancleBtn {
+    margin: 0 auto;
+    width: 90%;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.uploadList-form-saveBtn:active,
+.uploadList-form-cancleBtn:active {
+    box-shadow: none;
+}
+
+.uploadList-form-rateBox {
+    position: relative;
+    width: 78%;
+    height: 25px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.uploadList-form-uploadDone {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background: #89c997;
+}
+
+.uploadList-form-uploading {
+    width: 20%;
+    height: 25px;
+    line-height: 25px;
+    background: #00a8ff;
+}
+
+.uploadList-form-rateBox span {
+    float: left;
+    margin-left: 38%;
+    color: white;
+}
+
+.uploadList-form-rateBox .uploading-font {
+    color: black;
+}
+
+
+/*课件上传列表end */
+
+
+/*录制完成列表*/
+
+.uploadDoneList {
+    display: none;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.uploadDoneList-title {
+    margin-bottom: 30px;
+    border-left: 5px solid #199ca6;
+    padding-left: 20px
+}
+
+.uploadDoneList-form {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.uploadDoneList-form table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+.uploadDoneList-form tr {
+    height: 70px;
+}
+
+.uploadDoneList-form td {
+    position: relative;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.uploadDoneList-form-className {
+    width: 210px;
+}
+
+.uploadDoneList-form-time {
+    width: 155px;
+}
+
+.uploadDoneList-form-teacher {
+    width: 95px;
+}
+
+
+/*收藏按钮*/
+
+.uploadDoneList-form-save {
+    text-align: right;
+    width: 92px;
+    font-size: 14px;
+    color: #3FACB5;
+}
+
+.uploadDoneList-form-saveIcon {
+    position: absolute;
+    top: 26px;
+    left: 44px;
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sprite_star2 {
+    background: url(../images/sprite/sprite.png) -475px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 475px;
+    _margin-left: -475px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+
+/*收藏按钮 end*/
+
+
+/*取消收藏按钮*/
+
+.uploadDoneList-form-cancleSave {
+    text-align: right;
+    width: 92px;
+    font-size: 14px;
+    color: #F8B95B;
+}
+
+.uploadDoneList-form-cancleSaveIcon {
+    position: absolute;
+    top: 26px;
+    left: 18px;
+    height: 16px;
+    width: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sprite_star1 {
+    background: url(../images/sprite/sprite.png) -507px -0px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 507px;
+    _margin-left: -507px;
+    _padding-top: 0px;
+    _margin-top: -0px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+
+/*取消收藏按钮 end*/
+
+
+/*分享按钮*/
+
+.uploadDoneList-form-share {
+    text-align: right;
+    width: 92px;
+    font-size: 14px;
+    color: #3FACB5;
+}
+
+.uploadDoneList-form-shareIcon {
+    position: absolute;
+    top: 28px;
+    left: 45px;
+    height: 14px;
+    width: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sprite_share4 {
+    background: url(../images/sprite/sprite.png) -28px -25px no-repeat;
+    width: 100%;
+    height: 100%;
+    _background: none;
+    _padding-left: 28px;
+    _margin-left: -28px;
+    _padding-top: 25px;
+    _margin-top: -25px;
+    _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+
+
+/*分享按钮 end*/
+
+
+/*取消分享按钮*/
+
+.uploadDoneList-form-cancleShare {
+    text-align: right;
+    width: 92px;
+    font-size: 14px;
+    color: #F8B95B;
+}
+
+.uploadDoneList-form-cancleShareIcon {
+    position: absolute;
+    height: 14px;
+    width: 15px;
+    top: 26px;
+    left: 13px;
+    cursor: pointer;
+}
+
+.uploadDoneList-form-cancleShareIcon img {
+    width: 100%；
+}
+
+
+/*取消分享按钮 end*/
+
+
+/*录制完成列表 end*/
+
+
+/*翻页*/
+
+.page {
+    height: 26px;
+    line-height: 26px;
+    color: #333;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+.page a {
+    padding: 2px 7px;
+    border: #CCCCCC 1px solid;
+    margin: 0 3px;
+    font-family: Tahoma;
+    color: #444;
+    cursor: pointer;
+}
+
+.page span {
+    background: #95071B;
+    color: #fff;
+    padding: 2px 7px;
+    border: #ccc 1px solid;
+    margin: 0 3px;
+    font-family: Tahoma;
+}
+
+.page input {
+    width: 30px;
+    border: 1px solid #ccc;
+    padding-top: 2px;
+    margin: 0 3px -1px 3px;
+}
+
+.page a:hover {
+    background: #95071B;
+    color: #fff;
+}
+
+
+/*翻页 end*/

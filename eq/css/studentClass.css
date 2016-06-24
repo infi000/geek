@@ -199,8 +199,7 @@
 
 .content-down-R {
     float: right;
-    width: 320px;
-    background: red;
+    width: 285px;
 }
 
 .content-down-Lhead {
@@ -281,6 +280,10 @@
 .classInfoBox-className span{
 	font-size:19px;
 	color: #48596c;
+	cursor: pointer;
+}
+.classInfoBox-className span:hover{
+	color: black;
 }
 .classInfoBox-classTime {
     position: absolute;
@@ -327,6 +330,7 @@
         margin-right: 5px;
         cursor: pointer;
 }
+
 
 .sprite_pic {
     background: url(../images/sprite/sprite.png) -422px -0px no-repeat;
@@ -425,7 +429,9 @@
     border: 1px solid;
     cursor: pointer;
 }
-
+.classAction-more:hover{
+	background: #EDE4E4;
+}
 .classAction-more span {
     font-size: 20px;
     letter-spacing: 3px;
@@ -434,11 +440,10 @@
 /*++++++++content-down-R start*/
 .searchBox{
 	    padding-left: 15px;
-    float: right;
-    width: 270px;
+    width: 265px;
     position: relative;
     height: 31px;
-    /* margin-left: 25px; */
+     margin-bottom: 30px; 
     border: 1px solid #ccc;
 }
 .searchBox input{
@@ -466,5 +471,69 @@
     _padding-top: 0px;
     _margin-top: -0px;
     _filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="../images/sprite/sprite.png");
+}
+/*+++++++*/
+.hotTagsBox{
+	position: relative;
+	margin-bottom: 30px; 
+}
+.hotTagsBox-title{
+	margin-bottom: 20px;
+}
+.hotTagsBox-content table{
+width: 100%;
+height: 200px;
+text-align: center;
+border: 2px solid white;	
+border-collapse:collapse
+}
+.hotTagsBox-content table td{
+	border: 2px solid white;
+	background: #ededed;
+	color:#607D8B;
+	cursor: pointer;
+}
+.hotTagsBox-content table td:hover{
+	    background: #EDE4E4;
+  	color:black;
+}
+.sprite_hotTag_outer {
+height: 25px;
+width: 25px;
+overflow: hidden;
+    position: absolute;
+    top: 3px;
+    left: -35px;
+}
+.sprite_hotTag {
+background: url(../images/sprite/sprite.png) -22px -0px no-repeat;
+width: 100%;
+height: 100%;
+_background: none;
+_padding-left: 22px;
+_margin-left: -22px;
+_padding-top: 0px;
+_margin-top: -0px;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src="../images/sprite/sprite.png");
+}
+/*+++++++++++*/
+.hotNewsBox{
+	position: relative;
+}
+.hotNewsBox ol{
+	    width: 95%;
+    float: right;
+    margin-top: 25px;
+}
+.hotNewsBox ol li{
+	    font-size: 14px;
+	    margin-bottom: 20px;
+	    cursor: pointer;
+}
+.hotNewsBox li:hover{
+color:black;
+}
+.hotNewsBox-content-writter{
+	float: right;
 }
 /*+++++++++++++++++++++content-down end++++++++++++++++++++*/
