@@ -18,6 +18,9 @@
      position: relative;
      padding-top: 40px;
  }
+ .clear{
+    clear:both;
+ }
  
  footer {
      height: 135px;
