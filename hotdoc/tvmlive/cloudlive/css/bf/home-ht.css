@@ -1,0 +1,1069 @@
+﻿/*
+* @Author: USER
+* @Date:   2016-08-24 17:03:58
+* @Last Modified by:   张驰阳
+* @Last Modified time: 2016-10-12 14:24:20
+*/
+
+.main {
+    width: 100%;
+    overflow: hidden;
+    background: yellow;
+}
+
+.line {
+    height: 39px;
+    width: 1px;
+    background: #ccc;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*page*/
+
+.page{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.page .pagination  a{
+         border-radius: 50%!important;
+    margin: 0 5px;
+    background: black;
+    color: white;
+    width: 28px;
+    border: 1px solid #000;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0;    
+}
+.page .pagination .active a{
+    color:black;
+    background: white;
+    border:1px solid #ccc;   
+}
+.page .pagination .active a:hover{
+    color:black;
+    background: white;
+    border:1px solid #ccc;   
+}
+.page .pagination .active a:focus{
+    color:black;
+    background: white;
+    border:1px solid #ccc;   
+}
+/*sidebar*/
+
+.sidebar {
+    float: left;
+    width: 128px;
+    height: 100%;
+    background: #1d2227;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.side-userinfo {
+    height: 170px!important;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 30px;
+    position: relative;
+}
+
+.sidebar li {
+    list-style: none;
+    height: 140px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+    border-left: 2px solid #1d2227;
+}
+
+.sidebar .nowPage {
+    border-left: 2px solid #ff503f;
+}
+
+.sidebar .nowPage span {
+    color: white;
+}
+
+.side-point {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 26px;
+    margin-left: -13px;
+}
+
+.side-tag .side-userhead {
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: block;
+}
+
+.side-tag .side-username {
+    color: #ff503f;
+    display: block;
+    text-align: center;
+}
+
+.side-tag {
+    font-size: 18px;
+    display: block;
+    color: #ccc
+}
+
+.side-tag img {
+    width: 37px;
+    height: 35px;
+    margin: 0 auto 12px;
+    display: block;
+}
+
+.side-tag span {
+    /* float: left; */
+    display: block;
+    color: #4a4c4e;
+    text-align: center;
+}
+
+.msgNum {
+    position: absolute;
+    right: 14px;
+    top: -22px;
+    background: #a0a0a0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+    right: -24px;
+    color: white
+}
+.side-tag .msgNum{
+    color: black;
+}
+.nowPage .side-tag .msgNum{
+    background: white;
+     color: black;
+}
+
+/*sidebar end*/
+
+
+/*.content*/
+
+.content {
+    background: #eeeeee;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+
+.header {
+    height: 96px;
+    line-height: 96px;
+    background: #f3fbff;
+    box-shadow: 0 2px 2px 0px #ccc;
+}
+
+.content .header .managerBar li a{
+    font-size: 26px;
+
+}
+.content .header .managerBar li .managerChoose{
+        color: #ff5544;
+}
+.content .header .managerBar li a img{
+    width: 20px;
+    margin-right: 8px;
+}
+.header .bar {
+    float: left;
+    padding-left: 35px;
+}
+
+.header .bar li {
+    margin-left: 25px;
+    float: left;
+    list-style: none;
+}
+
+.header .bar li a img {
+    width: 35px;
+}
+
+.header .bar li:first-child {
+    margin: 0;
+}
+
+.header .bar li:last-child {
+    margin-left: 40px;
+}
+
+.header .bar li .headerInfo {
+    position: absolute;
+    background: #ffffff;
+    bottom: -97px;
+    width: 133px;
+    height: 68px;
+    line-height: 70px;
+    text-align: center;
+    box-sizing: border-box;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 111;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    -webkit-animation:fadein 0.5s ease-out 0.2s forwards;
+    -moz-animation:fadein 0.5s ease-out 0.2s forwards;
+    -ms-animation:fadein 0.5s ease-out 0.2s forwards;
+    -o-animation:fadein 0.5s ease-out 0.2s forwards;
+    animation:fadein 0.5s ease-out 0.2s forwards;
+    display: none;
+
+}
+
+.bar li a:hover .headerInfo {
+    display: block;
+    opacity: 0;
+   
+}
+
+
+.solgan {
+    float: left;
+    color: #6e7c8a;
+    font-size: 28px;
+    margin-left: 34px;
+}
+
+.header nav {
+    float: right;
+    margin-right: 33px;
+    height: 40px;
+    background: $;
+    line-height: 40px;
+    margin-top: 32px;
+}
+
+.header nav ul li {
+    float: left;
+    list-style: none;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.out {
+    width: 110px;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-radius: 14%;
+    background: #ffffff;
+}
+
+.header a {
+    color: #4b4b4b;
+    position: relative;
+}
+
+
+/*show*/
+
+.show {
+    padding: 90px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.showTitle {
+    height: 40px;
+    position: absolute;
+    top: 20px;
+}
+
+.allBox {
+    /*    width: 1070px;
+    margin: 0 auto;*/
+}
+
+.box2 {
+    padding: 18px;
+    height: 304px;
+    box-sizing: border-box;
+    width: 334px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px 1px #ccc;
+    margin-bottom: 20px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+.allBox .box2 p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #a0a0a0;
+    text-align: center;
+}
+
+.box2-mb {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: black;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    opacity: 0.2;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px black;
+}
+
+.box2-mb:active {
+    box-shadow: none;
+}
+
+.preview {
+    width: 100%;
+    background: #eeeeee;
+    height: 146px;
+    position: relative;
+    overflow: hidden;
+}
+
+.preview img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.boxInfo {
+    display: inline-block;
+    width: 292px;
+    height: 68px;
+    line-height: 63px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.boxInfo ul{
+    height: 100%;
+}
+
+.boxInfo li {
+    float: left;
+    list-style: none;
+    height: 100%;
+   position: relative;
+  
+}
+
+.boxInfo .boxName {
+    width: 41%;
+    font-weight: bold;
+    font-size: 18px;
+}
+.boxInfo .boxName span{
+    display: block;
+    height: 100%;
+     overflow: hidden;
+
+}
+.boxInfo .boxName span:hover +i{
+    display: block;
+}
+.boxInfo .boxName i{
+    position: absolute;
+    left: 0;
+    right: -160px;
+    bottom: -15px;
+    font-size: 12px;
+    line-height: 0px;
+    text-align: left;
+    color: #666;
+    display: none;
+}
+
+.boxInfo .boxStatus:nth-child(2):before {
+    content: "|";
+    font-size: 18px;
+    color: #888;
+    margin-right: 20px;
+}
+
+.boxInfo .boxStatus:nth-child(2):after{
+content:"";
+color: #888;
+margin: 0 5px;
+}
+
+.boxStatus img {
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.addBox .preview img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.addBox .btn {
+    width: 340px;
+    height: 70px;
+    line-height: 70px;
+    padding: 0;
+    font-size: 20px;
+    margin: 27px auto;
+}
+
+/*.content end*/
+
+
+/*binding*/
+
+.bindingBox {
+    width: 95%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 1px 1px 3px 0px #ccc;
+}
+
+.binding {
+    width: 902px;
+    padding: 22px;
+    margin: 0 auto;
+}
+
+.b-left {
+    float: left;
+    width: 120px;
+}
+
+.b-left img {
+    width: 100%;
+}
+
+.b-right {
+    float: right;
+    width: 714px;
+}
+
+.b-step1 {
+    background: url(../../images/bf/s1.png);
+    width: 100%;
+    height: 92px;
+    margin-bottom: 21px;
+    background-size: 100%;
+    position: relative;
+}
+
+.b-step2 {
+    background: url(../../images/bf/s2.png);
+    background-size: 100%;
+    width: 100%;
+    height: 235px;
+    /* height: 234px; */
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.b-step3 {
+    background: url(../../images/bf/s3.png);
+    background-size: 100%;
+    width: 100%;
+    height: 92px;
+    margin-bottom: 23px;
+    position: relative;
+}
+
+.b-step4 {
+    background: url(../../images/bf/s4.png);
+    background-size: 100%;
+    width: 100%;
+    height: 235px;
+    position: relative;
+}
+
+.b-msgBox {
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    left: 60px;
+    /*position: relative;*/
+}
+
+.b-tag {
+    font-size: 27px;
+}
+
+.b-msg {
+    font-size: 16px;
+}
+
+.b-msgBox input {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    margin-left: 5px;
+    background: #eeeeee
+}
+
+.b-msgBox-tempspan {
+    position: absolute;
+    right: 145px;
+    bottom: -16px;
+    color: #00aaff;
+    font-size: 15px;
+    line-height: initial;
+}
+
+.b-preview {
+    position: absolute;
+    width: 310px;
+    height: 200px;
+    right: 53px;
+    border: 3px solid #ccc;
+    bottom: 13px;
+    box-sizing: border-box;
+}
+
+.b-preview img {
+    width: 100%;
+    height: 100%;
+}
+
+.which-title {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    position: relative;
+}
+
+.which-title img {
+    margin-right: 10px;
+    width: 37px;
+    height: 37px;
+}
+.which-title .msgNum{
+     color: white;
+    background: red;
+    right: -35px;
+    top: 0;
+
+}
+
+/*bindingend*/
+
+
+/*box-set*/
+
+.boxSet {
+    width: 1050px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.boxSet-up {
+    width: 100%;
+    background: white;
+    padding: 40px 25px;
+    box-shadow: 1px 1px 3px 0px #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.boxSet-down {
+    width: 100%;
+    background: white;
+    box-shadow: 1px 1px 3px 0px #ccc;
+    box-sizing: border-box;
+}
+.boxSet-up nav{
+    position: absolute;
+    right: 22px;
+    top: 22px;
+}
+.boxSet-up nav li {
+    list-style: none;
+    float: left;
+    padding: 0 6px;
+}
+.boxSet-up nav li img{
+        margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.boxSet-upl {
+    float: left;
+}
+
+.boxSet-upl .btn-link {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.boxSet-preview {
+    width: 450px;
+    height: 310px;
+}
+
+.boxSet-preview img {
+    width: 100%;
+    height: 100%;
+}
+
+.boxSet-upr {
+    float: right;
+    width: 496px;
+}
+
+.boxSet-upr dl {
+    float: right;
+}
+
+.boxSet-upr dt {
+    margin-bottom: 36px;
+}
+
+.boxSet-upr .boxSet-upr-2c {
+    float: right;
+}
+
+.boxSet-upr .boxSet-upr-2c dt {
+    text-align: right;
+}
+
+.boxSet-upr .boxSet-upr-2c dt span {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.boxSet-upr .boxSet-upr-2c dt img {
+    margin-right: 10px;
+}
+
+.boxSet-upr .boxSet-upr-2c dd {
+    float: left;
+    font-size: 18px;
+}
+
+.boxSet-upr .boxSet-upr-2c dd span {
+    cursor: pointer;
+    position: relative;
+}
+
+.boxSet-upr .boxSet-upr-2c dd+dd:before {
+    content: "|";
+    font-size: 17px;
+    margin: 0 16px;
+    color: #000;
+    font-weight: lighter;
+}
+
+.boxSet-upr .boxSet-upr-2c dd span:hover i {
+    display: block;
+}
+.boxSet-upr .boxSet-upr-2c dd span:hover{
+color: #5fb137;
+}
+.boxSet-upr .boxSet-upr-2c dd span i {
+    position: absolute;
+    left: -40px;
+    right: 0;
+    width: 100px;
+    text-align: center;
+    font-style: normal;
+    font-size: 13px;
+    top: -24px;
+    color: #5fb137;
+    display: none;
+}
+
+.boxSet-upr .boxSet-upr-1c {
+    float: left;
+        width: 70%;
+}
+
+.boxSet-upr .boxSet-upr-1c h3 {
+    color: #010101;
+    font-size: 30px;
+    margin: 0;
+}
+
+.boxSet-upr .boxSet-upr-1c dd {
+    font-size: 20px;
+}
+
+.boxSet-action {
+    width: 100%;
+    height: 217px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #d1c0a5;
+}
+
+.boxSet-action .progress {
+    width: 19px;
+    height: 19px;
+    margin: 2.5px;
+    float: left;
+}
+
+.boxSet .form-group {
+    width: 80%;
+    margin-right: 5%;
+    display: inline-block;
+    padding-right: 130px;
+    position: relative;
+    border: 1px solid #ccc;
+    background: #eeeeee;
+}
+
+.boxSet-down input {
+    outline: none!important;
+    border: 0;
+    background: #eeeeee;
+}
+
+.boxSet-down a.btn{
+    float: right;
+}
+
+.boxSet-down .link-info {
+    padding: 48px 22px;
+}
+
+.boxSet-down nav ul {
+    background: #e5e5e5;
+}
+
+.boxSet-down nav ul li {
+    width: 33.33333333%;
+}
+
+.boxSet-down nav ul li a {
+    height: 60px;
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0;
+    text-align: center;
+}
+
+.boxSet-down nav ul li a img {
+    margin-right: 10px;
+}
+
+.boxSet-qr {
+    right: 131px!important;
+}
+.boxSet-qr:hover img{
+    display: block;
+}
+.boxSet-qr{
+        position: absolute;
+    top: -14px;
+    right: 27px;
+}
+.boxSet-qr img{
+    display: none;
+}
+.boxSet-copy {
+    right: 87px!important;
+}
+
+.boxSet-upload {
+    right: 41px!important;
+}
+
+
+
+.temp-l0 {
+    position: absolute;
+    right: 117px;
+    top: 8px;
+    font-size: 20px;
+}
+
+.temp-l1 {
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    font-size: 20px;
+}
+
+.temp-l2 {
+    position: absolute;
+    top: 8px;
+    font-size: 20px;
+    right: 70px;
+}
+
+.boxSet-down .form-group .boxSet-icon {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    z-index: 2;
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+.boxSet-icon:hover span{
+   display: block;
+}
+.boxSet-icon span{
+position: absolute;
+    top: -40px;
+    left: -40px;
+    font-size: 10px;
+    display: none;
+    /* background: darkkhaki; */
+    width: 100px;
+    text-align: center;
+    
+}
+
+/*box-setend*/
+
+
+/*home end*/
+
+
+/*manager 页面*/
+
+.manager-title {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.manager-title img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.manager-title span {
+    margin: 0 17px 0 10px;
+}
+.managerBox{
+    background: #fff;
+}
+.managerBox th{
+    text-align: center;
+    font-size: 18px;
+}
+.managerBox table tbody tr td{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    position: relative;
+}
+
+.managerBox table tbody tr td .btn .caret {
+    margin-left: 5px;
+    border: 4px solid transparent;
+    border-left-color: #9E9E9E;
+}
+
+.managerBox table tbody tr td .userInfo-box {
+    width: 200px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 1px 1px 1px 0px #333;
+    display: none;
+    left: 110px;
+    top: -180px;
+}
+
+.managerBox table tbody tr td.last .userInfo-box {
+    top: initial;
+    bottom: -100px;
+}
+
+.managerBox table tbody tr td .userInfo-box .panel-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.managerBox table tbody tr td .userInfo-box .list-group-item {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+}
+
+.managerBox table tbody tr td .userInfo-box .list-group-item p {
+    display: block;
+    text-align: center;
+    margin: 4px 0 0;
+    padding: 0
+}
+
+.managerBox .manager-preview img {
+   width: 150px;
+   height: 100px;
+   display: block;
+   margin: 0 auto;
+
+}
+.managerShow .setLink{
+        width: 95%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 1px 1px 3px 0px #ccc;
+   padding: 100px 0;
+}
+.setLinkBox{
+    width: 730px;
+    height: 300px;
+    margin: 0 auto;
+    /*background: green;*/
+}
+.setLinkBox p{
+    /*background: yellow;*/
+  height: 80px;
+  line-height: 80px;
+}
+.setLinkBox p span{
+     width: 120px;
+    display: block;
+    float: left;
+    font-size: 18px;
+}
+.setLinkBox p input{
+       height: 36px;
+    width: 378px;
+
+}
+/*manager 页面 end*/
+
+
+/*消息页面*/
+.msgBox{
+    padding: 0 27px;
+    background: white;
+}
+.msgBox .list-group-item{
+    border-left: 0;
+    border-right: 0;
+    line-height: 90px;
+    padding: 0;
+    
+}
+.msg-temp-1{
+    display: inline-block;
+    margin-right: 34px;
+}
+.msg-temp-1 img{
+width: 35px;
+margin-right: 5px;
+}
+.msg-temp-1 span{
+    font-size: 18px;
+}
+
+.msgNum-unread {}
+
+.msgNum-readed {
+    color: red;
+}
+
+.msgBox .msg-temp-2{
+    font-size: 20px;
+    font-weight: 200;
+    margin-right: 10px;
+}
+.msg-intro{
+        font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.msg-intro:hover{
+    color:#A9A9A9;
+}
+.msgBox .msg-temp-3{
+    color: #668dab;
+    font-size: 14px;
+    font-weight: 200;
+    border: 1px solid #668dab;
+    padding: 10px;
+    border-radius: 15px;
+    position: absolute;
+    right: 75px;
+    top: 31px;
+}
+.msgBox .msg-arrow{
+    border: 1px solid #668dab;
+    padding: 5px;
+    border-radius: 50%;
+    color: #668dab;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 36px;
+}
+ .msg-line{
+    display: none;
+        background: #f8f8f8;
+    border-top: 1px solid #ddd;
+    font-size: 36px;
+    color: #264f6f;
+    line-height: 230px;
+    position: relative;
+}
+.msg-line a{
+    font-size: 22px;
+    color: #0090ff;
+    margin-left: 50px;
+}
+.msg-line-tool li{
+    list-style: none;
+    float: left;
+}
+.msg-line-tool{
+        position: absolute;
+        right: 0;
+        top: 10px;
+        width: 115px;
+        height: 33px;
+        line-height: 33px;
+        font-size: 22px;
+        color: #8f8f8f;
+
+}
+/*消息页面end*/

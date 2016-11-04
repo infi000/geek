@@ -1,0 +1,66 @@
+<?php $this->includes('top')?>
+<!------nav start------>
+<br />
+<div class="nav">
+<div class="navbot">
+    <div class="search_blog">&nbsp;&nbsp;<p style="font-size:14px">用户管理</p>
+      <form name="exeForm" id="exeForm" action="index.php?do=/moveposts/view" method="post">
+   
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全选 <input type="checkbox" class="_pageinalCheckBoxAll" />&nbsp;&nbsp;<button>添加</button>
+      </form>
+      
+    </div>
+  </div>
+</div>
+<!------nav end------>
+<br />
+<!------main start------>
+<div class="main">
+ <!------左侧栏 start------>
+  <div class="left">
+    <div class="blogroom">
+    <?php print $this->tableBody ?>   
+      <div class="clear"></div>
+      <?php print $this->pager ?>
+     
+      
+    </div> 
+    <div class="clear"></div>
+  </div>
+  
+  <!------左侧栏 end------> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript" src="js/jquery.paginal.js"></script>
+<script language="javascript">
+$(function(){
+	$("#searchButton").click(function(){
+		$("#exeForm").attr('method','GET');
+		$("#doAction").val('search');
+		$("#exeForm").submit();
+	})
+	$("#moveButton").click(function(){
+		if(confirm('确认要转移记录吗？')){
+			if($("#calatey").val() == '0'){alert('请选择转移分类！');return;}
+			$("#exeForm").attr('method','POST');
+			$("#exeForm").attr('action','index.php?do=/moveposts/view&cat='+$("#cat").val()+'&postTitle='+$("#postTitle").val());
+			$("#newsId").val('');
+			$.each($("._pageinalCheckBox"),function(i,n){
+				if(n.checked == true){
+					$("#newsId").val($("#newsId").val()+','+n.value);
+				}
+			});
+			$("#newsId").val($("#newsId").val().slice(1));
+			if($("#newsId").val() == ''){alert('请选择转移记录！');return;}
+			$("#doAction").val('move');
+			$("#exeForm").submit();
+		}
+	})
+	$().pagination.action();
+	$("button").eq(0).bind('click',function(){
+		document.location.href="?do=/prms/adduser";
+		return false;
+	});
+})
+</script>
+<?php $this->includes('foot')?>

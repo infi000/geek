@@ -1,0 +1,164 @@
+/*
+* @Author: USER
+* @Date:   2016-08-23 16:26:52
+* @Last Modified by:   张驰阳
+* @Last Modified time: 2016-10-19 09:51:44
+*/
+
+header {
+    width: 1090px;
+    padding-top: 80px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    width: 500px;
+    height: 120px;
+    float: left;
+      display: none;
+}
+
+.logo img {
+    width: 100%;
+
+}
+.solgan{
+    width: 384px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto
+}
+
+.content {
+    width: 1090px;
+    height: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.left {
+    width: 500px;
+    float: left;
+    display: none;
+}
+.left img{
+    width: 100%;
+}
+.banner {
+    width: 100%;
+    height: 890px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.right {
+    width: 540px;
+    /*float: right;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+.temp-img {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    bottom: 110px;
+    left: 0;
+    display: none;
+}
+
+.login-box {
+    height: 381px;
+    width: 384px;
+    padding: 0 55px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /*float: right;*/
+    position: relative;
+    background:url(../img/loginbg.png);
+    background-size: 100%;
+}
+
+.errorMsg{
+        height: 68px;
+    line-height: 68px;
+    text-align: center;
+    color: #ff0000;
+    font-size: 16px;
+    /*display: none;*/
+}
+.errorMsg span{
+    display: none;
+}
+
+.inputText {
+    width: 100%;
+    height: 55px;
+    background: #f0f0f0;
+    margin-bottom: 25px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.inputText img {
+    float: left;
+    margin-right: 12px;
+    width: 21px;
+    height: 25px;
+    margin-top: 3px;
+}
+
+.inputText .username,
+.inputText .password {
+    height: 100%;
+    border: 0;
+    outline: none;
+    width: 210px;
+    font-size: 20px;
+    background: #f0f0f0;
+    font-family: "微软雅黑";
+}
+
+
+
+.findPw {
+    font-size: 16px;
+    color: black;
+    float: left;
+    cursor: pointer;
+}
+.findPw:hover{
+    color: #323232;
+}
+.create {
+    font-size: 16px;
+    color: #ff503f;
+    float: right;
+    cursor: pointer;
+}
+.create:hover{
+    color: #f47164;
+}
+.btn {
+      height: 55px;
+    background: url(../img/redbtn.png);
+    background-size: 100%;
+    line-height: 55px;
+    position: absolute;
+    left: 55px;
+    right: 55px;
+    bottom: 28px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 5px;
+    cursor: pointer;
+}

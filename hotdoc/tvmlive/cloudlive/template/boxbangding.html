@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>盒子绑定页</title>
+    <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/home.css">
+    <link rel="stylesheet" href="css/bf/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bf/animation.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                    
+                </div>
+                <div class="show">
+                    <!-- 绑定盒子 -->
+                    <div class="showTitle">
+                        <div class="which-title"><img src="images/bf/bind.png"><span>绑定视频直播设备IP指南</span></div>
+                    </div>
+                    <div class="bindingBox">
+                        <div class="binding">
+                            <div class="b-left">
+                                <img src="images/bf/midlle.png">
+                            </div>
+                            <div class="b-right">
+                                <div class="b-step1">
+                                    <div class="b-msgBox">
+                                        <span class="b-tag">开机</span>
+                                        <span style="margin:0 10px;">|</span>
+                                        <span class="b-msg">直播设备正确接入电源、有线网络和摄像机（开机状态）后，按开机键。</span>
+                                    </div>
+                                </div>
+                                <div class="b-step2">
+                                    <div class="b-msgBox" style="top:22%">
+                                        <span class="b-tag">查看</span>
+                                        <span style="margin:0 10px;">|</span>
+                                        <span class="b-msg">在直播设备视窗口查看序列号。</span>
+                                        <input id="ownflag" type="hidden" value="0">
+                                    <input id="boxcode" type="text" placeholder="记录直播设备ID序列号" maxlength="13">
+                                        <span class="b-msgBox-tempspan">如：T00E04CFC2655</span>
+                                    </div>
+                                    <div style=" position: absolute;bottom: 11px;height: 125px;left: 65px;"><img src="images/bf/box1.png" style="height: 100%"><span style="color: red">直播设备视窗口</span></div>
+                                </div>
+                                <div class="b-step3">
+                                    <div class="b-msgBox">
+                                        <span class="b-tag">命名</span>
+                                        <span style="margin:0 10px;">|</span>
+                                        <span class="b-msg">给直播设备命名。</span>
+                                        <input id="boxname" type="text"  maxlength="30" placeholder="请输入直播设备名称">
+                                    </div>
+                                </div>
+                                <div class="b-step4">
+                                    <div class="b-msgBox">
+                                        <span class="b-tag">预览</span>
+                                        <span style="margin:0 10px;">|</span>
+                                        <span class="b-msg">获取直播预览图片。</span>
+                                    </div>
+                                    <div class="b-preview">
+                                        <img src="images/bf/def.jpg" alt="预览图片">
+                                    </div>
+                                </div><p class="errorMsg"><span style="color:red"> </span></p>
+                                <button type="button" id="bindbut"  class="btn btn-danger btn-lg" style="float:right;margin-top: 23px;">绑定直播设备</button>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!-- 绑定盒子end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+	<script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bf/common.js"></script>
+	 <script type="text/javascript" src="js/bf/home.js"></script>
+	<script language="javascript">
+	$(function(){
+		var msgbox = $(".errorMsg").find("span");
+		msgbox.hide();
+		function checkInput(){
+			msgbox.hide();
+			var v = $(this).val();
+			if(v.length ==13){
+				if(checkcode(v)){
+					var url = '?m=5121';
+					 $.get(url,{'code':v},function(data){
+						var msg = data.msg.replace("\\n","<br/>");			
+						if(data.status){
+							if(data.data.code == 200){
+								$("#ownflag").val(1);
+								msgbox.hide();
+								$(".b-preview").find("img").attr('src',data.data.picurl);
+							}else{
+								
+								msg = "此ID预览图不能访问,请检查网络是否正常或盒子ID是否正确";
+								msgbox.text(msg);
+								msgbox.show();
+							}
+						}else{
+							//window.sessionStorage.setItem('CLIENTTOKEN',null);
+							 msgbox.text(msg);
+							 msgbox.show();
+							
+						}
+					},'json');
+				}else{
+					
+				}
+			}else{
+				$(".b-preview").find("img").attr('src',"images/bf/def.jpg");
+				var msg = "盒子ID格式错误";
+				msgbox.text(msg);
+				msgbox.show();
+			}
+		}
+		$("#boxcode").keyup(checkInput);
+		$("#boxcode").blur(checkInput);
+
+		$("#bindbut").click(function(){
+			var msg;
+			var code = $("#boxcode").val();
+			msgbox.hide();
+			if(!checkcode(code)){
+				msg = "盒子ID格式错误";
+				msgbox.text(msg);
+				msgbox.show();
+				return;
+			}
+			var name = $("#boxname").val();
+			if(name.trim()==''){
+				msg = "需要输入盒子名称";
+				msgbox.text(msg);
+				msgbox.show();
+				return;
+			}
+			if($("#ownflag").val() == 0){
+				msg = "请确认盒子已开机,并正常工作";
+				msgbox.text(msg);
+				msgbox.show();
+				return;
+			}
+			var url = '?m=5122';
+			 $.post(url,{'code':code,'name':name},function(data){
+				var msg = data.msg.replace("\\n","<br/>");			
+				if(data.status){
+					 //msgbox.text(data.data);
+					// msgbox.show();
+					location.href = "?m=5101";
+				}else{
+					 msgbox.text(msg);
+					 msgbox.show();
+					
+				}
+			},'json');
+
+		});
+
+	})
+	</script>
+</body>
+
+</html>

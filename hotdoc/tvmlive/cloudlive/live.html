@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <noscript>
+        <meta http-equiv=refresh content="0; url=http://noscript.html">
+    </noscript>
+    <title>正在直播</title>
+	<script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/lib/ckplayer/ckplayer.js"></script>
+    <style>
+    .wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    
+    .wrap #video {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .wrap p {
+        position: absolute;
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+        top: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .wrap p span:first-child {
+        float: left;
+    }
+    
+    .wrap p span:last-child {
+        float: right;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <p>
+            <span>盒子名称：</span>
+            <span>访问人数：0人</span>
+            <span>直播开始时间：</span>
+        </p>
+        <div id="video">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+	var url = document.URL.split('?');
+	var shost = 'http://'+document.domain+'/cloudlive/?';
+	var message = '';
+	var channel = '';
+	var views = '';
+	var dateString = '';
+	var token = '';
+	var URL;
+	//播放器配置餐宿
+    var flashvars;
+    var params = {
+        bgcolor: '#fff',
+        allowFullScreen: true,
+        allowScriptAccess: 'always',
+        wmode: 'transparent'
+    };
+    
+   
+//滚动字幕
+    function ckmarqueeadv() {
+	   return "{font color='#FFFFFF'size='12'}盒子名称："+channel+"。 访问人数："+views+"人。  开始时间："+dateString+"。{/font}"
+    }
+	 function loadedHandler() {
+        CKobject.getObjectById('ckplayer_video').addListener('error', 'errorHandler');
+         CKobject.getObjectById('ckplayer_video').addListener('videoLoad', 'errorHandler');
+    }
+
+    function errorHandler() {
+        var viewsurl = shost + url[1].replace('5150','5132') + '&at='+ (new Date());
+				$.get(viewsurl,function(data){
+                                    if(!data.status){
+                                        message = data.msg;
+                                        var errorObj = "<div class='mb' style='position:absolute;left:0;right:0;top:0;bottom:0;z-index:10;background:black;'><h2 style='color:white;text-align:center'>"+message+"<br>请联系管理员</h2></div>";
+                                var videoObj = $("#video");
+                                videoObj.css({
+                                    position: "relative"
+                                }).append(errorObj);
+                                        
+                                    }
+				},'json');
+        
+    }
+   //html5视频地址
+    var video;
+	$(function(){
+		var viewsurl = shost + url[1];
+				$.get(viewsurl,function(data){
+					//var msg = data.msg.replace("\\n","<br/>");
+						var security = data.data.security;
+						var uaurl =  data.data.url+'&string='+security;
+						$.get(uaurl,function(data){
+							token = data.access.token;
+							//直播地址
+							URL = encodeURIComponent(shost + url[1].replace('5150','5126')+"&token="+token);
+							flashvars = {
+							f: 'js/lib/m3u8/m3u8.swf',
+							a: URL,
+							s: 4,
+							c: 0,
+							p: 1,
+							lv: 1,
+							loaded: 'loadedHandler'
+						};
+						video= [URL];
+						CKobject.embed('js/lib/ckplayer/ckplayer.swf', 'video', 'ckplayer_video', '100%', '100%', false, flashvars, video, params);
+						
+				var viewsurl = shost + url[1].replace('5150','5131')+"&token="+token + '&at='+ (new Date());
+				$.get(viewsurl,function(data){
+					//var msg = data.msg.replace("\\n","<br/>");
+				},'json');
+
+
+						},'json');
+
+				},'json');
+	
+	var infourl = shost + url[1].replace('5150','5130');
+				
+				$.get(infourl,function(data){
+					var msg = data.msg.replace("\\n","<br/>");			
+					if(data.status){
+						channel = data.data.sn;
+						$(".wrap").find("span").eq(0).text("盒子名称："+channel);
+						views = data.data.views;
+						$(".wrap").find("span").eq(1).text("访问人数："+ views +"人");
+						dateString = data.data.date;
+						$(".wrap").find("span").eq(2).text("开始时间："+dateString);
+					}
+				},'json');
+
+  
+ 
+
+	})
+         
+    
+  
+
+
+    </script>
+</body>
+
+</html>

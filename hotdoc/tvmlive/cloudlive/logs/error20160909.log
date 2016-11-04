@@ -1,0 +1,91 @@
+[2016-09-09 10:49:51]2016-09-09 10:49:51 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(232): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(259): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(41): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC2653', '1000050016')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,del_time = ?,dstatus = ? where id='10009'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-09 10:49:56]2016-09-09 10:49:56 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(232): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(259): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(41): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC2653', '1000050016')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,del_time = ?,dstatus = ? where id='10009'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-09 10:50:04]2016-09-09 10:50:04 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(232): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(259): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(41): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC2653', '1000050016')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,del_time = ?,dstatus = ? where id='10009'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-09 10:55:29]数据非法
+[2016-09-09 13:06:02]2016-09-09 13:06:02 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('insert users_ex...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(266): Bean->update(true)
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbusersext.class.php(22): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/users.class.php(117): bUsersExt->add('1000050019', '', '', '', '15311111111@tvm...', '', '')
+#4 [internal function]: Users->user_register(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(241): Core::setModel('/users/user_reg...')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:insert users_ext (id,email) values(?,?)<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-09 13:59:40]2016-09-09 13:59:40 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('insert users_ex...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(266): Bean->update(true)
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbusersext.class.php(22): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/users.class.php(117): bUsersExt->add('1000050022', '', '', '', '15311111111@tvm...', '', '')
+#4 [internal function]: Users->user_register(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(241): Core::setModel('/users/user_reg...')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:insert users_ext (id,email) values(?,?)<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-09 14:08:15]2016-09-09 14:08:15 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('insert users_ex...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(266): Bean->update(true)
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbusersext.class.php(22): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/users.class.php(117): bUsersExt->add('1000050025', '', '', '', '15311111111@tvm...', '', '')
+#4 [internal function]: Users->user_register(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(241): Core::setModel('/users/user_reg...')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:insert users_ext (id,email) values(?,?)<br />
+PHP 5.5.22 (Linux)<br />
+

@@ -1,0 +1,94 @@
+<?php $this->includes('top')?>
+<!------nav start------>
+<br />
+<div >
+<div >
+    <div class="search_blog">
+      <form name="exeForm" id="exeForm" action="index.php?do=/moveposts/author" method="post">
+      	<input type="hidden" name="do" value="/moveposts/author<?php $this->var2?print '/'.$this->var2:'';?>">
+      	<input type="hidden" id="doAction" name="doAction" value="">
+      	<input type="hidden" id="newsId" name="newsId" value="">
+      	<?php if($this->var2){?>
+      	专家文章分类：<select id="cate" name="cate" onchange="fcate(this)"><option value="0">请选择分类</option>
+		<?php print $this->dataCate ?> </select><br /><?php }?>
+        博主权限：<select id="cat" name="cat"><option value="0">请选择权限</option>
+		<?php print $this->dataCategory ?> </select><br />博主名：<input type="text" id="postTitle" name="postTitle" value="<?php print $this->postTitle ?>" maxlength="20"><br />
+		注册邮箱：<input type="text" id="email" name="email" value="<?php print $this->email ?>" maxlength="20"><br />
+		时间：<input type="text" name="date1" id="date1" readonly="readonly" value="<?PHP print $this->stime?>" size="10" /><img src="images/calender/calender.gif" onClick="getDatePicker('date1', event)" />至
+        <input  name="date2" id="date2" readonly type="text" value="<?PHP print $this->etime?>" size="10" />
+                  <img src="images/calender/calender.gif" onClick="getDatePicker('date2', event)" >
+        <input type="button" id="searchButton" value="查询" class="" />
+      </form>
+    </div>
+  </div>
+</div>
+<!------nav end------>
+<br />
+<!------main start------>
+<div>
+ <!------左侧栏 start------>
+  <div>
+    <div class="blogposts">
+    <?php print $this->tableBody ?>   
+      <div class="clear"></div>
+      <?php print $this->pager ?>
+     
+      
+    </div> 
+    <div class="clear"></div>
+  </div>
+  
+  <!------左侧栏 end------> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript" src="js/jquery.paginal.js"></script>
+<script language="javascript" src="js/selectdate.js"></script>
+<script language="javascript">
+$(function(){
+	$("#searchButton").click(function(){
+		if($("#date1").val() >$("#date2").val() && $("#date2").val().trim() != ''){
+			alert('开始日期不能大于结束日期！')
+		}else if($("#date1").val().trim() == '' && $("#date2").val().trim() != ''){
+			alert('开始日期不能为空！')
+		}else{
+			$("#exeForm").attr('method','GET');
+			$("#doAction").val('search');
+			$("#exeForm").submit();
+		}
+	})
+	$().pagination.action();
+})
+function getPosts(e){
+	var t,u,c,p,index,v,len,img;
+	t = $(e).attr('title');
+	u = $(e).attr('postsurl');
+	img = $(e).attr('imgurl');
+	c = $(e).attr('postcontent');
+	p = $(self.parent.frames["mainFrame"].document).find(".newright");
+	len = p.children().length;
+	for(var i = 0; i < len; i++ ){
+		v = p.children().eq(i).children().children().eq(2).children().val().trim();
+		if(v == ''){
+			p.children().eq(i).children().children().eq(2).children().val(t);
+			p.children().eq(i).children().children().eq(3).children().val(u);
+			p.children().eq(i).children().children().eq(4).children().val(img);
+			p.children().eq(i).children().children().eq(5).children().val(c);
+			break;
+		}		
+	} 
+}
+function fcate(e){
+	var cat,p,v,len;
+	cat = $(e).find(':selected').html();
+	p = $(self.parent.frames["mainFrame"].document).find(".newright");
+	len = p.children().length;
+	for(var i = 0; i < len; i++ ){
+		v = p.children().eq(i).children().children().eq(1).children().val().trim();
+		if(v == ''){
+			p.children().eq(i).children().children().eq(1).children().val(cat);
+			break;
+		}		
+	} 
+}
+</script>
+<?php $this->includes('foot')?>

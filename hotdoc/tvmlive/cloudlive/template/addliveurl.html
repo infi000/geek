@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>添加直播地址</title>
+    <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/home-ht.css">
+    <link rel="stylesheet" href="css/bf/bootstrap.min.css">
+	<style>
+		 .binding li {list-style: none;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-left: 2px}
+	</style>
+</head>
+
+<body>
+<div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                   
+                </div>
+ <div class="show managerShow">
+                    <div class="showTitle">
+                        <div class="which-title"><img src="images/bf/bind.png"><span>添加直播地址</span></div>
+                    </div>
+                    <div class="setLink">
+                        <div class="setLinkBox">
+                            <p>
+                                <span>设备序列号：</span><input id="boxcode" placeholder="添加设备序列号" type="text" value="<?php print $this->code?>" maxlength="13">
+                            </p>
+                            <p>
+                                <span>微信直播地址：</span>
+								<input id="mpurl" size="100" value="<?php print $this->wxurl?>" placeholder="http://微信直播地址"  type="text" maxlength="255">
+                            </p>
+							 <p>
+                                <span>网页直播地址：</span>
+								<input id="weburl" size="100" value="<?php print $this->weburl?>" placeholder="http://网页直播地址"  type="text" maxlength="255">
+                            </p>
+                            <p class="errorMsg" style="height:30px;line-height: 30px;">
+                                <em style="color:red"></em>
+                            </p>
+                         <button type="button" id="bindbut" class="btn btn-danger btn-lg"><?php print $this->code?'编辑':'添加'?>地址</button>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+              
+    <footer></footer>
+	<script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bf/common.js"></script>
+	<script type="text/javascript" src="js/bf/home-ht.js"></script>
+	<script language="javascript">
+	$(function(){
+		var msgbox = $(".errorMsg").find("em");
+		msgbox.hide();
+		function checkInput(){
+			msgbox.hide();
+			var v = $(this).val();
+			if(!checkcode(v)){
+				var msg = "设备序列号格式错误";
+				msgbox.text(msg);
+				msgbox.show();
+			}
+		}
+		$("#boxcode").keyup(checkInput);
+		$("#boxcode").blur(checkInput);
+
+		$("#bindbut").click(function(){
+			var msg;
+			var code = $("#boxcode").val();
+			var liveurl = $("#weburl").val();
+			var mpurl = $("#mpurl").val();
+			msgbox.hide();
+			if(!checkcode(code)){
+				msg = "设备序列号格式错误";
+				msgbox.text(msg);
+				msgbox.show();
+				return;
+			}
+			if(liveurl.indexOf('http://') < 0){
+				msg = "网页直播地址需要带http://的完整路径";
+				msgbox.text(msg);
+				msgbox.show();
+				return;
+			}
+
+			if(mpurl.indexOf('http://') < 0){
+				msg = "微信直播地址需要带http://的完整路径";
+				msgbox.text(msg);
+				msgbox.show();
+				return;
+			}
+
+			var url = '?m=1250';
+			 $.post(url,{'code':code,'weburl':liveurl,'mpurl':mpurl},function(data){
+				var msg = data.msg.replace("\\n","<br/>");			
+				if(data.status){
+					 msgbox.text(msg);
+					 msgbox.show();
+				}else{
+					 msgbox.text(msg);
+					 msgbox.show();
+					
+				}
+			},'json');
+
+		});
+
+	})
+	</script>
+</body>
+
+</html>

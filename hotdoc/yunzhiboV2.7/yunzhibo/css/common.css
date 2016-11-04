@@ -1,0 +1,192 @@
+/*
+* @Author: USER
+* @Date:   2016-08-23 16:03:41
+* @Last Modified by:   张驰阳
+* @Last Modified time: 2016-09-22 12:27:17
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #eeeeee!important;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 1090px;
+    height: 100%;
+    background: url("../img/bg.jpg");
+    background-size: 100%;
+    font-family: "Microsoft YaHei";
+}
+
+.clear {
+    clear: both;
+}
+
+.tc-close {
+    position: absolute;
+    right: 7px;
+    width: 25px;
+    height: 25px;
+    top: 105px;
+    cursor: pointer;
+}
+
+.tc-close img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-black:hover,
+.btn-black:focus {
+    background: #28292a;
+    color: #d5d5d5!important;
+}
+
+.TC {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 10000;
+}
+
+.skipto {
+    background: url(../img/skip.png);
+    background-size: 100%;
+    width: 600px;
+    height: 374px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -187px;
+    display: none;
+}
+
+.successTo {
+    background: url(../img/successto.png);
+    background-size: 100%;
+    width: 600px;
+    height: 374px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -187px;
+    display: none;
+}
+
+.successTo-msg {
+    margin: 115px auto 30px;
+    text-align: center;
+}
+
+.successTo p {
+    color: #009cff;
+    text-align: center;
+}
+
+.opacity8 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #ccc;
+}
+
+.tc-uploadFile {
+    background: url(../img/upload.png);
+    background-size: 100%;
+    width: 550px;
+    height: 710px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -355px;
+    margin-top: -355px;
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: none;
+}
+
+.tc-uploadFile .input-group {
+    width: 100%;
+    border: none;
+    background: #eeeeee;
+    border: 1px solid #888;
+}
+
+.tc-uploadFile-preview {
+    width: 222px;
+    border: 1px solid #ccc;
+    height: 222px;
+    margin: 30px auto;
+}
+
+.tc-uploadFile-preview img {
+    width: 100%;
+    height: 100%
+}
+
+.tc-uploadFile-yes {
+    width: 222px;
+}
+
+
+/*上传按钮*/
+
+.u-upload {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.u-upload button {
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    overflow: visible;
+    font-size: 14px;
+    color: #666;
+    background: #ddd;
+}
+
+.u-upload input {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    font-size: 100px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.u-upload:hover button {
+    border-color: #bbb;
+    color: #333;
+    background: #ccc;
+}
+
+a.u-upload,
+a.u-upload:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TVMENCODER</title>
+    <link href="/manage/static/css/base.css" rel="stylesheet" type="text/css" />
+    <script src="/manage/static/js/jquery-1.8.0.min.js"></script>
+    <script src="/manage/static/js/base.js"></script>
+    <link href="/manage/static/js/datepicker.css" rel="stylesheet" type="text/css">
+    <script src="/manage/static/js/bootstrap-datepicker.js"></script>
+    <script src="/manage/static/js/js.js"></script>
+</head>
+
+<body>
+    <!--top start-->
+    <div class="top">
+        <div class="top_con">
+            <div class="con_l fl">
+                <div class="home fl"> <img src="http://saas.tvm.cn//manage/static/images/home.png" alt="home" /><span><a href="/manage/">中心首页</a></span></div>
+                <div class="server fl">
+                    <div class="serword fl" isfold="0"></div>
+                    <div class="serimg fl"><img src="http://saas.tvm.cn//manage/static/images/server.png" alt="server" /></div>
+                    <div class="foldMenu">
+                        <ul id="fold_con">
+                            <a href="/manage/index/checkin?access_token=e4d39ca1269e46b8bffc6bcad5fba28a&source=media?sid=6">
+                                <li>媒体桥</li>
+                            </a>
+                            <a href="/manage/index/checkin?access_token=e4d39ca1269e46b8bffc6bcad5fba28a&source=live">
+                                <li>直播云</li>
+                            </a>
+                            <a href="http://www.tvmcloud.com/home/login/quick_login?access_token=e4d39ca1269e46b8bffc6bcad5fba28a&tvmid=18611628220&tid=1005" target="_blank">
+                                <li>音视频处理</li>
+                            </a>
+                            <a href="/manage/index/checkin?access_token=e4d39ca1269e46b8bffc6bcad5fba28a&source=tvsearch">
+                                <li>搜电视</li>
+                            </a>
+                            <a href="http://admin.eq.tvm.cn/?access_token=e4d39ca1269e46b8bffc6bcad5fba28a" target="_blank">
+                                <li>EQ教育云</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="eq fl"><a href="javascript:void(0);">直播云</a></div>
+            </div>
+            <div class="con_r fr">
+                <div class="msg fl">
+                    <a href="/manage/msg" target="_blank">
+                        <img src="http://saas.tvm.cn//manage/static/images/msg1.png" class="fl" />
+                        <div>0</div>
+                    </a>
+                </div>
+                <div class="dst fr">
+                    <span class="dst_name fl">天脉ICE产品部</span>
+                    <span class="lk fr" issel="0"><img src="http://saas.tvm.cn//manage/static/images/down.png"/></span>
+                    <div class="userInfo">
+                        <div class="u_info">
+                            <div class="u_img fl"><img src="http://saas.tvm.cn//manage/static/images/face1.png" /></div>
+                            <div class="u_word fl">
+                                <p class="u_tvmid">您好，lujia</p>
+                            </div>
+                        </div>
+                        <ul id="u_list">
+                            <!-- <a href="/manage/index/baseinfo"><li>基本信息</li></a> -->
+                            <a href="/manage/index/checkin?access_token=e4d39ca1269e46b8bffc6bcad5fba28a&source=index/usermanage">
+                                <li>成员管理</li>
+                            </a>
+                            <a href="/manage/index/checkin?access_token=e4d39ca1269e46b8bffc6bcad5fba28a&source=index/myservice">
+                                <li>产品服务</li>
+                            </a>
+                            <!-- <a href="/manage/index/verification"> <li>安全设置</li></a> -->
+                            <a href="/manage/index/logout">
+                                <li style="border:none;font-size:12px;">退出</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--top end-->
+    <div class="header">
+        <div class="cont">
+            <div class="logo"><img src="http://saas.tvm.cn//manage/static/images/logo.png" /></div>
+            <div class="nav">
+                <ul>
+                    <li class="on"><a href="/manage/live">直播</a>
+                        <div class="menu_list">
+                            <p><a href="/manage/live">直播点</a></p>
+                            <p><a href="/manage/live/record">直播记录</a></p>
+                        </div>
+                    </li>
+                    <li><a href="#">微发布</a>
+                        <div class="menu_list">
+                            <p><a href="/manage/portal/content">内容管理</a></p>
+                            <p><a href="/manage/portal/hots">热点干预</a></p>
+                            <p><a href="/manage/hotword/hotword">热词管理</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <link href="/manage/static/css/base.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/manage/static/jwplayer6/jwplayer.js"></script>
+    <script type="text/javascript">
+    jwplayer.key = "DNFxpxvc9p8jGqZLsgNv4Rt0hW3O5lw2wxtz7g==";
+    </script>
+    <script type="text/javascript" src="/manage/static/js/tmlive.js"></script>
+    <script>
+    var live = 12620;
+
+    $(function() {
+        //  console.log($("#amount").val()+"--");
+        //n_host = "http://saasapi.test25.tvmining.com"
+        n_host = "http://api.saas.tvm.cn"
+            //n_host2 = "http://live.stream.tvmcloud.com"
+        n_host2 = "http://live.stream.tvmcloud.com"
+
+        // n_token = Cookies.get("access_token")
+        n_token = "76723fd11a154fe08b0431f7cfddbb12";
+        // n_pw = Cookies.get("listpw")
+        n_pw = "771837805a";
+        if (n_pw == null) {
+            n_pw = "771837805a"
+        }
+        var video_token
+
+        var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        var d7ago = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate() - 6, 0, 0, 0, 0);
+
+        $('#dp3').datepicker({
+            onRender: function(date) {
+                if (date.valueOf() > now.valueOf()) {
+                    return 'disabled';
+                } else if (date.valueOf() < d7ago.valueOf()) {
+                    return 'disabled';
+                } else {
+                    return '';
+                }
+            }
+        });
+        $('#dp3').on("changeDate", function(ev) {
+            location.href = "/manage/live/hls-play?live=" + live + "&date=" + $("#date").val();
+        });
+    })
+    </script>
+    <style type="text/css">
+    #player {
+        margin: auto;
+    }
+    
+    .mediaInfo li {
+        width: 40px;
+        border: 1px solid #000;
+        float: left;
+        text-align: center;
+    }
+    
+    .mediaInfo li .on {
+        border-color: #0000ff;
+    }
+    
+    .mediaInfo .hls_type {
+        width: 40px;
+        border: 1px solid #000;
+        float: left;
+        text-align: center;
+    }
+    </style>
+    <link rel="stylesheet" href="/manage/static/css/jquery-ui.css">
+    <script src="/manage/static/js/jquery.ui.widget.js"></script>
+    <script src="/manage/static/js/jquery.ui.mouse.js"></script>
+    <script src="/manage/static/js/jquery.ui.slider.js"></script>
+    <style>
+    .scroll-pane {
+        overflow: auto;
+        width: 100%;
+        float: left;
+    }
+    
+    .scroll-content {
+        float: left;
+    }
+    
+    .scroll-content-item {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 10px;
+        font-size: 3em;
+        line-height: 96px;
+        text-align: center;
+    }
+    
+    .scroll-bar-wrap {
+        margin-top: 26px
+    }
+    
+    .scroll-bar-wrap .ui-slider {
+        background: none;
+        border: 0;
+        height: 2em;
+        margin: 0 auto;
+    }
+    
+    .scroll-bar-wrap .ui-handle-helper-parent {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    .scroll-bar-wrap .ui-slider-handle {
+        top: .2em;
+        height: 1.5em;
+    }
+    
+    .scroll-bar-wrap .ui-slider-handle .ui-icon {
+        margin: -8px auto 0;
+        position: relative;
+        top: 50%;
+    }
+    
+    .scroll-bar-wrap .ui-slider-handle .timetag {
+        position: absolute;
+        margin: 20px 0 0 0px;
+        font-size: 5px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .volume_bar .ui-widget-header {
+        background: #0069dd;
+    }
+    
+    .scroll-bar-wrap .ui-slider-handle .video_pic {
+        background: url('http://static.itv.brtn.cn/images/add_playtime_bg4.png');
+        height: 90px;
+        width: 115px;
+        position: absolute;
+        margin: 20px 0 0 5px
+    }
+    
+    .scroll-bar-wrap .ui-slider-handle .video_pic img {
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        margin: 5px 0 0 8px;
+    }
+    
+    .scroll-bar-wrap .ui-slider-handle .video_pic .play_btn {
+        background: url('http://static.itv.brtn.cn/images/add_play_ico.gif') no-repeat center center;
+        position: absolute;
+        height: 90px;
+        width: 115px;
+        top: 0;
+        left: 0;
+        cursor: pointer
+    }
+    </style>
+    <script>
+    $(function() {
+
+        //volume
+        $("#slider-range-min").slider({
+            range: "min",
+            value: 30,
+            min: 1,
+            max: 100,
+            slide: function(event, ui) {
+                jwplayer("player").setVolume(ui.value);
+            }
+        });
+
+        //scrollpane parts
+        var scrollPane = $(".scroll-pane"),
+            scrollContent = $(".scroll-content");
+
+        //build time slider
+
+        var timeValue = null;
+
+        if ($("#hls").val() == "vod") {
+            var eqTime = $("#eqStart").val().substring(0, $("#eqStart").val().length - 2);
+            timeValue = parseInt(eqTime.substring(0, eqTime.length - 2)) * 60 + parseInt(eqTime.substring(eqTime.length - 2));
+        } else {
+            timeValue = 1033;
+        }
+
+        var scrollbar = $(".scroll-bar").slider({
+            range: "min",
+            value: timeValue,
+            min: 0,
+            max: 1440,
+            slide: function(event, ui) {
+                $("#amount").val(ui.value);
+                $(".timetag").text(min_to_time(ui.value));
+                if (scrollContent.width() > scrollPane.width()) {
+                    var interval = ui.value / 1440 * (scrollbar.width() - scrollContent.width());
+                    scrollContent.css("margin-left", interval + "px");
+                } else {
+                    scrollContent.css("margin-left", 0);
+                }
+            }
+        });
+
+
+        //开始/结束时间框每分钟自动更新
+        setInterval(function() {
+            //scrollbar.slider(scrollbar.slider()+1);
+            //var cur = $("#amount").val();
+            //if (cur.length==0) {
+            var cur = scrollbar.slider("option", "value");
+            //}
+
+            var next = parseInt(cur) + 1;
+            scrollbar.slider("option", "value", next);
+            $("#amount").val(next);
+            if (scrollContent.width() > scrollPane.width()) {
+                var interval = next / 1440 * (scrollbar.width() - scrollContent.width());
+                scrollContent.css("margin-left", interval + "px");
+            } else {
+                scrollContent.css("margin-left", 0);
+            }
+            if ($("#con_start").attr("confirm") == 0) {
+                $("#start").val(min_to_time(next));
+                //$("#start").val(next);
+            }
+            if ($("#con_end").attr("confirm") == 0) {
+                $("#end").val(min_to_time(next));
+            }
+            //蓝条        
+            var cur_blue = $(".time_read").width(); //alert(cur_blue);
+            cur_blue += 5.48;
+            $(".time_read").css("width", cur_blue + "px");
+        }, 60000);
+
+        scrollbar.width("100%");
+
+        var timeoutID = null;
+        //append icon to handle
+        var handleHelper = scrollbar.find(".ui-slider-handle")
+            .mousedown(function() {
+                scrollbar.width("100%");
+                //scrollbar.find(".timetag,.video_pic").remove();
+                scrollbar.find(".timetag").remove();
+                scrollbar.find(".ui-slider-handle").prepend('<div class="timetag">' + min_to_time($("#amount").val()) + '</div>');
+            })
+            .mouseup(function() {
+                var video_pichtml = '<div class="video_pic" id="video_pic"><img src="http://saas.tvm.cn//manage/static/images/big-loading.gif">';
+                video_pichtml += '<span class="play_btn" id="play_btn"></span></div>';
+                scrollbar.find(".ui-slider-handle").prepend(video_pichtml);
+
+                scrollbar.find(".timetag").hide();
+                scrollbar.width("100%");
+                var theDate = $("#date").val();
+                var theStart = $("#amount").val();
+                var theLive = $("#live").val();
+                //snapshot position
+                //alert($(".ui-slider-handle").css("left"));
+                if (parseInt($(".ui-slider-handle").css("left")) >= 580) {
+                    $(".video_pic").css("margin-left", -100);
+                } else if (parseInt($(".ui-slider-handle").css("left")) <= 100) {
+                    $(".video_pic").css("margin-left", 0);
+                }
+                //get snapshot 快照
+                var url = "http://saas.tvm.cn/manage/ajax/snapshot?live=" + theLive + "&date=" + theDate + "&start=" + $("#amount").val();
+                $.ajax({
+                    url: url,
+                    type: "GET",
+                    dataType: "JSON",
+                    success: function(response) {
+                        if (response["code"] == 0) {
+                            $(".video_pic img").attr("src", response["pic"]);
+                        } else {
+                            $("#amount").val($("#amount2").val());
+                            scrollbar.find(".video_pic").hide();
+                            scrollbar.slider("option", "value", $("#amount2").val());
+                            var interval = $("#amount2").val() / 1440 * (scrollbar.width() - scrollContent.width());
+                            scrollContent.css("margin-left", interval + "px");
+                            return false;
+                        }
+                    }
+                });
+                if (timeoutID) {
+                    clearTimeout(timeoutID);
+                }
+                timeoutID = setTimeout(function() {
+                    //点击其他地方隐藏截图        
+                    scrollbar.find(".video_pic").hide();
+                }, 5000);
+                $("#play_btn").click(function() {
+                    //获取某时间的直播流
+                    var url = "http://saas.tvm.cn/manage/ajax/hls?live=" + theLive + "&date=" + theDate + "&start=" + min_to_time($("#amount").val());
+                    //alert(url);
+                    $.ajax({
+                        url: url,
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(response) {
+                            if (response["code"] == 0) {
+
+                                $("#amount2").val($("#amount").val());
+                                $("#hls").val(response["m3u8"]["hls"]);
+                                at = response["m3u8"]["m3u8"]
+                                at_2 = at.substring(0, at.indexOf("access_token") + 13) + video_token
+                                    // loadStream(response["m3u8"]["m3u8"]);
+                                loadStream(at_2);
+                                if ($("#con_start").attr("confirm") == 0) {
+                                    $("#start").val(min_to_time($("#amount").val()));
+                                }
+                                if ($("#con_end").attr("confirm") == 0) {
+                                    $("#end").val(min_to_time($("#amount").val()));
+                                }
+                                $(".current").hide();
+                                $("#pie_ul").html("");
+                                scrollbar.find(".video_pic").hide();
+                                clearInterval(tsTime);
+                            } else {
+                                $("#amount").val($("#amount2").val());
+                                scrollbar.slider("option", "value", $("#amount2").val());
+                                var interval = $("#amount2").val() / 1440 * (scrollbar.width() - scrollContent.width());
+                                scrollContent.css("margin-left", interval + "px");
+                                return false;
+                            }
+
+                        }
+                    });
+                });
+                //------------------------------      
+            })
+            .append("<span class='ui-icon ui-icon-grip-dotted-vertical'></span>")
+            .wrap("<div class='ui-handle-helper-parent'></div>").parent();
+
+        //change overflow to hidden now that slider handles the scrolling
+        scrollPane.css("overflow", "visible");
+
+
+        //size scrollbar and handle proportionally to scroll distance
+        function sizeScrollbar() {
+            var remainder = scrollContent.width() - scrollPane.width();
+            var proportion = remainder / scrollContent.width();
+            var handleSize = scrollPane.width() - (proportion * scrollPane.width());
+            scrollbar.find(".ui-slider-handle").css({
+                width: 20,
+                "margin-left": -10
+            });
+            //  handleHelper.width( "" ).width( scrollbar.width() - handleSize );
+        }
+
+        //reset slider value based on scroll content position
+        function resetValue() {
+            var remainder = scrollPane.width() - scrollContent.width();
+            var leftVal = scrollContent.css("margin-left") === "auto" ? 0 :
+                parseInt(scrollContent.css("margin-left"));
+            var percentage = Math.round(leftVal / remainder * 100);
+            scrollbar.slider("value", percentage);
+        }
+
+        //if the slider is 100% and window gets larger, reveal content
+        function reflowContent() {
+            var showing = scrollContent.width() + parseInt(scrollContent.css("margin-left"), 10);
+            var gap = scrollPane.width() - showing;
+            if (gap > 0) {
+                scrollContent.css("margin-left", parseInt(scrollContent.css("margin-left"), 10) + gap);
+            }
+        }
+
+        //change handle position on window resize
+        $(window).resize(function() {
+            resetValue();
+            sizeScrollbar();
+            reflowContent();
+        });
+        //init scrollbar size
+        setTimeout(sizeScrollbar, 10); //safari wants a timeout
+
+
+
+        //时间轴
+        x = 1
+        $(".timeline .time").html("")
+        for (i = 0; i < 24; i++) {
+            for (j = 0; j < 6; j++) {
+                j0 = j * 10
+                i0 = i
+                if (j0 == 0) j0 = "00";
+                if (i < 10) i0 = "0" + i
+                aa = "<li>" + i0 + ":" + j0 + "</li>"
+                $(".timeline .time").append(aa)
+                $(".scroll-content").width(x * 53)
+                x = x + 1
+            }
+        }
+
+
+        //进度条初始标尺偏移   
+        // if($("#hid").val()=="vod"){
+
+        // } 
+        // var offset = 1033;  
+        // console.log(timeValue);  
+        if (scrollContent.width() > scrollbar.width()) {
+            var interval = timeValue / 1440 * (scrollbar.width() - scrollContent.width());
+            scrollContent.css("margin-left", interval + "px");
+
+        } else {
+            scrollContent.css("margin-left", 0);
+        }
+
+    });
+    </script>
+    </head>
+
+    <body>
+        <div id="debug"></div>
+        <div class="content">
+            <div class="view fl">
+                <div class="videomod fl">
+                    <div class="video_title">
+                        <h3>T00E0B412BBE7</h3>
+                        <div class="date datebtn" id="dp3" data-date="2016-11-03" data-date-format="yyyy-mm-dd">
+                            <input size="16" id="date" name="date" type="text" value="2016-11-03" readonly />
+                            <img src="http://saas.tvm.cn//manage/static/images/btn_date.png" class="add-on" />
+                        </div>
+                    </div>
+                    <div style="width: 710px; height: 419px;margin: auto;" id="player"></div>
+                    <div class="video_conrol">
+                        <div style=" margin-left: 8px;width:680px;">
+                            <div class="scroll-pane " style="overflow: visible;">
+                                <!--<div class="left"></div> <div class="rig"></div>-->
+                                <div class="scroll-content  timeline">
+                                    <div class="time_read" style="width:300px"></div>
+                                    <ul class="time"></ul>
+                                    <div class="sider">
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                                <div class="scroll-bar-wrap ">
+                                    <div class="scroll-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con_box">
+                            <div class="rewind"></div>
+                            <div id="btn_play" status="1" class="pause"></div>
+                            <div class="forward"></div>
+                            <div class="sx"></div>
+                            <div class="live"></div>
+                            <div class="volume">
+                                <div id="btn_sound" mute="0" class="sound"></div>
+                                <div class="volume_bar">
+                                    <div id="slider-range-min"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--记录播放时间-->
+                    <input type="hidden" id="amount" value="1033" style="position:absolute">
+                    <input type="hidden" id="amount2" value="1033" style="position:absolute">
+                    <div class="clear"></div>
+                    <!--流信息-->
+                    <input type="hidden" id="eqStart" value="" />
+                    <input type="hidden" id="eqEnd" value="" />
+                    <input type="hidden" id="eqSn" value="" />
+                    <!-- 
+        <input type="hidden" id="eqStart" value="092930"/>
+        <input type="hidden" id="eqEnd" value="212209"/>
+        <input type="hidden" id="eqSn" value="T00E04CFC45E6"/> -->
+                    <input type="hidden" id="m3u8" value="http://live.stream.tvmcloud.com/approve/live?type=iptv&channel=T00E0B412BBE7&access_token=0c4ddd995a6633fa71b541c952387393d971b745" size="80">
+                    <input type="hidden" id="live" value="12620">
+                    <input type="hidden" id="media" value="iptv">
+                    <input type="hidden" id="hls" value="live">
+                    <!--       <input type="hidden" id="hls" value="vod"> -->
+                    <!--打点控制面板-->
+                    <div class="video_tool">
+                        <div class="time">
+                            <input id="con_start" type="button" class="btn_01 btn_m " value="确定" confirm="0" style="float: right;margin-left: 5px;">
+                            <div class="play" style="margin-left: 0px;float: right;" rel="start"></div>
+                            开始时间
+                            <input name="start" id="start" type="text" class="text" value="17:13" />
+                            <!--17:13     -->
+                        </div>
+                        <div class="time">
+                            <input id="con_end" type="button" class="btn_01 btn_m " value="确定" confirm="0" style="float: right;margin-left: 5px;">
+                            <div class="play" style="margin-left: 0px;float: right;" rel="end"></div>
+                            结束时间
+                            <input name="end" id="end" type="text" class="text" value="17:13" />
+                        </div>
+                        <div>
+                            <input type="button" class="btn_01 btn_m fr" style="width:150px" value="保存视频" id="save_video">
+                        </div>
+                    </div>
+                    <div class="mediaInfo" style="display:none">
+                        <span class="hls_type">live</span>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="media" rel="iptv">iptv</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--碎片传输-->
+                <div class="piece_tab fr">
+                    <div class="tab" zoom="0"></div>
+                </div>
+            </div>
+            <div class="pie_content">
+                <div class="piece_div fl">
+                    <div class="piece_view fl">
+                        <div class="pie_tit">碎片传输</div>
+                        <div class="pie_desc">
+                            <span class="block ed fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;已传输</span>
+                            <span class="block ing fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;当前播放</span>
+                            <span class="block none fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;无视频</span>
+                        </div>
+                        <div class="pieces">
+                            <div class="showtime"></div>
+                            <div class="current" status="0"></div>
+                            <!--    <div class="scal"></div> -->
+                            <ul id="pie_ul">
+                            </ul>
+                            <div class="loadImg"><img src="http://saas.tvm.cn//manage/static/images/big-loading.gif" /></div>
+                            <div class="showText">抱歉，没有视频碎片。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--     <div id="log2"></div> -->
+            <div class="clear"></div>
+        </div>
+        <script type="text/javascript">
+        $(document).ready(function() {
+
+            var getcode = n_host + "/live/getloginstring.php?access_token=" + n_token + "&group=" + n_pw
+            $.ajax({
+                url: getcode,
+                type: "GET",
+                dataType: "JSONP",
+                success: function(response) {
+                    if (response.code == 1) {
+                        var gettoken = n_host2 + "/token/uatoken?app=js&string=" + response.data + "&format=json"
+                        $.ajax({
+                            url: gettoken,
+                            type: "GET",
+                            dataType: "JSON",
+                            success: function(response) {
+                                if (response.access.status == "SUCCESS") {
+                                    video_token = response.access.token
+                                        //加载直播流
+                                    at = $("#m3u8").val()
+                                    at_2 = at.substring(0, at.indexOf("access_token") + 13) + video_token
+
+                                    loadStream(at_2);
+                                    //初始化蓝条为当前时间
+                                    if ($("#hls").val() == "live") {
+                                        var nowTemp = 1033;
+                                    } else {
+                                        var nowTemp = 1440 - 1;
+                                    }
+                                    var interval = nowTemp / 1440 * ($(".scroll-content").width());
+                                    $(".time_read").css("width", interval + "px");
+                                }
+                            }
+                        })
+                    }
+
+                }
+            })
+        });
+        var tsTime = null;
+        var stop = null;
+        //直接按照开始结束时间播放
+        $(".video_tool .play").click(function() {
+            clearInterval(tsTime);
+            clearInterval(secTime);
+            clearInterval(stop);
+            var scrollbar = $(".scroll-bar");
+            var scrollContent = $(".scroll-content");
+            var theDate = $("#date").val();
+            var theStart;
+            if ($(this).attr("rel") == "start") {
+                theStart = $("#start").val();
+            } else {
+                theStart = $("#end").val();
+            }
+
+            var theLive = $("#live").val();
+            var media_type = $("#media").val();
+            var hls_type = $("#hls").val();
+            var url = "/manage/ajax/hls?live=" + theLive + "&media=" + media_type + "&date=" + theDate + "&start=" + theStart;
+
+            // if (hls_type == "vod") {
+            //     url = url+"&date="+theDate+"&start="+theStart;
+            // }
+            var start_min = time_to_min(theStart);
+
+            $.ajax({
+                url: url,
+                type: "GET",
+                dataType: "JSON",
+                success: function(response) {
+                    console.log(response);
+                    if (response["code"] == 0) {
+                        scrollbar.slider("option", "value", start_min);
+                        at = response["m3u8"]["m3u8"]
+                        at_2 = at.substring(0, at.indexOf("access_token") + 13) + video_token
+                            // loadStream(response["m3u8"]["m3u8"]);
+                        loadStream(at_2);
+                        $("#amount").val(start_min);
+                        $(".timetag").text(theStart);
+                        var interval = start_min / 1440 * (scrollbar.width() - scrollContent.width());
+                        scrollContent.css("margin-left", interval + "px");
+                        $(".current").hide();
+                        $("#pie_ul").html("");
+                    } else {
+                        return false;
+                    }
+                }
+            });
+
+        });
+        //打点开始时间
+        $("#con_start").click(function() {
+            if ($(this).attr("confirm") == 0) {
+                $(this).attr("confirm", 1);
+                $(this).removeClass("btn_01");
+                $(this).addClass("btn_02");
+                $(this).val("取消");
+                //$(this).parent().find(".play").css("display", "inline");
+                $("#start").attr("readonly", "readonly");
+            } else {
+                $(this).attr("confirm", 0);
+                $(this).removeClass("btn_02");
+                $(this).addClass("btn_01");
+                $(this).val("确定");
+                //$(this).parent().find(".play").css("display", "none");
+                $("#start").attr("readonly", false);
+            }
+        });
+        //打点结束时间
+        $("#con_end").click(function() {
+            if ($(this).attr("confirm") == 0) {
+                $(this).attr("confirm", 1);
+                $(this).removeClass("btn_01");
+                $(this).addClass("btn_02");
+                $(this).val("取消");
+                //$(this).parent().find(".play").css("display", "inline");
+                $("#end").attr("readonly", "readonly");
+            } else {
+                $(this).attr("confirm", 0);
+                $(this).removeClass("btn_02");
+                $(this).addClass("btn_01");
+                $(this).val("确定");
+                //$(this).parent().find(".play").css("display", "none");
+                $("#end").attr("readonly", false);
+            }
+        });
+
+        //播放按钮
+        $("#btn_play").click(function() {
+            if ($(this).attr("status") == 1) {
+                //暂停
+                jwplayer("player").pause(true);
+                $(this).removeClass("pause");
+                $(this).addClass("play");
+                $(this).attr("status", 0);
+                clearInterval(tsTime);
+                clearInterval(secTime);
+                clearInterval(stop);
+            } else {
+                //开始
+                jwplayer("player").play(true);
+                $(this).removeClass("play");
+                $(this).addClass("pause");
+                $(this).attr("status", 1);
+
+            }
+        });
+        //上一天按钮
+        $(".con_box .rewind").click(function() {
+
+            var live = $("#live").val();
+            var date = $("#date").val();
+            //new Date(2006,0,12); 2015-8-12 
+
+            var Day = date.split("-");
+            var d = new Date(Day[0], Day[1] - 1, Day[2]);
+
+            d.setDate(d.getDate() - 1);
+            var d7 = new Date();
+            d7.setDate(d7.getDate() - 7);
+
+            if (d >= d7) {
+                date = d.getFullYear() + "-" + (parseInt(d.getMonth()) + 1) + "-" + d.getDate();
+                hlsplay(live, date);
+            } else {
+                return false;
+            }
+        });
+        //下一天按钮
+        $(".con_box .forward").click(function() {
+            var live = $("#live").val();
+            var date = $("#date").val();
+
+            var Day = date.split("-");
+            var d = new Date(Day[0], Day[1] - 1, Day[2]);
+
+            d.setDate(d.getDate() + 1);
+            if (d > new Date()) {
+                return false;
+            }
+            date = d.getFullYear() + "-" + (parseInt(d.getMonth()) + 1) + "-" + d.getDate();
+            hlsplay(live, date);
+        });
+        //静音按钮
+        $("#btn_sound").click(function() {
+            if ($(this).attr("mute") == 1) {
+                jwplayer("player").setMute(false);
+                $(this).removeClass("mute");
+                $(this).addClass("sound");
+                $(this).attr("mute", 0);
+            } else {
+                jwplayer("player").setMute(true);
+                $(this).removeClass("sound");
+                $(this).addClass("mute");
+                $(this).attr("mute", 1);
+            }
+        });
+        //重试按钮
+        $(".sx").click(function() {
+
+            retry();
+        });
+        //切换回直播
+        $(".live").click(function() {
+            location.href = "/manage/live/hls-play?live=" + $("#live").val();
+        });
+        //视频源切换按钮
+        $(".media").click(function() {
+            var theDate = $("#date").val();
+            var theStart = $("#amount").val();
+            var theLive = $("#live").val();
+            var media_type = $(this).attr("rel");
+            var hls_type = $("#hls").val();
+            var url = "/manage/ajax/hls?live=" + theLive + "&media=" + media_type;
+            if (hls_type == "vod") {
+                url = url + "&date=" + theDate + "&start=" + min_to_time(theStart);
+            }
+            $.ajax({
+                url: url,
+                type: "GET",
+                dataType: "JSON",
+                success: function(response) {
+                    if (response["code"] == 0) {
+                        // loadStream(response["m3u8"]["m3u8"]);
+                        at = response["m3u8"]["m3u8"]
+                        at_2 = at.substring(0, at.indexOf("access_token") + 13) + video_token
+                            // loadStream(response["m3u8"]["m3u8"]);
+                        loadStream(at_2);
+                        if ($("#con_start").attr("confirm") == 0) {
+                            $("#start").val(min_to_time(theStart));
+                        }
+                        if ($("#con_end").attr("confirm") == 0) {
+                            $("#end").val(min_to_time(theStart));
+                        }
+                    } else {
+                        return false;
+                    }
+                }
+            });
+        });
+        //3秒后空闲，即未播放则重试
+        setTimeout(function() {
+            if (jwplayer("player").getState() == "IDLE") {
+                retry();
+            }
+        }, 3000);
+        jwplayer("player").setup({
+            playlist: [{
+                file: 'http://saas.tvm.cn/../../../playlists/test_001/stream.m3u8',
+                provider: '/manage/static/jwplayer6/HLSProvider6.swf',
+                type: 'mp4'
+            }],
+            width: 710,
+            height: 409,
+            primary: "flash",
+            aspectratio: "16:9",
+            image: "http://saas.tvm.cnhttp://saas.tvm.cn//manage/static/images/video.jpg",
+            //controls: false,
+            skin: "http://saas.tvm.cn/manage/static/jwplayer6/vapor.xml",
+            logo: {
+                hide: true
+            },
+            abouttext: "TVM ENCODER v1.0",
+            aboutlink: "#"
+
+        });
+
+        jwplayer("player").onError(function(event) {
+            //show_alert(event.message());
+            $(".loadImg").hide();
+            $(".showText").show();
+            clearInterval(tsTime);
+            clearInterval(secTime);
+            clearInterval(stop);
+            show_alert("资源播放错误");
+            //retry();
+        });
+        jwplayer("player").onComplete(function() {
+            clearInterval(tsTime);
+            clearInterval(secTime);
+            clearInterval(stop);
+            retry();
+        });
+        jwplayer("player").onSetupError(function(event) {
+            clearInterval(tsTime);
+            clearInterval(secTime);
+            clearInterval(stop);
+            show_alert(event.message());
+            retry();
+        });
+
+
+        var count = 0;
+        jwplayer("player").onPlay(function() {
+            clearInterval(stop);
+            //clearInterval(tsTime);
+            $("#btn_play").addClass("pause");
+            $("#btn_play").removeClass("play");
+            $("#btn_play").attr("status", 1);
+
+            var startTime = $("#eqStart").val();
+            var endTime = $("#eqEnd").val();
+            var sn = $("#eqSn").val();
+            //只有第一次进来的时候加载碎片
+
+            if ($("#pie_ul li").length == 0) {
+                getTs(startTime, endTime, sn);
+            }
+            //记录每个格子走了多少秒的时候停下来的
+            stop = setInterval(function() {
+                count++;
+                if (count == 11) {
+                    count = 1;
+                }
+            }, 1000);
+            //根据current的状态判断是原始播放的 还是暂停之后播放的 0原始播放 1暂停后播放
+            if ($(".current").attr("status") == "1") {
+                console.log(parseInt((10 - count) + "000"));
+                var wid = $('#pie_ul').find('.ing').find('.scal').width(); //获取单个ts内 暂停时 已经播放了的位置
+                interval(parseInt(wid), $(".current").get(0).offsetLeft, 1); //在当前位置继续播放 ts的 定位的
+                //在当前 ts执行完之后 执行下一个ts 根据记录的时间延时加载
+                setTimeout(function() {
+                    clearInterval(tsTime);
+                    clearInterval(secTime);
+
+                    interval(0); //下一个ts 恢复原始播放的样式 
+                    tsTime = setInterval(function() {
+                        interval(0);
+                    }, 10000);
+                }, parseInt((10 - count) + "000"));
+            } else {
+                tsTime = setInterval(function() {
+                    interval(0);
+                }, 10000);
+            }
+            var state = jwplayer("player").getState();
+            console.log(state);
+        });
+        jwplayer("player").onPause(function() {
+            clearInterval(tsTime);
+            clearInterval(secTime);
+            clearInterval(stop);
+            $("#btn_play").addClass("play");
+            $("#btn_play").removeClass("pause");
+            $("#btn_play").attr("status", 0);
+
+            $(".current").attr("status", "1");
+        });
+
+
+        //继续加载
+        function retry() {
+            clearInterval(tsTime);
+            clearInterval(secTime);
+            clearInterval(stop);
+            var theDate = $("#date").val();
+            var theStart = $("#amount").val();
+            var theLive = $("#live").val();
+            var media_type = $("#media").val();
+            var hls_type = $("#hls").val();
+
+            // var url = "http://saas.tvm.cn/manage/ajax/hls?live="+theLive+"&media="+media_type;
+            var url = "http://10.20.50.51/approve/live?channel=T00E04CFC2AE9&type=iptv";
+            // if (hls_type == "vod") {
+            //     url = url+"&date="+theDate+"&start="+min_to_time(theStart);
+            // }
+            $.ajax({
+                url: url,
+                type: "GET",
+                dataType: "JSON",
+                success: function(response) {
+                    if (response["code"] == 0) {
+                        // loadStream(response["m3u8"]["m3u8"]);
+                        at = response["m3u8"]["m3u8"]
+                        at_2 = at.substring(0, at.indexOf("access_token") + 13) + video_token
+                        loadStream(at_2);
+                        if ($("#con_start").attr("confirm") == 0) {
+                            $("#start").val(min_to_time(theStart));
+                        }
+                        if ($("#con_end").attr("confirm") == 0) {
+                            $("#end").val(min_to_time(theStart));
+                        }
+                    } else {
+                        return false;
+                    }
+                }
+            });
+        }
+
+        function loadStream(url) {
+            console.log(url);
+            jwplayer("player").load([{
+                file: url,
+                provider: 'http://saas.tvm.cn/manage/static/jwplayer6/HLSProvider6.swf',
+                type: 'mp4'
+            }]);
+            jwplayer("player").play();
+            return false;
+        }
+
+        var isStart = null;
+        jwplayer("player").onTime(function(evt) {
+            currentTime = evt.position.toFixed(0);
+            currentBuffer = ((evt.bufferPercent * evt.duration) / 100 - evt.position).toFixed(1);
+            if (isNaN(currentBuffer)) currentBuffer = 0;
+            currentLength = evt.duration.toFixed(1);
+
+            var html = 'position : ' + currentTime + 's';
+            html += ',buffer : ' + currentBuffer + 's';
+            html += ',duration : ' + currentLength + 's';
+            isStart = currentTime;
+            // document.getElementById('log2').innerHTML = html;
+
+
+        });
+
+        jwplayer("player").onBuffer(function() {
+            console.log("加载");
+            clearInterval(tsTime);
+            clearInterval(secTime);
+            clearInterval(stop);
+        });
+
+
+        function dateTime() {
+            //format date/time;
+            var d = new Date();
+            var curr_date = d.getDate();
+            var curr_month = d.getMonth() + 1;
+            var curr_year = d.getFullYear();
+
+            var curr_hour = d.getHours();
+            var curr_min = d.getMinutes();
+            var curr_sec = d.getSeconds();
+
+            curr_hour = curr_hour + "";
+            if (curr_hour.length == 1) {
+                curr_hour = "0" + curr_hour;
+            }
+
+            curr_min = curr_min + "";
+            if (curr_min.length == 1) {
+                curr_min = "0" + curr_min;
+            }
+
+            curr_sec = curr_sec + "";
+            if (curr_sec.length == 1) {
+                curr_sec = "0" + curr_sec;
+            }
+
+            currentDateTime = curr_year + '-' + curr_month + '-' + curr_date + ' ' + curr_hour + ':' + curr_min + ':' + curr_sec;
+            return currentDateTime;
+        }
+
+        //碎片相关js
+        $(".tab").click(function() {
+            if ($(".tab").attr("zoom") == "0") {
+                $(".tab").attr("zoom", "1");
+                $(".piece_view").stop().animate({
+                    right: -383
+                }, function() {
+                    $(".piece_div").hide();
+                    $(".tab").addClass("upBg");
+                    $(".piece_tab").css("margin", "0 5px 0 1px");
+                });
+                $(".view").animate({
+                    left: "20%"
+                });
+            } else {
+                $(".tab").attr("zoom", "0");
+                $(".tab").removeClass("upBg");
+                $(".piece_tab").css("margin", "0 0 0 6px");
+                $(".piece_div").show();
+                $(".piece_view").stop().animate({
+                    right: 0
+                });
+                $(".view").animate({
+                    left: 0
+                });
+            }
+        });
+        </script>
+        <!--打点补充信息-->
+        <div class="f_box">
+            <div class="boxclose"></div>
+            <h3>请填写描述信息</h3>
+            <div class="cont">
+                <p><strong>内容标题</strong>
+                    <input name="title" id="title" type="text" class="text" style="width:280px">
+                </p>
+                <p><strong>简单描述</strong>
+                    <textarea name="summary" id="summary" style="width:280px; height:90px; padding:5px 10px" class="text"></textarea>
+                </p>
+                <p><strong>&nbsp;</strong>
+                    <input type="button" id="btn_cut" class="btn_01 fl f14 w300" value="确定">
+                </p>
+                <p class="sm">
+                    系统将处理您的剪切视频需求，稍后您将能够在您的“记录” 界面中，看到您刚刚保存的视频内容。请注意，该视频将会占 用您的私有云存储空间。
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $("#btn_cut").click(function() {
+            var that = $(this);
+            $(that).addClass("btn_saveing");
+            $(that).val("保存中...");
+            $(that).attr("disabled", "disabled");
+            var data = {
+                start: $("#start").val(),
+                end: $("#end").val(),
+                date: $("#date").val(),
+                title: $("#title").val(),
+                summary: $("#summary").val(),
+                live: $("#live").val(),
+                type: $("#media").val()
+            };
+            var url = "/manage/ajax/cut";
+            $.ajax({
+                url: url,
+                data: data,
+                type: "POST",
+                dataType: "JSON",
+                success: function(response) {
+                    if (response["code"] == 0) {
+                        $(that).val("已完成");
+                        setTimeout(function() {
+                            //还原表单初始状态
+                            $("#con_start").attr("confirm", 0);
+                            $("#con_start").removeClass("btn_02");
+                            $("#con_start").addClass("btn_01");
+                            $("#con_start").val("确定")
+                            $("#start").attr("readonly", false);
+
+                            $("#con_end").attr("confirm", 0);
+                            $("#con_end").removeClass("btn_02");
+                            $("#con_end").addClass("btn_01");
+                            $("#con_end").val("确定")
+                            $("#end").attr("readonly", false);
+
+                            $("#title").val("");
+                            $("#summary").val("");
+                            closebox();
+                            $(that).val("确定");
+                            $(that).attr("disabled", false);
+                            $(that).removeClass("btn_saveing");
+                        }, 3000);
+                    } else {
+                        $(".sm").text(response["msg"]);
+                        $(that).val("确定");
+                        $(that).attr("disabled", false);
+                        $(that).removeClass("btn_saveing");
+                    }
+                }
+            });
+        });
+        </script>
+        <div class="f_box2" id="set_box">
+            <div class="boxclose"></div>
+            <h3>个人设置</h3>
+            <p class="setting_msg" style="display:none">
+                <p>
+                    <div class="cont" style="padding-left:150px">
+                        <form id="form_setting">
+                            <input name="newpwd" type="password" class="text02 pass" placeholder="新密码">
+                </p>
+                <p>
+                    <input name="repwd" type="password" class="text02 pass" placeholder="重复密码">
+                </p>
+                <p>
+                    <input type="button" id="btn_setting" class="btn_01 fl f14" value="确 定" style="width:195px">
+                </p>
+                </form>
+                </div>
+        </div>
+        <script type="text/javascript">
+        $("#btn_setting").click(function() {
+            $(".setting_msg").css("display", "none");
+            var url = "/manage/ajax/setting";
+            var data = $("#form_setting").serialize();
+            $.ajax({
+                url: url,
+                data: data,
+                type: "POST",
+                dataType: "JSON",
+                success: function(response) {
+                    if (response["code"] == 0) {
+                        $(".setting_msg").addClass("alert-success");
+                        $(".setting_msg").removeClass("alert-error");
+                        $(".setting_msg").text("修改成功");
+                        $(".setting_msg").show();
+                        setTimeout(function() {
+                            $(".bgbox ,.f_box,.f_box2").hide();
+                        }, 3000);
+                        return;
+                    } else {
+                        $(".setting_msg").removeClass("alert-success");
+                        $(".setting_msg").addClass("alert-error");
+                        $(".setting_msg").text(response["msg"]);
+                        $(".setting_msg").show();
+                    }
+                }
+            });
+        });
+
+        function errimg(obj) {
+            $(obj).attr("src", "http://saas.tvm.cn//manage/static/images/face.png");
+        }
+        </script>
+        <div class="ts_box ts_alert" style="display:none">
+            <div class="cont">
+                <div class="tsico"></div><span></span>
+            </div>
+            <div align="right">
+                <input type="button" value="确定" id="ts_box_btn_ok" class="btn_03 on">
+            </div>
+        </div>
+        <div class="bgbox"></div>
+    </body>
+
+</html>

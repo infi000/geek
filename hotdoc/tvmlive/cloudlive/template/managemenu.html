@@ -1,0 +1,60 @@
+<?php print $this->includes('listtop')?>
+
+<br />
+<!------main start------>
+<div class="main">
+ <!------左侧栏 start------>
+  <div class="left">
+    <div class="blogroom">&nbsp;&nbsp;<p style="font-size:14px">菜单管理</p>
+    <form name="exeForm" id="exeForm" action="" method="post" >
+    <table border="0" cellpadding="0" cellspacing="8">
+    <tr><td><button>添加</button>&nbsp;&nbsp;<button>删除</button></td></tr>
+<TR>
+	<TD><input type="hidden" name="delNode" id="delNode" value="">
+	  	<div class="TreeMenu" id="CategoryTree" valign="top">
+			<ul>
+			<?php print $this->dataContent?>
+			</ul>
+		</div>
+	  </TD>
+</TR>
+</table></form>
+    </div> 
+    <div class="clear"></div>
+  </div>
+  
+  <!------左侧栏 end------> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript">
+$(function(){
+	$("button").eq(0).bind('click',function(){
+		document.location.href="?do=/prms/addmenu";
+	});
+	$("button").eq(1).bind('click',submitForm);
+})
+function nodeClick(t){
+	c = $(t).parent().attr('class');
+	$(t).parent().removeClass();
+	if(c == 'Closed'){
+		$(t).parent().toggleClass("Opened");
+	}else{
+		$(t).parent().toggleClass("Closed");
+	}
+}
+function submitForm(){
+	if(!confirm("确定要删除菜单项吗？"))return false;
+	var f =  $("input:checked");
+	$("#delNode").val('');
+	$.each(f,function(i,n){
+		$("#delNode").val($("#delNode").val()+','+n.value);
+	});
+	$("#delNode").val($("#delNode").val().slice(1));
+	var v = $("#delNode").val();
+	if( v == ''){
+		alert('请选择删除项！');
+	}else{
+		$("#exeForm").submit();
+	}
+}
+</script>

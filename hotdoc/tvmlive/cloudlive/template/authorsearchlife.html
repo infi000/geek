@@ -1,0 +1,145 @@
+<?php $this->includes('top')?>
+<!------nav start------>
+<br />
+<div >
+<div >
+    <div class="search_blog">
+      <form name="exeForm" id="exeForm" action="index.php?do=/moveposts/authorlife" method="post">
+      	<input type="hidden" name="do" value="/moveposts/authorlife">
+      	<input type="hidden" id="doAction" name="doAction" value="">
+      	<input type="hidden" id="newsId" name="newsId" value="">
+      	<?php if($this->var2){?>
+      	专家文章分类：<select id="cate" name="cate" onchange="fcate(this)"><option value="0">请选择分类</option>
+		<?php print $this->dataCate ?> </select><br /><?php }?>
+        博主权限：<select id="cat" name="cat"><option value="0">请选择权限</option>
+		<?php print $this->dataCategory ?> </select><br />博主名：<input type="text" id="postTitle" name="postTitle" value="<?php print $this->postTitle ?>" maxlength="20"><br />
+		注册邮箱：<input type="text" id="email" name="email" value="<?php print $this->email ?>" maxlength="20"><br />
+		时间：<input type="text" name="date1" id="date1" readonly="readonly" value="<?PHP print $this->stime?>" size="10" /><img src="images/calender/calender.gif" onClick="getDatePicker('date1', event)" />至
+        <input  name="date2" id="date2" readonly type="text" value="<?PHP print $this->etime?>" size="10" />
+                  <img src="images/calender/calender.gif" onClick="getDatePicker('date2', event)" >
+        <input type="button" id="searchButton" value="查询" class="" />
+      </form>
+    </div>
+  </div>
+</div>
+<!------nav end------>
+<br />
+<!------main start------>
+<div>
+ <!------左侧栏 start------>
+  <div>
+    <div class="blogposts">
+    <?php print $this->tableBody ?>   
+      <div class="clear"></div>
+      <?php print $this->pager ?>
+     
+      
+    </div> 
+    <div class="clear"></div>
+  </div>
+  
+  <!------左侧栏 end------> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript" src="js/jquery.paginal.js"></script>
+<script language="javascript" src="js/selectdate.js"></script>
+<script language="javascript">
+$(function(){
+	$("#searchButton").click(function(){
+		if($("#date1").val() >$("#date2").val() && $("#date2").val().trim() != ''){
+			alert('开始日期不能大于结束日期！')
+		}else if($("#date1").val().trim() == '' && $("#date2").val().trim() != ''){
+			alert('开始日期不能为空！')
+		}else{
+			$("#exeForm").attr('method','GET');
+			$("#doAction").val('search');
+			$("#exeForm").submit();
+		}
+	})
+	$().pagination.action();
+})
+
+var fabuparam = {
+	lenparam:Array(Array(10,7,20),Array(10,7,20),Array(10,7,20),Array(10,7,20))
+}
+//含有汉字字符串长度
+String.prototype.len = function() { return this.replace(/[^\x00-\xff]/g,"**").length; };
+String.prototype.rltrim = function(){ return this.replace(/[\s　]+|(&nbsp;)+/gi, ''); };
+function wordsLength(n,t,y,p){
+	if(p == undefined)p='input';
+	var initlen = fabuparam.lenparam[t][y]*2;
+	var txtlen = (p == 'input')?$(n).find(p).val().len():$(n).find(p).html().len();
+	var residue = initlen - txtlen;
+	residue = Math.floor(residue/2);
+	$(n).find('span').html(residue+'/'+fabuparam.lenparam[t][y]);
+}
+
+function wordsLengthx(p){
+	if(p.data.c == undefined)p.data.c='input';
+	var initlen = fabuparam.lenparam[p.data.b][p.data.d]*2;
+	var txtlen = (p.data.c == 'input')?$(p.data.a).find(p.data.c).val().len():$(p.data.a).find(p.data.c).html().len();
+	var residue = initlen - txtlen;
+	residue = Math.floor(residue/2);
+	$(p.data.a).find('span').html(residue+'/'+fabuparam.lenparam[p.data.b][p.data.d]);
+}
+
+function getPosts(e){
+	var t,u,c,p,index,v,len,img;
+	t = $(e).attr('title');
+	u = $(e).attr('postsurl');
+	img = $(e).attr('imgurl');
+	c = $(e).attr('postcontent');
+	p = $(self.parent.frames["mainFrame"].document).find(".newright");
+	len = p.children().length;
+	uid = getUrlParam(img,"=","&",'uid',false);
+	v = p.children().eq(0).children().children().eq(1).children().val().trim();
+	if(v == ''){
+		p.children().eq(0).children().children().eq(1).children().val(t);
+		p.children().eq(0).children().children().eq(2).children().val(u);
+		p.children().eq(0).children().children().eq(3).children().val(img);
+		$.each(p.children(),function(i,k){
+			if(i>0)$(k).remove();
+		});
+		$.post('?do=/postsaction/lifeposts',{id:uid},function(data){
+			p.append(data);
+			var t = 3;
+			$.each(p.children().children(),function(j,k){
+				if(j>0){
+					$.each($(k).children(),function(i, n){
+						switch(i){
+							case 1:
+								$(n).find('span').html('0/'+fabuparam.lenparam[t][0]);
+								$(n).find('input').change(wordsLength(n,t,0));
+								$(n).find('input').bind('change',{a:n,b:t,d:0},wordsLengthx);
+								$(n).find('input').bind('keyup',{a:n,b:t,d:0},wordsLengthx);
+								break;
+							case 3:
+								if(j == 1){
+									$(n).find('span').html('0/'+fabuparam.lenparam[t][2]);
+									$(n).find('textarea').change(wordsLength(n,t,2,'textarea'));
+									$(n).find('textarea').bind('change',{a:n,b:t,d:2,c:'textarea'},wordsLengthx);
+									$(n).find('textarea').bind('keyup',{a:n,b:t,d:2,c:'textarea'},wordsLengthx);
+								}
+								break;
+						}
+					});
+				}
+			});
+		});
+	}	
+}
+function fcate(e){
+	var cat,p,v,len;
+	cat = $(e).find(':selected').html();
+	p = $(self.parent.frames["mainFrame"].document).find(".newright");
+	len = p.children().length;
+	for(var i = 0; i < len; i++ ){
+		v = p.children().eq(i).children().children().eq(1).children().val().trim();
+		if(v == ''){
+			p.children().eq(i).children().children().eq(1).children().val(cat);
+			break;
+		}		
+	} 
+}
+</script>
+<?php $this->includes('foot')?>

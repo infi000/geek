@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	 <noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>直播监管</title>
+     <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/home-ht.css">
+    <link rel="stylesheet" href="css/bf/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bf/animation.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                   
+                </div>
+                <div class="show managerShow">
+                    <div class="showTitle">
+                        <div class="manager-title">
+                             <?php print $this->collect?>
+                        </div>
+                    </div>
+                    <!-- 分页 -->
+                    <div class="page">
+                        <div style="text-align: center;">
+                            <nav>
+                                <ul class="pagination">
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="managerBox">
+                        <table class="table table-hover">
+                                                      
+                        </table>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+     <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bf/common.js"></script>
+	<script type="text/javascript" src="js/bf/home-ht.js"></script>
+	<script language="javascript">
+	function boxpause(){
+			var that = $(this);
+			var id = that.attr('data-boxid');
+			var url = '?m=1202';
+			 $.post(url,{'id':id},function(data){
+				var msg = data.msg.replace("\\n","<br/>");			
+				if(data.status){
+					if(data.data==1){
+						that.text('暂停直播');
+					}else{
+						that.text('恢复直播');
+					}
+					
+				}
+			},'json');
+		}
+function details() {
+        var that = $(this);
+        var obj = that.closest('td').find(".userInfo-box");
+        obj.show();
+        that.on("mouseleave", function() {
+            obj.fadeOut("fast");
+
+        });
+        obj.on("mouseenter", function() {
+            $(this).finish();
+            obj.show();
+        });
+        obj.on("mouseleave", function() {
+            obj.fadeOut("fast");
+        });
+}
+function jumppage(p){
+			var that = $(this);
+			var page = (typeof(p) == "number")?p:that.attr('data-page');
+			var url = '?m=1201';
+			 $.post(url,{'page':page},function(data){
+				var msg = data.msg.replace("\\n","<br/>");			
+				if(data.status){
+					$('.pagination').html(data.data.page);
+					 $('.table-hover').html(data.data.body);
+					 $('.btn-info').click(boxpause);
+					 $('.pagination').find('a').click(jumppage);
+                                          $(".details").click(details);
+				}
+			},'json');
+		}
+                
+$(function(){
+
+		var url = '?m=1201';
+		 $.post(url,{'page':1},function(data){
+			var msg = data.msg.replace("\\n","<br/>");			
+			if(data.status){
+				$('.pagination').html(data.data.page);
+				$('.table-hover').html(data.data.body);
+				 $('.btn-info').click(boxpause);
+				 $('.pagination').find('a').click(jumppage);
+                                 $(".details").click(details);
+			}
+		},'json');
+		//jumppage(1);
+
+		
+		
+})
+	
+
+</script>
+
+</body>
+
+</html>

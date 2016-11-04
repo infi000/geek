@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+	<noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+    <title>修改密码</title>
+    <link rel="stylesheet" href="css/bf/password.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="head">
+                <img src="images/bf/tag2.png">
+                <div class="title"><span>修改密码</span></div>
+            </div>
+            <div class="main">
+                <div class="temp-1">
+                    <input type="text" class="oldpass" placeholder="原密码">
+                    <img src="images/bf/xing.png">
+                    <p class="input-msg">原密码</p>
+                </div>
+                <div class="temp-1">
+                    <input type="text" class="newpass" placeholder="密码">
+                    <img src="images/bf/xing.png">
+                    <p class="input-msg">输入8-20位的数字、字母组合</p>
+                </div>
+                <div class="temp-1">
+                    <input type="text" class="repass" placeholder="确认密码">
+                    <img src="images/bf/xing.png">
+                    <p class="input-msg"></p>
+                </div>
+                <p style="color:#ff503f;padding-left: 10px;" id="messerror">bffff</p>
+            </div>
+            <div class="footer">
+                <div class="confirm-btn">
+                    确定
+                </div>
+            </div>
+        </div>
+        <div class="TC">
+            <div class="skipto">
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/bf/common.js"></script>
+<script language="javascript">
+var rightflag = 0;
+var msgbox = $("#messerror");
+msgbox.hide();
+//判断Input内是否有值
+function checkInput(){
+	rightflag = 1;
+	msgbox.hide();
+    var imgObj = $(this).closest('.temp-1').find("img");
+    var msgObj = $(this).closest('.temp-1').find(".input-msg");
+	if ($(this).val().trim() == ""){
+        imgObj.show();
+        msgObj.show();
+        imgObj.attr({"src": "images/bf/xing.png"});
+    } else {
+		if($(this).attr('class') =="oldpass"){
+			if($(".oldpass").val().length >=8 && $(".oldpass").val().length <=20 ){
+				imgObj.attr({ "src": "images/bf/right.png" });
+				msgObj.hide();
+			}else{
+				rightflag =0;
+				msgObj.text("密码8到20个字符");
+				msgObj.show();
+				imgObj.attr({ "src": "images/bf/xing.png" });
+			}
+		}else if($(this).attr('class') =="newpass"){
+			if($(".oldpass").val() == $(".newpass").val()){
+				rightflag =0;
+				msgObj.text("旧密码不能与新密码相同");
+				msgObj.show();
+				imgObj.attr({ "src": "images/bf/xing.png" });
+			}else if(!checkpasswd($(".newpass").val())){
+				rightflag =0;
+				msgObj.text("密码8-20位的数字、字母组合");
+				msgObj.show();
+				imgObj.attr({ "src": "images/bf/xing.png" });
+			}else if($(".newpass").val().length <8 || $(".newpass").val().length >20){
+				msgObj.text("密码8-20位的数字、字母组合");
+				msgObj.show();
+				imgObj.attr({ "src": "images/bf/xing.png" });
+			}else{
+				imgObj.attr({ "src": "images/bf/right.png" });
+				msgObj.hide();
+			}
+		}else if($(this).attr('class') =="repass"){
+			if($(".newpass").val()==$(".repass").val()){
+				msgObj.hide();
+				imgObj.attr({ "src": "images/bf/right.png" });
+			}else{
+				rightflag =0;
+				msgObj.text("两次输入的密码不一致");
+				msgObj.show();
+				imgObj.attr({ "src": "images/bf/xing.png" });
+			}
+		}else{
+			imgObj.attr({ "src": "images/bf/right.png" });
+			msgObj.hide();
+		}
+	}
+}
+$(function(){
+	$("input").blur(checkInput);
+	$("input").keyup(checkInput);
+	$(".confirm-btn").click(function(){
+		msgbox.hide();
+		if(rightflag){
+			var pass = $(".newpass").val();
+			var opass = $(".oldpass").val();
+			 var url = '?m=5025';
+			 $.post(url,{'opasswd':opass,'passwd':pass},function(data){
+				var msg = data.msg.replace("\\n","<br/>");			
+				if(data.status){
+					location.href = "?m=5101";
+				}else{
+					//window.sessionStorage.setItem('CLIENTTOKEN',null);
+					 msgbox.text(msg);
+					 msgbox.show();
+					
+				}
+			},'json');
+		}
+	});
+})
+
+
+</script>
+
+</html>

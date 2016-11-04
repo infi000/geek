@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>管理员登录</title>
+	<link rel="stylesheet" type="text/css" href="css/bf/houtai-login.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <img src="images/bf/logo3.png" alt="天脉logo">
+            <img src="images/bf/logo2.png" alt="天脉logo">
+        </div>
+        <div class="right">
+            <div class="solgan">
+                <span>天脉直播云后台管理登陆</span>
+            </div>
+            <div class="content">
+            <p class="errorMsg"><span>用户名与密码不匹配,请重新输入</span></p>
+                <div class="inputText">
+                    <img src="images/bf/Profile.png">
+                    <input type="text" class="username" name="user" placeholder="账号" maxlength="20">
+                </div>
+                <div class="inputText">
+                    <img src="images/bf/lock.png">
+                    <input type="password" class="password" name="pass" placeholder="密码" maxlength="20">
+                </div>
+               
+                <div class="btn" id="login-btn">登陆</div>
+            </div>
+        </div>
+    </div>
+  <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+<script language="javascript">
+$(function(){
+	//清除空格
+	String.prototype.trim = function() { return this.replace(/[\s　]+|(&nbsp;)+/gi, ''); };
+	var msgbox = $(".errorMsg").find("span");
+	
+	$(".username").focus(function(){
+		 msgbox.text('');
+		 msgbox.hide();
+	})
+	$(".password").focus(function(){
+		 msgbox.text('');
+		 msgbox.hide();
+	})
+	$("#login-btn").click(function(){
+		var mess = "";
+		var name = $(".username").val();
+		var pass = $(".password").val();
+		if(name.trim() == ""){
+			mess = "请输入帐号";
+			msgbox.text(mess);
+			msgbox.show();
+			return;
+		}
+		
+		if(pass.trim() == ""){
+			mess = "请输入密码";
+			msgbox.text(mess);
+			msgbox.show();
+			return;
+		}
+		
+		var url = '?m=1001';
+		 $.post(url,{'user':name,'pass':pass},function(data){
+			var msg = data.msg.replace("\\n","<br/>");			
+			if(data.status){
+				 //msgbox.text(data.data);
+				// msgbox.show();
+				location.href = "?m=1200";
+			}else{
+				//window.sessionStorage.setItem('CLIENTTOKEN',null);
+                 msgbox.text(msg);
+				 msgbox.show();
+				
+			}
+		},'json');
+	})
+
+})
+	
+
+</script>
+</body>
+
+</html>

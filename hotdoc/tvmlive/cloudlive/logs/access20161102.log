@@ -1,0 +1,815 @@
+[2016-11-02 10:23:36]request start time:2016-11-02 10:23:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:23:40]request start time:2016-11-02 10:23:40
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:23:41]request start time:2016-11-02 10:23:41
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10045&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-11-02 10:23:42]request start time:2016-11-02 10:23:42
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10045&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-11-02 10:25:55]request start time:2016-11-02 10:25:55
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=123456
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:25:59]request start time:2016-11-02 10:25:59
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:26:00]request start time:2016-11-02 10:26:00
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:26:33]request start time:2016-11-02 10:26:33
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:26:34]request start time:2016-11-02 10:26:34
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:26:54]request start time:2016-11-02 10:26:54
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5025&opasswd=12345678&passwd=87654321
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:26:55]request start time:2016-11-02 10:26:55
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:26:57]request start time:2016-11-02 10:26:57
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:26:58]request start time:2016-11-02 10:26:58
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10045&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-11-02 10:26:59]request start time:2016-11-02 10:26:59
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10045&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-11-02 10:28:10]request start time:2016-11-02 10:28:10
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:28:17]request start time:2016-11-02 10:28:17
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:28:22]request start time:2016-11-02 10:28:22
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:28:24]request start time:2016-11-02 10:28:24
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project2.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">13<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:28:34]request start time:2016-11-02 10:28:34
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=4002&id=10114
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:28:41]request start time:2016-11-02 10:28:41
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=4002&id=10111
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:28:55]request start time:2016-11-02 10:28:55
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=4002&id=10108
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:29:04]request start time:2016-11-02 10:29:04
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project2.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">10<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:29:43]request start time:2016-11-02 10:29:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:29:44]request start time:2016-11-02 10:29:44
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"系统繁忙","status":0}
+request end
+
+[2016-11-02 10:29:49]request start time:2016-11-02 10:29:49
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:29:50]request start time:2016-11-02 10:29:50
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"系统繁忙","status":0}
+request end
+
+[2016-11-02 10:29:51]request start time:2016-11-02 10:29:51
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:29:57]request start time:2016-11-02 10:29:57
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=87654321d
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:29:58]request start time:2016-11-02 10:29:58
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=87654321d
+return value: {"data":"","msg":"系统繁忙","status":0}
+request end
+
+[2016-11-02 10:30:05]request start time:2016-11-02 10:30:05
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=876543d21
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:30:07]request start time:2016-11-02 10:30:07
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=876543d21
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:30:07]request start time:2016-11-02 10:30:07
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=876543d21
+return value: {"data":"","msg":"系统繁忙","status":0}
+request end
+
+[2016-11-02 10:30:09]request start time:2016-11-02 10:30:09
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=876543d21
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:30:09]request start time:2016-11-02 10:30:09
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=876543d21
+return value: {"data":"","msg":"系统繁忙","status":0}
+request end
+
+[2016-11-02 10:30:18]request start time:2016-11-02 10:30:18
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=8765432d1
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:30:19]request start time:2016-11-02 10:30:19
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=8765432d1
+return value: {"data":"","msg":"系统繁忙","status":0}
+request end
+
+[2016-11-02 10:30:19]request start time:2016-11-02 10:30:19
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=8765432d1
+return value: {"data":"","msg":"系统繁忙","status":0}
+request end
+
+[2016-11-02 10:30:26]request start time:2016-11-02 10:30:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:30:46]request start time:2016-11-02 10:30:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=87654321
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:30:47]request start time:2016-11-02 10:30:47
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">10<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:31:02]request start time:2016-11-02 10:31:02
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:31:03]request start time:2016-11-02 10:31:03
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"系统繁忙","status":0}
+request end
+
+[2016-11-02 10:31:10]request start time:2016-11-02 10:31:10
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=87654321
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:31:11]request start time:2016-11-02 10:31:11
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">10<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:31:27]request start time:2016-11-02 10:31:27
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=222222
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-11-02 10:31:40]request start time:2016-11-02 10:31:40
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=87654321
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 10:31:40]request start time:2016-11-02 10:31:40
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">10<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:31:47]request start time:2016-11-02 10:31:47
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">10<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 10:31:48]request start time:2016-11-02 10:31:48
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10045&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-11-02 10:31:48]request start time:2016-11-02 10:31:48
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10045&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-11-02 11:02:10]request start time:2016-11-02 11:02:10
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5201&boxid=T00E0B412BBE7&uid=vu_9c1d02c56065_0&callback=jQuery11120025482757249847054_1478055634796&_=1478055634797
+return value: jQuery11120025482757249847054_1478055634796({"data":{"liveurl":"http:\/\/live.stream.tvmcloud.com\/approve\/live?channel=T00E0B412BBE7&type=iptv","security":"eJwFwUEOwCAIBMAvrSAUXmMQ472HNjHh8c783%2FBsC5SiUBkoPq84qjZ62grssNlhNvNpxIKAugrTBQBmEFs%3D"},"msg":"ok","status":1})
+request end
+
+[2016-11-02 12:31:08]request start time:2016-11-02 12:31:08
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1001&user=admin&pass=admin123*
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 12:31:09]request start time:2016-11-02 12:31:09
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1101
+return value: {"data":{"home":" <div class=\"managerBar bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=1200\" class=\"managerChoose\" ><img src=\"images\/bf\/zbjg2.png\" alt=\"\">直播监管<\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=1203\"  ><img src=\"images\/bf\/jcbd.png\" alt=\"\">违规直播<\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，admin<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                        <li><a href=\"?m=1210\">直播地址列表<\/a><\/li>\r\n                        <li><a href=\"?m=1250\">添加直播地址<\/a><\/li>\r\n                            <li><a href=\"\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=1002\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 12:31:09]request start time:2016-11-02 12:31:09
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1201&page=1
+return value: {"data":{"body":"<tr class=\"active\">\r\n                                <th style=\"width:160px;\">用户名<\/th>\r\n                                <th>设备名称<\/th>\r\n                                <th>设备ID<\/th>\r\n                                <th>直播状态<\/th>\r\n                                <th>预览图<\/th>\r\n                                <th>监管<\/th>\r\n                            <\/tr><tr><td><p><span>杨瑞琼<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>其他公司\/企业<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>杨瑞琼<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>天脉学院<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>北京市朝阳区中宇大厦<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>yangruiqiong@tvmining.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span>517800139<\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>中宇大厦9层前台<\/td>\r\n                                <td>T00E0B412B9C2<\/td>\r\n                                <td><span class=\"label label-success label-lg\">在线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/mtq.stcdn.tvmcloud.com\/picture\/T00E0B412B9C2.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10048,1000050046\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>胡静<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>胡静<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>18812345678<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>朝阳小学<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>西城区<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>907258513@qq.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>18812345678<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>开学啦<\/td>\r\n                                <td>T00E0B412BC3F<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"images\/bf\/set-default.png\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10006,1000050013\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>cloudtest2<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>cloudtest2<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>15313212312<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>aaa@ss.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>中<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>测试云直播2<\/td>\r\n                                <td>T00E04CFC1EA6<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/mtq.stcdn.tvmcloud.com\/picture\/T00E04CFC1EA6.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10015,1000050001\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>马立志<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>其他公司\/企业<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>马立志<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>18618423773<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>18618423773@tvm.cn<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>马立志测试<\/td>\r\n                                <td>T00E0B412BBD5<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/mtq.stcdn.tvmcloud.com\/picture\/T00E0B412BBD5.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10021,1000050031\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span><\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>CESHI<\/td>\r\n                                <td>T00E0B412BCC0<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/mtq.stcdn.tvmcloud.com\/picture\/T00E0B412BCC0.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10024,1000050034\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td class=\"last\"><p><span>喻红利<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>喻红利<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>18513661760<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>中国<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>北京<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>yuhongli88@126.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>17777777777<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>直播测试测试测试<\/td>\r\n                                <td>T00E0B412BBE7<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/mtq.stcdn.tvmcloud.com\/picture\/T00E0B412BBE7.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10045,1000050016\">暂停直播<\/button>\r\n                                <\/td><\/tr>","page":"<li><a href=\"javascript:void(0);\" aria-label=\"Previous\" data-page=\"1\"><span aria-hidden=\"true\">&laquo;<\/span><\/a><\/li><li class=\"active\"><a href=\"javascript:void(0);\"  data-page=\"1\">1<\/a><\/li><li><a href=\"javascript:void(0);\" aria-label=\"Next\"  data-page=\"1\"><span aria-hidden=\"true\">&raquo;<\/span><\/a><\/li>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 14:05:44]request start time:2016-11-02 14:05:44
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=15901260539&passwd=chinasunarui
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-11-02 14:05:45]request start time:2016-11-02 14:05:45
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">0<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，杨瑞琼<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 14:05:47]request start time:2016-11-02 14:05:47
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">0<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，杨瑞琼<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-11-02 14:05:47]request start time:2016-11-02 14:05:47
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066620,"timestamp":"2016-11-02 14:03:40"},{"unixtime":1478066636,"timestamp":"2016-11-02 14:03:56"},{"unixtime":1478066646,"timestamp":"2016-11-02 14:04:06"},{"unixtime":1478066656,"timestamp":"2016-11-02 14:04:16"},{"unixtime":1478066666,"timestamp":"2016-11-02 14:04:26"},{"unixtime":1478066676,"timestamp":"2016-11-02 14:04:36"},{"unixtime":1478066686,"timestamp":"2016-11-02 14:04:46"},{"unixtime":1478066696,"timestamp":"2016-11-02 14:04:56"},{"unixtime":1478066706,"timestamp":"2016-11-02 14:05:06"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:05:48]request start time:2016-11-02 14:05:48
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10048&token=a070683626b4c5207fe8e693d711ccd629562e1c&at=Wed%20Nov%2002%202016%2014:05:52%20GMT+0800%20(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4)
+return value: {"data":"","msg":"直播正常","status":1}
+request end
+
+[2016-11-02 14:05:58]request start time:2016-11-02 14:05:58
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066636,"timestamp":"2016-11-02 14:03:56"},{"unixtime":1478066646,"timestamp":"2016-11-02 14:04:06"},{"unixtime":1478066656,"timestamp":"2016-11-02 14:04:16"},{"unixtime":1478066666,"timestamp":"2016-11-02 14:04:26"},{"unixtime":1478066676,"timestamp":"2016-11-02 14:04:36"},{"unixtime":1478066686,"timestamp":"2016-11-02 14:04:46"},{"unixtime":1478066696,"timestamp":"2016-11-02 14:04:56"},{"unixtime":1478066706,"timestamp":"2016-11-02 14:05:06"},{"unixtime":1478066716,"timestamp":"2016-11-02 14:05:16"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:05:58]request start time:2016-11-02 14:05:58
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5201&boxid=T00E0B412B9C2&uid=vu_9c1d02c56065_0&callback=jQuery1112040690400814857797_1478066761889&_=1478066761890
+return value: jQuery1112040690400814857797_1478066761889({"data":{"liveurl":"http:\/\/live.stream.tvmcloud.com\/approve\/live?channel=T00E0B412B9C2&type=iptv","security":"eJwFwbENwDAIBMCVHjAET2MBlqu0SRExfO7eZ82iDS41mC40fSl3dh%2BM8h044TngnnURiyJg01T4Bwu7EK4%3D"},"msg":"ok","status":1})
+request end
+
+[2016-11-02 14:06:09]request start time:2016-11-02 14:06:09
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066646,"timestamp":"2016-11-02 14:04:06"},{"unixtime":1478066656,"timestamp":"2016-11-02 14:04:16"},{"unixtime":1478066666,"timestamp":"2016-11-02 14:04:26"},{"unixtime":1478066676,"timestamp":"2016-11-02 14:04:36"},{"unixtime":1478066686,"timestamp":"2016-11-02 14:04:46"},{"unixtime":1478066696,"timestamp":"2016-11-02 14:04:56"},{"unixtime":1478066706,"timestamp":"2016-11-02 14:05:06"},{"unixtime":1478066716,"timestamp":"2016-11-02 14:05:16"},{"unixtime":1478066726,"timestamp":"2016-11-02 14:05:26"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:06:20]request start time:2016-11-02 14:06:20
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066666,"timestamp":"2016-11-02 14:04:26"},{"unixtime":1478066676,"timestamp":"2016-11-02 14:04:36"},{"unixtime":1478066686,"timestamp":"2016-11-02 14:04:46"},{"unixtime":1478066696,"timestamp":"2016-11-02 14:04:56"},{"unixtime":1478066706,"timestamp":"2016-11-02 14:05:06"},{"unixtime":1478066716,"timestamp":"2016-11-02 14:05:16"},{"unixtime":1478066726,"timestamp":"2016-11-02 14:05:26"},{"unixtime":1478066736,"timestamp":"2016-11-02 14:05:36"},{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:06:30]request start time:2016-11-02 14:06:30
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066676,"timestamp":"2016-11-02 14:04:36"},{"unixtime":1478066686,"timestamp":"2016-11-02 14:04:46"},{"unixtime":1478066696,"timestamp":"2016-11-02 14:04:56"},{"unixtime":1478066706,"timestamp":"2016-11-02 14:05:06"},{"unixtime":1478066716,"timestamp":"2016-11-02 14:05:16"},{"unixtime":1478066726,"timestamp":"2016-11-02 14:05:26"},{"unixtime":1478066736,"timestamp":"2016-11-02 14:05:36"},{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:06:41]request start time:2016-11-02 14:06:41
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066686,"timestamp":"2016-11-02 14:04:46"},{"unixtime":1478066696,"timestamp":"2016-11-02 14:04:56"},{"unixtime":1478066706,"timestamp":"2016-11-02 14:05:06"},{"unixtime":1478066716,"timestamp":"2016-11-02 14:05:16"},{"unixtime":1478066726,"timestamp":"2016-11-02 14:05:26"},{"unixtime":1478066736,"timestamp":"2016-11-02 14:05:36"},{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"},{"unixtime":1478066756,"timestamp":"2016-11-02 14:05:56"},{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:06:52]request start time:2016-11-02 14:06:52
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066696,"timestamp":"2016-11-02 14:04:56"},{"unixtime":1478066706,"timestamp":"2016-11-02 14:05:06"},{"unixtime":1478066716,"timestamp":"2016-11-02 14:05:16"},{"unixtime":1478066726,"timestamp":"2016-11-02 14:05:26"},{"unixtime":1478066736,"timestamp":"2016-11-02 14:05:36"},{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"},{"unixtime":1478066756,"timestamp":"2016-11-02 14:05:56"},{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"},{"unixtime":1478066776,"timestamp":"2016-11-02 14:06:16"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:07:03]request start time:2016-11-02 14:07:03
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066706,"timestamp":"2016-11-02 14:05:06"},{"unixtime":1478066716,"timestamp":"2016-11-02 14:05:16"},{"unixtime":1478066726,"timestamp":"2016-11-02 14:05:26"},{"unixtime":1478066736,"timestamp":"2016-11-02 14:05:36"},{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"},{"unixtime":1478066756,"timestamp":"2016-11-02 14:05:56"},{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"},{"unixtime":1478066776,"timestamp":"2016-11-02 14:06:16"},{"unixtime":1478066786,"timestamp":"2016-11-02 14:06:26"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:07:14]request start time:2016-11-02 14:07:14
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066716,"timestamp":"2016-11-02 14:05:16"},{"unixtime":1478066726,"timestamp":"2016-11-02 14:05:26"},{"unixtime":1478066736,"timestamp":"2016-11-02 14:05:36"},{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"},{"unixtime":1478066756,"timestamp":"2016-11-02 14:05:56"},{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"},{"unixtime":1478066776,"timestamp":"2016-11-02 14:06:16"},{"unixtime":1478066786,"timestamp":"2016-11-02 14:06:26"},{"unixtime":1478066796,"timestamp":"2016-11-02 14:06:36"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:07:25]request start time:2016-11-02 14:07:25
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066726,"timestamp":"2016-11-02 14:05:26"},{"unixtime":1478066736,"timestamp":"2016-11-02 14:05:36"},{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"},{"unixtime":1478066756,"timestamp":"2016-11-02 14:05:56"},{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"},{"unixtime":1478066776,"timestamp":"2016-11-02 14:06:16"},{"unixtime":1478066786,"timestamp":"2016-11-02 14:06:26"},{"unixtime":1478066796,"timestamp":"2016-11-02 14:06:36"},{"unixtime":1478066806,"timestamp":"2016-11-02 14:06:46"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:07:36]request start time:2016-11-02 14:07:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066736,"timestamp":"2016-11-02 14:05:36"},{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"},{"unixtime":1478066756,"timestamp":"2016-11-02 14:05:56"},{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"},{"unixtime":1478066776,"timestamp":"2016-11-02 14:06:16"},{"unixtime":1478066786,"timestamp":"2016-11-02 14:06:26"},{"unixtime":1478066796,"timestamp":"2016-11-02 14:06:36"},{"unixtime":1478066806,"timestamp":"2016-11-02 14:06:46"},{"unixtime":1478066816,"timestamp":"2016-11-02 14:06:56"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:07:47]request start time:2016-11-02 14:07:47
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066746,"timestamp":"2016-11-02 14:05:46"},{"unixtime":1478066756,"timestamp":"2016-11-02 14:05:56"},{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"},{"unixtime":1478066776,"timestamp":"2016-11-02 14:06:16"},{"unixtime":1478066786,"timestamp":"2016-11-02 14:06:26"},{"unixtime":1478066796,"timestamp":"2016-11-02 14:06:36"},{"unixtime":1478066806,"timestamp":"2016-11-02 14:06:46"},{"unixtime":1478066816,"timestamp":"2016-11-02 14:06:56"},{"unixtime":1478066826,"timestamp":"2016-11-02 14:07:06"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:07:58]request start time:2016-11-02 14:07:58
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066756,"timestamp":"2016-11-02 14:05:56"},{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"},{"unixtime":1478066776,"timestamp":"2016-11-02 14:06:16"},{"unixtime":1478066786,"timestamp":"2016-11-02 14:06:26"},{"unixtime":1478066796,"timestamp":"2016-11-02 14:06:36"},{"unixtime":1478066806,"timestamp":"2016-11-02 14:06:46"},{"unixtime":1478066816,"timestamp":"2016-11-02 14:06:56"},{"unixtime":1478066826,"timestamp":"2016-11-02 14:07:06"},{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:08:09]request start time:2016-11-02 14:08:09
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066766,"timestamp":"2016-11-02 14:06:06"},{"unixtime":1478066776,"timestamp":"2016-11-02 14:06:16"},{"unixtime":1478066786,"timestamp":"2016-11-02 14:06:26"},{"unixtime":1478066796,"timestamp":"2016-11-02 14:06:36"},{"unixtime":1478066806,"timestamp":"2016-11-02 14:06:46"},{"unixtime":1478066816,"timestamp":"2016-11-02 14:06:56"},{"unixtime":1478066826,"timestamp":"2016-11-02 14:07:06"},{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"},{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:08:20]request start time:2016-11-02 14:08:20
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066786,"timestamp":"2016-11-02 14:06:26"},{"unixtime":1478066796,"timestamp":"2016-11-02 14:06:36"},{"unixtime":1478066806,"timestamp":"2016-11-02 14:06:46"},{"unixtime":1478066816,"timestamp":"2016-11-02 14:06:56"},{"unixtime":1478066826,"timestamp":"2016-11-02 14:07:06"},{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"},{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"},{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:08:31]request start time:2016-11-02 14:08:31
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066796,"timestamp":"2016-11-02 14:06:36"},{"unixtime":1478066806,"timestamp":"2016-11-02 14:06:46"},{"unixtime":1478066816,"timestamp":"2016-11-02 14:06:56"},{"unixtime":1478066826,"timestamp":"2016-11-02 14:07:06"},{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"},{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"},{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:08:42]request start time:2016-11-02 14:08:42
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066806,"timestamp":"2016-11-02 14:06:46"},{"unixtime":1478066816,"timestamp":"2016-11-02 14:06:56"},{"unixtime":1478066826,"timestamp":"2016-11-02 14:07:06"},{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"},{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"},{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"},{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:08:53]request start time:2016-11-02 14:08:53
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066816,"timestamp":"2016-11-02 14:06:56"},{"unixtime":1478066826,"timestamp":"2016-11-02 14:07:06"},{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"},{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"},{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"},{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"},{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:09:04]request start time:2016-11-02 14:09:04
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066826,"timestamp":"2016-11-02 14:07:06"},{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"},{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"},{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"},{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"},{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"},{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:09:15]request start time:2016-11-02 14:09:15
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"},{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"},{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"},{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"},{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"},{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"},{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:09:26]request start time:2016-11-02 14:09:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066842,"timestamp":"2016-11-02 14:07:22"},{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"},{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"},{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"},{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"},{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"},{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"},{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:09:37]request start time:2016-11-02 14:09:37
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066852,"timestamp":"2016-11-02 14:07:32"},{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"},{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"},{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"},{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"},{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"},{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"},{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:09:48]request start time:2016-11-02 14:09:48
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066862,"timestamp":"2016-11-02 14:07:42"},{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"},{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"},{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"},{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"},{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"},{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"},{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"},{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:09:59]request start time:2016-11-02 14:09:59
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066872,"timestamp":"2016-11-02 14:07:52"},{"unixtime":1478066882,"timestamp":"2016-11-02 14:08:02"},{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"},{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"},{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"},{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"},{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"},{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"},{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"},{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:10:10]request start time:2016-11-02 14:10:10
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066892,"timestamp":"2016-11-02 14:08:12"},{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"},{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"},{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"},{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"},{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"},{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"},{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"},{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:10:21]request start time:2016-11-02 14:10:21
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066902,"timestamp":"2016-11-02 14:08:22"},{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"},{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"},{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"},{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"},{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"},{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"},{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:10:32]request start time:2016-11-02 14:10:32
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066912,"timestamp":"2016-11-02 14:08:32"},{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"},{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"},{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"},{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"},{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"},{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"},{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:10:43]request start time:2016-11-02 14:10:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066922,"timestamp":"2016-11-02 14:08:42"},{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"},{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"},{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"},{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"},{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"},{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"},{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:10:54]request start time:2016-11-02 14:10:54
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066932,"timestamp":"2016-11-02 14:08:52"},{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"},{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"},{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"},{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"},{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"},{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"},{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:11:05]request start time:2016-11-02 14:11:05
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066942,"timestamp":"2016-11-02 14:09:02"},{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"},{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"},{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"},{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"},{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"},{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"},{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:11:16]request start time:2016-11-02 14:11:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066952,"timestamp":"2016-11-02 14:09:12"},{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"},{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"},{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"},{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"},{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"},{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:11:27]request start time:2016-11-02 14:11:27
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066962,"timestamp":"2016-11-02 14:09:22"},{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"},{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"},{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"},{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"},{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"},{"unixtime":1478067048,"timestamp":"2016-11-02 14:10:48"},{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:11:38]request start time:2016-11-02 14:11:38
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066972,"timestamp":"2016-11-02 14:09:32"},{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"},{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"},{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"},{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"},{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"},{"unixtime":1478067048,"timestamp":"2016-11-02 14:10:48"},{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"},{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:11:49]request start time:2016-11-02 14:11:49
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478066982,"timestamp":"2016-11-02 14:09:42"},{"unixtime":1478066992,"timestamp":"2016-11-02 14:09:52"},{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"},{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"},{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"},{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"},{"unixtime":1478067048,"timestamp":"2016-11-02 14:10:48"},{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"},{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:12:00]request start time:2016-11-02 14:12:00
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067002,"timestamp":"2016-11-02 14:10:02"},{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"},{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"},{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"},{"unixtime":1478067048,"timestamp":"2016-11-02 14:10:48"},{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"},{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"},{"unixtime":1478067078,"timestamp":"2016-11-02 14:11:18"},{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:12:11]request start time:2016-11-02 14:12:11
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067012,"timestamp":"2016-11-02 14:10:12"},{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"},{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"},{"unixtime":1478067048,"timestamp":"2016-11-02 14:10:48"},{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"},{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"},{"unixtime":1478067078,"timestamp":"2016-11-02 14:11:18"},{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"},{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:12:22]request start time:2016-11-02 14:12:22
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067022,"timestamp":"2016-11-02 14:10:22"},{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"},{"unixtime":1478067048,"timestamp":"2016-11-02 14:10:48"},{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"},{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"},{"unixtime":1478067078,"timestamp":"2016-11-02 14:11:18"},{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"},{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"},{"unixtime":1478067108,"timestamp":"2016-11-02 14:11:48"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:12:33]request start time:2016-11-02 14:12:33
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067038,"timestamp":"2016-11-02 14:10:38"},{"unixtime":1478067048,"timestamp":"2016-11-02 14:10:48"},{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"},{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"},{"unixtime":1478067078,"timestamp":"2016-11-02 14:11:18"},{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"},{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"},{"unixtime":1478067108,"timestamp":"2016-11-02 14:11:48"},{"unixtime":1478067118,"timestamp":"2016-11-02 14:11:58"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:12:44]request start time:2016-11-02 14:12:44
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067048,"timestamp":"2016-11-02 14:10:48"},{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"},{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"},{"unixtime":1478067078,"timestamp":"2016-11-02 14:11:18"},{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"},{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"},{"unixtime":1478067108,"timestamp":"2016-11-02 14:11:48"},{"unixtime":1478067118,"timestamp":"2016-11-02 14:11:58"},{"unixtime":1478067128,"timestamp":"2016-11-02 14:12:08"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:12:55]request start time:2016-11-02 14:12:55
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067058,"timestamp":"2016-11-02 14:10:58"},{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"},{"unixtime":1478067078,"timestamp":"2016-11-02 14:11:18"},{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"},{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"},{"unixtime":1478067108,"timestamp":"2016-11-02 14:11:48"},{"unixtime":1478067118,"timestamp":"2016-11-02 14:11:58"},{"unixtime":1478067128,"timestamp":"2016-11-02 14:12:08"},{"unixtime":1478067138,"timestamp":"2016-11-02 14:12:18"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:13:06]request start time:2016-11-02 14:13:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067068,"timestamp":"2016-11-02 14:11:08"},{"unixtime":1478067078,"timestamp":"2016-11-02 14:11:18"},{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"},{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"},{"unixtime":1478067108,"timestamp":"2016-11-02 14:11:48"},{"unixtime":1478067118,"timestamp":"2016-11-02 14:11:58"},{"unixtime":1478067128,"timestamp":"2016-11-02 14:12:08"},{"unixtime":1478067138,"timestamp":"2016-11-02 14:12:18"},{"unixtime":1478067148,"timestamp":"2016-11-02 14:12:28"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:13:17]request start time:2016-11-02 14:13:17
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067078,"timestamp":"2016-11-02 14:11:18"},{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"},{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"},{"unixtime":1478067108,"timestamp":"2016-11-02 14:11:48"},{"unixtime":1478067118,"timestamp":"2016-11-02 14:11:58"},{"unixtime":1478067128,"timestamp":"2016-11-02 14:12:08"},{"unixtime":1478067138,"timestamp":"2016-11-02 14:12:18"},{"unixtime":1478067148,"timestamp":"2016-11-02 14:12:28"},{"unixtime":1478067158,"timestamp":"2016-11-02 14:12:38"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:13:28]request start time:2016-11-02 14:13:28
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067088,"timestamp":"2016-11-02 14:11:28"},{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"},{"unixtime":1478067108,"timestamp":"2016-11-02 14:11:48"},{"unixtime":1478067118,"timestamp":"2016-11-02 14:11:58"},{"unixtime":1478067128,"timestamp":"2016-11-02 14:12:08"},{"unixtime":1478067138,"timestamp":"2016-11-02 14:12:18"},{"unixtime":1478067148,"timestamp":"2016-11-02 14:12:28"},{"unixtime":1478067158,"timestamp":"2016-11-02 14:12:38"},{"unixtime":1478067168,"timestamp":"2016-11-02 14:12:48"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:13:39]request start time:2016-11-02 14:13:39
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067098,"timestamp":"2016-11-02 14:11:38"},{"unixtime":1478067108,"timestamp":"2016-11-02 14:11:48"},{"unixtime":1478067118,"timestamp":"2016-11-02 14:11:58"},{"unixtime":1478067128,"timestamp":"2016-11-02 14:12:08"},{"unixtime":1478067138,"timestamp":"2016-11-02 14:12:18"},{"unixtime":1478067148,"timestamp":"2016-11-02 14:12:28"},{"unixtime":1478067158,"timestamp":"2016-11-02 14:12:38"},{"unixtime":1478067168,"timestamp":"2016-11-02 14:12:48"},{"unixtime":1478067178,"timestamp":"2016-11-02 14:12:58"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:13:50]request start time:2016-11-02 14:13:50
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067118,"timestamp":"2016-11-02 14:11:58"},{"unixtime":1478067128,"timestamp":"2016-11-02 14:12:08"},{"unixtime":1478067138,"timestamp":"2016-11-02 14:12:18"},{"unixtime":1478067148,"timestamp":"2016-11-02 14:12:28"},{"unixtime":1478067158,"timestamp":"2016-11-02 14:12:38"},{"unixtime":1478067168,"timestamp":"2016-11-02 14:12:48"},{"unixtime":1478067178,"timestamp":"2016-11-02 14:12:58"},{"unixtime":1478067188,"timestamp":"2016-11-02 14:13:08"},{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:14:01]request start time:2016-11-02 14:14:01
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067128,"timestamp":"2016-11-02 14:12:08"},{"unixtime":1478067138,"timestamp":"2016-11-02 14:12:18"},{"unixtime":1478067148,"timestamp":"2016-11-02 14:12:28"},{"unixtime":1478067158,"timestamp":"2016-11-02 14:12:38"},{"unixtime":1478067168,"timestamp":"2016-11-02 14:12:48"},{"unixtime":1478067178,"timestamp":"2016-11-02 14:12:58"},{"unixtime":1478067188,"timestamp":"2016-11-02 14:13:08"},{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"},{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:14:12]request start time:2016-11-02 14:14:12
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067138,"timestamp":"2016-11-02 14:12:18"},{"unixtime":1478067148,"timestamp":"2016-11-02 14:12:28"},{"unixtime":1478067158,"timestamp":"2016-11-02 14:12:38"},{"unixtime":1478067168,"timestamp":"2016-11-02 14:12:48"},{"unixtime":1478067178,"timestamp":"2016-11-02 14:12:58"},{"unixtime":1478067188,"timestamp":"2016-11-02 14:13:08"},{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"},{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"},{"unixtime":1478067218,"timestamp":"2016-11-02 14:13:38"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:14:23]request start time:2016-11-02 14:14:23
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067148,"timestamp":"2016-11-02 14:12:28"},{"unixtime":1478067158,"timestamp":"2016-11-02 14:12:38"},{"unixtime":1478067168,"timestamp":"2016-11-02 14:12:48"},{"unixtime":1478067178,"timestamp":"2016-11-02 14:12:58"},{"unixtime":1478067188,"timestamp":"2016-11-02 14:13:08"},{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"},{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"},{"unixtime":1478067218,"timestamp":"2016-11-02 14:13:38"},{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:14:34]request start time:2016-11-02 14:14:34
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067158,"timestamp":"2016-11-02 14:12:38"},{"unixtime":1478067168,"timestamp":"2016-11-02 14:12:48"},{"unixtime":1478067178,"timestamp":"2016-11-02 14:12:58"},{"unixtime":1478067188,"timestamp":"2016-11-02 14:13:08"},{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"},{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"},{"unixtime":1478067218,"timestamp":"2016-11-02 14:13:38"},{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"},{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:14:45]request start time:2016-11-02 14:14:45
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067168,"timestamp":"2016-11-02 14:12:48"},{"unixtime":1478067178,"timestamp":"2016-11-02 14:12:58"},{"unixtime":1478067188,"timestamp":"2016-11-02 14:13:08"},{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"},{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"},{"unixtime":1478067218,"timestamp":"2016-11-02 14:13:38"},{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"},{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"},{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:14:56]request start time:2016-11-02 14:14:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067178,"timestamp":"2016-11-02 14:12:58"},{"unixtime":1478067188,"timestamp":"2016-11-02 14:13:08"},{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"},{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"},{"unixtime":1478067218,"timestamp":"2016-11-02 14:13:38"},{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"},{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"},{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"},{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:15:07]request start time:2016-11-02 14:15:07
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067188,"timestamp":"2016-11-02 14:13:08"},{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"},{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"},{"unixtime":1478067218,"timestamp":"2016-11-02 14:13:38"},{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"},{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"},{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"},{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"},{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:15:18]request start time:2016-11-02 14:15:18
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067198,"timestamp":"2016-11-02 14:13:18"},{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"},{"unixtime":1478067218,"timestamp":"2016-11-02 14:13:38"},{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"},{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"},{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"},{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"},{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"},{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:15:29]request start time:2016-11-02 14:15:29
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067208,"timestamp":"2016-11-02 14:13:28"},{"unixtime":1478067218,"timestamp":"2016-11-02 14:13:38"},{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"},{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"},{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"},{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"},{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"},{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"},{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:15:40]request start time:2016-11-02 14:15:40
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"},{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"},{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"},{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"},{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"},{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"},{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"},{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:15:51]request start time:2016-11-02 14:15:51
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067234,"timestamp":"2016-11-02 14:13:54"},{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"},{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"},{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"},{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"},{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"},{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"},{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:16:02]request start time:2016-11-02 14:16:02
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067244,"timestamp":"2016-11-02 14:14:04"},{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"},{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"},{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"},{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"},{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"},{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"},{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:16:13]request start time:2016-11-02 14:16:13
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067254,"timestamp":"2016-11-02 14:14:14"},{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"},{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"},{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"},{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"},{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"},{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"},{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:16:24]request start time:2016-11-02 14:16:24
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067264,"timestamp":"2016-11-02 14:14:24"},{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"},{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"},{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"},{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"},{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"},{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"},{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:16:35]request start time:2016-11-02 14:16:35
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067274,"timestamp":"2016-11-02 14:14:34"},{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"},{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"},{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"},{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"},{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"},{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"},{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:16:46]request start time:2016-11-02 14:16:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067284,"timestamp":"2016-11-02 14:14:44"},{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"},{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"},{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"},{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"},{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"},{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"},{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:16:57]request start time:2016-11-02 14:16:57
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067294,"timestamp":"2016-11-02 14:14:54"},{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"},{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"},{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"},{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"},{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"},{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"},{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:17:08]request start time:2016-11-02 14:17:08
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067304,"timestamp":"2016-11-02 14:15:04"},{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"},{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"},{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"},{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"},{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"},{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"},{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"},{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:17:19]request start time:2016-11-02 14:17:19
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067314,"timestamp":"2016-11-02 14:15:14"},{"unixtime":1478067324,"timestamp":"2016-11-02 14:15:24"},{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"},{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"},{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"},{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"},{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"},{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"},{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:17:30]request start time:2016-11-02 14:17:30
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067334,"timestamp":"2016-11-02 14:15:34"},{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"},{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"},{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"},{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"},{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"},{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"},{"unixtime":1478067404,"timestamp":"2016-11-02 14:16:44"},{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:17:41]request start time:2016-11-02 14:17:41
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067344,"timestamp":"2016-11-02 14:15:44"},{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"},{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"},{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"},{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"},{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"},{"unixtime":1478067404,"timestamp":"2016-11-02 14:16:44"},{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"},{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:17:52]request start time:2016-11-02 14:17:52
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067354,"timestamp":"2016-11-02 14:15:54"},{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"},{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"},{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"},{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"},{"unixtime":1478067404,"timestamp":"2016-11-02 14:16:44"},{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"},{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"},{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:18:03]request start time:2016-11-02 14:18:03
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067364,"timestamp":"2016-11-02 14:16:04"},{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"},{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"},{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"},{"unixtime":1478067404,"timestamp":"2016-11-02 14:16:44"},{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"},{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"},{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"},{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:18:14]request start time:2016-11-02 14:18:14
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067374,"timestamp":"2016-11-02 14:16:14"},{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"},{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"},{"unixtime":1478067404,"timestamp":"2016-11-02 14:16:44"},{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"},{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"},{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"},{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"},{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:18:25]request start time:2016-11-02 14:18:25
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067384,"timestamp":"2016-11-02 14:16:24"},{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"},{"unixtime":1478067404,"timestamp":"2016-11-02 14:16:44"},{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"},{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"},{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"},{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"},{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"},{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:18:36]request start time:2016-11-02 14:18:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067394,"timestamp":"2016-11-02 14:16:34"},{"unixtime":1478067404,"timestamp":"2016-11-02 14:16:44"},{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"},{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"},{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"},{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"},{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"},{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"},{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:18:47]request start time:2016-11-02 14:18:47
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067404,"timestamp":"2016-11-02 14:16:44"},{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"},{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"},{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"},{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"},{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"},{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"},{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"},{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:18:58]request start time:2016-11-02 14:18:58
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067414,"timestamp":"2016-11-02 14:16:54"},{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"},{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"},{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"},{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"},{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"},{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"},{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"},{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:19:09]request start time:2016-11-02 14:19:09
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067424,"timestamp":"2016-11-02 14:17:04"},{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"},{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"},{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"},{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"},{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"},{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"},{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"},{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:19:20]request start time:2016-11-02 14:19:20
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067440,"timestamp":"2016-11-02 14:17:20"},{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"},{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"},{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"},{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"},{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"},{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"},{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"},{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:19:31]request start time:2016-11-02 14:19:31
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067450,"timestamp":"2016-11-02 14:17:30"},{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"},{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"},{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"},{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"},{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"},{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"},{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"},{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:19:42]request start time:2016-11-02 14:19:42
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067460,"timestamp":"2016-11-02 14:17:40"},{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"},{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"},{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"},{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"},{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"},{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"},{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"},{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:19:53]request start time:2016-11-02 14:19:53
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067470,"timestamp":"2016-11-02 14:17:50"},{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"},{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"},{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"},{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"},{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"},{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"},{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"},{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:20:04]request start time:2016-11-02 14:20:04
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067480,"timestamp":"2016-11-02 14:18:00"},{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"},{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"},{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"},{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"},{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"},{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"},{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"},{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:20:15]request start time:2016-11-02 14:20:15
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067490,"timestamp":"2016-11-02 14:18:10"},{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"},{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"},{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"},{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"},{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"},{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"},{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"},{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:20:26]request start time:2016-11-02 14:20:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067500,"timestamp":"2016-11-02 14:18:20"},{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"},{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"},{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"},{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"},{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"},{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"},{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"},{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:20:37]request start time:2016-11-02 14:20:37
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067510,"timestamp":"2016-11-02 14:18:30"},{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"},{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"},{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"},{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"},{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"},{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"},{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"},{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:20:48]request start time:2016-11-02 14:20:48
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067520,"timestamp":"2016-11-02 14:18:40"},{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"},{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"},{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"},{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"},{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"},{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"},{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"},{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:20:59]request start time:2016-11-02 14:20:59
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067530,"timestamp":"2016-11-02 14:18:50"},{"unixtime":1478067540,"timestamp":"2016-11-02 14:19:00"},{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"},{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"},{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"},{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"},{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"},{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"},{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"},{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:21:10]request start time:2016-11-02 14:21:10
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067550,"timestamp":"2016-11-02 14:19:10"},{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"},{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"},{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"},{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"},{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"},{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"},{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"},{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:21:21]request start time:2016-11-02 14:21:21
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067560,"timestamp":"2016-11-02 14:19:20"},{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"},{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"},{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"},{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"},{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"},{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"},{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"},{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:21:32]request start time:2016-11-02 14:21:32
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067570,"timestamp":"2016-11-02 14:19:30"},{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"},{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"},{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"},{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"},{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"},{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"},{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"},{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:21:43]request start time:2016-11-02 14:21:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067580,"timestamp":"2016-11-02 14:19:40"},{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"},{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"},{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"},{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"},{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"},{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"},{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"},{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:21:54]request start time:2016-11-02 14:21:54
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067590,"timestamp":"2016-11-02 14:19:50"},{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"},{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"},{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"},{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"},{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"},{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"},{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"},{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:22:05]request start time:2016-11-02 14:22:05
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067600,"timestamp":"2016-11-02 14:20:00"},{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"},{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"},{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"},{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"},{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"},{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"},{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"},{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:22:16]request start time:2016-11-02 14:22:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067610,"timestamp":"2016-11-02 14:20:10"},{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"},{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"},{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"},{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"},{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"},{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"},{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"},{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:22:27]request start time:2016-11-02 14:22:27
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067620,"timestamp":"2016-11-02 14:20:20"},{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"},{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"},{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"},{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"},{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"},{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"},{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"},{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:22:38]request start time:2016-11-02 14:22:38
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067630,"timestamp":"2016-11-02 14:20:30"},{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"},{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"},{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"},{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"},{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"},{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"},{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"},{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:22:49]request start time:2016-11-02 14:22:49
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067646,"timestamp":"2016-11-02 14:20:46"},{"unixtime":1478067656,"timestamp":"2016-11-02 14:20:56"},{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"},{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"},{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"},{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"},{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"},{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"},{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:23:00]request start time:2016-11-02 14:23:00
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067666,"timestamp":"2016-11-02 14:21:06"},{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"},{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"},{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"},{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"},{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"},{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"},{"unixtime":1478067736,"timestamp":"2016-11-02 14:22:16"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:23:11]request start time:2016-11-02 14:23:11
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067676,"timestamp":"2016-11-02 14:21:16"},{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"},{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"},{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"},{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"},{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"},{"unixtime":1478067736,"timestamp":"2016-11-02 14:22:16"},{"unixtime":1478067746,"timestamp":"2016-11-02 14:22:26"},{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:23:22]request start time:2016-11-02 14:23:22
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067686,"timestamp":"2016-11-02 14:21:26"},{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"},{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"},{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"},{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"},{"unixtime":1478067736,"timestamp":"2016-11-02 14:22:16"},{"unixtime":1478067746,"timestamp":"2016-11-02 14:22:26"},{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"},{"unixtime":1478067766,"timestamp":"2016-11-02 14:22:46"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:23:33]request start time:2016-11-02 14:23:33
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067696,"timestamp":"2016-11-02 14:21:36"},{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"},{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"},{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"},{"unixtime":1478067736,"timestamp":"2016-11-02 14:22:16"},{"unixtime":1478067746,"timestamp":"2016-11-02 14:22:26"},{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"},{"unixtime":1478067766,"timestamp":"2016-11-02 14:22:46"},{"unixtime":1478067776,"timestamp":"2016-11-02 14:22:56"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:23:44]request start time:2016-11-02 14:23:44
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067706,"timestamp":"2016-11-02 14:21:46"},{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"},{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"},{"unixtime":1478067736,"timestamp":"2016-11-02 14:22:16"},{"unixtime":1478067746,"timestamp":"2016-11-02 14:22:26"},{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"},{"unixtime":1478067766,"timestamp":"2016-11-02 14:22:46"},{"unixtime":1478067776,"timestamp":"2016-11-02 14:22:56"},{"unixtime":1478067786,"timestamp":"2016-11-02 14:23:06"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:23:55]request start time:2016-11-02 14:23:55
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067716,"timestamp":"2016-11-02 14:21:56"},{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"},{"unixtime":1478067736,"timestamp":"2016-11-02 14:22:16"},{"unixtime":1478067746,"timestamp":"2016-11-02 14:22:26"},{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"},{"unixtime":1478067766,"timestamp":"2016-11-02 14:22:46"},{"unixtime":1478067776,"timestamp":"2016-11-02 14:22:56"},{"unixtime":1478067786,"timestamp":"2016-11-02 14:23:06"},{"unixtime":1478067796,"timestamp":"2016-11-02 14:23:16"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:24:06]request start time:2016-11-02 14:24:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067726,"timestamp":"2016-11-02 14:22:06"},{"unixtime":1478067736,"timestamp":"2016-11-02 14:22:16"},{"unixtime":1478067746,"timestamp":"2016-11-02 14:22:26"},{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"},{"unixtime":1478067766,"timestamp":"2016-11-02 14:22:46"},{"unixtime":1478067776,"timestamp":"2016-11-02 14:22:56"},{"unixtime":1478067786,"timestamp":"2016-11-02 14:23:06"},{"unixtime":1478067796,"timestamp":"2016-11-02 14:23:16"},{"unixtime":1478067806,"timestamp":"2016-11-02 14:23:26"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:24:17]request start time:2016-11-02 14:24:17
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067736,"timestamp":"2016-11-02 14:22:16"},{"unixtime":1478067746,"timestamp":"2016-11-02 14:22:26"},{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"},{"unixtime":1478067766,"timestamp":"2016-11-02 14:22:46"},{"unixtime":1478067776,"timestamp":"2016-11-02 14:22:56"},{"unixtime":1478067786,"timestamp":"2016-11-02 14:23:06"},{"unixtime":1478067796,"timestamp":"2016-11-02 14:23:16"},{"unixtime":1478067806,"timestamp":"2016-11-02 14:23:26"},{"unixtime":1478067816,"timestamp":"2016-11-02 14:23:36"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:24:28]request start time:2016-11-02 14:24:28
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067746,"timestamp":"2016-11-02 14:22:26"},{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"},{"unixtime":1478067766,"timestamp":"2016-11-02 14:22:46"},{"unixtime":1478067776,"timestamp":"2016-11-02 14:22:56"},{"unixtime":1478067786,"timestamp":"2016-11-02 14:23:06"},{"unixtime":1478067796,"timestamp":"2016-11-02 14:23:16"},{"unixtime":1478067806,"timestamp":"2016-11-02 14:23:26"},{"unixtime":1478067816,"timestamp":"2016-11-02 14:23:36"},{"unixtime":1478067826,"timestamp":"2016-11-02 14:23:46"}],"msg":"online","status":1}
+request end
+
+[2016-11-02 14:24:39]request start time:2016-11-02 14:24:39
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&token=a070683626b4c5207fe8e693d711ccd629562e1c&code=T00E0B412B9C2
+return value: {"data":[{"unixtime":1478067756,"timestamp":"2016-11-02 14:22:36"},{"unixtime":1478067766,"timestamp":"2016-11-02 14:22:46"},{"unixtime":1478067776,"timestamp":"2016-11-02 14:22:56"},{"unixtime":1478067786,"timestamp":"2016-11-02 14:23:06"},{"unixtime":1478067796,"timestamp":"2016-11-02 14:23:16"},{"unixtime":1478067806,"timestamp":"2016-11-02 14:23:26"},{"unixtime":1478067816,"timestamp":"2016-11-02 14:23:36"},{"unixtime":1478067826,"timestamp":"2016-11-02 14:23:46"},{"unixtime":1478067836,"timestamp":"2016-11-02 14:23:56"}],"msg":"online","status":1}
+request end
+

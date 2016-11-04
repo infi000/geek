@@ -1,0 +1,215 @@
+[2016-09-01 11:14:56]request start time:2016-09-01 11:14:56
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5020&tel=15313212312&passwd=11111111
+return value: {"data":"c9f04aff6b73539e5cc54f44f9c2ecbb2f22f553","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:14:56]request start time:2016-09-01 11:14:56
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:14:56]request start time:2016-09-01 11:14:56
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home2.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:15:05]request start time:2016-09-01 11:15:05
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:15:05]request start time:2016-09-01 11:15:05
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project2.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:15:15]request start time:2016-09-01 11:15:15
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home2.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:15:16]request start time:2016-09-01 11:15:16
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:15:21]request start time:2016-09-01 11:15:21
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home2.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:15:21]request start time:2016-09-01 11:15:21
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:16:56]request start time:2016-09-01 11:16:56
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1001&user=jys&pass=jsdf
+return value: {"data":"","msg":"用户或密码错误,登录次数剩余2","status":0}
+request end
+
+[2016-09-01 11:17:07]request start time:2016-09-01 11:17:07
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1001&user=jys&pass=jys654321*
+return value: {"data":"","msg":"用户或密码错误,登录次数剩余1","status":0}
+request end
+
+[2016-09-01 11:17:13]request start time:2016-09-01 11:17:13
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1001&user=jys&pass=123456
+return value: {"data":"","msg":"用户或密码错误,登录次数剩余0","status":0}
+request end
+
+[2016-09-01 11:17:29]request start time:2016-09-01 11:17:29
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1001&user=jys&pass=123456
+return value: {"data":"","msg":"帐号已被锁定,请过10分钟再试","status":0}
+request end
+
+[2016-09-01 11:17:49]request start time:2016-09-01 11:17:49
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1001&user=admin&pass=admin123*
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:17:49]request start time:2016-09-01 11:17:49
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1100
+return value: {"data":"<span class=\"solgan\">欢迎，admin<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=1002\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:17:49]request start time:2016-09-01 11:17:49
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1101
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">admin<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=1200\">\r\n                            <img src=\"images\/bf\/zbjg2.png\">\r\n                            <span>直播监管<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/jcbd.png\">\r\n                            <span>解除绑<br>定记录<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:17:49]request start time:2016-09-01 11:17:49
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1201&page=1
+return value: {"data":{"body":"<div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC4661.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/j.png\" class=\"mbox-status\">\r\n                                            <\/div><button class=\"btn btn-danger mbox-pause\" data-boxid=\"10004,1000050001\">暂停直播<\/button><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC4672.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BC2F.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div>","page":"<li><a href=\"javascript:void(0);\" aria-label=\"Previous\" data-page=\"1\"><span aria-hidden=\"true\">&laquo;<\/span><\/a><\/li><li class=\"active\"><a href=\"javascript:void(0);\"  data-page=\"1\">1<\/a><\/li><li><a href=\"javascript:void(0);\" aria-label=\"Next\"  data-page=\"1\"><span aria-hidden=\"true\">&raquo;<\/span><\/a><\/li>"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:27:44]request start time:2016-09-01 11:27:44
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5020&tel=15313212312&passwd=11111111
+return value: {"data":"5e2d571dd52a6b7634168a755cf21f260f35cb27","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:27:44]request start time:2016-09-01 11:27:44
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:27:44]request start time:2016-09-01 11:27:44
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home2.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:27:58]request start time:2016-09-01 11:27:58
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1001&user=admin&pass=admin123*
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:27:58]request start time:2016-09-01 11:27:58
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1100
+return value: {"data":"<span class=\"solgan\">欢迎，admin<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=1002\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:27:58]request start time:2016-09-01 11:27:58
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1101
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">admin<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=1200\">\r\n                            <img src=\"images\/bf\/zbjg2.png\">\r\n                            <span>直播监管<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"javascript:void(0);\">\r\n                            <img src=\"images\/bf\/jcbd.png\">\r\n                            <span>解除绑<br>定记录<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:27:58]request start time:2016-09-01 11:27:58
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1201&page=1
+return value: {"data":{"body":"<div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC4661.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/j.png\" class=\"mbox-status\">\r\n                                            <\/div><button class=\"btn btn-danger mbox-pause\" data-boxid=\"10004,1000050001\">暂停直播<\/button><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC4672.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BC2F.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div>","page":"<li><a href=\"javascript:void(0);\" aria-label=\"Previous\" data-page=\"1\"><span aria-hidden=\"true\">&laquo;<\/span><\/a><\/li><li class=\"active\"><a href=\"javascript:void(0);\"  data-page=\"1\">1<\/a><\/li><li><a href=\"javascript:void(0);\" aria-label=\"Next\"  data-page=\"1\"><span aria-hidden=\"true\">&raquo;<\/span><\/a><\/li>"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:08]request start time:2016-09-01 11:29:08
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5020&tel=15313212312&passwd=11111111
+return value: {"data":"482a2eff3dbe49c52de34dfef0531b17e80676ff","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:09]request start time:2016-09-01 11:29:09
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:09]request start time:2016-09-01 11:29:09
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home2.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:23]request start time:2016-09-01 11:29:23
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1001&user=admin&pass=admin123*
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:23]request start time:2016-09-01 11:29:23
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1100
+return value: {"data":"<span class=\"solgan\">欢迎，admin<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=1002\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:23]request start time:2016-09-01 11:29:23
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1101
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">admin<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=1200\">\r\n                            <img src=\"images\/bf\/zbjg2.png\">\r\n                            <span>直播监管<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"javascript:void(0);\">\r\n                            <img src=\"images\/bf\/jcbd.png\">\r\n                            <span>解除绑<br>定记录<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:23]request start time:2016-09-01 11:29:23
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1201&page=1
+return value: {"data":{"body":"<div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC4661.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/j.png\" class=\"mbox-status\">\r\n                                            <\/div><button class=\"btn btn-danger mbox-pause\" data-boxid=\"10004,1000050001\">暂停直播<\/button><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC4672.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BC2F.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div>","page":"<li><a href=\"javascript:void(0);\" aria-label=\"Previous\" data-page=\"1\"><span aria-hidden=\"true\">&laquo;<\/span><\/a><\/li><li class=\"active\"><a href=\"javascript:void(0);\"  data-page=\"1\">1<\/a><\/li><li><a href=\"javascript:void(0);\" aria-label=\"Next\"  data-page=\"1\"><span aria-hidden=\"true\">&raquo;<\/span><\/a><\/li>"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:31]request start time:2016-09-01 11:29:31
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1100
+return value: {"data":"<span class=\"solgan\">欢迎，admin<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=1002\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:31]request start time:2016-09-01 11:29:31
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1201&page=1
+return value: {"data":{"body":"<div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC4661.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/j.png\" class=\"mbox-status\">\r\n                                            <\/div><button class=\"btn btn-danger mbox-pause\" data-boxid=\"10004,1000050001\">暂停直播<\/button><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC4672.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BC2F.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div><div class=\"mBox\"><div class=\"mbox-img\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg\" alt=\"\"><\/div>\r\n                                    <div class=\"mbox-info\"><div class=\"mbox-userInfo\">\r\n                                                    <img src=\"images\/bf\/head.png\" alt=\"\" class=\"mbox-head\">\r\n                                                    <br>\t\r\n                                                    <span>cloudtest2<\/span>\r\n                                                    <img src=\"images\/bf\/x.png\" class=\"mbox-status\">\r\n                                            <\/div><\/div><\/div>","page":"<li><a href=\"javascript:void(0);\" aria-label=\"Previous\" data-page=\"1\"><span aria-hidden=\"true\">&laquo;<\/span><\/a><\/li><li class=\"active\"><a href=\"javascript:void(0);\"  data-page=\"1\">1<\/a><\/li><li><a href=\"javascript:void(0);\" aria-label=\"Next\"  data-page=\"1\"><span aria-hidden=\"true\">&raquo;<\/span><\/a><\/li>"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:29:31]request start time:2016-09-01 11:29:31
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1101
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">admin<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=1200\">\r\n                            <img src=\"images\/bf\/zbjg2.png\">\r\n                            <span>直播监管<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"javascript:void(0);\">\r\n                            <img src=\"images\/bf\/jcbd.png\">\r\n                            <span>解除绑<br>定记录<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:30:48]request start time:2016-09-01 11:30:48
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1202&id=10004,1000050001
+return value: {"data":0,"msg":"ok","status":1}
+request end
+
+[2016-09-01 11:30:51]request start time:2016-09-01 11:30:51
+request url:http://admin.eq.tvm.cn/cloudlive/?m=1202&id=10004,1000050001
+return value: {"data":1,"msg":"ok","status":1}
+request end
+
+[2016-09-01 15:30:45]request start time:2016-09-01 15:30:45
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5020&tel=15313212312&passwd=11111111
+return value: {"data":"30e9a0aac46b7532158da6364bd0356a5350fd24","msg":"ok","status":1}
+request end
+
+[2016-09-01 15:30:46]request start time:2016-09-01 15:30:46
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 15:30:46]request start time:2016-09-01 15:30:46
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home2.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 15:30:49]request start time:2016-09-01 15:30:49
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 15:30:49]request start time:2016-09-01 15:30:49
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home2.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-09-01 15:31:42]request start time:2016-09-01 15:31:42
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-09-01 15:31:42]request start time:2016-09-01 15:31:42
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home2.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a> <img class=\"side-point\" src=\"images\/bf\/point.png\">","message":"<a class=\"side-tag\" href=\"?m=4001\">\r\n                            <img src=\"images\/bf\/project.png\">\r\n                            <span class=\"msgNum\">2<\/span>\r\n                            <span>消息<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a><img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+

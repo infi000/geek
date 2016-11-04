@@ -1,0 +1,165 @@
+[2016-09-20 10:54:41]2016-09-20 10:54:41 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(41): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC4661', '1000050001')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,image = ?,del_time = ?,status = ?,dstatus = ? where id='10004'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 10:54:55]2016-09-20 10:54:55 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(41): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC4661', '1000050001')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,image = ?,del_time = ?,status = ?,dstatus = ? where id='10004'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 10:55:55]2016-09-20 10:55:55 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(41): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC1653', '1000050016')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,del_time = ?,dstatus = ? where id='10012'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 10:57:07]2016-09-20 10:57:07 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(41): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC1EA6', '1000050010')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,del_time = ?,status = ?,dstatus = ? where id='10015'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 11:01:04]2016-09-20 11:01:04 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(42): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC4661', '1000050001')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,image = ?,del_time = ?,status = ?,dstatus = ? where id='10004'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 11:05:03]2016-09-20 11:05:03 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(42): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC4661', '1000050001')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set userid = ?,boxname = ?,image = ?,del_time = ?,status = ?,dstatus = ? where id='10004'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 11:10:59]2016-09-20 11:10:59 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(42): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC4661', '1000050001')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`image` = ?,`del_time` = ?,`status` = ?,`dstatus` = ? where id='10004'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 11:14:37]2016-09-20 11:14:37 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(42): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC2633', '1000050010')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`del_time` = ?,`dstatus` = ? where id='10018'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 11:16:04]2016-09-20 11:16:04 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(237): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(264): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(42): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC4661', '1000050001')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`image` = ?,`del_time` = ?,`status` = ?,`dstatus` = ?,`livepath` = ? where id='10004'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 11:18:21]2016-09-20 11:18:21 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(240): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(267): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(42): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC4661', '1000050001')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`image` = ?,`del_time` = ?,`status` = ?,`dstatus` = ?,`livepath` = ? where id='10004'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-09-20 11:24:48]2016-09-20 11:24:48 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(240): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(267): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmboxs.class.php(42): Bean->save()
+#3 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(127): Boxs->delete('T00E04CFC4661', '1000050001')
+#4 [internal function]: Box->delete_box(Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/delete_box')
+#7 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#8 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#9 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`image` = ?,`del_time` = ?,`status` = ?,`dstatus` = ?,`livepath` = ? where id='10004'<br />
+PHP 5.5.22 (Linux)<br />
+

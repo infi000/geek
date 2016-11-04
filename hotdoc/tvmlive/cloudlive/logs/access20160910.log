@@ -1,0 +1,18 @@
+[2016-09-10 10:06:35]request start time:2016-09-10 10:06:35
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5020&tel=15313212312&passwd=11111111
+return value: {"data":"bbbd94efcd8d3f295cb6130c60e7ac4691534b63","msg":"ok","status":1}
+request end
+
+[2016-09-10 10:06:36]request start time:2016-09-10 10:06:36
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">0<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-09-10 10:06:44]return value: error
+request end
+
+[2016-09-10 10:06:45]request start time:2016-09-10 10:06:45
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">0<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+

@@ -1,0 +1,37 @@
+<?php $this->includes('top')?>
+<style>
+html {overflow:hidden}
+</style>
+
+ <!------左侧栏 start------>
+  <div >
+    <div class="">
+   <ul class="authorblog">
+   <?php print $this->dataMenu;?>
+	<li>&nbsp;</li>
+    <li><a href="<?php print Core::get_url('/cms/logout')?>&logouturl=<?php print $this->logouturl?>" target="_parent">退  出</a></li>
+   </ul>
+    </div> 
+    <div class="clear"></div>
+    <div id="leftbar" style="position: absolute;float: right;cursor: pointer;height: 100%;width: 15px;top:10px;left:165px;padding: 160px 0 0 0;background-color:#edf2fc;"><<</div>
+  </div>
+ <script type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" src="js/jquery-ui.js"></script>
+<script language="javascript">
+$(function(){
+	$("#leftbar").click(function(){
+           var p = $(this).css('left');
+           var fs = parent.document.getElementsByTagName("frameset")[0];
+           if(p == '165px'){
+                fs.cols = "15,*";
+                $(this).css({left:'0px'});
+                $(this).html('>>')
+           }else{
+                fs.cols = "180,*";
+                $(this).css({left:'165px'});
+                $(this).html('<<')
+           }
+	})
+})
+</script>
+<?php $this->includes('foot')?>

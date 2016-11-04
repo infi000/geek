@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	 <noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>直播监管</title>
+     <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/home.css">
+    <link rel="stylesheet" href="css/bf/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bf/animation.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                   
+                </div>
+                <div class="show managerShow">
+                    <div class="showTitle">
+                        <div class="manager-title">
+                            
+                        </div>
+                    </div>
+                    <!-- 分页 -->
+                    <div class="page">
+                        <div style="text-align: center;">
+                            <nav>
+                                <ul class="pagination">
+                                    <?php print $this->pager?>   
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="managerBox">
+                        <table class="table table-hover">
+                             <?php print $this->tableBody?>                
+                        </table>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+     <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bf/common.js"></script>
+	<script type="text/javascript" src="js/bf/home-ht.js"></script>
+	<script language="javascript">
+	function boxedit(){
+			var that = $(this);
+			var id = that.attr('data-boxid');
+			var url = '?m=1250&id='+id;
+			 location.href = url;
+		}
+function jumppage(p){
+			var that = $(this);
+			var page = (typeof(p) == "number")?p:that.attr('data-page');
+			var url = '?m=1210&page='+page;
+			 location.href = url;
+		}
+$(function(){
+ $('.btn-info').click(boxedit);
+$('.pagination').find('a').click(jumppage);
+		
+		
+})
+	
+
+</script>
+
+</body>
+
+</html>

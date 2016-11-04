@@ -1,0 +1,60 @@
+[2016-10-09 12:02:21]2016-10-09 12:02:21<b>My ERROR</b> [256] Module Param Invalid!<br />
+  Fatal error on line 262 in file /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php, PHP 5.5.22 (Linux)<br />
+Aborting...<br />
+
+[2016-10-09 16:06:15]2016-10-09 16:06:15 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(240): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(267): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(46): Bean->save()
+#3 [internal function]: Box->add_box(Array)
+#4 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/add_box')
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#7 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#8 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`del_time` = ?,`status` = ?,`dstatus` = ? where id='10015'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-10-09 16:06:17]2016-10-09 16:06:17 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(240): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(267): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(46): Bean->save()
+#3 [internal function]: Box->add_box(Array)
+#4 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/add_box')
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#7 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#8 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`del_time` = ?,`status` = ?,`dstatus` = ? where id='10015'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-10-09 16:06:20]2016-10-09 16:06:20 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(240): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(267): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(46): Bean->save()
+#3 [internal function]: Box->add_box(Array)
+#4 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/add_box')
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#7 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#8 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`del_time` = ?,`status` = ?,`dstatus` = ? where id='10015'<br />
+PHP 5.5.22 (Linux)<br />
+
+[2016-10-09 16:06:25]2016-10-09 16:06:25 <b>My ERROR</b> [5022] 执行SQL语句出错！Failed: 执行SQL语句出错！<br />
+  Fatal error on line 208 in file /opt/eq-cloud-admin/public/cloudlive/class/plus/pdodatabase/pdodatabase.class.php<br />
+#0 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(240): pdoDatabase->execute('update liveboxs...', Array)
+#1 /opt/eq-cloud-admin/public/cloudlive/class/model/tvmbean.class.php(267): Bean->update()
+#2 /opt/eq-cloud-admin/public/cloudlive/class/module/box.class.php(46): Bean->save()
+#3 [internal function]: Box->add_box(Array)
+#4 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(284): call_user_func(Array, Array)
+#5 /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php(232): Core::setModel('/box/add_box')
+#6 /opt/eq-cloud-admin/public/cloudlive/class/includes/default.inc.php(84): Core::getRoute()
+#7 /opt/eq-cloud-admin/public/cloudlive/index.php(11): require_once('/opt/eq-cloud-a...')
+#8 {main}<br />
+SQL 语句:update liveboxs set `userid` = ?,`boxname` = ?,`del_time` = ?,`status` = ?,`dstatus` = ? where id='10015'<br />
+PHP 5.5.22 (Linux)<br />
+

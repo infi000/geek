@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+.clear{
+	clear: both;
+}
+.wrapper {
+    width: 100%;
+    min-width: 1090px;
+    height: 100%;
+    background: #f6f6f6;
+    font-family: "微软雅黑";
+}
+.left{
+	width: 50%;
+	height: 100%;
+	float:left;
+	background: #f18162;
+	box-sizing: border-box;
+	padding-top: 130px;
+    display: none;
+}
+.left img{
+    padding-bottom: 35px;
+    margin: 0 auto;
+    display: block;
+}
+.right{
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 130px;
+	/*float: left;*/
+    margin: 0 auto;
+
+}
+.solgan{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+
+}
+.content{
+	width: 100%;
+	text-align: center;
+/*	margin-top: 70px;*/
+}
+.errorMsg {
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    color: #ff0000;
+    font-size: 16px;
+     /*display: none; */
+}
+.errorMsg span{
+display: none;
+}
+.inputText{
+	width: 406px;
+	height: 55px;
+	margin: 0 auto 22px;
+	/*background:yellow;*/
+	   background: #dddddd;
+/*    margin-bottom: 25px;*/
+    padding: 12px;
+    box-sizing: border-box;
+}
+.inputText img {
+    float: left;
+    margin-right: 12px;
+    width: 21px;
+    height: 25px;
+    margin-top: 3px;
+}
+
+.inputText .username,
+.inputText .password {
+      width: 90%;
+
+}
+.inputText input{
+	    height: 100%;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    background: #dddddd;
+    font-family: "微软雅黑";
+    color: #1f2428;
+}
+
+.inputText2{
+    width: 406px;
+    height: 55px;
+    margin: 0 auto 22px;
+    /* padding: 0 0 0 12px; */
+    box-sizing: border-box;
+}
+.inputText2-temp1{
+	    float: left;
+    height: 100%;
+    background: #dddddd;
+    padding-left: 12px;
+}
+.inputText2-temp1 img{
+	margin-right: 12px;
+    width: 21px;
+}
+.inputText2 input{
+height: 100%;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    background: #dddddd;
+    font-family: "微软雅黑";
+    color: #1f2428;
+}
+
+.inputText2-temp2{
+	    float: right;
+    width: 118px;
+    height: 100%;
+}
+
+.inputText2-temp2 img{
+	width: 100%;
+}
+.text{
+	width: 406px;
+	margin: 0 auto;
+}
+.findPw {
+    font-size: 16px;
+    color: black;
+    float: left;
+    cursor: pointer;
+}
+.findPw:hover{
+    color: #323232;
+}
+
+.btn {
+height: 55px;
+    background: #ff503f;
+    line-height: 55px;
+    margin: 24px auto 0;
+    width: 406px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 0px #7a0303;
+}
+.btn:hover{
+	background: #e02727
+}
+.btn:active{
+	background: #e02727;
+	 box-shadow: none;
+}

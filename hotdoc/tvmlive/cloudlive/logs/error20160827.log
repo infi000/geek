@@ -1,0 +1,8 @@
+[2016-08-27 16:55:15]2016-08-27 16:55:15<b>My ERROR</b> [256] class file:/opt/eq-cloud-admin/public/cloudlive/class/module/user.class.php no exists!<br />
+  Fatal error on line 101 in file /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php, PHP 5.5.22 (Linux)<br />
+Aborting...<br />
+
+[2016-08-27 16:55:16]2016-08-27 16:55:16<b>My ERROR</b> [256] class file:/opt/eq-cloud-admin/public/cloudlive/class/module/statistics.class.php no exists!<br />
+  Fatal error on line 101 in file /opt/eq-cloud-admin/public/cloudlive/class/includes/public/core.class.php, PHP 5.5.22 (Linux)<br />
+Aborting...<br />
+

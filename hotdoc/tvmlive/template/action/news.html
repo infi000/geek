@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>最新动态</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../lib/font-awesome.min.css">
+    <link rel="stylesheet" href="../../lib/swiper.min.css">
+    <link rel="stylesheet" href="../../lib/animation.css">
+</head>
+
+<body>
+    <div class="g-doc">
+        <!-- 头部 -->
+        <div class="g-hd">
+            <div class="g-in">
+                <div class="m-logo">
+                    <a href="../../index.html">
+                        <img src="../../img/logo.png" alt="小脉直播logo" width="170" height="67">
+                    </a>
+                </div>
+                <div class="f-fr">
+                    <div class="m-sch">
+                        <input type="text" placeholder="请输入关键字">
+                        <a class="m-btn"><i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="g-hd-box">
+                        <a class="m-btn" href="http://www.xiaomaizhibo.com/cloudlive/">
+                            <i class="fa fa-user fa-fw"></i>
+                            <span>登陆</span>
+                        </a>
+                        <a class="m-btn" href="http://www.xiaomaizhibo.com/cloudlive/?m=5002">
+                            <i class="fa fa-edit fa-fw"></i>
+                            <span>注册</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 头部/ -->
+        <!-- 导航 -->
+        <div class="g-nav">
+            <div class="g-in">
+                <div class="m-nav">
+                    <ul>
+                        <li><a href="../../index.html">首页</a></li>
+                        <li><a href="../../template/solution.html">解决方案</a></li>
+                        <li><a href="../../template/product.html">核心产品</a></li>
+                        <li><a href="../../template/case.html">合作案例</a></li>
+                        <li class="s-nav-sel"><a href="../../template/action.html">最新动态</a></li>
+                        <li><a href="../../template/cooperation.html">代理合作</a></li>
+                        <li><a href="../../template/service.html">用户服务</a></li>
+                        <li><a href="../../template/about.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 导航/ -->
+        <!-- 内容 -->
+        <div class="g-bd">
+            <div class="f-mrt30"></div>
+            <div class="g-in">
+                <div class="g-art">
+                    <div class="g-art-tt" id="newsArt">
+                        <h4 class="newsArt-title"></h4>
+                        <i class="newsArt-time"></i>
+                        <div class="g-shareTo">
+                            <ul>
+                                <li><span>分享至：</span></li>
+                                <li>
+                                    <a href=""><img src="../../img/share1.png" alt="微信"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="../../img/share2.png" alt="微博"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="../../img/share3.png" alt="QQ"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="../../img/share4.png" alt="收藏"></a>
+                                </li>
+                            </ul>
+                            <div class="f-cb"></div>
+                        </div>
+                    </div>
+                    <div class="g-art-con" id="newsBox">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="g-art-list" id="hot-newsList">
+                    <div class="g-art-tt2">
+                        <h4>热门文章</h4>
+                    </div>
+                    <ul>
+                        <!-- 热门文章列表 -->
+                    </ul>
+                    <div class="f-cb"></div>
+                </div>
+                <div class="f-cb"></div>
+            </div>
+        </div>
+        <!-- 内容/ -->
+        <!-- 底部 -->
+        <div class="g-ft">
+            <div class="g-box1">
+                <dl>
+                    <dt>
+                        <img src="../../img/qr.png" alt="二维码">
+                    </dt>
+                </dl>
+                <dl>
+                    <dt>
+                        扫一扫
+                    </dt>
+                    <dd>了解更多信息</dd>
+                </dl>
+                <dl>
+                    <dt>产品服务</dt>
+                    <dd><a href="../solution.html">解决方案</a></dd>
+                    <dd><a href="../product.html">核心产品</a></dd>
+                    <dd><a href="../service.html">使用说明</a></dd>
+                </dl>
+                <dl>
+                    <dt>代理合作</dt>
+                    <dd><a href="../cooperation.html">合作政策</a></dd>
+                    <dd><a href="../cooperation.html">合作条件</a></dd>
+                    <dd><a href="../cooperation.html">在线申请</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="../about.html">天脉教育</a></dd>
+                    <dd><a href="../action.html">最新动态</a></dd>
+                    <dd><a href="../about.html">联系方式</a></dd>
+                </dl>
+            </div>
+            <div class="g-in">
+                <div class="m-copyright">
+                    <span>2016 Corpation </span><i> All Rights Reserved </i><span> 备案号苏ICP备09017284号-9</span>
+                </div>
+            </div>
+            <div class="f-cb"></div>
+        </div>
+        <!-- 底部/ -->
+    </div>
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+        actionPage.getNews();
+    });
+    </script>
+</body>
+
+</html>

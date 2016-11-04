@@ -1,0 +1,991 @@
+<?php
+
+/*
+ * 系统核心类
+ * Created on 2008-11-3
+ *
+ */
+
+class Core {
+
+    /**
+     * 系统配置对像
+     *
+     * @var object
+     */
+    static $_config;
+
+    /**
+     * 数据过滤对像
+     *
+     * @var object
+     */
+    static $_dataFilter;
+
+    /**
+     * 错误处理对像
+     *
+     * @var object
+     */
+    static $_myError;
+
+    /**
+     * MySql数据库连接对像
+     *
+     * @var object
+     */
+    static $_mdb;
+
+    /**
+     * 变量参数对像
+     *
+     * @var object
+     */
+    static $params;
+
+    /**
+     * 公共变量
+     *
+     * @var object
+     */
+    static $object;
+
+    /**
+     * 登录用户ID对像
+     *
+     * @var object
+     */
+    static $userInfo;
+    private static $client_ip;
+
+    /**
+     * 加载业务class
+     * 
+     * @param string $clsName 类名,如:default.Member_Interest
+     * @param boolean $instance 是否实例化,默认false只include,true返回实例
+     * @return $obj|void description
+     */
+    static function loadClass($clsName, $instance = false) {
+        static $clas = array();
+
+        if (!empty($clas[$clsName]))
+            return new $clas[$clsName];
+        $tmp = strtolower($clsName);
+        $prefix = strtolower(PREFIXPROJECT);
+        if (substr($clsName, 0, 3) === 'COM') {
+            $clsFile = ROOT . 'class/common/' . substr($tmp, 3) . '.class.php';
+        } elseif ($clsName{ 0 } === 'I') {
+            $clsFile = ROOT . 'class/apis/i' . $prefix . substr($tmp, 1) . '.class.php';
+        } elseif (substr($clsName, 0, 3) === 'Sql') {
+            $clsFile = ROOT . 'class/sql/' . $prefix . substr($tmp, 3) . '.sql.php';
+        } else {
+            $clsFile = ROOT . 'class/model/' . $prefix . $tmp . '.class.php';
+        }
+
+        if (file_exists($clsFile)) {
+            require_once $clsFile;
+            $clas[$clsName] = $clsName;
+            if ($instance)
+                return new $clas[$clsName];
+        }elseif (file_exists($clsFile = ROOT . "class/plus/$tmp/$tmp.class.php")) {
+            require_once $clsFile;
+            $clas[$clsName] = $clsName;
+            if ($instance)
+                return new $clas[$clsName];
+        }elseif (file_exists($clsFile = ROOT . "class/module/$tmp.class.php")) {
+            require_once $clsFile;
+            $clas[$clsName] = $clsName;
+            if ($instance)
+                return new $clas[$clsName];
+        } else {
+            trigger_error("class file:{$clsFile} no exists!", E_USER_ERROR);
+        }
+        unset($clsName, $instance, $tmp, $clsFile);
+    }
+
+    /**
+     * 使用语言包
+     * 
+     * @param string $langstr 格式模块名member.basic
+     * @return void description
+     */
+    static function lang($langstr) {
+        static $langs = array();
+
+        if (!empty($langs[$langstr]))
+            return $langs[$langstr];
+        $_files = implode('/', explode('.', $langstr));
+        $langFile = ROOT . "template/lang/{$_files}.lang.php";
+
+        if (file_exists($langFile)) {
+            require_once $langFile;
+            $langs[$langstr] = $languages;
+            unset($languages, $langFile, $_files, $langstr);
+            return $langs[$langstr];
+        } else {
+            trigger_error("lang file:{$langFile} no exists!", E_USER_ERROR);
+        }
+        unset($languages, $langFile, $_files, $langstr);
+        return;
+    }
+
+    /**
+     * 设置当前缺省时区
+     * 
+     * @return void description
+     */
+    static function setDefaultDate() {
+        if (function_exists('date_default_timezone_set')) {
+            $timezone = ini_get('date.timezone');
+            if (empty($timezone)) {
+                date_default_timezone_set('Asia/ShangHai');
+            }
+        }
+        unset($timezone);
+    }
+
+    /**
+     * 过滤GET,POST变量
+     * 
+     * @param string $str description
+     * @return datatype description
+     */
+    static function setSlashes(&$str) {
+        if (is_array($str)) {
+            foreach ($str as $key => $value) {
+                $str[$key] = Core::setSlashes($value);
+            }
+        } else {
+            $str = !get_magic_quotes_gpc() ? addslashes(trim($str)) : trim($str);
+        }
+        unset($key, $value);
+        return $str;
+    }
+
+    /**
+     * 实例化Oracle数据库连接对像
+     * 
+     * @return 数据库连接对像
+     */
+    static function setODatabase($charset = 'ZHS16GBK') {
+        $db = pdoDatabase::getConn(Core::$_config->dataOracleWrite, '', 'oci', $charset);
+        return $db;
+    }
+
+    /**
+     * 实例化Mysql数据库连接对像
+     * 
+     * @return 数据库连接对像
+     */
+    static function setMDatabase($charset = 'utf8') {
+        $pos = strpos(Core::$_config->dataMysqlWrite['host'], ':');
+        if ($pos) {
+            $port = substr(Core::$_config->dataMysqlWrite['host'], $pos, 4);
+        } else {
+            $port = 3306;
+        }
+        $db = pdoDatabase::getConn(Core::$_config->dataMysqlWrite, $port, 'mysql', $charset);
+        return $db;
+    }
+
+    /**
+     * 路由解析URL地址
+     *
+     */
+    static function getRoute() {
+        /* if(ROUTINGPROJECT === 1){
+          $model = $_SERVER['REQUEST_URI'];
+          $urlparam = explode('/',trim($model,'/'));
+          array_splice( $urlparam , 0 , 2 );
+          for($i = 0;$i < count($urlparam);$i = $i+2){
+          $_GET[$urlparam[$i]] = $urlparam[$i+1];
+          }
+
+          }else{
+          $model = $_GET['do'];
+          } */
+        $Exception = array();
+        
+        
+        $action = intval(self::get(ACTIONPARAM));
+        if ($action) {
+            $data = Core::$_mdb->search("select * from cms_module where enable=1 and id=?", array($action));
+            if ($data) {
+                if ($data[0]['URL']) {
+                    if ($data[0]['front']) {
+                        if ($data[0]['isign']) {
+                            if (self::check_signature()) {
+                              /*  $atime = $_GET['at']?$_GET['at']:$_POST['at'];
+                                if(!empty($atime)){
+                                    $querytime = $_SERVER['REQUEST_TIME'];
+                                    if($atime + REQUESTIMEOUT < $querytime){
+                                        self::json_error('time out!');
+                                    }
+                                }*/
+                                Core::setModel($data[0]['URL']);
+                            } else {
+                                self::json_error('签名不正确');
+                            }
+                        }elseif($data[0]['login']){
+                            $flag = Login::frontlogincheck();
+                            if($flag){
+                                Core::setModel($data[0]['URL']);
+                            }else{
+                                Core::jump('', '?m=5021', 3);
+                            }
+                        } else {
+                            $ip = self::get_client_ip();
+                            if($ip == '127.0.0.1' && in_array($action, $Exception)){
+                                Core::setModel($data[0]['URL']);
+                            }elseif(!in_array($action, $Exception)){
+                                 Core::setModel($data[0]['URL']);
+                            }else{
+                                self::json_error('禁止访问');
+                            }
+                        }
+                    } else {
+                        if ($data[0]['login']) {
+                            Login::logincheck();
+                            if (Core::$userInfo->userID) {
+                                Core::setModel($data[0]['URL']);
+                            } else {
+                                Core::jump('', '?m=1001', 3);
+                            }
+                        } else {
+                            Core::setModel($data[0]['URL']);
+                        }
+                    }
+                } else {
+                    trigger_error("Check SQL Fields!", E_USER_ERROR);
+                }
+            } else {
+                trigger_error("Module Param Invalid!", E_USER_ERROR);
+            }
+        } else {
+            Core::setModel();
+        }
+
+        unset($model, $urlparam, $i);
+    }
+
+    /**
+     * 设置显示模型
+     *
+     * @param string $model
+     */
+    static function setModel($model) {
+        if (empty($model)) {
+            $default = Module::factory();
+            $default->view();
+        } else {
+            $temp = explode('/', trim($model, '/'));
+            $temp[0] = ucfirst($temp[0]);
+            $body = call_user_func(array($temp[0], 'factory'));
+            call_user_func(array($body, $temp[1]), $temp);
+        }
+    }
+
+    /**
+     * 页面跳转方法
+     * 
+     * @param string $mess 提示信息
+     * @param string $otherUrl 默认返回当前页，否则跳转到指定页面
+     * @return void
+     */
+    static function jump($mess, $otherUrl = '', $flag = 1) {
+        if ($otherUrl) {
+            if ($flag == 1) {
+                echo '<script language="javascript">alert("' . $mess . '");document.location.href="' . $otherUrl . '"</script>';
+            } elseif ($flag == 2) {
+                echo '<script language="javascript">open("' . $otherUrl . '","_top");</script>';
+            } elseif ($flag == 3) {
+                print '<meta http-equiv=refresh content="0; url='.$otherUrl.'">';
+            } else {
+                echo '<script language="javascript">alert("' . $mess . '");open("' . $otherUrl . '","_top");</script>';
+            }
+        } elseif ($flag == 1) {
+            $url = $_SERVER['HTTP_REFERER'];
+            Header('Location:' . $url);
+        } elseif ($flag == 2) {
+            $url = $_SERVER['HTTP_REFERER'];
+            echo '<script language="javascript">alert("' . $mess . '");document.location.href="' . $url . '"</script>';
+        } elseif ($flag == 3) {
+            $url = 'index.php' . ($_SERVER['QUERY_STRING'] ? '?' . $_SERVER['QUERY_STRING'] : '');
+            echo '<script language="javascript">alert("' . $mess . '");document.location.href="' . $url . '"</script>';
+        } else {
+            //echo '<script language="javascript">open("http://blog.dwnews.com","_top");//document.location.href="http://blog.dwnews.com";</script>';
+
+            $url = $_SERVER['HTTP_REFERER'];
+            Header('Location:' . $url);
+        }
+        exit();
+    }
+
+    /**
+     * 两个数组根据相同键值进行值替换，得到与数据表联合查询相似的结果
+     * 
+     * @param array $parentArray 父表数组
+     * @param array $childArray  子表数组
+     * @param string $parentFields 父表关联字段名
+     * @param string $childFields 子表关联字段名
+     * @param string $valeFields  父表中的字段名(需要显示在子表中的)
+     * @return array 关联后的结果数组
+     */
+    static function arrayJoin($parentArray, $childArray, $parentFields, $childFields, $valueFields) {
+        $i = 0;
+        if (is_array($childArray)) {
+            foreach ($childArray as $childRow) {
+                $temp[] = $childRow;
+                if (is_array($parentArray)) {
+                    foreach ($parentArray as $parentRow) {
+                        if ($childRow[$childFields] == $parentRow[$parentFields]) {
+                            $temp[$i][$childFields] = $parentRow[$valueFields];
+                            break;
+                        } else {
+                            $temp[$i][$childFields] = '';
+                        }
+                    }
+                } else {
+                    $temp[$i][$childFields] = '';
+                }
+                $i++;
+            }
+        } else {
+            $temp = $childArray;
+        }
+        unset($parentArray, $childArray, $parentFields, $childFields, $valeFields, $i, $parentRow, $childRow);
+        return $temp;
+    }
+
+    /**
+     * 得到多维数组中一列的值(去掉重复值)
+     * 
+     * @param array $multArray 父表数组
+     * @param string $Fields 需要得到的字段名
+     * @return array 得到的列数组
+     */
+    static function getOneField($multArray, $Fields) {
+        if (is_array($multArray)) {
+            foreach ($multArray as $row) {
+                $temp[] = $row[$Fields];
+            }
+            if (is_array($temp)) {
+                $temp = array_unique($temp);
+            }
+        } else {
+            $temp = $multArray;
+        }
+        unset($multArray, $Fields, $row);
+        return $temp;
+    }
+
+    /**
+     * 一维数组转换为字符串
+     * 
+     * @param array $array 一维数组
+     * @param string $separator 值分隔符
+     * @return string 转换后的字符串
+     */
+    static function getArrayToString($array, $separator = ',') {
+        if (is_array($array)) {
+            $string = implode($array, $separator);
+        } else {
+            $string = $array;
+        }
+        return $string;
+    }
+
+    /**
+     * 文件上传
+     * 
+     * @param object $file 文件域对像
+     * @param array $fileType 允许上传文件类型
+     * @param integer $fileSize 文件的最大字节数
+     * @return array 返回上传文件的信息
+     */
+    static function fileUpLoad($file, $fileType, $path = '', $filename = '', $fileSize = 204800) {
+
+		//设置上传文件保存路径
+		$savePath = self::createDir('download/'.$path);
+
+        //实例化上传类
+        $upload = Upload::factory();
+
+        if (!empty($file)) {
+            //上传文件
+            $flag = $upload->fileUpLoad($file, $savePath, $fileType, $filename, $fileSize);
+            if ($flag) {
+                //获取文件名与大小
+                $picture[] = $upload->getFileName();
+                $picture[] = $upload->getFileSize();
+                $picture[] = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/' . $savePath . $upload->getFileName();
+            } else {
+                //显示错误信息
+                self::json_error($upload->getErrorMessage());
+            }
+        } else {
+            //显示错误信息
+            self::json_error('没有文件被上传！');
+        }
+        unset($fileSize, $savePath, $upload, $fileType, $file, $flag);
+        return $picture;
+    }
+
+    /**
+     * 生成图片缩略图
+     * 
+     * @param string $filename 图片地址
+     * @return array 返回上传文件的信息
+     */
+    static function createSmallPic($filename) {
+        $small = new ImageHandle();
+        $file = $small->miniatureImage($filename, $sfolder, $width, $height);
+        unset($small, $filename, $sfolder, $width, $height);
+        return $file;
+    }
+
+	/**
+	 * 生成目录
+	 * 
+	 * @param string $root 根目录
+	 * @return string 返回目录路径
+	 */
+	static function createDir($path,$d=FALSE){
+            static $realpath = '';
+                if(empty($path)) return '';
+		$pos = strpos($path,'/');
+                if($pos !== false){
+                    $fpath = substr($path,0,$pos);
+                    $bpath = substr($path,$pos+1);
+                    $currpath = $realpath.$fpath;
+                }else{
+                    $currpath = $realpath.$path;
+                }
+		if(!is_dir($currpath)){
+                    $flag = mkdir($currpath);
+                    if($flag){
+                        $realpath = $currpath.'/';
+                        if(!empty($bpath)){
+                            self::createDir($bpath);
+                        }
+                    }
+                }elseif(!empty($bpath)){
+                    $realpath = $currpath.'/';
+                    self::createDir($bpath);
+                }else{
+                    $realpath = $currpath.'/';
+                }
+		if($d){
+			$realpath .= date('Ym').'/';
+			if(!is_dir($realpath)){
+				mkdir($realpath);
+			}
+			$realpath .= date('Ymd')."/";
+			if(!is_dir($realpath)){
+				mkdir($realpath);
+			}
+		}
+		unset($path,$currpath);
+		return $realpath;
+	}
+
+    /**
+     * 删除文件
+     * 
+     * @param string $path 文件地址
+     * @return void
+     */
+    static function deleteFile($path) {
+        $fileDir = parse_url($path);
+        if (is_file('..' . $fileDir['path'])) {
+            unlink('..' . $fileDir['path']);
+        }
+        unset($path, $fileDir);
+    }
+
+    /**
+     * 获取文件扩展名
+     * 
+     * @param string $fileName 文件名
+     * @return string 文件扩展名
+     */
+    static function getNameSuffix($fileName) {
+        $pos = strrpos($fileName, '.');
+        if ($pos > 0) {
+            $suffix = substr($fileName, $pos + 1);
+        }
+        unset($fileName, $pos);
+        return $suffix;
+    }
+
+    /**
+     * 生成JSON字符串
+     */
+    static private function json_response($content = '', $error = "0", $message = '', $append = array()) {
+        $res = array('data' => $content, 'msg' => $message, 'status' => $error);
+       // ob_end_clean();
+        if (!empty($append)) {
+            foreach ($append AS $key => $val) {
+                $res[$key] = $val;
+            }
+        }
+        $json = str_replace('null', "\"\"", json_encode($res,256));//php <5.4 256,php>=5.4 JSON_UNESCAPED_UNICODE = 256
+        if (self::get('format') == 'xml') {
+            header("Content-type: application/xml; charset=utf-8");
+            $xml = self::json_to_xml($json);
+            print $xml;
+        } else {
+            header("Content-type: application/json; charset=utf-8");
+            $json = isset($_GET['callback']) ? "{$_GET['callback']}($json)" : $json;
+            print $json;
+        }
+        $msg = self::client_visit_info();
+        $msg = $msg . 'return value: ' . $json . "\n" . 'request end' . "\n";
+        self::log($msg, "access/logs");
+        exit();
+    }
+
+    /**
+     * 打印字符串
+     */
+    static public function print_result($content = '') {
+        ob_end_clean();
+        print $content;
+        $msg = $msg . 'return value: ' . $content . "\n" . 'request end' . "\n";
+        self::log($msg, "access/logs");
+        exit();
+    }
+    
+    /**
+     * 创建一个JSON格式的结果信息
+     *
+     * @access  public
+     * @param   string      $content
+     * @param   string      $message
+     * @param   array       $append
+     * @return  void
+     */
+    static function json_result($content, $message = '',$status=1,$append = array()) {
+        self::json_response($content, $status, $message, $append);
+    }
+
+    /**
+     * 创建一个JSON格式的错误信息
+     *
+     * @access  public
+     * @param   string  $msg
+     * @return  void
+     * @author jys
+     * @date 20140117
+     */
+    static function json_error($msg,$status=0) {
+        self::json_response(null, $status, $msg);
+    }
+
+    /**
+     * 获取form参数
+     * @param type $name
+     * @param type $default
+     * @return type 
+     */
+    public static function get($name, $default = NULL) {
+        if (isset($_GET[$name]) || isset($_POST[$name])) {
+            $val = isset($_GET[$name]) ? $_GET[$name] : $_POST[$name];
+            if (empty($val) && !empty($default)) {
+                $val = $default;
+            }
+            if (is_array($val)) {
+                foreach ($val as $k => $v) {
+                    $val[$k] = htmlentities($v, ENT_QUOTES, "UTF-8");
+                }
+                return $val;
+            } else {
+                return htmlentities($val, ENT_QUOTES, "UTF-8");
+            }
+        } else {
+            return $default;
+        }
+    }
+
+    public static function get_url($url, $type = 0,$param='') {
+        $data = Core::$_mdb->search("select * from cms_module where url=?", array($url));
+        if ($data) {
+            if ($data[0]['ID']) {
+                if ($type) {
+                    $url = $data[0]['ID'];
+                } else {
+                    $url = 'i.php?' . ACTIONPARAM . '=' . $data[0]['ID'].$param;
+                }
+            } else {
+                trigger_error("TABLE MODULE Param Invalid!", E_USER_ERROR);
+            }
+        } else {
+            trigger_error("URL Param Invalid!$url", E_USER_ERROR);
+        }
+        return $url;
+    }
+
+    //格式化日期显示方法
+    public static function showdate($value, $type = 0, $spec = '-',$style=1) {
+        if ($value) {
+            switch ($type) {
+                case 1:
+                    $format = "Y{$spec}m{$spec}d H:i";
+                    break;
+                case 2:
+                    $format = "Y{$spec}m{$spec}d";
+                    break;
+                case 3:
+                    $format = "H:i";
+                    break;
+                default:
+                    $format = "Y{$spec}m{$spec}d H:i:s";
+                    break;
+            }
+            $time = date($format, $value);
+            switch ($style){
+                 case 1:
+                    $text = "<span>$time</span>";
+                    break;
+                default:
+                    $text = "$time";
+                    break;
+            }
+            
+        }
+        return $text;
+    }
+
+    //启用显示方法
+    public static function showenable($value) {
+        if ($value) {
+            $text = "<span>启用</span>";
+        } else {
+            $text = "<span>禁用</span>";
+        }
+        return $text;
+    }
+
+    //启用显示方法
+    public static function showimage($value) {
+        $text = '<img src="' . $value . '" width="28" height="28">';
+        return $text;
+    }
+     public static function fieldsdesc($value){
+        $text = '<a href="'.$value[1].'" target="_self">'.$value[0].'</a>';
+        return $text;
+    }
+    //序号
+    public static function order() {
+        return  Core::$object->number;
+    }	
+    public static function microtime_float() {
+        list($usec, $sec) = explode(" ", microtime());
+        return ((float) $usec + (float) $sec);
+    }
+
+    //检查频道号
+    public static function checkcode($code) {
+        $reg = "/^T[0-9A-Z]{12}$/i";
+        if (preg_match($reg, $code)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //获取签名
+    public static function get_signature($params) {
+        if (empty($params))
+            return false;
+        unset($params['sign']); //去掉sign参数
+        $str = '';  //待签名字符串
+        //先将参数以其参数名的字典序升序进行排序
+        ksort($params);
+        //遍历排序后的参数数组中的每一个key/value对
+        foreach ($params as $k => $v) {
+            //为key/value对生成一个key=value格式的字符串，并拼接到待签名字符串后面
+            $str .= "$k=$v";
+        }
+
+        $str = stripslashes($str);
+        //将签名密钥拼接到签名字符串最后面
+        $str .= base64_decode(SIGNKEY);
+        self::log($str, 'sign/log');
+        //通过sha1算法为签名字符串生成一个sha1签名，该签名就是我们要追加的sign参数值
+        return sha1($str);
+    }
+
+    //验证签名
+    public static function check_signature() {
+        $sign = self::get('sign');
+        $params = array_merge($_GET, $_POST);
+        $check = self::get_signature($params);
+        if ($sign === $check) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * 记录log
+     *
+     * @param mixed $msg        需要记录的内容
+     * @param string $filename  文件名称
+     */
+    public static function log($msg, $filename = '',$write=false) {
+        if (!WRITELOGS && !$write)
+            return false;
+        $dir = "logs/";
+        $path = dirname($filename);
+        $filename = $path . date('Ymd');
+        //$filename = basename($filename).date('Ymd');
+        //$path = self::createDir($dir.$path.'/');
+        $logf = $dir . $filename . '.log';
+        if (is_array($msg) || is_object($msg)) {
+            ob_start();
+            print_r($msg);
+            $msg = ob_get_clean();
+        } elseif (is_bool($msg)) {
+            ob_start();
+            var_dump($msg);
+            $msg = ob_get_clean();
+        }
+        $msg = '['.date('Y-m-d H:i:s').']'.$msg."\n";
+        file_put_contents($logf, $msg, FILE_APPEND | LOCK_EX);
+       // @chmod($logf, 0444);
+       // @chown($logf, 'nobody');
+    }
+
+    /**
+     * 读取缓存
+     *
+     * @param string $filename  文件名称
+     * @param integer $exptime  过期时间
+     * @return bool true 过期 false 未过期 
+     */
+    public static function readcache($filename,$exptime=60) {
+        $time = time();
+        $flag =  true;
+        $data = '';
+        $path = "logs/cache/";
+        $logf = $path . $filename;
+        if(file_exists($logf)){
+            $mtime = filemtime($logf);
+            if($time < $mtime + $exptime){
+               $flag =  false;
+            }
+            $data = file_get_contents($logf);
+        }
+        return array('expire'=>$flag,'data'=>$data);
+    }
+    
+     /**
+     * 写缓存
+     *
+     * @param mixed $msg        需要记录的内容
+     * @param string $filename  文件名称
+     */
+    public static function writecache($msg, $filename,$exptime=60) {
+        $time = time();
+        $dir = "logs/cache/";
+        $path = dirname($filename);
+        $filename = pathinfo($filename,PATHINFO_FILENAME);
+        $path = $dir.$path.'/';
+        if(!is_dir($path)){
+            $path = self::createDir($path);
+        }
+        $logf = $path . $filename;
+        if(file_exists($logf)){
+            $mtime = filemtime($logf);
+            if($time < $mtime + $exptime){
+               return $logf;
+            }
+        }
+        if (is_array($msg) || is_object($msg)) {
+            ob_start();
+            print_r($msg);
+            $msg = ob_get_clean();
+        } elseif (is_bool($msg)) {
+            ob_start();
+            var_dump($msg);
+            $msg = ob_get_clean();
+        }
+        $msg = $msg;
+        file_put_contents($logf, $msg, LOCK_EX);
+        return $logf;
+    }
+    
+    /**
+     * 写日志
+     * @author jys
+     * @date 20140410
+     */
+    public static function client_visit_info() {
+        $request_url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        $request_time = date("Y-m-d H:i:s");
+        if (is_array($_POST)) {
+            foreach ($_POST as $k => $val) {
+                $request_param .= '&' . $k . '=' . $val;
+            }
+        }
+        $msg = 'request start time:' . $request_time . "\nrequest url:" . $request_url . $request_param . "\n";
+        return $msg;
+    }
+
+    /**
+     * json转换xml
+     * @author jys
+     * @date 20140630
+     */
+    public static function json_to_xml($json, $header = true) {
+        if ($header)
+            $xml = '<?xml version="1.0" encoding="UTF-8"?><response>';
+        if ($json) {
+            if (is_array($json)) {
+                $obj = $json;
+            } else {
+                $obj = json_decode($json, true);
+            }
+            if (is_array($obj)) {
+                foreach ($obj as $k => $v) {
+                    if (is_array($v)) {
+                        $xml .="<$k>";
+                        $xml .= self::json_to_xml($v, false);
+                        $xml .= "</$k>";
+                    } else {
+                        $xml .="<$k>$v</$k>";
+                    }
+                }
+            }
+        }
+        if ($header)
+            $xml .= '</response>';
+        return $xml;
+    }
+
+    /**
+     * 安全的base64加密
+     *
+     */
+    public static function urlsafe_b64encode($string) {
+        $data = base64_encode($string);
+        $data = str_replace(array('+', '/', '='), array('-', '_', ''), $data);
+        return $data;
+    }
+
+    /**
+     * 解析安全的base64加密串
+     *
+     */
+    public static function urlsafe_b64decode($string) {
+        $data = str_replace(array('-', '_'), array('+', '/'), $string);
+        $mod4 = strlen($data) % 4;
+        if ($mod4) {
+            $data .= substr('====', $mod4);
+        }
+        return base64_decode($data);
+    }
+
+    /**
+     * 获取客户端IP
+     *
+     */
+    public static function get_client_ip() {
+        if (!self::$client_ip) {
+            if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+                self::$client_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+                if (strpos(self::$client_ip, ',') !== FALSE) {
+                    self::$client_ip = strstr(self::$client_ip, ',', TRUE);
+                }
+            } elseif (isset($_SERVER['HTTP_CLIENT_IP'])) {
+                self::$client_ip = $_SERVER['HTTP_CLIENT_IP'];
+            } elseif (isset($_SERVER['REMOTE_ADDR'])) {
+                self::$client_ip = $_SERVER['REMOTE_ADDR'];
+            }
+        }
+        preg_match('/^((?:\d{1,3}\.){3}\d{1,3})/', self::$client_ip, $match);
+        if ($match) {
+            self::$client_ip = $match[0];
+        } else {
+            self::$client_ip = '0.0.0.0';
+        }
+        return self::$client_ip;
+    }
+
+    /**
+     * 格式化数组为URL请求参数
+     *
+     */
+    public static function get_params($params) {
+        if (empty($params))
+            return false;
+        $temp = '';
+        foreach ($params as $key => $val) {
+            $temp .= $key . '=' . urlencode($val) . '&';
+        }
+        return rtrim($temp,'&');
+    }
+
+    /**
+     * 模拟URL请求
+     * @param string $url url地址
+     * @param int $method  POST; 1 ,GET; 0
+     * @param mixed $params array("param1"=>"value1","param2"=>"value2");
+     */
+    public static function request_url($url, $params = null, $method = 0,$file = 0,$headers=null) {
+        if (is_array($params) && !$file) {
+            $params = self::get_params($params);
+        }
+        if(!$method && $params){ //get 方式提交数据
+            if(strpos($url,"?")){ //url 有问号
+                $params = '&'.$params;
+            }elseif(!strpos('@'.$params,"?")){ //url 无问号 参数无问号
+                $params = '?'.$params;
+            }
+        }
+        
+        //print $params;
+        $header = array('Accept: text/html,application/xhtml+xml,application/json,application/xml;q=0.9,*\/*;q=0.8',
+		'Accept-Encoding: gzip, deflate',
+		'Accept-Language:zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3') ;
+        if($headers && is_array($headers)){
+            $header = array_merge($header,$headers);
+        }
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($curl, CURLOPT_HEADER, 0);
+        curl_setopt ($curl , CURLOPT_HTTPHEADER ,$header );
+        if ($method)
+            curl_setopt($curl, CURLOPT_POST, true);
+       // curl_setopt($curl, CURLOPT_TIMEOUT, 5);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)");
+        curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+        curl_setopt($curl, CURLOPT_URL, $url . (($method) ? '' : $params)); 
+        if ($method)
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $params);
+        $data = curl_exec($curl);
+        curl_close($curl);
+        return ltrim($data);
+    }
+
+     /**
+     * 模拟URL请求获取状态码
+     * @param string $url url地址
+     */
+    public static function request_code($url) {
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_HEADER, 0);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+       // curl_setopt($curl, CURLOPT_TIMEOUT, 5);
+        curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)");
+        curl_setopt($curl, CURLOPT_URL, $url); 
+        $data = curl_exec($curl);
+        $httpCode = curl_getinfo($curl,CURLINFO_HTTP_CODE); 
+        curl_close($curl);
+        return $httpCode;
+    }
+
+}

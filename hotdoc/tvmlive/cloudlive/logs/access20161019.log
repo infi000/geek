@@ -1,0 +1,575 @@
+[2016-10-19 10:07:00]request start time:2016-10-19 10:07:00
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=123456
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:07:03]request start time:2016-10-19 10:07:03
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18513661760&passwd=12345678
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-10-19 10:07:04]request start time:2016-10-19 10:07:04
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">0<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:07:08]request start time:2016-10-19 10:07:08
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project2.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">0<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:07:15]request start time:2016-10-19 10:07:15
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">0<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:07:17]request start time:2016-10-19 10:07:17
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project2.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">0<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，喻红利<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:35:38]request start time:2016-10-19 10:35:38
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18611628220&passwd=120612061206
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:35:42]request start time:2016-10-19 10:35:42
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18611628220&passwd=120612061206
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:36:59]request start time:2016-10-19 10:36:59
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1001&user=admin&pass=admin123*
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-10-19 10:37:00]request start time:2016-10-19 10:37:00
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1101
+return value: {"data":{"home":" <div class=\"managerBar bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=1200\" class=\"managerChoose\" ><img src=\"images\/bf\/zbjg2.png\" alt=\"\">直播监管<\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=1203\"  ><img src=\"images\/bf\/jcbd.png\" alt=\"\">违规直播<\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，admin<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                        <li><a href=\"?m=1210\">直播地址列表<\/a><\/li>\r\n                        <li><a href=\"?m=1250\">添加直播地址<\/a><\/li>\r\n                            <li><a href=\"\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=1002\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:37:00]request start time:2016-10-19 10:37:00
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1201&page=1
+return value: {"data":{"body":"<tr class=\"active\">\r\n                                <th style=\"width:160px;\">用户名<\/th>\r\n                                <th>设备名称<\/th>\r\n                                <th>设备ID<\/th>\r\n                                <th>直播状态<\/th>\r\n                                <th>预览图<\/th>\r\n                                <th>监管<\/th>\r\n                            <\/tr><tr><td><p><span>cloudtest2<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>cloudtest2<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>15313212312<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>aaa@ss.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>中<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>大屏测试<\/td>\r\n                                <td>T00E04CFC2932<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10003,1000050001\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>胡静<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>胡静<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>18812345678<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>朝阳小学<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>西城区<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>907258513@qq.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>18812345678<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>开学啦<\/td>\r\n                                <td>T00E0B412BC3F<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BC3F.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10006,1000050013\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>cloudtest2<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>cloudtest2<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>15313212312<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>aaa@ss.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>中<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>测试云直播<\/td>\r\n                                <td>T00E04CFC1EA6<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC1EA6.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10015,1000050001\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>马立志<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>其他公司\/企业<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>马立志<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>18618423773<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>18618423773@tvm.cn<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>马立志测试<\/td>\r\n                                <td>T00E0B412BBD5<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BBD5.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10021,1000050031\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td class=\"last\"><p><span>杨瑞琼<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>政府机关单位<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>杨瑞琼<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>天脉教育<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>雍和宫<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>yangruiqiong@tvmining.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span>517800139<\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>CESHI<\/td>\r\n                                <td>T00E0B412BCC0<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BCC0.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10024,1000050034\">暂停直播<\/button>\r\n                                <\/td><\/tr>","page":"<li><a href=\"javascript:void(0);\" aria-label=\"Previous\" data-page=\"1\"><span aria-hidden=\"true\">&laquo;<\/span><\/a><\/li><li class=\"active\"><a href=\"javascript:void(0);\"  data-page=\"1\">1<\/a><\/li><li><a href=\"javascript:void(0);\" aria-label=\"Next\"  data-page=\"1\"><span aria-hidden=\"true\">&raquo;<\/span><\/a><\/li>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:37:15]request start time:2016-10-19 10:37:15
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=15313212312&passwd=11111111
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-10-19 10:37:16]request start time:2016-10-19 10:37:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">8<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:37:25]request start time:2016-10-19 10:37:25
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">8<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:37:26]request start time:2016-10-19 10:37:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:37:29]request start time:2016-10-19 10:37:29
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10003&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-10-19 10:37:29]request start time:2016-10-19 10:37:29
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10003&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-10-19 10:37:36]request start time:2016-10-19 10:37:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:37:46]request start time:2016-10-19 10:37:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:37:56]request start time:2016-10-19 10:37:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:38:06]request start time:2016-10-19 10:38:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:38:16]request start time:2016-10-19 10:38:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:38:26]request start time:2016-10-19 10:38:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:38:36]request start time:2016-10-19 10:38:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:38:46]request start time:2016-10-19 10:38:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:38:56]request start time:2016-10-19 10:38:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:39:06]request start time:2016-10-19 10:39:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:39:16]request start time:2016-10-19 10:39:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:39:26]request start time:2016-10-19 10:39:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:39:36]request start time:2016-10-19 10:39:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:39:46]request start time:2016-10-19 10:39:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:39:56]request start time:2016-10-19 10:39:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:40:06]request start time:2016-10-19 10:40:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:40:16]request start time:2016-10-19 10:40:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:40:26]request start time:2016-10-19 10:40:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:40:36]request start time:2016-10-19 10:40:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:40:46]request start time:2016-10-19 10:40:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:40:56]request start time:2016-10-19 10:40:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:41:06]request start time:2016-10-19 10:41:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:41:16]request start time:2016-10-19 10:41:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:41:26]request start time:2016-10-19 10:41:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:41:36]request start time:2016-10-19 10:41:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:41:46]request start time:2016-10-19 10:41:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:41:56]request start time:2016-10-19 10:41:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:42:06]request start time:2016-10-19 10:42:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:42:16]request start time:2016-10-19 10:42:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:42:26]request start time:2016-10-19 10:42:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:42:36]request start time:2016-10-19 10:42:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:42:46]request start time:2016-10-19 10:42:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:42:56]request start time:2016-10-19 10:42:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:43:06]request start time:2016-10-19 10:43:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:43:16]request start time:2016-10-19 10:43:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:43:26]request start time:2016-10-19 10:43:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:43:36]request start time:2016-10-19 10:43:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:43:46]request start time:2016-10-19 10:43:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:43:56]request start time:2016-10-19 10:43:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:44:06]request start time:2016-10-19 10:44:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:44:16]request start time:2016-10-19 10:44:16
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:44:26]request start time:2016-10-19 10:44:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:44:36]request start time:2016-10-19 10:44:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:44:46]request start time:2016-10-19 10:44:46
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:44:56]request start time:2016-10-19 10:44:56
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:45:06]request start time:2016-10-19 10:45:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:45:09]request start time:2016-10-19 10:45:09
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">8<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:45:11]request start time:2016-10-19 10:45:11
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">8<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:45:12]request start time:2016-10-19 10:45:12
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:45:12]request start time:2016-10-19 10:45:12
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10003&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-10-19 10:45:12]request start time:2016-10-19 10:45:12
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10003&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-10-19 10:45:15]request start time:2016-10-19 10:45:15
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">8<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:45:19]request start time:2016-10-19 10:45:19
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">8<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:45:23]request start time:2016-10-19 10:45:23
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">8<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:45:23]request start time:2016-10-19 10:45:23
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:45:24]request start time:2016-10-19 10:45:24
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10003&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-10-19 10:45:24]request start time:2016-10-19 10:45:24
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5132&code=10003&token=1231
+return value: {"data":"","msg":"没有直播画面","status":0}
+request end
+
+[2016-10-19 10:45:33]request start time:2016-10-19 10:45:33
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:45:43]request start time:2016-10-19 10:45:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:45:53]request start time:2016-10-19 10:45:53
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:46:03]request start time:2016-10-19 10:46:03
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:46:13]request start time:2016-10-19 10:46:13
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:46:23]request start time:2016-10-19 10:46:23
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:46:33]request start time:2016-10-19 10:46:33
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:46:43]request start time:2016-10-19 10:46:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:46:53]request start time:2016-10-19 10:46:53
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:47:03]request start time:2016-10-19 10:47:03
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:47:13]request start time:2016-10-19 10:47:13
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:47:23]request start time:2016-10-19 10:47:23
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:47:33]request start time:2016-10-19 10:47:33
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:47:43]request start time:2016-10-19 10:47:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:47:53]request start time:2016-10-19 10:47:53
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:48:03]request start time:2016-10-19 10:48:03
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:48:13]request start time:2016-10-19 10:48:13
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:48:23]request start time:2016-10-19 10:48:23
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:48:33]request start time:2016-10-19 10:48:33
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:48:43]request start time:2016-10-19 10:48:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:48:53]request start time:2016-10-19 10:48:53
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:49:03]request start time:2016-10-19 10:49:03
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:49:13]request start time:2016-10-19 10:49:13
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:49:23]request start time:2016-10-19 10:49:23
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:49:33]request start time:2016-10-19 10:49:33
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:49:43]request start time:2016-10-19 10:49:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5129&code=T00E04CFC2932
+return value: {"data":"","msg":"offline","status":0}
+request end
+
+[2016-10-19 10:49:52]request start time:2016-10-19 10:49:52
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5024
+return value: {"data":{"home":" <div class=\"bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=5101\"><img src=\"images\/bf\/home2.png\" alt=\"\"><span class=\"headerInfo\">主页<\/span><\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=4001\"><img src=\"images\/bf\/project.png\" alt=\"\"><span class=\"headerInfo\">消息<\/span><span class=\"msgNum\" style=\"background: red\">8<\/span><\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                            <li><a href=\"?m=5120\">添加新直播设备<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5025\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 10:50:36]request start time:2016-10-19 10:50:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=hujing7710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:50:43]request start time:2016-10-19 10:50:43
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:50:48]request start time:2016-10-19 10:50:48
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=hujing710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:50:50]request start time:2016-10-19 10:50:50
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=hujing710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:51:24]request start time:2016-10-19 10:51:24
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=hujing710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:51:26]request start time:2016-10-19 10:51:26
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=hujing710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:52:50]request start time:2016-10-19 10:52:50
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=hujing710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:53:06]request start time:2016-10-19 10:53:06
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=hujing710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:53:15]request start time:2016-10-19 10:53:15
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=12345678
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:54:14]request start time:2016-10-19 10:54:14
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=12345678
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 10:54:21]request start time:2016-10-19 10:54:21
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=5020&tel=18800109171&passwd=hujing710902
+return value: {"data":"","msg":"用户名或密码错误","status":0}
+request end
+
+[2016-10-19 11:32:36]request start time:2016-10-19 11:32:36
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1001&user=admin&pass=admin123*
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-10-19 11:32:37]request start time:2016-10-19 11:32:37
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1101
+return value: {"data":{"home":" <div class=\"managerBar bar\">\r\n                        <ul>\r\n                            <li>\r\n                                <a href=\"?m=1200\" class=\"managerChoose\" ><img src=\"images\/bf\/zbjg2.png\" alt=\"\">直播监管<\/a>\r\n                            <\/li>\r\n                            <li>\r\n                                <a href=\"?m=1203\"  ><img src=\"images\/bf\/jcbd.png\" alt=\"\">违规直播<\/a>\r\n                            <\/li>\r\n                            <li><span class=\"line\"><\/span><\/li>\r\n                        <\/ul>\r\n                    <\/div>\r\n                    <span class=\"solgan\">欢迎，admin<\/span>\r\n                    <nav>\r\n                        <ul>\r\n                        <li><a href=\"?m=1210\">直播地址列表<\/a><\/li>\r\n                        <li><a href=\"?m=1250\">添加直播地址<\/a><\/li>\r\n                            <li><a href=\"\">修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                            <li><a href=\"?m=1002\" class=\"out\">退出<\/a><\/li>\r\n                        <\/ul>\r\n                    <\/nav>"},"msg":"ok","status":1}
+request end
+
+[2016-10-19 11:32:37]request start time:2016-10-19 11:32:37
+request url:http://www.xiaomaizhibo.cn/cloudlive/?m=1201&page=1
+return value: {"data":{"body":"<tr class=\"active\">\r\n                                <th style=\"width:160px;\">用户名<\/th>\r\n                                <th>设备名称<\/th>\r\n                                <th>设备ID<\/th>\r\n                                <th>直播状态<\/th>\r\n                                <th>预览图<\/th>\r\n                                <th>监管<\/th>\r\n                            <\/tr><tr><td><p><span>cloudtest2<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>cloudtest2<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>15313212312<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>aaa@ss.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>中<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>大屏测试<\/td>\r\n                                <td>T00E04CFC2932<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10003,1000050001\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>胡静<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>胡静<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>18812345678<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>朝阳小学<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>西城区<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>907258513@qq.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>18812345678<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>开学啦<\/td>\r\n                                <td>T00E0B412BC3F<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BC3F.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10006,1000050013\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>cloudtest2<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>学校<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>cloudtest2<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>15313212312<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>中<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>aaa@ss.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>中<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>测试云直播<\/td>\r\n                                <td>T00E04CFC1EA6<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC1EA6.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10015,1000050001\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td><p><span>马立志<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>其他公司\/企业<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>马立志<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>18618423773<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p><\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>18618423773@tvm.cn<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span><\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span><\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>马立志测试<\/td>\r\n                                <td>T00E0B412BBD5<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BBD5.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10021,1000050031\">暂停直播<\/button>\r\n                                <\/td><\/tr><tr><td class=\"last\"><p><span>杨瑞琼<\/span><\/p> <button class=\"btn btn-default btn-xs details\">详情<span class=\"caret\"><\/span><\/button>\r\n                                    <div class=\"panel panel-default userInfo-box\">\r\n                                        <div class=\"panel-heading\">用户详情<\/div>\r\n                                        <ul class=\"list-group\">\r\n                                            <li class=\"list-group-item\"><b>用户类型：<\/b><span>政府机关单位<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>用户名：<\/b><span>杨瑞琼<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>手机号：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>单位名称：<\/b>\r\n                                                <p>天脉教育<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>单位地址：<\/b>\r\n                                                <p>雍和宫<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系邮箱：<\/b>\r\n                                                <p>yangruiqiong@tvmining.com<\/p>\r\n                                            <\/li>\r\n                                            <li class=\"list-group-item\"><b>联系电话：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人手机号：<\/b><span>15901260539<\/span><\/li>\r\n                                            <li class=\"list-group-item\"><b>联系人QQ：<\/b><span>517800139<\/span><\/li>\r\n                                        <\/ul>\r\n                                    <\/div><\/td>\r\n                                <td>CESHI<\/td>\r\n                                <td>T00E0B412BCC0<\/td>\r\n                                <td><span class=\"label label-danger label-lg\">离线<\/span><\/td>\r\n                                <td class=\"manager-preview\"><img src=\"http:\/\/live.stream.tvmcloud.com\/picture\/T00E0B412BCC0.jpg\" alt=\"预览图\" onerror=\"javascript:this.src='images\/bf\/test2.png'\"><\/td>\r\n                                <td>\r\n                                    <button class=\"btn btn-info\" data-boxid=\"10024,1000050034\">暂停直播<\/button>\r\n                                <\/td><\/tr>","page":"<li><a href=\"javascript:void(0);\" aria-label=\"Previous\" data-page=\"1\"><span aria-hidden=\"true\">&laquo;<\/span><\/a><\/li><li class=\"active\"><a href=\"javascript:void(0);\"  data-page=\"1\">1<\/a><\/li><li><a href=\"javascript:void(0);\" aria-label=\"Next\"  data-page=\"1\"><span aria-hidden=\"true\">&raquo;<\/span><\/a><\/li>"},"msg":"ok","status":1}
+request end
+

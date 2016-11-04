@@ -1,0 +1,61 @@
+<?php print $this->includes('listtop')?>
+<div align="left">
+<div id='0' style='font-size: 11pt;background-color:#E8F4FF;'>菜单列表<div>
+</div>
+<table border="0" cellpadding="0" cellspacing="8">
+<TR>
+	<TD>
+	  	<div class="TreeMenu" id="CategoryTree" valign="top">
+			<ul>
+			<?php print $this->dataContent?>
+			</ul>
+		</div>
+	  </TD>
+</TR>
+  <tr align="center">
+    <td colspan="3"><input type="hidden" id="txtclass" value=""><input type="button" onclick="_click();" value="确定">&nbsp;&nbsp;<input type="button" onclick="_cancel();" value="取消"></td>
+  </tr>
+</table>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript">
+function nodeClick(t){
+	c = $(t).parent().attr('class');
+	$(t).parent().removeClass();
+	if(c == 'Closed'){
+		$(t).parent().toggleClass("Opened");
+	}else{
+		$(t).parent().toggleClass("Closed");
+	}
+}
+function _click() {
+	txt = $("#txtclass").val();
+	if(txt != ''){
+		txt = txt.split(",")
+		if(window.Event){
+			opener.document.getElementById("menuPname").value = txt[1];
+			opener.document.getElementById("menuPid").value = txt[0];
+		}else{
+			dialogArguments.document.getElementById("menuPname").value = txt[1];
+			dialogArguments.document.getElementById("menuPid").value = txt[0];
+		}
+	}
+	window.close();
+}
+function _cancel() {
+	window.close();
+	if(window.Event){
+		opener.document.getElementById("menuPname").value = '';
+		opener.document.getElementById("menuPid").value = '';
+	}else{
+		dialogArguments.document.getElementById("menuPname").value = '';
+		dialogArguments.document.getElementById("menuPid").value = '';
+	}
+}
+function getText(o){
+	$(".nodeList").removeAttr("checked");
+	$(o).attr("checked",'true');
+	$("#txtclass").val($(o).val());
+}
+</script>
+<?php print $this->includes('foot')?>

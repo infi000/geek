@@ -1,0 +1,183 @@
+<?php $this->includes('top')?>
+<!------nav start------>
+<div >
+    <div style="margin:10px 13px 0 13px;">
+      <form name="exeForm" id="exeForm" action="index.php?do=/cms/postslife" method="post" onsubmit="return $().Validator.Validate(this,4); ">
+      <input type="hidden" name="do" value="/cms/postslife">
+      <input type="hidden" name="type" value="<?php print $this->type; ?>">
+      <ul class="newright">
+      <?php
+      	if(empty($this->content)){
+      ?>
+      	<li>
+	      	<ul>
+	      		<li>显示序号：<span>1</span></li>
+	      		<li>推荐专家：<input type="text" name="title[]" size="50" dataType="Limit" max="100" msg="推荐专家最多100个汉字"><span></span></li>
+	      		<li>推荐链接地址：<input type="text" name="postsurl[]" size="50" require="false" dataType="URL" msg="链接地址不正确"></li>
+	      		<li>头像地址：<input type="text" name="picurl[]" size="50" require="false" dataType="URL" msg="链接地址不正确"></li>
+				<li><a href="javascript:void(0)" onclick="clearline(this)">清除</a></li></ul></li>
+	      	</ul>
+      	</li>
+      	<?php
+      	}else{
+      		foreach ($this->content as $key=>$row){
+				if($key === 0){
+					$nextZy = $row['comment'];
+					$temp = '<li><ul><li>显示序号：<span>'.$row['sort'].'</span></li>';
+					$temp .= '<li>推荐专家：<input type="text" name="title[]" value="'.($row['title']?$row['title']:'""').'" size="50" dataType="Limit" max="100" msg="推荐专家最多100个汉字"><span>10/40</span></li>';
+					$temp .= '<li>推荐链接地址：<input type="text" name="postsurl[]" value="'.($row['url']?$row['url']:'""').'" size="50" require="false" dataType="URL" msg="链接地址不正确"></li>';
+					$temp .= '<li>头像地址：<input type="text" name="picurl[]" value="'.($row['img']?$row['img']:'""').'" size="50" require="false" dataType="URL" msg="链接地址不正确"></li>';
+					$temp .= '<li><a href="javascript:void(0)" onclick="clearline(this)">清除</a></li></ul></li>';
+				}else{
+					$temp = '<li><ul><li>显示序号：<span>'.$row['sort'].'</span></li>';
+					$temp .= '<li>博文标题：<input type="text" name="title[]" value="'.($row['title']?$row['title']:'""').'" size="50" dataType="Limit" max="100" msg="推荐专家最多100个汉字"><span>10/40</span></li>';
+					$temp .= '<li>博文地址：<input type="text" name="postsurl[]" value="'.($row['url']?$row['url']:'""').'" size="50" require="false" dataType="URL" msg="链接地址不正确"></li>';
+					if($key === 1){
+						$temp .= '<li>推荐摘要:<textarea cols="50" rows="3" name="postszy[]" dataType="Limit" max="120" msg="推荐摘要最多120个汉字">'.$nextZy.'</textarea><span>10/30</span></li>';
+					}
+					$temp .= '<li>'.($key!==1?'<a href="javascript:void(0)" onclick="move(this,1)">上移</a>':'').' <a href="javascript:void(0)" onclick="move(this,-1)">下移</a> <a href="javascript:void(0)" onclick="delLine(this)">移除记录</a> <a href="javascript:void(0)" onclick="clearline(this)">清除</a></li></ul></li>';
+				}
+      			print $temp;
+      		}
+      	}
+      	?>
+      </ul>
+      <div align="center">
+        <input type="submit" value="发布" class="" />
+      </div>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript">
+var fabuparam = {
+	lenparam:Array(Array(10,7,20),Array(10,7,20),Array(10,7,20),Array(10,7,20))
+}
+$(function(){
+	var p,t;
+	p = $(".newright");
+	t = <?php print $this->type; ?>;
+	if(typeof(t) != 'number'){
+		t = 0;
+	}else{
+		t = t - 1;
+	}
+	$.each(p.children().children(),function(j,k){
+		
+		$.each($(k).children(),function(i, n){
+			switch(i){
+				case 1:
+					$(n).find('span').html('0/'+fabuparam.lenparam[t][0]);
+					$(n).find('input').change(wordsLength(n,t,0));
+					$(n).find('input').bind('change',{a:n,b:t,d:0},wordsLengthx);
+					$(n).find('input').bind('keyup',{a:n,b:t,d:0},wordsLengthx);
+					break;
+				case 3:
+					if(j == 1){
+						$(n).find('span').html('0/'+fabuparam.lenparam[t][2]);
+						$(n).find('textarea').change(wordsLength(n,t,2,'textarea'));
+						$(n).find('textarea').bind('change',{a:n,b:t,d:2,c:'textarea'},wordsLengthx);
+						$(n).find('textarea').bind('keyup',{a:n,b:t,d:2,c:'textarea'},wordsLengthx);
+					}
+					break;
+			}
+		});
+		
+	});
+})
+//含有汉字字符串长度
+String.prototype.len = function() { return this.replace(/[^\x00-\xff]/g,"**").length; };
+String.prototype.rltrim = function(){ return this.replace(/[\s　]+|(&nbsp;)+/gi, ''); };
+function wordsLength(n,t,y,p){
+	if(p == undefined)p='input';
+	var initlen = fabuparam.lenparam[t][y]*2;
+	var txtlen = (p == 'input')?$(n).find(p).val().len():$(n).find(p).html().len();
+	var residue = initlen - txtlen;
+	residue = Math.floor(residue/2);
+	$(n).find('span').html(residue+'/'+fabuparam.lenparam[t][y]);
+}
+
+function wordsLengthx(p){
+	if(p.data.c == undefined)p.data.c='input';
+	var initlen = fabuparam.lenparam[p.data.b][p.data.d]*2;
+	var txtlen = (p.data.c == 'input')?$(p.data.a).find(p.data.c).val().len():$(p.data.a).find(p.data.c).html().len();
+	var residue = initlen - txtlen;
+	residue = Math.floor(residue/2);
+	$(p.data.a).find('span').html(residue+'/'+fabuparam.lenparam[p.data.b][p.data.d]);
+}
+
+function addLine(){
+	var mime,len;
+	var t = <?php print $this->type; ?>;
+	if(typeof(t) != 'number'){
+		t = 0;
+	}else{
+		t = t - 1;
+	}
+	len = $(".newright").children().length;
+	mime = $(".newright").children().eq(0).clone(true);
+	$.each(mime.children().children(),function(i, n){
+		if(i > 0 && i < 6){
+			$(n).children().val('');
+			switch(i){
+				case 1:
+					$(n).find('span').html('0/'+fabuparam.lenparam[t][0]);
+					$(n).find('input').change(wordsLength(n,t,0));
+					$(n).find('input').bind('change',{a:n,b:t,d:0},wordsLengthx);
+					$(n).find('input').bind('keyup',{a:n,b:t,d:0},wordsLengthx);
+					break;
+				case 2:
+					$(n).find('span').html('0/'+fabuparam.lenparam[t][1]);
+					$(n).find('input').change(wordsLength(n,t,1));
+					$(n).find('input').bind('change',{a:n,b:t,d:1},wordsLengthx);
+					$(n).find('input').bind('keyup',{a:n,b:t,d:1},wordsLengthx);
+					break;
+				case 5:
+					$(n).find('span').html('0/'+fabuparam.lenparam[t][2]);
+					$(n).find('textarea').change(wordsLength(n,t,2,'textarea'));
+					$(n).find('textarea').bind('change',{a:n,b:t,d:2,c:'textarea'},wordsLengthx);
+					$(n).find('textarea').bind('keyup',{a:n,b:t,d:2,c:'textarea'},wordsLengthx);
+					break;
+			}
+			
+		}
+	})
+	mime.children().children().eq(0).children().html((len+1))
+	$(".newright").append(mime);
+}
+function delLine(e){
+	var p,index,len;
+	p = $(e).parent().parent().parent();
+	index = $(".newright").children().index(p);
+	len = $(".newright").children().length;
+	if(len == 1)alert('最后一行不能移除!');
+	else p.remove(); 
+}
+function move(e,x){
+	var p,index,v,len,t;
+	p = $(e).parent().parent().parent();
+	len = $(".newright").children().length;
+	index = $(".newright").children().index(p) - x;
+	if( index >= 0 && index != len ){
+		$.each(p.children().children(),function(i, n){
+			if(i > 0 && i < 6){
+				v = $(n).children().val().trim();
+				if( v != ''){
+					t = $(".newright").children().eq(index).children().children().eq(i).children().val().trim();
+					$(".newright").children().eq(index).children().children().eq(i).children().val(v);
+					$(n).children().val(t);
+				}
+			}
+		})
+	}
+}
+function clearline(e){
+	$.each($(e).parent().parent().children(),function(i, n){
+			if(i > 0 && i < 6){
+				$(n).children().val('');
+			}
+		})
+}
+</script>
+<?php $this->includes('foot')?>

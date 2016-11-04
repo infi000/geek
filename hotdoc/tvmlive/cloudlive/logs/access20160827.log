@@ -1,0 +1,150 @@
+[2016-08-27 16:31:38]request start time:2016-08-27 16:31:38
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5020&tel=15313212312&passwd=11111111
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:31:39]request start time:2016-08-27 16:31:39
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:31:39]request start time:2016-08-27 16:31:39
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:33:29]request start time:2016-08-27 16:33:29
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5121&code=T00E04CFC2932
+return value: {"data":{"picurl":"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg","code":200},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:33:29]request start time:2016-08-27 16:33:29
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5121&code=T00E04CFC2932
+return value: {"data":{"picurl":"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg","code":200},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:33:31]request start time:2016-08-27 16:33:31
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5121&code=T00E04CFC2932
+return value: {"data":{"picurl":"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg","code":200},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:34:23]request start time:2016-08-27 16:34:23
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:34:23]request start time:2016-08-27 16:34:23
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:34:34]request start time:2016-08-27 16:34:34
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:34:34]request start time:2016-08-27 16:34:34
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:34:44]request start time:2016-08-27 16:34:44
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:34:44]request start time:2016-08-27 16:34:44
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:36:21]request start time:2016-08-27 16:36:21
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:36:21]request start time:2016-08-27 16:36:21
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:36:37]request start time:2016-08-27 16:36:37
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5121&code=T00E04CFC2932
+return value: {"data":{"picurl":"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg","code":200},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:36:37]request start time:2016-08-27 16:36:37
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5121&code=T00E04CFC2932
+return value: {"data":{"picurl":"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg","code":200},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:36:42]request start time:2016-08-27 16:36:42
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5121&code=T00E04CFC2932
+return value: {"data":{"picurl":"http:\/\/live.stream.tvmcloud.com\/picture\/T00E04CFC2932.jpg","code":200},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:43:51]request start time:2016-08-27 16:43:51
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:43:51]request start time:2016-08-27 16:43:51
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a>\r\n                        <img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:43:59]request start time:2016-08-27 16:43:59
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:43:59]request start time:2016-08-27 16:43:59
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a>\r\n                        <img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:44:14]request start time:2016-08-27 16:44:14
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:44:14]request start time:2016-08-27 16:44:14
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a>\r\n                        <img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:44:28]request start time:2016-08-27 16:44:28
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:44:28]request start time:2016-08-27 16:44:28
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a>\r\n                        <img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:44:33]request start time:2016-08-27 16:44:33
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:44:33]request start time:2016-08-27 16:44:33
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a>\r\n                        <img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:45:40]request start time:2016-08-27 16:45:40
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5020&tel=15313212312&passwd=11111111
+return value: {"data":"","msg":"ok","status":1}
+request end
+
+[2016-08-27 16:45:40]request start time:2016-08-27 16:45:40
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5024
+return value: {"data":{"info":"<a class=\"side-tag\" href=\"\">\r\n                        <img src=\"images\/bf\/head.png\" class=\"side-userhead\">\r\n                        <span class=\"side-username\">cloudtest2<\/span>\r\n                        <div class=\"clear\"><\/div>\r\n                    <\/a>\r\n                    <img class=\"side-point\" src=\"images\/bf\/point.png\">","home":"<a class=\"side-tag\" href=\"?m=5101\">\r\n                            <img src=\"images\/bf\/home.png\">\r\n                            <span>主页<\/span>\r\n                            <div class=\"clear\"><\/div>\r\n                        <\/a>\r\n                        <img class=\"side-point\" src=\"images\/bf\/point.png\">"},"msg":"ok","status":1}
+request end
+
+[2016-08-27 16:45:40]request start time:2016-08-27 16:45:40
+request url:http://admin.eq.tvm.cn/cloudlive/?m=5023
+return value: {"data":"<span class=\"solgan\">欢迎，cloudtest2<\/span>\r\n                  <nav>\r\n                      <ul>\r\n                           <li><a>修改密码<\/a><\/li>\r\n                            <li>|<\/li>\r\n                          <li><a href=\"?m=5022\" class=\"out\">退出<\/a><\/li>\r\n                    <\/ul>\r\n                    <\/nav>","msg":"ok","status":1}
+request end
+

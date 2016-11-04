@@ -1,0 +1,32 @@
+<?php $this->includes('top')?>
+<!------nav start------>
+<div >
+    <div style="margin:10px 13px 0 13px;">
+      <form name="exeForm" id="exeForm" action="" method="post" onsubmit="return $().Validator.Validate(this,4);">
+      <input type="hidden" name="do" value="/rms/addmenu">
+      <input type="hidden" name="menuId" value="<?php print $this->id; ?>">
+      <ul class="newright">
+      	<li>
+	      	<ul>
+	      		<li>菜单名：<input type="text" name="menuName" value="<?php print $this->name;?>" size="20" dataType="Limit" max="50" msg="菜单名最多25个汉字"></li>
+	      		<li>父菜单：<input type="text" name="menuPname" value="<?php print $this->pname;?>" readonly><input type="hidden" name="menuPid" value="<?php print $this->pid?$this->pid:0;?>"><button>请选择</button></select></li>
+	      		<li>菜单URL地址：<input type="text" name="menuUrl" value="<?php print $this->url;?>" size="80" dataType="Limit" max="120" msg="菜单URL地址最多150个汉字"></li>
+	     		<li>菜单序号：<input type="text" name="menuSort" value="<?php print $this->sort?$this->sort:99;?>" dataType="Integer" size="3" msg="排序号必须为数字" value="99" ></li>
+	      		</ul>
+      	</li>
+      	
+      </ul>
+      <div align="center">
+        <input type="submit" value="提交" class="" />
+      </div>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript">
+$(function(){
+	$("button").eq(0).bind('click',selClass);
+})
+</script>
+<?php $this->includes('foot')?>

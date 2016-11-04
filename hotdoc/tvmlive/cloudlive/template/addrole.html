@@ -1,0 +1,25 @@
+<?php $this->includes('top')?>
+<!------nav start------>
+<div >
+    <div style="margin:10px 13px 0 13px;">
+      <form name="exeForm" id="exeForm" action="" method="post" onsubmit="return $().Validator.Validate(this,4);">
+      <input type="hidden" name="do" value="/prms/addrole">
+      <input type="hidden" name="roleId" value="<?php print $this->id; ?>">
+      <ul class="newright">
+      	<li>
+	      	<ul>
+	      		<li>角色名：<input type="text" name="roleName" value="<?php print $this->name;?>" size="20" dataType="Limit" max="40" msg="角色名最多20个汉字"></li>
+	      		<li>角色说明：<textarea cols="50" rows="3" name="roleIntro" dataType="Limit" max="120" msg="角色最多120个汉字"><?php print $this->intro;?></textarea></li>
+	      	</ul>
+      	</li>
+      	
+      </ul>
+      <div align="center">
+        <input type="submit" value="提交" class="" />
+      </div>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<?php $this->includes('foot')?>

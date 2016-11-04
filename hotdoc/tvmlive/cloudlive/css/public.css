@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+/*---------公共---------*/
+body{ margin:0; padding:0; font:12px "宋体",Tahoma,Helvetica,Arial; text-align:left;}
+table,div,form,img,ul,ol,li,dl,dt,td,th,tr,dd{ margin: 0; padding:0; border:0;}
+body{height:100%;margin:0;*overflow:auto;}
+html{overflow:auto;*overflow:auto;}
+p,h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
+table,td,tr,th{ font-size:12px;text-align:center;}
+/*table,td,th{border: solid thin black;border-collapse: collapse;}*/
+table,tr,th{line-height:24px;}
+ul,li{ list-style:none;}
+button{cursor:pointer;}
+input,select{ margin:0; padding:0; font-size:12px;}
+select{ height:21px;}
+img{ vertical-align:top;}
+.fl{float:left;}
+.fr{float:right;}
+.clear{ clear:both; width:1px; height:0; font-size:1px; visibility: hidden; }
+.txtl{ text-align:left;}
+.txtc{ text-align:center;}
+.txtr{ text-align:right;}
+.hidden{display:none;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+h2{ font-size:14px;}
+h3{ font-size:12px;}
+em,strong{font-style:normal;font-weight:normal;}
+/*---------字体---------*/
+.fa{ font-family:Arial, Helvetica, sans-serif;}
+.fb{ font-weight:bold;}
+.f12{ font-size:12px;}
+.f14{ font-size:14px;}
+.DGray,.DGray a{ color:#333;}
+.LGray,.LGray a{ color:#B4B4B4;}
+.cWhite,.cWhite a{ color:#FFF;}
+.blank6{ clear:both; display:block; height:5px; line-height:5px; font-size:1px; overflow:hidden;}
+.blank10{ clear:both; display:block; height:10px; font-size:1px; line-height:10px; overflow:hidden;}
+/*---------区块---------*/
+.blanket{width:998px;margin:0 auto;}
+*html .blanket{position:relative;width:100%;height:100%;overflow:auto;}
+*+html .blanket{width:998px;margin:0 auto;}
+.head,.nav,.main,.foot{ width:98%; margin:0 auto;}
+.left{ display:inline; float:left; width:100%; margin:0 10px; overflow:hidden;}
+.right{ display:inline; float:left; width:308px; margin-right:10px; overflow:hidden;}
+.line1a{ height:1px; margin:0 2px; background:#FFF; overflow:hidden; }
+.line1b{ height:1px; margin:0 1px; background:#FFF; overflow:hidden; }
+/*---------头部---------*/
+.head{ height:129px;  overflow:hidden;}
+.head .tip{ height:23px; padding-right:10px; line-height:23px; text-align:right; color:#9E9E9E;}
+.head .logo{ display:inline; float:left; width:229px; height:88px; margin:0 21px 0 10px;}
+.head .logo a{ display:block; width:229px; height:88px;  overflow:hidden; font-size:14px; white-space:nowrap; overflow:hidden; text-indent:1000em;}
+.head .banner{ float:left; width:728px; height:90px; margin:0 0 0 0; overflow:hidden; }
+/*---------导航---------*/
+.nav .navtop{ height:37px; background: font-weight:bold;}
+.nav .navtop .navl{ float:left; width:808px; padding:0 0 0 17px; overflow:hidden; }
+.nav .navtop .navl a{ float:left; display:block; width:37px; height:22px; margin:0 10px 0 4px; padding:15px 0 0 16px; color:#000;}
+
+.nav .navtop .navr{ float:left; width:173px; height:26px; padding:7px 0 0 0; }
+.nav .navtop .navr .btniw{ margin:0 30px 0 15px;}
+.nav .navtop .navr .iwbtnon{ width:60px; height:29px; margin:1px 28px 0 0px;}
+.nav .navbot .hotnav{ float:left; width:650px; line-height:36px; height:36px; color:#757575; overflow:hidden;}
+.nav .navbot .hotnav img{ margin-top:14px;}
+.nav .navbot .hotnav a{ margin-right:4px;_margin-right:3px; color:#757575; text-decoration:underline;}
+:root body .nav .navbot .hotnav a{margin: 0 4px 0 0}
+.hotzt{width:45px; float:left; line-height:36px; margin-right:5px;}
+:root body .nav .navbot .hotzt a{margin: 0 6px 0 3px}
+.fd41819{ color:#d41819}
+.nav .navbot  a.spnews{color: #d11c1b; text-decoration:underline;}
+.nav .navbot  a.spnews:hover{color:#f00; text-decoration:underline;}
+.f0b81c6{ color:#0b81c6}
+.nav .navbot  a.spnewsb{color: #0b81c6; text-decoration:underline; }
+.nav .navbot  a.spnewsb:hover{color:#f00; text-decoration:underline;}
+.ff0831b{ color:#f0831b}
+.nav .navbot  a.spnewsy{color: #f0831b; text-decoration:underline;}
+.nav .navbot  a.spnewsy:hover{color:#f00; text-decoration:underline;}
+.f18943b{ color:#18943b}
+.nav .navbot  a.spnewsg{color: #18943b; text-decoration:underline;}
+.nav .navbot  a.spnewsg:hover{color:#f00; text-decoration:underline;}
+.f683d94{ color:#683d94}
+.nav .navbot  a.spnewsp{color: #683d94; text-decoration:underline;}
+.nav .navbot  a.spnewsp:hover{color:#f00; text-decoration:underline;}
+.nav .navbot .search input{ margin-right:17px;}
+.nav .navbot .search .btn{ margin-right:10px;}
+.nav .navbot .inp{ display:inline; float:left; width:70px; height:16px; line-height:16px; margin-top:10px;margin-top:11px\9;+margin-top:11px;_margin-top:11px; border:none; background:none; overflow:hidden; color:#B3B3B3;}
+.nav .navbot .inppsw{ margin:9px 9px 0 18px;}
+.nav .navbot .btn,.nav .bgiw .btn{ cursor:pointer; display:inline; float:left; width:22px; height:22px; margin:8px 0 0 0; border:none; background:url(../images/head/btnbg.gif) 0 0 no-repeat;}
+
+.nav .navbot .log{ float:left; width:282px;}
+.nav .navbot .peoimg{ float:left; width:24px; height:24px; margin:5px 0 0 0; border:1px solid #F7F7F7;}
+.nav .navbot .peotip{ float:left; width:183px; height:36px; margin-right:-7px; padding-left:5px; line-height:36px; overflow:hidden;}
+.nav .navbot .peotip em{ color:#29A3DD;}
+.nav .bg3{ background-position:0 -104px;}
+.nav .bg4{ background-position:0 -135px;}
+.nav .bg5{ background-position:0 -166px;}
+.nav .bg6{ background-position:0 -197px;}
+.nav .bgiw, .nav .bg7{ background-position:0 -228px;}
+.nav .bgiw span{ float:right; margin:-2px 18px 0 0;}
+.nav .bgiw span input{ display:inline; float:left; margin-left:11px;}
+/*---------主体部分---------*/
+ul.newsa,ul.newsb{ padding-right:10px; padding-left:13px;}
+ul.newsa li{ height:22px; padding-left:18px; line-height:22px; overflow:hidden;}
+ul.newsa li a,ul.newsb li a{ color:#333;}
+ul.newsa li img{ float:left; margin:8px 0 0 -13px;}
+ul.newsb li img{ float:left; margin:9px 0 0 -13px;}
+ul.newsb li{ height:24px; padding-left:18px; line-height:24px; overflow:hidden;}
+
+* {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+.btn-default {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #333;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    color: #333;
+}
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default.active[disabled], fieldset[disabled] .btn-default.active {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default .badge {
+    background-color: #333;
+    color: #fff;
+}
+table {
+    background-color: transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #ddd;
+    line-height: 1.82957;
+    padding: 3px;
+    vertical-align: top;
+}
+.table > thead > tr > th {
+    border-bottom: 2px solid #ddd;
+    vertical-align: bottom;
+}
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    border-top: 0 none;
+}
+.table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+.table .table {
+    background-color: #fff;
+}

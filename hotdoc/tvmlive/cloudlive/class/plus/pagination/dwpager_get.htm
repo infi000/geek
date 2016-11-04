@@ -1,0 +1,11 @@
+{PAGER_VISITEDMODAL}&nbsp;{PAGER_NUMBER}&nbsp;<em>|</em>{/PAGER_VISITEDMODAL}<!--第1行当前页样式-->
+{PAGER_LINKMODAL}<a href="{PAGER_LINK}" target="_self">{PAGER_NUMBER}</a><em>|</em>{/PAGER_LINKMODAL}<!--第2行数字列表页码样式-->
+<div class="pagenum"><div class="pagetxt fa">
+<a href="{PAGER_FIRSTURL}" target="_self"><img src="http://www.dwnews.com/images/news/ico_07.gif" /></a><a href="{PAGER_PREVIOUSURL}" target="_self"><img src="http://www.dwnews.com/images/news/ico_08.gif" /></a><!--第4行首页和上一页内容-->
+<a href="{PAGER_NEXTURL}" target="_self"><img src="http://www.dwnews.com/images/news/ico_09.gif" /></a><a href="{PAGER_LASTURL}" target="_self"><img src="http://www.dwnews.com/images/news/ico_10.gif" /></a><!--第5行下一页和末页内容-->
+</div>
+</div>
+<script language="javascript">
+function onPagerJump( ){ var reg = /^[0-9]+$/;var v = document.getElementById( 'page' );if( !reg.test( v.value ) ){ alert( '请输入整数页码!' );return }location.href = "{PAGER_JUMPLINK}=" + v.value;}
+function unpress( evt ){ evt = ( evt ) ? evt : event;if( evt.keyCode == 13 ) return false;}
+</script> <!--此脚本位置必须在第5行之后 -->

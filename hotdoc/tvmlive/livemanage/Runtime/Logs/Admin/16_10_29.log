@@ -1,0 +1,252 @@
+[ 2016-10-29T19:26:22+08:00 ] 111.206.36.140 /livemanage/admin.php?m=Admin&c=Index&a=getcase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `case_info` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `case_info` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `case_info` ORDER BY case_weight asc, createtime desc LIMIT 0,20   [ RunTime:0.0008s ]
+
+[ 2016-10-29T22:42:39+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,5   [ RunTime:0.0008s ]
+
+[ 2016-10-29T22:42:44+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+
+[ 2016-10-29T22:42:49+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+NOTIC: [8] Undefined index: page /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 341 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,10   [ RunTime:0.0006s ]
+
+[ 2016-10-29T22:42:49+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getNewsById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 383 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0010s ]
+SQL: select * from news_info where id='22' [ RunTime:0.0007s ]
+
+[ 2016-10-29T22:43:00+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+
+[ 2016-10-29T22:43:02+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getNewsById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 383 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0010s ]
+SQL: select * from news_info where id='19' [ RunTime:0.0006s ]
+
+[ 2016-10-29T22:43:02+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+NOTIC: [8] Undefined index: page /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 341 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2016-10-29T22:43:04+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+
+[ 2016-10-29T22:43:05+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+NOTIC: [8] Undefined index: page /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 341 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,10   [ RunTime:0.0006s ]
+
+[ 2016-10-29T22:43:05+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getNewsById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 383 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0011s ]
+SQL: select * from news_info where id='13' [ RunTime:0.0005s ]
+
+[ 2016-10-29T22:43:09+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+
+[ 2016-10-29T22:43:11+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getcase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `case_info` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `case_info` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `case_info` ORDER BY case_weight asc, createtime desc LIMIT 0,20   [ RunTime:0.0008s ]
+
+[ 2016-10-29T22:43:29+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getcase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `case_info` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `case_info` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `case_info` ORDER BY case_weight asc, createtime desc LIMIT 0,20   [ RunTime:0.0008s ]
+
+[ 2016-10-29T22:43:39+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getcase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `case_info` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `case_info` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `case_info` ORDER BY case_weight asc, createtime desc LIMIT 0,20   [ RunTime:0.0008s ]
+
+[ 2016-10-29T22:43:46+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,5   [ RunTime:0.0008s ]
+
+[ 2016-10-29T22:44:08+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getcase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `case_info` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `case_info` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `case_info` ORDER BY case_weight asc, createtime desc LIMIT 0,20   [ RunTime:0.0008s ]
+
+[ 2016-10-29T22:44:15+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+
+[ 2016-10-29T22:45:01+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getcase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `case_info` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `case_info` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `case_info` ORDER BY case_weight asc, createtime desc LIMIT 0,20   [ RunTime:0.0009s ]
+
+[ 2016-10-29T22:45:01+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getnews
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 340 行.
+SQL: SHOW COLUMNS FROM `news_info` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `news_info` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `news_info` ORDER BY news_weight asc,news_time desc,create_time desc LIMIT 0,5   [ RunTime:0.0006s ]
+
+[ 2016-10-29T22:45:03+08:00 ] 114.249.71.189 /livemanage/admin.php?m=Admin&c=Index&a=getcase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [8] Undefined index: r_type_link /opt/tvmlive/livemanage/Application/Admin/Controller/IndexController.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `case_info` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `case_info` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `case_info` ORDER BY case_weight asc, createtime desc LIMIT 0,20   [ RunTime:0.0009s ]
+

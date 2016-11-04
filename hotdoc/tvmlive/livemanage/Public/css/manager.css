@@ -1,0 +1,129 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  font-family: "微软雅黑";
+  min-width: 1050px;
+}
+.clear{
+  clear: both;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+#navbar ul ,#navbar form{
+  display: none;
+}
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+
+  .sidebar {
+    position: fixed ;
+    width: 160px;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+  min-width: 100px;
+  margin-left: 180px;
+}
+.main .page-header {
+  margin-top: 0;
+}
+.case_thumbinal img,.news_thumbinal img{
+  width: 50px;
+  max-height: 100px;
+}
+.case_qrcode img{
+  width: 80px;
+}
+.main th,.main td{
+  text-align: center;
+}
+.main td{
+  height: 100px;
+}
+
+.addBox{
+  width: 700px;
+  margin:0 auto;
+  margin-bottom: 50px;
+}
+
+/*
+* 模态框
+*/
+
+.modal .input-group .input-group-inport,.input-group-inport{
+      color: red;
+    background: white;
+    border: 0;
+    font-weight: bold;
+}
+.modal .input-group,.addBox .input-group {
+  margin-bottom: 20px;
+}
+
+
+.totalpagestyle{
+	color:#000000;
+	border:0px;
+}
+.totalpagestyle:focus{
+	border:0px;
+	color: #000000;
+	background:#ffffff;
+	
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>盒子列表页</title>
+    <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/home.css">
+    <link rel="stylesheet" href="css/bf/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bf/animation.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                   
+                </div>
+                <div class="show">
+                    
+                    <!-- 盒子总览 -->
+                    <div class="allBox">
+                        
+                        <?php print $this->tableBody?>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+	<script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/bf/home.js"></script>
+	<script language="javascript">
+	$(function(){
+		$(".btn-default").click(function(){
+			var id = $(this).attr('dataid');
+			location.href ="?m=5123&id="+id;
+		});
+		});
+		</script>
+</body>
+
+</html>

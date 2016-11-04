@@ -1,0 +1,67 @@
+<?php print $this->includes('listtop')?>
+
+<br />
+<!------main start------>
+<div class="main">
+ <!------左侧栏 start------>
+  <div class="left">
+    <div class="blogroom">
+    <table border="0" cellpadding="0" cellspacing="8">
+    <tr><td>用户角色添加：</td></tr>
+<TR>
+	<TD><form name="exeForm" id="exeForm" action="" method="post" onsubmit="return $().Validator.Validate(this,4);">
+      <input type="hidden" name="userId" value="<?php print $this->id; ?>">
+      <input type="hidden" name="moudle" id="moudle" value="<?php print $this->module; ?>">
+	  	<div class="TreeMenu" id="CategoryTree" valign="top">
+			<ul>
+			<?php print $this->dataContent?>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div><button>提交</button></div>
+		</form>
+	  </TD>
+</TR>
+</table>
+    </div> 
+    <div class="clear"></div>
+  </div>
+  
+  <!------左侧栏 end------> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script language="javascript">
+$(function(){
+	var mou = $("#moudle").val();
+	var mouarr = mou.split(',');
+	$.each($(".nodeList"),function(i,n){
+		if(findItem( mouarr , n.value)){
+			$(".nodeList").eq(i).attr('checked','true');
+		}
+	});
+	$("button").eq(0).bind('click',submitForm);
+})
+function findItem( arr , item){
+	for( var n in arr ){
+		if(arr[n] == item){
+			return true;
+			break;
+		}
+	}
+	return false;
+}
+function submitForm(){
+	var f =  $("input:checked");
+	$("#moudle").val('');
+	$.each(f,function(i,n){
+			$("#moudle").val($("#moudle").val()+','+n.value);
+		});
+		$("#moudle").val($("#moudle").val().slice(1));
+		var v = $("#moudle").val();
+		if( v == ''){
+			alert('请选择模块！');
+		}else{
+			$("#exeForm").submit();
+		}
+}
+</script>

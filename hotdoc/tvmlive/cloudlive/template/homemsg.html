@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>消息列表</title>
+    <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/home.css">
+    <link rel="stylesheet" href="css/bf/bootstrap.min.css">
+</head>
+
+<body>
+     <div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                   
+                </div>
+                <div class="show">
+                     
+                    <!-- 消息盒子 -->
+                    <div class="showTitle">
+                        <div class="which-title">
+                            <img src="images/bf/clock.png">
+                            <span>全部消息</span>
+                            <span class="msgNum"><?php print $this->total?></span>
+                        </div>
+                    </div>
+                    <div class="msgBox">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="msg-temp-1">
+                                    <img src="images/bf/email1.png" alt="">
+                                    <span class="msgNum-unread">未读<?php print $this->noread?></span>
+                                </div>
+                                <div class="msg-temp-1">
+                                    <img src="images/bf/email2.png" alt="">
+                                    <span class="msgNum-readed">已读<?php print $this->read?></span>
+                                </div>
+                            </li>
+                           
+                           <?php print $this->tableBody?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bf/common.js"></script>
+	<script type="text/javascript" src="js/bf/home.js"></script>
+		<script language="javascript">
+	$(function(){
+		
+		});
+		</script>
+</body>
+
+</html>

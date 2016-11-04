@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <noscript>
+        <meta http-equiv=refresh content="0; url=http://noscript.html">
+    </noscript>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/lib/animation.css">
+    <link rel="stylesheet" href="../css/lib/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <script type="text/javascript" src="../js/lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="../js/lib/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lib/clipboard.min.js"></script>
+    <script type="text/javascript" src="../js/lib/ckplayer/ckplayer.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                    <div class="bar">
+                        <ul>
+                            <li>
+                                <a href=""><img src="../img/home2.png" alt=""><span class="headerInfo">主页</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="../img/project.png" alt=""><span class="headerInfo">消息</span><span class="msgNum">3</span></a>
+                            </li>
+                            <li><span class="line"></span></li>
+                        </ul>
+                    </div>
+                    <span class="solgan">欢迎，abc123</span>
+                    <nav>
+                        <ul>
+                            <li><a href="">添加新直播设备</a></li>
+                            <li>|</li>
+                            <li><a>修改密码</a></li>
+                            <li>|</li>
+                            <li><a href="" class="out">退出</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="show">
+                    <!-- 盒子设置-->
+                    <div class="boxSet">
+                        <div class="boxSet-up">
+                            <div class="boxSet-upl">
+                                <a href="" class="btn btn-link btn-lg">
+                                    < 返回</a>
+                                        <div class="boxSet-preview" id="boxSet-preview-video">
+                                        </div>
+                            </div>
+                            <div class="boxSet-upr">
+                                <dl class="boxSet-upr-1c">
+                                    <dt>
+                                        <h3 id="BoxName">我们的直播</h3>
+                                        <div class="input-group" style="display: none;">
+                                            <input type="text" id="codename" class="form-control input-lg" placeholder="修改名称" maxlength="20">
+                                            <input type="hidden" id="codeid" value="10012">
+                                            <span class="input-group-btn">
+                                                 <button id="editbut" class="btn  btn-danger btn-lg" type="button">确定</button>
+                                                </span>
+                                        </div>
+                                    </dt>
+                                    <dd><span>设备序列号：T00E04CFC2633</span></dd>
+                                </dl>
+                                <dl class="boxSet-upr-2c">
+                                    <dt><span><img src="../img/j.png">在线</span></dt>
+                                    <dd><span class="glyphicon glyphicon-pencil" id="setBoxName"><i>设置设备名称</i></span></dd>
+                                    <dd><span class="glyphicon glyphicon-time"><i>查看直播记录</i></span></dd>
+                                    <dd><span class="iconfont-unlock">&#xe603;<i>解除绑定</i></span></dd>
+                                </dl>
+                                <div class="clear"></div>
+                                <div class="piece_div ">
+                                    <div class="piece_view fl">
+                                        <div class="pie_desc">
+                                            <span class="block ed fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;已传输</span>
+                                            <span class="block ing fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;当前播放</span>
+                                            <span class="block none fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;无视频</span>
+                                        </div>
+                                        <div class="pieces">
+                                            <div class="showtime"></div>
+                                            <div class="current" status="0"></div>
+                                            <ul id="pie_ul">
+                                                <li class="ed"><span class="scal"></span></li>
+                                                <li class="ed"><span class="scal"></span></li>
+                                                <li class="ed"><span class="scal"></span></li>
+                                                <li class="ing"><span class="scal" style="width: 22.4px;"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                            </ul>
+                                            <div class="loadImg"><img src="../img/big-loading.gif" /></div>
+                                            <div class="showText">抱歉，没有视频碎片。</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="boxSet-down">
+                            <nav>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="javascript:0" dataInfo="wyzhibo"><img src="../img/coding.png" alt="">网页直播路径</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="javascript:0" dataInfo="wxzhibo"><img src="../img/chats.png" alt="">微信直播路径</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="javascript:0" dataInfo="tyzhibo"><img src="../img/gear.png" alt="">直播通用代码</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="link-info" id="wyzhibo">
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" aria-describedby="inputWarning2Status" placeholder="网页直播路径" id="wyUrl">
+                                    <span class="glyphicon glyphicon-duplicate boxSet-icon boxSet-copy" aria-hidden="true" data-clipboard-action="copy" data-clipboard-target="#wyUrl"><span>复制链接</span></span>
+                                    <span class="temp-l1">|</span>
+                                    <span class="glyphicon glyphicon-picture boxSet-icon boxSet-upload" aria-hidden="true"><span>上传图片</span></span>
+                                    <span class="temp-l2">|</span>
+                                    <span class="glyphicon glyphicon-eye-open  boxSet-icon boxSet-watch" aria-hidden="true"><span>预览直播</span></span>
+                                </div>
+                                <a href="" class="btn  btn-info">下载使用指南</a>
+                            </div>
+                            <div class="link-info" id="wxzhibo" style="display:none">
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" aria-describedby="inputWarning2Status" placeholder="微信直播路径" id="wxUrl">
+                                    <span class="glyphicon glyphicon-duplicate boxSet-icon boxSet-copy" aria-hidden="true" data-clipboard-action="copy" data-clipboard-target="#wxUrl"><span>复制链接</span></span>
+                                    <span class="temp-l1">|</span>
+                                    <span class="glyphicon glyphicon-picture boxSet-icon boxSet-upload" aria-hidden="true"><span>上传图片</span></span>
+                                    <span class="temp-l2">|</span>
+                                    <span class="glyphicon glyphicon-eye-open  boxSet-icon boxSet-watch" aria-hidden="true"><span>预览直播</span></span>
+                                </div>
+                                <a href="" class="btn  btn-info">下载使用指南</a>
+                            </div>
+                            <div class="link-info" id="tyzhibo" style="display:none">
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" aria-describedby="inputWarning2Status" placeholder="通用直播代码" id="zbUrl">
+                                    <span class="glyphicon glyphicon-duplicate boxSet-icon boxSet-copy" aria-hidden="true" data-clipboard-action="copy" data-clipboard-target="#zbUrl" style="right:5px!important"><span>复制链接</span></span>
+                                </div>
+                                <a href="" class="btn  btn-info">下载使用指南</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 盒子设置 end-->
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗 -->
+        <div class="TC">
+            <div class="opacity8">
+                <!-- 萌版 -->
+            </div>
+            <div class="skipto">
+                <!-- 3秒跳转 -->
+            </div>
+            <!-- 上传图片 -->
+            <div class="tc-uploadFile">
+                <div class="tc-close">
+                    <img src="../img/close.png" alt="">
+                </div>
+                <div style="text-align: center;line-height: 50px;margin-bottom: 50px;">
+                    <p style="font-size:40px;padding: 0;margin: 0">上传直播宣传图片</p>
+                    <span style="color:#00a0e9;font-size: 16px;">支持JPG、JPEG、PNG格式，大小限制15M以内</span>
+                </div>
+                <div class="input-group">
+                    <input type="file">
+                </div>
+                <div class="tc-uploadFile-preview">
+                    <img src="../img/default.png" alt="预览">
+                </div>
+                <p style="text-align: center;">
+                    <button class="btn btn-danger btn-lg tc-uploadFile-yes" type="btn"> 确 定 </button>
+                </p>
+            </div>
+            <div class="successTo">
+                <div class="tc-close" style="right: 70px;">
+                    <img src="../img/close.png" alt="">
+                </div>
+                <h2 class="successTo-msg">上传图片成功!</h2>
+                <p>3S后跳转至您的云直播</p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script type="text/javascript" src="../js/home.js"></script>
+    <script type="text/javascript">
+    // 滚动条样式
+    $('.pieces').perfectScrollbar();
+    //直播
+    //直播地址
+    var URL = 'http://10.20.50.51/approve/live?channel=T00E04CFC2AE9&type=iptv';
+    // var URL = 'http://10.20.50.51/approve/live?channel=2T00E04CFC2AE9&type=iptv';
+    //播放器配置餐宿
+    var flashvars = {
+        f: '../js/lib/m3u8/m3u8.swf',
+        a: URL,
+        s: 4,
+        c: 0,
+        p: 1,
+        lv: 1,
+        loaded: 'loadedHandler'
+    };
+    var params = {
+        bgcolor: '#fff',
+        allowFullScreen: true,
+        allowScriptAccess: 'always',
+        wmode: 'transparent'
+    };
+    //html5视频地址
+    var video = [URL];
+    CKobject.embed('../js/lib/ckplayer/ckplayer.swf', 'boxSet-preview-video', 'ckplayer_video', '100%', '100%', false, flashvars, video, params);
+
+    function loadedHandler() {
+        CKobject.getObjectById('ckplayer_video').addListener('error', 'errorHandler');
+    }
+
+    function errorHandler() {
+        var errorObj = "<div class='mb' style='position:absolute;left:0;right:0;top:0;bottom:0;z-index:10;background:black;'><h2 style='color:white;text-align:center'>直播因涉嫌违规而被暂停。<br>请联系管理员: 010-12345678。</h2></div>";
+        var videoObj = $("#boxSet-preview-video");
+        videoObj.css({
+            position: "relative"
+        }).append(errorObj);
+    }
+    </script>
+</body>
+
+</html>

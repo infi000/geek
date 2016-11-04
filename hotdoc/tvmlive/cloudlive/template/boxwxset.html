@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>盒子微信设置</title>
+    <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/home.css">
+    <link rel="stylesheet" href="css/bf/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bf/animation.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                   
+                </div>
+            <iframe src="<?php print $this->seturl?>" frameborder="0" frameborder=0 style="width: 100%;height: 800px" id="iframePage">
+                    </iframe>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+	<script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/bf/home.js"></script>
+	<script language="javascript">
+	var boxname = '<?php print $this->boxname?>';
+	var Intid=0;
+	function setlivename(){
+		var txt = $(".solgan").text();
+		  if(txt != ''){
+				txt += '　设备: ' + boxname;
+				$(".solgan").text(txt)
+			   clearInterval(Intid);
+		  }
+	}
+	$(function(){
+		
+		Intid = setInterval("setlivename()",200);
+		});
+		</script>
+</body>
+
+</html>

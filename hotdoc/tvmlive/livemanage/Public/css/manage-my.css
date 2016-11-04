@@ -1,0 +1,28 @@
+/*@CHARSET "UTF-8";*/
+.td-left-style
+{
+	width: 200px;
+    height: 800px;
+    vertical-align: top;
+}
+.tr-style
+{
+	font-size: 20px;
+	margin-bottom:10px;
+	height: 30px;
+}
+.td-table-style{
+	vertical-align: top;
+	text-align: center;
+	width: 800px;
+}
+.table-style{
+	margin: 20px;
+	width: 800px;
+	border-width:1px;
+	border-color: gray;
+	border-collapse:collapse;
+}
+a{
+	text-decoration:none;
+}

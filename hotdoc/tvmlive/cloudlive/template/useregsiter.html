@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/regsiter.css">    
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="head">
+                <img src="images/bf/zhifeiji.png">
+                <div class="title"><span>注册页</span></div>
+            </div>
+            <div class="nav">
+                <div class="tab">
+                    <span>用户类型:</span>
+					<input type="hidden" name="usertype" value="2">
+                </div>
+                <div class="choose">
+                    <ul>
+                        <li style="margin:0">
+                            <div class="chooseBtn" data-type="学校" data-value="2">
+                                <div class="choosed"></div>
+                            </div><span>学校</span></li>
+                        <li>
+                            <div class="chooseBtn" data-type="教育培训机构" data-value="3">
+                                <div></div>
+                            </div><span>教育培训机构</span></li>
+                        <li>
+                            <div class="chooseBtn" data-type="政府机关单位" data-value="4">
+                                <div></div>
+                            </div><span>政府机关单位</span></li>
+                        <li>
+                            <div class="chooseBtn" data-type="其他公司/企业" data-value="5">
+                                <div></div>
+                            </div><span>其他公司、企业</span></li>
+                        <li>
+                            <div class="chooseBtn" data-type="个人" data-value="1">
+                                <div></div>
+                            </div><span>个人</span></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="main">
+                <div class="pInfo">
+                    <div class="tab">
+                        <span>用户信息:</span>
+                    </div>
+                    <div class="Info-input">
+					<div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span>姓名</span></div>
+                                <input type="text" class="username" placeholder="" maxlength="20">
+                            </div>
+                            <div class="inputStatus">
+                                <img src="images/bf/xing.png">
+                                <p class="input-msg"></p>
+                                <p class="errorMsg">请输入姓名</p>
+                            </div>
+                        </div>
+                       
+					<div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span>手机号</span></div>
+                                <input type="text" class="phone" placeholder="" maxlength="20">
+                            </div>
+                            <div class="inputStatus">
+                                <img src="images/bf/xing.png">
+                                <p class="input-msg">手机号将作为登录名</p>
+                                 <p class="errorMsg">请输入手机号</p>
+                            </div>
+                        </div>
+                        
+                        <div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span>密码</span></div>
+                                <input type="password" class="password" placeholder="" maxlength="20">
+                            </div>
+                            <div class="inputStatus">
+                                <img src="images/bf/xing.png">
+                                <p class="input-msg"></p>
+                                 <p class="errorMsg">请输入密码</p>
+                            </div>
+                        </div>
+                        <div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span>确认密码</span></div>
+                                <input type="password" class="password2" placeholder="" maxlength="20">
+                            </div>
+                            <div class="inputStatus">
+                                <img src="images/bf/xing.png">
+                                <p class="input-msg"></p>
+                                 <p class="errorMsg"></p>
+                            </div>
+                        </div><p class="aerrorMsg"><span style="color:red"> </span></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="cInfo">
+                    <div class="tab">
+                        <span>单位信息:</span>
+                    </div>
+                      <div class="Info-input">
+                        <div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span class="companyName">单位名称</span></div>
+                                <input type="text" class="cName" placeholder="" maxlength="50">
+                            </div>
+							<div class="inputStatus">
+                                <img src="images/bf/xing.png">
+                                <p class="input-msg"></p>
+                                 <p class="errorMsg">请输入单位名称</p>
+                            </div>
+                        </div>
+                        <div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span class="companyAddr">单位地址</span></div>
+                                <input type="text" class="cAddr" placeholder="" maxlength="60">
+                            </div>
+                            <div class="inputStatus">
+                                <p class="input-msg">省、市/区、县</p>
+                            </div>
+                        </div>
+                        <div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span>联系电话</span></div>
+                                <input type="text" class="cPhone" placeholder="" maxlength="20">
+                            </div>
+                        </div>
+                        <div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span>联系邮箱</span></div>
+                                <input type="text" class="cEmail" placeholder="" maxlength="50">
+                            </div>
+							<div class="inputStatus">
+                                <p class="errorMsg">请输入联系邮箱</p>
+                            </div>
+                        </div>
+						<div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span>联系人手机号</span></div>
+                                <input type="text" class="uPhone" placeholder="" maxlength="20">
+                            </div>
+                        </div>
+						<div class="temp-box">
+                            <div class="inputText">
+                                <div class="input-title"><span>联系人QQ</span></div>
+                                <input type="text" class="Oicq" placeholder="" maxlength="20">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="regsiterBtn">
+                    <span>注册</span>
+                </div> 
+            </div>
+        </div>
+        <div class="TC">
+            <div class="skipto">
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bf/common.js"></script>
+    <script type="text/javascript" src="js/bf/regsiter.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<?php $this->includes('top')?>
+<!------nav start------>
+<div >
+    <div style="margin:10px 13px 0 13px;">
+      <form name="exeForm" id="exeForm" action="index.php" method="post" onsubmit="return $().Validator.Validate(this,4); ">
+      <input type="hidden" name="do" value="/cms/postsright">
+      <input type="hidden" name="type" value="<?php print $this->type; ?>">
+      <ul class="newright">
+      	<li>
+	      	<ul>
+	      		<li>颗粒序号：<span>1</span></li>
+	      		<li>颗粒名称：<input type="text" name="title" size="50" dataType="Limit" max="100" msg="颗粒名称最多100个汉字"></li>
+	      		<li>颗粒描述：<textarea cols="50" rows="3" name="postszy" dataType="Limit" max="120" msg="颗粒描述最多120个汉字"></textarea></li>
+	     	</ul>
+      	</li>
+      	
+      </ul>
+      <div align="center">
+        <input type="submit" value="提交" class="" />
+      </div>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<?php $this->includes('foot')?>

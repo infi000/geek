@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<noscript><meta http-equiv=refresh content="0; url=noscript.html"></noscript>
+	<title>盒子设置</title>
+    <link rel="stylesheet" type="text/css" href="css/bf/common.css">
+    <link rel="stylesheet" href="css/bf/home.css">
+    <link rel="stylesheet" href="css/bf/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bf/animation.css">
+    <link rel="stylesheet" href="css/bf/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="css/bf/base.css">
+
+</head>
+
+<body>
+   <div class="wrapper">
+        <div class="main">
+            <div class="content">
+                <div class="header">
+                   
+                </div>
+                <div class="show">
+              
+                    <!-- 盒子设置-->
+                    <div class="boxSet">
+                        <div class="boxSet-up">
+							<div class="boxSet-upl">
+									<a href="?m=5101" class="btn btn-link btn-lg">
+										< 返回</a>
+											<div class="boxSet-preview" id="boxSet-preview-video"></div>
+							</div>
+							<div class="boxSet-upr">
+                                <dl class="boxSet-upr-1c">
+                                    <dt>
+                                        <h3 id="BoxName"><?php print $this->boxname?></h3>
+                                        <div class="input-group" style="display: none;">
+                                            <input type="text" id="codename" class="form-control input-lg" placeholder="修改名称" maxlength="20">
+                                            <input type="hidden" id="codeid" value="<?php print $this->boxid?>">
+											<input type="hidden" id="boxcode" value="<?php print $this->boxcode?>">
+                                            <span class="input-group-btn">
+                                                 <button id="editbut" class="btn  btn-danger btn-lg" type="button">确定</button>
+                                                </span>
+                                        </div>
+                                    </dt>
+                                    <dd><span>设备序列号：<?php print $this->boxcode?></span></dd>
+                                </dl>
+                                <dl class="boxSet-upr-2c">
+                                    <dt><span><?php if($this->online){?>
+                                        <img src="images/bf/j.png">
+                                        在线
+										<?php }else{?>
+										<img src="images/bf/x.png">
+                                        离线
+										<?php }?></span></dt>
+                                    <dd><span class="glyphicon glyphicon-pencil" id="setBoxName"><i>设置设备名称</i></span></dd>
+                                    <dd><span class="glyphicon glyphicon-time"><i>查看直播记录</i></span></dd>
+									<dd><span class="iconfont-unlock" onclick="unbind()">&#xe603;<i>解除绑定</i></span></dd>
+                                </dl>
+                                <div class="clear"></div>
+                                <div class="piece_div ">
+                                    <div class="piece_view fl">
+                                        <div class="pie_desc">
+                                            <span class="block ed fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;已传输</span>
+                                            <span class="block ing fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;当前播放</span>
+                                            <span class="block none fl"></span><span class="fl">&nbsp;&nbsp;&nbsp;无视频</span>
+                                        </div>
+                                        <div class="pieces">
+                                            <div class="showtime"></div>
+                                            <div class="current" status="0"></div>
+                                            <ul id="pie_ul">
+                                                <!--li class="ed"><span class="scal"></span></li>
+                                                <li class="ed"><span class="scal"></span></li>
+                                                <li class="ed"><span class="scal"></span></li>
+                                                <li class="ing"><span class="scal" style="width: 22.4px;"></span></li>
+                                                <li class="none"><span class="scal"></span></li>
+                                                <li class="none"><span class="scal"></span></li-->
+                                               
+                                            </ul>
+                                            <div class="loadImg"><img src="images/bf/big-loading.gif" /></div>
+                                            <div class="showText">抱歉，没有视频碎片。</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="boxSet-down">
+                            <nav>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="javascript:;" dataInfo="wyzhibo"><img src="images/bf/coding.png" alt="">网页直播路径</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="javascript:;" dataInfo="wxzhibo"><img src="images/bf/chats.png" alt="">微信直播路径</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="javascript:;" dataInfo="tyzhibo"><img src="images/bf/gear.png" alt="">直播通用代码</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="link-info" id="wyzhibo">
+                                <div class="form-group">
+                                    <input type="text" value="<?php print $this->weburl?>" readonly="readonly" class="form-control input-lg" aria-describedby="inputWarning2Status" placeholder="网页直播路径" id="wyUrl">
+                                    <span class="glyphicon glyphicon-duplicate boxSet-icon boxSet-copy" aria-hidden="true" data-clipboard-action="copy" data-clipboard-target="#wyUrl"><span>复制链接</span></span>
+                                    <span class="temp-l1">|</span>
+                                    <span class="glyphicon glyphicon-picture boxSet-icon boxSet-upload" aria-hidden="true"><span>上传图片</span></span>
+                                    <span class="temp-l2">|</span>
+                                    <span class="glyphicon glyphicon-eye-open  boxSet-icon boxSet-watch" aria-hidden="true"><span>预览直播</span></span>
+                                </div>
+                                <a href="download.php?name=微信公共平台实现直播链接嵌入说明.docx" class="btn  btn-info">下载使用指南</a>
+                            </div>
+                            <div class="link-info" id="wxzhibo" style="display:none">
+                                <div class="form-group">
+                                    <input type="text" value="<?php print $this->wxurl?>" readonly="readonly" class="form-control input-lg" aria-describedby="inputWarning2Status" placeholder="微信直播路径" id="wxUrl">
+									<span class="glyphicon glyphicon-qrcode boxSet-icon boxSet-qr" aria-hidden="true">
+                                    <img src="?m=5127&id=<?php print $this->boxid?>&type=1" style="position: absolute;top: -14px;right: 27px;"></span>
+                                    <span class="temp-l0">|</span>
+                                    <span class="glyphicon glyphicon-duplicate boxSet-icon boxSet-copy" aria-hidden="true" data-clipboard-action="copy" data-clipboard-target="#wxUrl"><span>复制链接</span></span>
+                                    <span class="temp-l1">|</span>
+                                    <span class="glyphicon glyphicon-picture boxSet-icon boxSet-upload" aria-hidden="true"><span>上传图片</span></span>
+                                    <span class="temp-l2">|</span>
+                                    <span class="glyphicon glyphicon-eye-open  boxSet-icon boxSet-watch" aria-hidden="true"><span>预览直播</span></span>
+                                </div>
+                                <a href="<?php print $this->seturl?>" class="btn  btn-info" target="_blank">边看边聊设置</a>&nbsp;&nbsp;<a href="download.php?name=微信公共平台实现直播链接嵌入说明.docx" class="btn  btn-info">下载使用指南</a>
+                            </div>
+                            <div class="link-info" id="tyzhibo" style="display:none">
+                                <div class="form-group">
+                                    <input type="text" value="<?php print $this->liveurl?>" readonly="readonly" class="form-control input-lg" aria-describedby="inputWarning2Status" placeholder="通用直播代码" id="zbUrl">
+                                    <span class="glyphicon glyphicon-duplicate boxSet-icon boxSet-copy" aria-hidden="true" data-clipboard-action="copy" data-clipboard-target="#zbUrl" style="right:5px!important"><span>复制链接</span></span>
+                                </div>
+                                <a href="download.php?name=微信公共平台实现直播链接嵌入说明.docx" class="btn  btn-info">下载使用指南</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- 盒子设置 end-->
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗 -->
+        <div class="TC">
+            <div class="opacity8">
+                <!-- 萌版 -->
+            </div>
+            <div class="skipto">
+                <!-- 3秒跳转 -->
+            </div>
+            <!-- 上传图片 -->
+            <div class="tc-uploadFile">
+                <div class="tc-close">
+                    <img src="images/bf/close.png" alt="">
+                </div>
+                <div style="text-align: center;line-height: 50px;margin-bottom: 50px;">
+                    <p style="font-size:40px;padding: 0;margin: 0">上传直播宣传图片</p>
+                    <span style="color:#00a0e9;font-size: 16px;">支持JPG、JPEG、PNG格式，大小限制1M以内</span>
+                </div>
+                <div class="input-group">
+                    <form  enctype="multipart/form-data" id="exeForm" action="" method="post" target="upload_frame">
+					<input type="hidden" name="id" value="<?php print $this->boxid?>">
+                    <input type="file" name="file" onchange="previewImage(this)" id="uploadfile">
+				</form>
+				<iframe name='upload_frame' id="upload_frame" style='display:none'></iframe>
+                </div>
+                <div class="tc-uploadFile-preview" id="preview">
+                    <img src="images/bf/default.png" alt="预览">
+                </div>
+                <p style="text-align: center;">
+                    <button class="btn btn-danger btn-lg tc-uploadFile-yes" type="btn"> 确 定 </button>
+                </p>
+            </div>
+            <div class="successTo">
+                <div class="tc-close" style="right: 70px;">
+                    <img src="images/bf/close.png" alt="">
+                </div>
+                <h2 class="successTo-msg">上传图片成功!</h2>
+                <p>3S后跳转至您的云直播</p>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script type="text/javascript" src="js/lib/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/bf/common.js"></script>
+    <script type="text/javascript" src="js/bf/home.js"></script>
+    <script type="text/javascript" src="js/lib/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/lib/ckplayer/ckplayer.js"></script>
+	<script language="javascript">
+	// 滚动条样式
+    $('.pieces').perfectScrollbar();
+var message = '';
+    //直播token
+	var token =  '<?php print $this->token?>';
+
+    //直播地址
+    var shost = '<?php print $this->pliveurl?>';
+   var URL = '<?php print urlencode($this->pliveurl)?>';
+    //播放器配置餐宿
+    var flashvars = {
+        f: 'js/lib/m3u8/m3u8.swf',
+        a: URL,
+        s: 4,
+        c: 0,
+        p: 1,
+        lv: 1,
+        loaded: 'loadedHandler'
+    };
+    var params = {
+        bgcolor: '#fff',
+        allowFullScreen: true,
+        allowScriptAccess: 'always',
+        wmode: 'transparent'
+    };
+    //html5视频地址
+    var video = [URL];
+    CKobject.embed('js/lib/ckplayer/ckplayer.swf', 'boxSet-preview-video', 'ckplayer_video', '100%', '100%', false, flashvars, video, params);
+    online = 1;
+ function loadedHandler() {
+        CKobject.getObjectById('ckplayer_video').addListener('error', 'errorHandler');
+         CKobject.getObjectById('ckplayer_video').addListener('videoLoad', 'errorHandler');
+    }
+
+    function errorHandler() {
+        
+        var viewsurl = shost?(shost.replace('5126','5132') + '&at='+ (new Date())):('http://'+document.domain+'/cloudlive/?m=5132&code=<?php print $this->boxid?>&token=1231');
+				$.get(viewsurl,function(data){
+                                    
+                                    if(!data.status){
+                                        message = data.msg;
+                                        var errorObj = "<div class='mb' style='position:absolute;left:0;right:0;top:0;bottom:0;z-index:10;background:black;'><h2 style='color:white;text-align:center'>"+message+"<br>请联系管理员</h2></div>";
+                                var videoObj = $("#boxSet-preview-video");
+                                videoObj.css({
+                                    position: "relative"
+                                }).append(errorObj);
+                                        
+                                    }
+				},'json');
+
+        
+    }
+
+
+	function previewImage(file)
+        {
+          var MAXWIDTH  = 252; 
+          var MAXHEIGHT = 252;
+          var div = document.getElementById('preview');
+          if (file.files && file.files[0])
+          {
+              div.innerHTML ='<img id=imghead>';
+              var img = document.getElementById('imghead');
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight )
+            {
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                  
+                if( rateWidth > rateHeight )
+                {
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else
+                {
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+              
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+	    }
+
+function unbind() {
+			if(confirm("确定删除直播设备？")){
+				var url = '?m=5125';
+				
+				var boxid = $("#codeid").val();
+				if(boxid.trim()==""){
+					return;
+				}else if(!checknumber(boxid)){
+					return;
+				}
+
+				$.post(url,{'name':name,'id':boxid},function(data){
+					var msg = data.msg.replace("\\n","<br/>");			
+					if(data.status){
+						location.href="?m=5101";
+					}
+				},'json');
+			}
+			}
+
+var Intid = 0;
+var counter = 0;
+var poffset;
+var online = 0;
+//指针移动
+function move() {
+	counter++;
+   var keep = 2.8;
+   var left = $(".current").css("left");
+   var piecs = $("#pie_ul").find('li:last').find('.scal');
+   var width = parseFloat(piecs.css("width"));
+   if(counter == 1){
+		width = width -1.8;
+   }
+   $(".current").css("left",(parseFloat(left)+keep) + "px");
+   piecs.css("width",(width+keep) + "px");
+	if(counter >= 10){
+		counter = 0;
+		$("#pie_ul").find('li:last').addClass('ed').removeClass('ing');
+		if(Intid > 0){
+			clearInterval(Intid);
+			Intid = 0;
+		}
+	}
+}
+
+//碎片加载
+
+function piecesload(){
+	var code = $("#boxcode").val();
+	var url = '?m=5129&token='+token;
+	if(Intid > 0){
+		counter = 0;
+		$("#pie_ul").find('li:last').addClass('ed').removeClass('ing');
+		clearInterval(Intid);
+		Intid = 0;
+	}
+	$.post(url,{'code':code},function(data){
+		var msg = data.msg.replace("\\n","<br/>");			
+		if(data.status){
+			var scrolltop = parseInt($(".ps-scrollbar-y-rail").css('top'));
+			$("#pie_ul").append('<li class="ing"><span class="scal"></span></li>');
+			var offset = $("#pie_ul").find('li:last').offset();
+			if(parseInt(offset.top) >= 115){
+				$('.pieces')[0].scrollTop = scrolltop + parseInt(offset.top);
+			}
+			$(".current").css({ "left":  (parseInt(offset.left)-parseInt(poffset.left)) + "px", "top": (scrolltop+parseInt(offset.top)-parseInt(poffset.top)) + "px" });
+			Intid = setInterval("move()",1000);
+			if(online == 0){
+				CKobject.embed('js/lib/ckplayer/ckplayer.swf', 'boxSet-preview-video', 'ckplayer_video', '100%', '100%', false, flashvars, video, params);
+			}
+			online = 1;
+
+		}else{
+			online = 0;
+                    if(Intid > 0){
+                            counter = 0;
+                            $("#pie_ul").find('li:last').addClass('ed').removeClass('ing');
+                            clearInterval(Intid);
+                            Intid = 0;
+                    }
+			$("#pie_ul").append('<li class="none"><span class="scal"></span></li>');
+		}
+	},'json');
+	
+	setTimeout('piecesload()', 10*1000);
+}
+
+	$(function(){
+	//点击复制链接
+poffset =  $("#pie_ul").offset();
+$(".current").css({ "left":  0, "top": parseInt(poffset.top) + "px" });
+var clipboard = new Clipboard(".boxSet-copy");
+clipboard.on('success', function(e) {
+
+    alert("复制成功")
+});
+
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+
+// 切换直播路径模块
+
+
+$(".boxSet-down").find("nav li a").on("click", function() {
+    $(".boxSet-down").find("nav li").removeClass('active');
+    $(this).closest('li').addClass('active');
+    var msg = $(this).attr("dataInfo");
+    console.log(msg);
+    for (var i = 0; i < $(".link-info").length; i++) {
+        if ($(".link-info").eq(i).attr("id") == msg) {
+            $(".link-info").eq(i).show();
+        } else {
+            $(".link-info").eq(i).hide();
+        }
+    }
+})
+	
+			$('#editbut').click(function(){	
+			var url = '?m=5124';
+			var name = $("#codename").val();
+			if(name.trim()==""){
+				return;
+			}
+			var boxid = $("#codeid").val();
+			if(boxid.trim()==""){
+				return;
+			}else if(!checknumber(boxid)){
+				return;
+			}
+			$.post(url,{'name':name,'id':boxid},function(data){
+				var msg = data.msg.replace("\\n","<br/>");			
+				if(data.status){
+					var name =  $("#codename").val();
+					$("#BoxName").html(name).show().closest('dt').find('.input-group').hide();
+					//$("#codename").val('');
+					//$(".boxName").find('span').text(data.data);
+				}
+			},'json');
+		});
+$('.boxSet-watch').click(function(){
+	var url = $('#wyUrl').val();
+	window.open(url,'_blank');
+});
+		
+piecesload();
+//move();
+		
+})
+	</script>
+</body>
+
+</html>

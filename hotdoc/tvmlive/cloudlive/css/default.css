@@ -1,0 +1,18 @@
+* { margin: 0; padding: 0; }
+BODY {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 70px; BACKGROUND: white fixed no-repeat left top; PADDING-BOTTOM: 2em; MARGIN: 0px; COLOR: black; PADDING-TOP: 2em; FONT-FAMILY: sans-serif;
+	text-align: center;width: 780px;
+}
+BODY {
+	BACKGROUND-IMAGE: url(../images/logo-REC.png)
+}
+#login {
+	margin:auto;
+	width:500;
+	height:100%;
+	text-align: left;
+	margin: 0 auto;
+}
+#login li{
+	DISPLAY:inline;
+}

@@ -1,0 +1,12 @@
+{PAGER_VISITEDMODAL}<b>{PAGER_NUMBER}</b> {/PAGER_VISITEDMODAL}   <!--第1行当前页样式-->
+{PAGER_LINKMODAL} <a href="{PAGER_LINK}" target="_self">{PAGER_NUMBER}</a> {/PAGER_LINKMODAL}    <!--第2行数字列表页码样式-->
+<table width="100%" border="0"  cellpadding="0" cellpadding="0"><tr><td width="30%" align="left" class="">共{PAGER_PAGETOTAL}页{PAGER_ROWTOTAL}条 本页显示{PAGER_STARTROW}－{PAGER_ENDROW}条</td><td width="40%" align="right" class=""><!--第3行首页链接前的内容-->
+<a href="{PAGER_FIRSTURL}" target="_self">首页</a> <a href="{PAGER_PREVIOUSURL}" target="_self">上一页</a>  <!--第4行首页和上一页内容-->
+<a href="{PAGER_NEXTURL}" target="_self">下一页</a> <a href="{PAGER_LASTURL}" target="_self">末页</a>   <!--第5行下一页和末页内容-->
+ 到  <!--第6行及以后为其它内容-->
+<input name="page" type="text" size="3" onkeypress="return unpress(event)" id="page" />页 <!--页面中只能此处的输入框定义为page,页面中不能出现重复定义--> 
+<input type="button" value="确定" onclick="onPagerJump()" /></td></tr></table><!--建议：按纽实现跳转动作，程序员根据需要选择，表单的GET方式，或使用Click事件,事件请放到主文件中，模板页中请不要添加脚本内容。-->
+<script language="javascript">
+function onPagerJump( ){ var reg = /^[0-9]+$/;var v = document.getElementById( 'page' );if( !reg.test( v.value ) ){ alert( '请输入整数页码!' );return }location.href = "{PAGER_JUMPLINK}=" + v.value;}
+function unpress( evt ){ evt = ( evt ) ? evt : event;if( evt.keyCode == 13 ) return false;}
+</script> <!--此脚本位置必须在第5行之后 -->
