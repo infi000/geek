@@ -1,0 +1,54 @@
+/*蒙版*/
+
+.dude-mb {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+/*浮动*/
+
+.clear {
+    clear: both;
+}
+.f-fl{
+	float: left;
+}
+.f-fr{
+	float: right;
+}
+
+
+/*dude盒子*/
+
+.dude-box {
+    width: 1140px;
+    margin: 20px auto;
+}
+@media (max-width: 1200px){
+	.dude-box {
+    width: 100%;
+}
+}
+
+/*字体*/
+
+.f-blod {
+    font-weight: bold;
+}
+.f-grey{
+    color:grey;
+}
+.f-green{
+color:#57bf59;
+}
+.f-red{
+    color:#a94442;
+}
+.f-blue{
+    color:#337ab7;
+}
