@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="http://cdn.bootcss.com/jquery/2.2.0/jquery.min.js"></script>
+    <script src='https://cdn.wilddog.com/sdk/js/2.3.8/wilddog.js'></script>
+    <script type="text/javascript" src="app/index.js"></script>
+    <style>
+    .wrap {
+        margin: 50px auto;
+    }
+    
+    .wrap a.button {
+        margin: 20px auto;
+        line-height: 40px;
+        height: 40px;
+        display: block;
+        border: 1px solid #bbb;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .wrap a.button:hover {
+        background: #ccc;
+    }
+    
+    .input-group input {
+        width: 80%;
+        line-height: 30px;
+        margin: 5px 0;
+    }
+    
+    .input-group textarea {
+        width: 80%;
+        height: 100px;
+    }
+    
+    #submit {
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    </style>
+</head>
+
+<body>
+    <h2></h2>
+    <h2></h2>
+    <h3></h3>
+</body>
+<script>
+var getSource = {
+    invoke: function(_url, _callback) {
+        $.ajax({
+            url: _url,
+            type: "GET",
+            dataType: "json",
+            success: _callback
+        });
+    },
+    url_config: "app/getjson.php",
+    url_gamefile: "app/getfile.php",
+    callback_config: function(msg) {
+        wdog.ref.child("config").set(msg, function(error) {
+            if (error == null) {
+                // 数据同步到野狗云端成功完成
+                $("h2").eq(0).html("上传config.json完成" + new Date())
+            }
+        });
+
+    },
+    callback_gamefile: function(msg) {
+        wdog.ref.child("gamefile").set(msg, function(error) {
+            if (error == null) {
+                // 数据同步到野狗云端成功完成
+                $("h2").eq(1).html("上传gamefile完成" + new Date())
+            }
+        });
+    }
+};
+
+
+
+function start() {
+    getSource.invoke(getSource.url_config, getSource.callback_config);
+    getSource.invoke(getSource.url_gamefile, getSource.callback_gamefile);
+}
+start();
+window.setInterval(start, 120000) //120000两分钟
+</script>
+
+</html>

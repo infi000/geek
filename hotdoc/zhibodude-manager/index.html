@@ -51,43 +51,34 @@
         <div class="row">
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
-                    <li class="active"><a href="#">banner&slogan</a></li>
+                    <li class="active"><a href="#" id="getBs">banner&slogan</a></li>
                     <li><a href="#">Reports</a></li>
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#">Export</a></li>
                 </ul>
-                <!--                 <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item</a></li>
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                    <li><a href="">More navigation</a></li>
-                </ul>
-                <ul class="nav nav-sidebar">
-                    <li><a href="">Nav item again</a></li>
-                    <li><a href="">One more nav</a></li>
-                    <li><a href="">Another nav item</a></li>
-                </ul> -->
             </div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="bs-main" style="display:none">
                 <h1 class="page-header">Banner&slogan</h1>
                 <div class="container">
                     <div class="form">
                         <div class="form-group">
                             <label for="">name:</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="bs-name">
                         </div>
                         <div class="form-group">
                             <label for="">weight:</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="bs-weight">
                         </div>
                         <div class="form-group">
                             <label for="">img:</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="bs-img">
                         </div>
                         <div class="form-group">
                             <label for="">msg:</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea class="form-control" rows="3" id="bs-msg"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="btn btn-default" id="bs-submit">提交</div>
                         </div>
                     </div>
                 </div>
@@ -96,7 +87,6 @@
                     <table class="table table-striped" id="bsList">
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>name</th>
                                 <th>weight</th>
                                 <th>msg</th>
@@ -104,7 +94,7 @@
                             </tr>
                         </thead>
                         <tbody>
-            <!--                 <tr>
+                            <!--                 <tr>
                                 <td>1,001</td>
                                 <td>Lorem</td>
                                 <td>ipsum</td>
@@ -115,18 +105,26 @@
                     </table>
                 </div>
             </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="data-main">
+                <h1 class="page-header">DATA manager</h1>
+                <div class="container">
+                    <div class="input-group">
+                        <div class="btn btn-default">更新config.json</div>
+                        <div class="btn btn-default">更新gamefile</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-      <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="js/wilddog.js"></script>
     <script src="js/index.js"></script>
 </body>
 <script>
-
 </script>
 
 </html>

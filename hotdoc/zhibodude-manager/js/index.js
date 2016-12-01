@@ -9,56 +9,35 @@
 var test;
 
 function Dude() {
-    this.url_bs = "http://infi000.wilddogio.com/zhibodude.json";
+    this.url_bs = 'https://infi000.wilddogio.com/zhibodude.json';
     this.url_live = "";
     this.invoke = function(_url, _callback) {
         $.ajax({
             url: _url,
+            // dataType:"jsonp",
             success: _callback
         })
     };
     this.callback_bs = function(msg) {
-        console.log(msg);
-        test = msg;
-        var obj;
-        for (key in test) {
-            console.log(key)
-        }
-
-
-        // for (keys in test){
-        // 	var index=msg[keys];
-        // 	var name=index.name;
-        // 	var msg=index.msg;
-        // 	var img=index.img;
-        // 	var weight=index.weight;
-        // 	obj+="<tr><td>"+keys+"</td>";
-        // 	obj+="<td>"+name+"</td>";
-        // 	obj+="<td>"+weight+"</td>";
-        // 	obj+="<td>"+msg+"</td>";
-        // 	obj+="<td>"+img+"</td></tr>";
-        // };
+        var data = msg;
+        var obj = "";
+        for (var keys in data) {
+            var index = data[keys];
+            var name = (index.name) ? index.name : "无";
+            var msg = index.msg;
+            var img = 'http://zhibodude.com/' + index.img;
+            var weight = index.weight;
+            // obj += "<tr><td>" + keys + "</td>";
+            obj += "<tr><td>" + name + "</td>";
+            obj += "<td>" + weight + "</td>";
+            obj += "<td>" + msg + "</td>";
+            obj += "<td><a href='" + img + "'>" + img + "</a></td></tr>";
+        };
         $("#bsList").find("tbody").html(obj);
     };
 
 };
 
-    $.ajax({
-        url: "http://infi000.wilddogio.com/jrstv/config.json",
-        // dataType:"jsonp",
-        // async:false,
-        success: function(msg) {
-            test = msg
-        }
-    })
-var myDude = new Dude();
-// myDude.invoke(myDude.url_bs, function(msg) {
-//     console.log(msg);
-//     test = msg;
-//     for (key in msg) {
-//         console.log(key)
-//     }
-// })
 var wdog = {
     config: {
         authDomain: "infi000.wilddog.com",
@@ -68,14 +47,31 @@ var wdog = {
 
 wilddog.initializeApp(wdog.config);
 wdog.ref = wilddog.sync().ref("/jrstv/");
+wdog.ref_bs = wilddog.sync().ref("/zhibodude/");
 
 $(document).ready(function($) {
+    //实例化
+    var myDude = new Dude();
+    // 获取bs数据
+    myDude.invoke(myDude.url_bs + '?orderBy="weight"&limitToLast=1000', myDude.callback_bs)
+    $("#getBs").on("click", function() {
+        console.log("dus");
+        myDude.invoke(myDude.url_bs + '?orderBy="weight"&limitToLast=1000', myDude.callback_bs)
+    });
+    $("#bs-submit").on("click", function() {
+        var data = {
+            name: $("#bs-name").val(),
+            weight: $("#bs-weight").val(),
+            img: $("#bs-img").val(),
+            msg: $("#bs-msg").val(),
+        };
+        wdog.ref_bs.push(data, function(err) {
+            if (err == null) {
+                alert("提交成功");
+                myDude.invoke(myDude.url_bs + '?orderBy="weight"&limitToLast=1000', myDude.callback_bs)
 
-
-
-    console.log(test)
-    for (key in test) {
-        console.log(key)
-    }
+            }
+        });
+    });
 
 });
