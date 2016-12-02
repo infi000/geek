@@ -166,6 +166,18 @@ a.static-nav-link {
     text-decoration: none;
 }
 
+.playerHead{
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0px #ccc;
+}
+.twitterImg{
+    border-radius: 5px;
+    width: 100%;
+}
 footer{
         height: 50px;
     line-height: 50px;

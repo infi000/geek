@@ -88,7 +88,7 @@ function Dude() {
             obj += "<td>" + weight + "</td>";
             obj += "<td>" + msg + "</td>";
             obj += "<td>" + time + "</td>";
-            obj += "<td><a href='" + img + "'><img src='" + img + "' width='100' ></a></td></tr>";
+            obj += "<td><a href='http://www.zhibodude.com/static/twitterImg/" + img + "'><img src='http://www.zhibodude.com/static/twitterImg/" + img + "' width='100' ></a></td></tr>";
             Num++;
         };
         $("#twitterList").find("tbody").html(obj);

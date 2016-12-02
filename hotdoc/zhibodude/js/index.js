@@ -88,11 +88,11 @@ $(document).ready(function() {
             var weight=index.weight;
             var head=index.head;
             var msg=index.msg;
-            var img=(index.img=="no")?"":'<p><img src="'+index.img+'" alt="" width="500" class="twitterImg"></p>';
-            obj+='<div class="media"><a class="media-left" href="#">';
-            obj+='<img src="'+head+'" width="78" alt="用户头像"></a>';
-            obj+='<div class="media-body"><h4 class="media-heading">'+name+'</h4>'+msg;
-            obj+=img+'</div></div>';
+            var img=(index.img=="no")?"":'<p><img src="http://www.zhibodude.com/static/twitterImg/'+index.img+'" alt=""  class="twitterImg"></p>';
+            obj+='<li class="list-group-item"><div class="media"><a class="media-left" href="#">';
+            obj+='<img src=".'+head+'" alt="用户头像" class="playerHead"></a>';
+            obj+='<div class="media-body"><h4 class="media-heading">'+name+'<small style="margin-left:14px;">'+time+'</small></h4><div><p>'+msg+'</p></div>';
+            obj+=img+'</div></div></li>';
         };
         $(".twitter-live-box").html(obj);
     };
