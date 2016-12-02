@@ -52,65 +52,111 @@
             <div class="col-sm-3 col-md-2 sidebar">
                 <ul class="nav nav-sidebar">
                     <li class="active"><a href="#" id="getBs">banner&slogan</a></li>
-                    <li><a href="#">Reports</a></li>
+                    <li><a href="#" id="getData">DATAcenter</a></li>
                     <li><a href="#">Analytics</a></li>
                     <li><a href="#">Export</a></li>
                 </ul>
             </div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="bs-main" style="display:none">
-                <h1 class="page-header">Banner&slogan</h1>
-                <div class="container">
-                    <div class="form">
-                        <div class="form-group">
-                            <label for="">name:</label>
-                            <input type="text" class="form-control" id="bs-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="">weight:</label>
-                            <input type="text" class="form-control" id="bs-weight">
-                        </div>
-                        <div class="form-group">
-                            <label for="">img:</label>
-                            <input type="text" class="form-control" id="bs-img">
-                        </div>
-                        <div class="form-group">
-                            <label for="">msg:</label>
-                            <textarea class="form-control" rows="3" id="bs-msg"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <div class="btn btn-default" id="bs-submit">提交</div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <div class="mainBox" id="bs-main" >
+                    <h1 class="page-header">Banner&slogan</h1>
+                    <div class="container">
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="">name:</label>
+                                <input type="text" class="form-control" id="bs-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">weight:</label>
+                                <input type="text" class="form-control" id="bs-weight">
+                            </div>
+                            <div class="form-group">
+                                <label for="">img:</label>
+                                <input type="text" class="form-control" id="bs-img">
+                            </div>
+                            <div class="form-group">
+                                <label for="">msg:</label>
+                                <textarea class="form-control" rows="3" id="bs-msg"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn btn-default" id="bs-submit">提交</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <h2 class="sub-header">Banner&sloban-list</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped" id="bsList">
-                        <thead>
-                            <tr>
-                                <th>name</th>
-                                <th>weight</th>
-                                <th>msg</th>
-                                <th>img</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!--                 <tr>
+                    <h2 class="sub-header">Banner&sloban-list</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="bsList">
+                            <thead>
+                                <tr>
+                                    <th>name</th>
+                                    <th>weight</th>
+                                    <th>msg</th>
+                                    <th>img</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--                 <tr>
                                 <td>1,001</td>
                                 <td>Lorem</td>
                                 <td>ipsum</td>
                                 <td>dolor</td>
                                 <td>sit</td>
                             </tr> -->
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id="data-main">
-                <h1 class="page-header">DATA manager</h1>
-                <div class="container">
-                    <div class="input-group">
-                        <div class="btn btn-default">更新config.json</div>
-                        <div class="btn btn-default">更新gamefile</div>
+                <div class="mainBox" id="data-main" style="display: none">
+                    <h1 class="page-header">DATA manager</h1>
+                    <div class="container">
+                        <div class="input-group">
+                            <div class="btn btn-default" id="update-config">更新config.json</div>
+                            <div class="btn btn-default" id="update-gamefile">更新gamefile</div>
+                        </div>
+                    </div>
+                    <h2 class="sub-header">频道直播信息</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="data-channel">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>title</th>
+                                    <th>url</th>
+                                    <th>pc_url</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--                 <tr>
+                                <td>1,001</td>
+                                <td>Lorem</td>
+                                <td>ipsum</td>
+                                <td>dolor</td>
+                                <td>sit</td>
+                            </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2 class="sub-header">比赛直播信息</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="data-config">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>title</th>
+                                    <th>url</th>
+                                    <th>pc_url</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--                 <tr>
+                                <td>1,001</td>
+                                <td>Lorem</td>
+                                <td>ipsum</td>
+                                <td>dolor</td>
+                                <td>sit</td>
+                            </tr> -->
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
