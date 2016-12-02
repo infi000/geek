@@ -2,7 +2,7 @@
  * @Author: 张驰阳
  * @Date:   2016-12-01 17:01:50
  * @Last Modified by:   张驰阳
- * @Last Modified time: 2016-12-02 11:49:03
+ * @Last Modified time: 2016-12-02 18:21:12
  */
 
 'use strict';
@@ -11,6 +11,7 @@ var test;
 function Dude() {
     this.domain = "https://infi000.wilddogio.com";
     this.url_bs = 'https://infi000.wilddogio.com/zhibodude.json';
+    this.url_twitter = 'https://infi000.wilddogio.com/zhibodude-twitter.json';
     this.url_live = "";
     this.url_config = "http://jrstv.net/getSource/app/getjson.php";
     this.url_gamefile = "http://jrstv.net/getSource/app/getfile.php";
@@ -67,6 +68,30 @@ function Dude() {
             liveNum++;
         };
         $("#data-config").find("tbody").html(liveObj);
+    };
+    this.callback_twitter = function(msg) {
+        var data = msg;
+        var obj = "";
+        var Num = 1;
+        for (var keys in data) {
+            var index = data[keys];
+            var name = (index.name) ? index.name : "无";
+            var msg = index.msg;
+            var head = index.head;
+            var img = index.img;
+            var time = index.time;
+            var weight = index.weight;
+            // obj += "<tr><td>" + keys + "</td>";
+            obj += "<tr><td>" + Num + "</td>";
+            obj += "<td>" + name + "</td>";
+            obj += "<td><img src='http://www.zhibodude.com/" + head + "' width='70'></td>";
+            obj += "<td>" + weight + "</td>";
+            obj += "<td>" + msg + "</td>";
+            obj += "<td>" + time + "</td>";
+            obj += "<td><a href='" + img + "'><img src='" + img + "' width='100' ></a></td></tr>";
+            Num++;
+        };
+        $("#twitterList").find("tbody").html(obj);
     }
 };
 
@@ -80,6 +105,7 @@ var wdog = {
 wilddog.initializeApp(wdog.config);
 wdog.ref = wilddog.sync().ref("/jrstv/");
 wdog.ref_bs = wilddog.sync().ref("/zhibodude/");
+wdog.ref_twitter = wilddog.sync().ref("/zhibodude-twitter/");
 
 $(document).ready(function($) {
     //实例化
@@ -123,20 +149,53 @@ $(document).ready(function($) {
         });
         myDude.invoke(myDude.domain + "/jrstv/gamefile/data.json", myDude.callback_config);
     });
+    // 提交twitter数据
+    $("#twitter-submit").on("click", function() {
+        var data = {
+            name: $("#twitter-name").val(),
+            weight: $("#twitter-weight").val(),
+            img: $("#twitter-img").val(),
+            head: $("#twitter-head").val(),
+            time: $("#twitter-time").val(),
+            msg: $("#twitter-msg").val(),
+        };
+        for (var key in data) {
+            var index = data[key];
+            if (index == "") {
+                console.log(key)
+                alert("填写完整内容");
+                return;
+            }
+
+        };
+        wdog.ref_twitter.push(data, function(err) {
+            if (err == null) {
+                alert("提交成功");
+                myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
+            }
+        });
+    });
     // 切换展示界面
     $("#getData").on("click", function() {
         $(".mainBox").hide();
         $("#data-main").show();
-       $(this).closest('ul').find("li").removeClass();
-       $(this).closest('li').addClass('active');
+        $(this).closest('ul').find("li").removeClass();
+        $(this).closest('li').addClass('active');
         myDude.invoke(myDude.domain + "/jrstv/gamefile/data.json", myDude.callback_config);
     });
     $("#getBs").on("click", function() {
-       $(".mainBox").hide();
-       $("#bs-main").show();
-       $(this).closest('ul').find("li").removeClass();
-       $(this).closest('li').addClass('active');
+        $(".mainBox").hide();
+        $("#bs-main").show();
+        $(this).closest('ul').find("li").removeClass();
+        $(this).closest('li').addClass('active');
         myDude.invoke(myDude.url_bs + '?orderBy="weight"&limitToLast=1000', myDude.callback_bs)
     });
+    $("#getTwitter").on("click", function() {
+        $(".mainBox").hide();
+        $("#twitter-main").show();
+        $(this).closest('ul').find("li").removeClass();
+        $(this).closest('li').addClass('active');
+        myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
+    })
 
 });

@@ -75,7 +75,27 @@ $(document).ready(function() {
         $(".slogan").find("h2").html(msg);
         $(".slogan").find("p").html("--"+name);
         $(".banner").css({'background-image':'url('+img+')','background-size':'contain'});
-    }
+    };
+    index.callback_twitter=function(msg){
+        var obj="";
+        var data=msg
+        for(var key in data){
+            var index=data[key];
+            console.log(index);
+            console.log(index.name);
+            var name=index.name;
+            var time=index.time;
+            var weight=index.weight;
+            var head=index.head;
+            var msg=index.msg;
+            var img=(index.img=="no")?"":'<p><img src="'+index.img+'" alt="" width="500" class="twitterImg"></p>';
+            obj+='<div class="media"><a class="media-left" href="#">';
+            obj+='<img src="'+head+'" width="78" alt="用户头像"></a>';
+            obj+='<div class="media-body"><h4 class="media-heading">'+name+'</h4>'+msg;
+            obj+=img+'</div></div>';
+        };
+        $(".twitter-live-box").html(obj);
+    };
     index.data = {
         key: "d40b83c5590a7a27358c405d40b41659"
     };
@@ -92,7 +112,9 @@ $(document).ready(function() {
         url: 'https://infi000.wilddogio.com/zhibodude.json?orderBy="weight"&limitToLast=1',
         success:index.callback_slogan
     });
-    
+    //TWITTER更新
+    index.invoke_data(index.url_twitter, index.data, index.callback_twitter);
+    //选择频道
     $(".liveChannels").on("click", function() {
         // console.log(13);
         var title = $(this).attr("dataType");

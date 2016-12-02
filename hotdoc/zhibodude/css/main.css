@@ -64,6 +64,9 @@ a.static-nav-link {
         width: 80%!important;
         left: 10%!important;
     }
+    .twitterImg{
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -87,6 +90,9 @@ a.static-nav-link {
         color: #f5f5f5 !important;
         font-weight: bold;
         text-align: center;
+    }
+    .twitterImg{
+        width: 100%;
     }
 }
 

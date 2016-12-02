@@ -53,12 +53,12 @@
                 <ul class="nav nav-sidebar">
                     <li class="active"><a href="#" id="getBs">banner&slogan</a></li>
                     <li><a href="#" id="getData">DATAcenter</a></li>
-                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#" id="getTwitter">Twitter</a></li>
                     <li><a href="#">Export</a></li>
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <div class="mainBox" id="bs-main" >
+                <div class="mainBox" id="bs-main">
                     <h1 class="page-header">Banner&slogan</h1>
                     <div class="container">
                         <div class="form">
@@ -159,8 +159,80 @@
                         </table>
                     </div>
                 </div>
+                <div class="mainBox" id="twitter-main" style="display: none">
+                    <h1 class="page-header">TWIITER</h1>
+                    <div class="container">
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="">name:</label>
+                                <input type="text" class="form-control" id="twitter-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">headSrc:</label>
+                                <!-- <input type="text" class="form-control" id="twitter-head"> -->
+
+                                <select name="" id="twitter-head">
+                                    <option value="/static/head/russwest44.jpg">威少</option>
+                                    <option value="/static/head/StephenCurry30.jpg">库里</option>
+                                    <option value="/static/head/JHarden13.jpg">哈登</option>
+                                    <option value="/static/head/KingJames.jpg">詹姆斯</option>
+                                    <option value="/static/head/kobebryant.jpg">科比</option>
+                                    <option value="/static/head/DwyaneWade.jpg">wade</option>
+                                    <option value="/static/head/SHAQ.jpg">SHAQ</option>
+                                    <option value="/static/head/KDTrey5.jpg">杜兰特</option>
+                                    <option value="/static/head/KyrieIrving.jpg">欧文</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">weight:</label>
+                                <input type="text" class="form-control" id="twitter-weight">
+                            </div>
+                            <div class="form-group">
+                                <label for="">img:</label>
+                                <input type="text" class="form-control" id="twitter-img">
+                            </div>
+                            <div class="form-group">
+                                <label for="">time</label>
+                                <input type="text" class="form-control" id="twitter-time">
+                            </div>
+                            <div class="form-group">
+                                <label for="">msg:</label>
+                                <textarea class="form-control" rows="3" id="twitter-msg"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn btn-default" id="twitter-submit">提交</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="sub-header">twitter-list</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="twitterList">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>name</th>
+                                    <th>head</th>
+                                    <th>weight</th>
+                                    <th>msg</th>
+                                    <th>time</th>
+                                    <th>img</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--                 <tr>
+                                <td>1,001</td>
+                                <td>Lorem</td>
+                                <td>ipsum</td>
+                                <td>dolor</td>
+                                <td>sit</td>
+                            </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
