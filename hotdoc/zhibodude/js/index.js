@@ -113,7 +113,7 @@ $(document).ready(function() {
         success:index.callback_slogan
     });
     //TWITTER更新
-    index.invoke_data(index.url_twitter, index.data, index.callback_twitter);
+    index.invoke_data(index.url_twitter+'?orderBy="weight"&limitToLast=1000', index.data, index.callback_twitter);
     //选择频道
     $(".liveChannels").on("click", function() {
         // console.log(13);

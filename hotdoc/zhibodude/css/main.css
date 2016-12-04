@@ -165,7 +165,14 @@ a.static-nav-link {
     color: #999;
     text-decoration: none;
 }
+.ins-live-box h3{
+    color: #a94442;
+}
+.ins-live-box p{
 
+height: 80px;
+overflow-y: scroll;
+}
 .playerHead{
     width: 70px;
     height: 70px;
@@ -177,6 +184,9 @@ a.static-nav-link {
 .twitterImg{
     border-radius: 5px;
     width: 100%;
+}
+.twitter-live-box .media-heading {
+color: #a94442; 
 }
 footer{
         height: 50px;

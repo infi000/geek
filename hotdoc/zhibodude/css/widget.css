@@ -29,9 +29,14 @@
 
 .dude-box {
     width: 1140px;
-    margin: 20px auto;
+    margin: 20px auto 0;
 }
-
+.dude-box2{
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background: #a94442;
+}
 .dude-box3 {
     width: 590px;
     margin: 0 auto;

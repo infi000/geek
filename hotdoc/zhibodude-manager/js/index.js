@@ -26,16 +26,20 @@ function Dude() {
         var data = msg;
         var obj = "";
         for (var keys in data) {
+            var num = 1;
             var index = data[keys];
             var name = (index.name) ? index.name : "无";
             var msg = index.msg;
             var img = 'http://zhibodude.com/' + index.img;
             var weight = index.weight;
             // obj += "<tr><td>" + keys + "</td>";
-            obj += "<tr><td>" + name + "</td>";
+            obj += "<tr data-Key='" + keys + "' data-type='bs'><td>" + num + "</td>";
+            obj += "<td>" + name + "</td>";
             obj += "<td>" + weight + "</td>";
             obj += "<td>" + msg + "</td>";
-            obj += "<td><a href='" + img + "'>" + img + "</a></td></tr>";
+            obj += "<td><a href='" + img + "'>" + img + "</a></td>";
+            obj += '<td><div class="btn-group"><a class="btn btn-sm btn-default fix">修改</><a class="btn btn-sm btn-default delete">删除</a></div></tr>';
+            num++;
         };
         $("#bsList").find("tbody").html(obj);
     };
@@ -82,13 +86,14 @@ function Dude() {
             var time = index.time;
             var weight = index.weight;
             // obj += "<tr><td>" + keys + "</td>";
-            obj += "<tr><td>" + Num + "</td>";
+            obj += "<tr data-Key='" + keys + "' data-type='twitter'><td>" + Num + "</td>";
             obj += "<td>" + name + "</td>";
             obj += "<td><img src='http://www.zhibodude.com/" + head + "' width='70'></td>";
             obj += "<td>" + weight + "</td>";
             obj += "<td>" + msg + "</td>";
             obj += "<td>" + time + "</td>";
-            obj += "<td><a href='http://www.zhibodude.com/static/twitterImg/" + img + "'><img src='http://www.zhibodude.com/static/twitterImg/" + img + "' width='100' ></a></td></tr>";
+            obj += "<td><a href='http://www.zhibodude.com/static/twitterImg/" + img + "'><img src='http://www.zhibodude.com/static/twitterImg/" + img + "' width='100' ></a></td>";
+            obj += '<td><div class="btn-group"><a class="btn btn-sm btn-default fix">修改</><a class="btn btn-sm btn-default delete">删除</a></div></tr>';
             Num++;
         };
         $("#twitterList").find("tbody").html(obj);
@@ -128,6 +133,7 @@ $(document).ready(function($) {
             }
         });
     });
+
     //更新直播数据至野狗后台
     $("#update-config").on("click", function() {
         myDude.invoke(myDude.url_config, function(msg) {
@@ -166,7 +172,6 @@ $(document).ready(function($) {
                 alert("填写完整内容");
                 return;
             }
-
         };
         wdog.ref_twitter.push(data, function(err) {
             if (err == null) {
@@ -196,6 +201,79 @@ $(document).ready(function($) {
         $(this).closest('ul').find("li").removeClass();
         $(this).closest('li').addClass('active');
         myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
-    })
+    });
+    //删除数据
+    $(document).on("click", ".delete", function() {
+        var type = $(this).closest('tr').attr("data-type");
+        var node = $(this).closest('tr').attr("data-Key");
+        var cf = confirm("确认删除？");
+        if (cf == true) {
+            if (type == "bs") {
+                wdog.ref_bs.child("/" + node).set(null, function(err) {
+                    if (err == null) {
+                        alert("删除成功");
+                        myDude.invoke(myDude.url_bs + '?orderBy="weight"&limitToLast=1000', myDude.callback_bs)
+                    }
+                })
+            } else if (type == "twitter") {
+                wdog.ref_twitter.child("/" + node).set(null, function(err) {
+                    if (err == null) {
+                        alert("删除成功");
+                        myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
+                    }
+                })
+            }
+        } else {
+            return;
+        }
+
+    });
+    //修改数据
+    $(document).on("click", ".fix", function() {
+        var type = $(this).closest('tr').attr("data-type");
+        var node = $(this).closest('tr').attr("data-Key");
+        var cf = confirm("确认修改？");
+        if (cf == true) {
+            if (type == "bs") {
+                var data = {
+                    name: $("#bs-name").val(),
+                    weight: $("#bs-weight").val(),
+                    img: $("#bs-img").val(),
+                    msg: $("#bs-msg").val(),
+                };
+                wdog.ref_bs.child("/" + node).set(data, function(err) {
+                    if (err == null) {
+                        alert("修改成功");
+                        myDude.invoke(myDude.url_bs + '?orderBy="weight"&limitToLast=1000', myDude.callback_bs)
+                    }
+                });
+            } else if (type == "twitter") {
+                var data = {
+                    name: $("#twitter-name").val(),
+                    weight: $("#twitter-weight").val(),
+                    img: $("#twitter-img").val(),
+                    head: $("#twitter-head").val(),
+                    time: $("#twitter-time").val(),
+                    msg: $("#twitter-msg").val(),
+                };
+                for (var key in data) {
+                    var index = data[key];
+                    if (index == "") {
+                        console.log(key)
+                        alert("填写完整内容");
+                        return;
+                    }
+                };
+                wdog.ref_twitter.child("/" + node).set(data, function(err) {
+                    if (err == null) {
+                        alert("修改成功");
+                        myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
+                    }
+                });
+            }
+        } else {
+            return;
+        }
+    });
 
 });
