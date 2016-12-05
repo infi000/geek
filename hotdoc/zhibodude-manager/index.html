@@ -55,10 +55,11 @@
                     <li><a href="#" id="getData">DATAcenter</a></li>
                     <li><a href="#" id="getTwitter">Twitter</a></li>
                     <li><a href="#" id="getIns">Ins</a></li>
+                    <li><a href="#" id="getLine">添加线路</a></li>
                 </ul>
             </div>
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <div class="mainBox" id="bs-main" >
+                <div class="mainBox" id="bs-main">
                     <h1 class="page-header">Banner&slogan</h1>
                     <div class="container">
                         <div class="form">
@@ -286,6 +287,56 @@
                         </table>
                     </div>
                 </div>
+                <div class="mainBox" id="line-main" style="display: none">
+                    <h1 class="page-header">添加线路</h1>
+                    <div class="container">
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="">title:</label>
+                                <input type="text" class="form-control" id="line-title">
+                            </div>
+                            <div class="form-group">
+                                <label for="">name:</label>
+                                <input type="text" class="form-control" id="line-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">weight:</label>
+                                <input type="text" class="form-control" id="line-weight">
+                            </div>
+                            <div class="form-group">
+                                <label for="">url:</label>
+                                <textarea class="form-control" rows="3" id="line-url"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn btn-default" id="line-submit">提交</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="sub-header">添加线路列表</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="lineList">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>title</th>
+                                    <th>name</th>
+                                    <th>weight</th>
+                                    <th>url</th>
+                                    <th>action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--<tr>
+                                <td>1,001</td>
+                                <td>Lorem</td>
+                                <td>ipsum</td>
+                                <td>dolor</td>
+                                <td>sit</td>
+                            </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -298,4 +349,5 @@
     <script src="js/wilddog.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>

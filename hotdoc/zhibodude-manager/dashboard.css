@@ -104,3 +104,9 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+/*字符样式*/
+
+.f-break{
+    word-break: break-word;
+}

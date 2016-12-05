@@ -2,7 +2,7 @@
  * @Author: 张驰阳
  * @Date:   2016-12-01 17:01:50
  * @Last Modified by:   张驰阳
- * @Last Modified time: 2016-12-05 17:02:21
+ * @Last Modified time: 2016-12-05 18:35:12
  */
 
 'use strict';
@@ -12,6 +12,7 @@ function Dude() {
     this.url_bs = 'https://infi000.wilddogio.com/zhibodude.json';
     this.url_twitter = 'https://infi000.wilddogio.com/zhibodude-twitter.json';
     this.url_ins = 'https://infi000.wilddogio.com/zhibodude-ins.json';
+    this.url_line = 'https://infi000.wilddogio.com/zhibodude-line.json';
     this.url_live = "";
     this.url_config = "http://jrstv.net/getSource/app/getjson.php";
     this.url_gamefile = "http://jrstv.net/getSource/app/getfile.php";
@@ -67,8 +68,8 @@ function Dude() {
             var pc_url = index.pc_url;
             liveObj += "<tr><td>" + liveNum + "</td>";
             liveObj += "<td>" + title + "</td>";
-            liveObj += "<td>" + url + "</td>";
-            liveObj += "<td>" + pc_url + "</td></tr>";
+            liveObj += "<td><span class='f-break'>" + url + "</span></td>";
+            liveObj += "<td><span class='f-break'>" + pc_url + "</span></td></tr>";
             liveNum++;
         };
         $("#data-config").find("tbody").html(liveObj);
@@ -119,12 +120,44 @@ function Dude() {
         };
         $("#insList").find("tbody").html(obj);
     };
+    this.callback_line = function(msg) {
+        var data = msg[wdog.date()];
+        var obj = "";
+        var num = 0;
+        for (var key in data) {
+            var index = data[key];
+            var title = key;
+            num++;
+            for (var _key in index) {
+                
+                var _index = index[_key];
+                var _name = _index.name;
+                var _weight = _index.weight;
+                var _url = _index.url;
+                obj += "<tr><td>" + num + "</td>";
+                obj += "<td>" + title + "</td>";
+                obj += "<td>" + _name + "</td>";
+                obj += "<td>" + _weight + "</td>";
+                obj += "<td>" + _url + "</td>";
+                obj += '<td><div class="btn-group"><a class="btn btn-sm btn-default fix">修改</><a class="btn btn-sm btn-default delete">删除</a></td></tr>';
+
+            }
+        };
+        $("#lineList").find("tbody").html(obj);
+    }
 };
 
 var wdog = {
     config: {
         authDomain: "infi000.wilddog.com",
         syncURL: "https://infi000.wilddogio.com"
+    },
+    date: function() {
+        var oDate = new Date();
+        var year = oDate.getFullYear(); //获取系统的年；
+        var month = oDate.getMonth() + 1; //获取系统月份，由于月份是从0开始计算，所以要加1
+        var day = oDate.getDate(); // 获取系统日，
+        return year + "-" + month + "-" + day
     }
 };
 
@@ -133,6 +166,7 @@ wdog.ref = wilddog.sync().ref("/jrstv/");
 wdog.ref_bs = wilddog.sync().ref("/zhibodude/");
 wdog.ref_twitter = wilddog.sync().ref("/zhibodude-twitter/");
 wdog.ref_ins = wilddog.sync().ref("/zhibodude-ins/");
+wdog.ref_line = wilddog.sync().ref("/zhibodude-line/" + wdog.date());
 
 $(document).ready(function($) {
     //实例化
@@ -224,6 +258,28 @@ $(document).ready(function($) {
             }
         });
     });
+    // 提交line数据
+    $("#line-submit").on("click", function() {
+        var title = $("#line-title").val();
+        var data = {
+            name: $("#line-name").val(),
+            weight: $("#line-weight").val(),
+            url: $("#line-url").val(),
+        };
+        for (var key in data) {
+            var index = data[key];
+            if (index == "") {
+                alert("填写完整内容");
+                return;
+            }
+        };
+        wdog.ref_line.child("/" + title).push(data, function(err) {
+            if (err == null) {
+                alert("提交成功");
+                myDude.invoke(myDude.url_line, myDude.callback_line)
+            }
+        });
+    });
     // 切换展示界面
     $("#getData").on("click", function() {
         $(".mainBox").hide();
@@ -246,15 +302,23 @@ $(document).ready(function($) {
         $(this).closest('li').addClass('active');
         myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
     });
-    $("#getIns").on("click",function(){
-           $(".mainBox").hide();
+    $("#getIns").on("click", function() {
+        $(".mainBox").hide();
         $("#ins-main").show();
         $(this).closest('ul').find("li").removeClass();
         $(this).closest('li').addClass('active');
-                myDude.invoke(myDude.url_ins + '?orderBy="weight"&limitToLast=1000', myDude.callback_ins)
+        myDude.invoke(myDude.url_ins + '?orderBy="weight"&limitToLast=1000', myDude.callback_ins)
 
-    })
-    //删除数据
+    });
+    $("#getLine").on("click", function() {
+            $(".mainBox").hide();
+            $("#line-main").show();
+            $(this).closest('ul').find("li").removeClass();
+            $(this).closest('li').addClass('active');
+            myDude.invoke(myDude.url_line, myDude.callback_line)
+
+        })
+        //删除数据
     $(document).on("click", ".delete", function() {
         var type = $(this).closest('tr').attr("data-type");
         var node = $(this).closest('tr').attr("data-Key");
