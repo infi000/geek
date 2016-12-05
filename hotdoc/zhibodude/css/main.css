@@ -20,10 +20,11 @@ li {
     width: 78px;
     height: 78px;
 }
-#saveWeb{
+
+#saveWeb {
     cursor: pointer;
-    
 }
+
 .dude-navbar {
     position: absolute;
     left: 0;
@@ -64,9 +65,12 @@ a.static-nav-link {
         width: 80%!important;
         left: 10%!important;
     }
-    .twitterImg{
+    .twitterImg {
         width: 100%;
     }
+    .ins-live-box h3 {
+    font-size: 20px;
+}
 }
 
 @media (max-width: 600px) {
@@ -91,7 +95,7 @@ a.static-nav-link {
         font-weight: bold;
         text-align: center;
     }
-    .twitterImg{
+    .twitterImg {
         width: 100%;
     }
 }
@@ -165,15 +169,22 @@ a.static-nav-link {
     color: #999;
     text-decoration: none;
 }
-.ins-live-box h3{
+
+.ins-live-box h3 {
     color: #a94442;
 }
-.ins-live-box p{
-
-height: 80px;
-overflow-y: scroll;
+.ins-live-box-item{
+    padding: 0;
 }
-.playerHead{
+.ins-live-box-item .thumbnail{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.ins-live-box p {
+    word-wrap: break-word;
+}
+
+.playerHead {
     width: 70px;
     height: 70px;
     box-sizing: border-box;
@@ -181,15 +192,18 @@ overflow-y: scroll;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 0px #ccc;
 }
-.twitterImg{
+
+.twitterImg {
     border-radius: 5px;
     width: 100%;
 }
+
 .twitter-live-box .media-heading {
-color: #a94442; 
+    color: #a94442;
 }
-footer{
-        height: 50px;
+
+footer {
+    height: 50px;
     line-height: 50px;
     background: black;
     font-size: 16px;

@@ -2,16 +2,16 @@
  * @Author: 张驰阳
  * @Date:   2016-12-01 17:01:50
  * @Last Modified by:   张驰阳
- * @Last Modified time: 2016-12-02 18:21:12
+ * @Last Modified time: 2016-12-05 17:02:21
  */
 
 'use strict';
-var test;
 
 function Dude() {
     this.domain = "https://infi000.wilddogio.com";
     this.url_bs = 'https://infi000.wilddogio.com/zhibodude.json';
     this.url_twitter = 'https://infi000.wilddogio.com/zhibodude-twitter.json';
+    this.url_ins = 'https://infi000.wilddogio.com/zhibodude-ins.json';
     this.url_live = "";
     this.url_config = "http://jrstv.net/getSource/app/getjson.php";
     this.url_gamefile = "http://jrstv.net/getSource/app/getfile.php";
@@ -97,7 +97,28 @@ function Dude() {
             Num++;
         };
         $("#twitterList").find("tbody").html(obj);
-    }
+    };
+    this.callback_ins = function(msg) {
+        var data = msg;
+        var obj = "";
+        var Num = 1;
+        for (var keys in data) {
+            var index = data[keys];
+            var name = (index.name) ? index.name : "无";
+            var msg = index.msg;
+            var img = index.img;
+            var weight = index.weight;
+            // obj += "<tr><td>" + keys + "</td>";
+            obj += "<tr data-Key='" + keys + "' data-type='ins'><td>" + Num + "</td>";
+            obj += "<td>" + name + "</td>";
+            obj += "<td>" + weight + "</td>";
+            obj += "<td>" + msg + "</td>";
+            obj += "<td><a href='http://www.zhibodude.com/static/insImg/" + img + "'><img src='http://www.zhibodude.com/static/insImg/" + img + "' width='100' ></a></td>";
+            obj += '<td><div class="btn-group"><a class="btn btn-sm btn-default fix">修改</><a class="btn btn-sm btn-default delete">删除</a></div></tr>';
+            Num++;
+        };
+        $("#insList").find("tbody").html(obj);
+    };
 };
 
 var wdog = {
@@ -111,6 +132,7 @@ wilddog.initializeApp(wdog.config);
 wdog.ref = wilddog.sync().ref("/jrstv/");
 wdog.ref_bs = wilddog.sync().ref("/zhibodude/");
 wdog.ref_twitter = wilddog.sync().ref("/zhibodude-twitter/");
+wdog.ref_ins = wilddog.sync().ref("/zhibodude-ins/");
 
 $(document).ready(function($) {
     //实例化
@@ -180,6 +202,28 @@ $(document).ready(function($) {
             }
         });
     });
+    // 提交ins数据
+    $("#ins-submit").on("click", function() {
+        var data = {
+            name: $("#ins-name").val(),
+            weight: $("#ins-weight").val(),
+            img: $("#ins-img").val(),
+            msg: $("#ins-msg").val(),
+        };
+        for (var key in data) {
+            var index = data[key];
+            if (index == "") {
+                alert("填写完整内容");
+                return;
+            }
+        };
+        wdog.ref_ins.push(data, function(err) {
+            if (err == null) {
+                alert("提交成功");
+                myDude.invoke(myDude.url_ins + '?orderBy="weight"&limitToLast=1000', myDude.callback_ins)
+            }
+        });
+    });
     // 切换展示界面
     $("#getData").on("click", function() {
         $(".mainBox").hide();
@@ -202,6 +246,14 @@ $(document).ready(function($) {
         $(this).closest('li').addClass('active');
         myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
     });
+    $("#getIns").on("click",function(){
+           $(".mainBox").hide();
+        $("#ins-main").show();
+        $(this).closest('ul').find("li").removeClass();
+        $(this).closest('li').addClass('active');
+                myDude.invoke(myDude.url_ins + '?orderBy="weight"&limitToLast=1000', myDude.callback_ins)
+
+    })
     //删除数据
     $(document).on("click", ".delete", function() {
         var type = $(this).closest('tr').attr("data-type");
@@ -220,6 +272,13 @@ $(document).ready(function($) {
                     if (err == null) {
                         alert("删除成功");
                         myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
+                    }
+                })
+            } else if (type == "ins") {
+                wdog.ref_ins.child("/" + node).set(null, function(err) {
+                    if (err == null) {
+                        alert("删除成功");
+                        myDude.invoke(myDude.url_ins + '?orderBy="weight"&limitToLast=1000', myDude.callback_ins)
                     }
                 })
             }
@@ -268,6 +327,27 @@ $(document).ready(function($) {
                     if (err == null) {
                         alert("修改成功");
                         myDude.invoke(myDude.url_twitter + '?orderBy="weight"&limitToLast=1000', myDude.callback_twitter)
+                    }
+                });
+            } else if (type == "ins") {
+                var data = {
+                    name: $("#ins-name").val(),
+                    weight: $("#ins-weight").val(),
+                    img: $("#ins-img").val(),
+                    msg: $("#ins-msg").val(),
+                };
+                for (var key in data) {
+                    var index = data[key];
+                    if (index == "") {
+                        console.log(key)
+                        alert("填写完整内容");
+                        return;
+                    }
+                };
+                wdog.ref_ins.child("/" + node).set(data, function(err) {
+                    if (err == null) {
+                        alert("修改成功");
+                        myDude.invoke(myDude.url_ins + '?orderBy="weight"&limitToLast=1000', myDude.callback_ins)
                     }
                 });
             }

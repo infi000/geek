@@ -5,6 +5,7 @@ var Dude = function() {
     this.url_live = "https://infi000.wilddogio.com/jrstv/gamefile/data.json";
     this.url_slogan = "https://infi000.wilddogio.com/zhibodude.json";
     this.url_twitter = "https://infi000.wilddogio.com/zhibodude-twitter.json";
+    this.url_ins = "https://infi000.wilddogio.com/zhibodude-ins.json";
     this.invoke_data = function(_url, _data, _callback) {
         $.ajax({
                 url: _url,
