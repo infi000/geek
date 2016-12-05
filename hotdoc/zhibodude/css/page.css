@@ -30,7 +30,26 @@ header a:hover {
     color: #fff;
 
 }
-
+.f-pad0{
+    padding: 0;
+}
+/*.playerBox .col-sm-1{
+padding: 0;
+}
+*/
 #a1{
-	height: 600px;
+    width: 100%;
+    height: 500px;
+}
+.chooseLine,.chatBox{
+    height: 500px;
+}
+.chooseLine{
+    /*background: yellow;*/
+}
+.chooseLine li a{
+    width: 100%;
+}
+.chatBox{
+    /*background: red;*/
 }
