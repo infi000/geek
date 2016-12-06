@@ -2,7 +2,7 @@
  * @Author: 张驰阳
  * @Date:   2016-12-01 17:01:50
  * @Last Modified by:   张驰阳
- * @Last Modified time: 2016-12-05 18:35:12
+ * @Last Modified time: 2016-12-06 11:32:07
  */
 
 'use strict';
@@ -64,12 +64,27 @@ function Dude() {
         for (var key in msg.today) {
             var index = msg.today[key];
             var title = index.title;
-            var url = index.url[0];
+            // var url = index.url[0];
+            // var url = (index.url == undefined) ? "" : index.url;
+            var _url;
+            if(index.url!==undefined){
+                // _url=index.url.map(function(index, elem) {
+                //     var obj="";
+                //     obj+="<p><span class='f-break'>"+index+"</span></p>";
+                //     return obj;
+                // });
+                _url="";
+                for(var keys in index.url){
+                    _url+="<p><a class='f-break'>"+index.url[keys]+"</a></p>";
+                }
+            }else{
+                _url="<p>暂无</p>"
+            }
             var pc_url = index.pc_url;
             liveObj += "<tr><td>" + liveNum + "</td>";
             liveObj += "<td>" + title + "</td>";
-            liveObj += "<td><span class='f-break'>" + url + "</span></td>";
-            liveObj += "<td><span class='f-break'>" + pc_url + "</span></td></tr>";
+            liveObj += "<td>"+_url+"</td>";
+            liveObj += "<td><a class='f-break'>" + pc_url + "</a></td></tr>";
             liveNum++;
         };
         $("#data-config").find("tbody").html(liveObj);
@@ -129,16 +144,16 @@ function Dude() {
             var title = key;
             num++;
             for (var _key in index) {
-                
+
                 var _index = index[_key];
                 var _name = _index.name;
                 var _weight = _index.weight;
                 var _url = _index.url;
-                obj += "<tr><td>" + num + "</td>";
+                obj += "<tr data-key='" + _key + "' data-type='line' data-title='" + title + "'><td>" + num + "</td>";
                 obj += "<td>" + title + "</td>";
                 obj += "<td>" + _name + "</td>";
                 obj += "<td>" + _weight + "</td>";
-                obj += "<td>" + _url + "</td>";
+                obj += "<td><span class='f-break'>" + _url + "</span></td>";
                 obj += '<td><div class="btn-group"><a class="btn btn-sm btn-default fix">修改</><a class="btn btn-sm btn-default delete">删除</a></td></tr>';
 
             }
@@ -345,6 +360,14 @@ $(document).ready(function($) {
                         myDude.invoke(myDude.url_ins + '?orderBy="weight"&limitToLast=1000', myDude.callback_ins)
                     }
                 })
+            } else if (type == "line") {
+                var title = $(this).closest('tr').attr("data-title");
+                wdog.ref_line.child("/" + title + "/" + node).set(null, function(err) {
+                    if (err == null) {
+                        alert("删除成功");
+                        myDude.invoke(myDude.url_line, myDude.callback_line)
+                    }
+                })
             }
         } else {
             return;
@@ -412,6 +435,27 @@ $(document).ready(function($) {
                     if (err == null) {
                         alert("修改成功");
                         myDude.invoke(myDude.url_ins + '?orderBy="weight"&limitToLast=1000', myDude.callback_ins)
+                    }
+                });
+            } else if (type == "line") {
+                var data = {
+                    name: $("#line-name").val(),
+                    weight: $("#line-weight").val(),
+                    title: $("#line-title").val(),
+                    url: $("#line-url").val(),
+                };
+                for (var key in data) {
+                    var index = data[key];
+                    if (index == "") {
+                        console.log(key)
+                        alert("填写完整内容");
+                        return;
+                    }
+                };
+                wdog.ref_line.child("/" + data.title + "/" + node).set(data, function(err) {
+                    if (err == null) {
+                        alert("修改成功");
+                        myDude.invoke(myDude.url_line, myDude.callback_line)
                     }
                 });
             }

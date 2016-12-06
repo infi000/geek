@@ -7,6 +7,7 @@ var Dude = function() {
     this.url_twitter = "https://infi000.wilddogio.com/zhibodude-twitter.json";
     this.url_ins = "https://infi000.wilddogio.com/zhibodude-ins.json";
     this.url_line = "https://infi000.wilddogio.com/zhibodude-line.json";
+    this.url_channel = "https://infi000.wilddogio.com/zhibodude-channel.json";
     this.invoke_data = function(_url, _data, _callback) {
         $.ajax({
                 url: _url,

@@ -37,7 +37,7 @@ $(document).ready(function() {
         }
     };
     index.callback_live = function(msg) {
-        index.liveData = msg;
+
         var obj = "<ul>";
         for (key in msg.today) {
             var data = msg.today[key];
@@ -120,6 +120,9 @@ $(document).ready(function() {
             });
         });
     };
+    index.callback_channel=function(msg){
+                index.liveData = msg;
+    }
     index.data = {
         key: "d40b83c5590a7a27358c405d40b41659"
     };
@@ -136,6 +139,8 @@ $(document).ready(function() {
         url: 'https://infi000.wilddogio.com/zhibodude.json?orderBy="weight"&limitToLast=1',
         success: index.callback_slogan
     });
+    //直播频道
+    index.invoke_data(idnex.url_channel,index.data,index.callback_channel);
     //TWITTER更新
     index.invoke_data(index.url_twitter + '?orderBy="weight"&limitToLast=1000', index.data, index.callback_twitter);
     //ins更新
